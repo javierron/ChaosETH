@@ -7,24 +7,20 @@ import csv, re
 import logging
 
 INJECTOR = None
-MONITOR = None
 DRETESTETH = None
 
 def handle_sigint(sig, frame):
     global INJECTOR
-    global MONITOR
     global DRETESTETH
     if (INJECTOR != None): os.killpg(os.getpgid(INJECTOR.pid), signal.SIGTERM)
-    if (MONITOR != None): os.killpg(os.getpgid(MONITOR.pid), signal.SIGTERM)
     if (DRETESTETH != None): os.killpg(os.getpgid(DRETESTETH.pid), signal.SIGTERM)
     exit()
 
 def handle_args():
     parser = argparse.ArgumentParser(
         description="Observe natural errors in EVM using its test cases")
-    parser.add_argument("-m", "--monitor", required=True, help="path to syscall_monitor.py")
-    parser.add_argument("-i", "--injector", help="the path to syscall_injector.py")
-    parser.add_argument("-c", "--config", help="the fault injection config (.csv)")
+    parser.add_argument("-i", "--injector", required=True, help="the path to syscall_injector.py")
+    parser.add_argument("-c", "--config", required=True, help="the fault injection config (.csv)")
     parser.add_argument("-t", "--testpath", required=True, help="path to the root folder of eth tests")
     parser.add_argument("--testcategory", default="GeneralStateTests", help="the main category of tests")
     parser.add_argument("-e", "--dretesteth", required=True, help="path to dretesteth.sh")
@@ -56,7 +52,7 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
     for sub_tests in test_folders:
         logging.info("run tests in folder %s"%sub_tests)
         INJECTOR = subprocess.Popen("python -u %s --process evm -P %s --errorno=-%s %s"%(
-            injector, "0.01", config["error_code"], config["system_call"]
+            injector, config["error_rate"], config["error_code"], config["system_call"]
         ), stdout=subprocess.PIPE, stderr=subprocess.PIPE, close_fds=True, shell=True, preexec_fn=os.setsid)
         time.sleep(3)
 
