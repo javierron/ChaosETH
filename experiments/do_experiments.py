@@ -48,7 +48,7 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
 
     logging.info("experiment begins!")
     logging.info("system call: %s, error code: %s, error rate: %s"%(config["system_call"], config["error_code"], config["error_rate"]))
-    result = {"success": 0, "failure": 0, "injection_count": 0}
+    result = {"success": 0, "failure": 0, "timeout": 0, "injection_count": 0}
     for sub_tests in test_folders:
         logging.info("run tests in folder %s"%sub_tests)
         INJECTOR = subprocess.Popen("/usr/bin/python -u %s --process evm -P %s --errorno=-%s %s"%(
@@ -59,7 +59,12 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
         run_tests_cmd = "%s -t %s -- --testpath %s --datadir /tests/config --clients local"%(dretesteth, sub_tests, testpath)
         with tempfile.NamedTemporaryFile(mode="w+b") as f_output:
             DRETESTETH = subprocess.Popen(run_tests_cmd, stdout=f_output.fileno(), stderr=f_output.fileno(), close_fds=True, shell=True, preexec_fn=os.setsid)
-            exit_code = DRETESTETH.wait()
+            try:
+                exit_code = DRETESTETH.wait(timeout=300)
+            except subprocess.TimeoutExpired as err:
+                os.killpg(os.getpgid(DRETESTETH.pid), signal.SIGTERM)
+                result["timeout"] = result["timeout"] + 1
+                log_to_file("./logs/dretesteth-%s-%s-%s.log"%(config["system_call"], config["error_code"], config["error_rate"]), "Timeout when executing %s"%sub_tests)
             DRETESTETH = None
             f_output.flush()
             f_output.seek(0, os.SEEK_SET)
@@ -111,7 +116,7 @@ def extract_test_folders(test_path, test_category):
 
 def main(args):
     headers, configs = read_from_csv(args.config)
-    if "success" not in headers: headers.extend(["success", "failure", "injection_count"])
+    if "success" not in headers: headers.extend(["success", "failure", "timeout", "injection_count"])
 
     test_folders = extract_test_folders(args.testpath, args.testcategory)
 
@@ -121,6 +126,7 @@ def main(args):
         result = do_experiment(config, args.dretesteth, args.testpath, test_folders, args.injector)
         config["success"] = result["success"]
         config["failure"] = result["failure"]
+        config["timeout"] = result["timeout"]
         config["injection_count"] = result["injection_count"]
         write_to_csv(args.config, headers, configs)
 
