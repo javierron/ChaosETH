@@ -60,10 +60,12 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
         with tempfile.NamedTemporaryFile(mode="w+b") as f_output:
             DRETESTETH = subprocess.Popen(run_tests_cmd, stdout=f_output.fileno(), stderr=f_output.fileno(), close_fds=True, shell=True, preexec_fn=os.setsid)
             try:
+                timeout_flag = False
                 exit_code = DRETESTETH.wait(timeout=300)
             except subprocess.TimeoutExpired as err:
                 os.killpg(os.getpgid(DRETESTETH.pid), signal.SIGTERM)
                 exit_code = "-999"
+                timeout_flag = True
                 result["timeout"] = result["timeout"] + 1
                 log_to_file("./logs/dretesteth-%s-%s-%s.log"%(config["system_call"], config["error_code"], config["error_rate"]), "Timeout when executing %s\n"%sub_tests)
                 logging.info("Timeout when executing %s\n"%sub_tests)
@@ -100,7 +102,7 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
             logging.warning(injector_stdout)
             logging.warning(injector_stderr)
 
-        logging.info("Done, exit code of dretesteth.sh: %d, success: %d, failure: %d, injection_count: %d"%(exit_code, success_count, failure_count, injection_count))
+        logging.info("Done, exit code of dretesteth.sh: %d, success: %d, failure: %d, timeout: %s, injection_count: %d"%(exit_code, success_count, failure_count, timeout_flag, injection_count))
 
     logging.info("experiment ends!")
 
