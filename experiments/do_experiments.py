@@ -51,7 +51,7 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
     result = {"success": 0, "failure": 0, "injection_count": 0}
     for sub_tests in test_folders:
         logging.info("run tests in folder %s"%sub_tests)
-        INJECTOR = subprocess.Popen("python -u %s --process evm -P %s --errorno=-%s %s"%(
+        INJECTOR = subprocess.Popen("/usr/bin/python -u %s --process evm -P %s --errorno=-%s %s"%(
             injector, config["error_rate"], config["error_code"], config["system_call"]
         ), stdout=subprocess.PIPE, stderr=subprocess.PIPE, close_fds=True, shell=True, preexec_fn=os.setsid)
         time.sleep(3)
@@ -83,7 +83,7 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
         injector_stdout, injector_stderr = INJECTOR.communicate()
         INJECTOR = None
         pattern = re.compile(r'(\d+) failures have been injected so far')
-        injection_count = pattern.findall(injector_stdout)
+        injection_count = pattern.findall(injector_stdout.decode("utf-8"))
         if len(injection_count) > 0:
             injection_count = int(injection_count[-1])
             result["injection_count"] = result["injection_count"] + injection_count
