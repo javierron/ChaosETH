@@ -64,7 +64,7 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
                 exit_code = DRETESTETH.wait(timeout=300)
             except subprocess.TimeoutExpired as err:
                 os.killpg(os.getpgid(DRETESTETH.pid), signal.SIGTERM)
-                exit_code = "-999"
+                exit_code = -999
                 timeout_flag = True
                 result["timeout"] = result["timeout"] + 1
                 log_to_file("./logs/dretesteth-%s-%s-%s.log"%(config["system_call"], config["error_code"], config["error_rate"]), "Timeout when executing %s\n"%sub_tests)
@@ -74,6 +74,9 @@ def do_experiment(config, dretesteth, testpath, test_folders, injector):
             f_output.seek(0, os.SEEK_SET)
             test_output = f_output.read().decode("utf-8")
             log_to_file("./logs/dretesteth-%s-%s-%s.log"%(config["system_call"], config["error_code"], config["error_rate"]), test_output)
+
+        # make sure the related containers have been stopped
+        os.system("docker stop $(docker ps -q --filter ancestor=retesteth)")
 
         # analyze the test results
         pattern_success = re.compile(r'Total Tests Run: (\d+)')
