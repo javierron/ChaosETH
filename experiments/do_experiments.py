@@ -33,7 +33,7 @@ def pgrep_the_client(client_name):
     return pgrep_output
 
 def restart_client(client_name, client_path, restart_cmd, client_log):
-    os.system("cd %s && %s >> %s 2>&1 &"%(restart_cmd, client_log))
+    os.system("cd %s && %s >> %s 2>&1 &"%(client_path, restart_cmd, client_log))
     time.sleep(3)
 
     pid = pgrep_the_client(client_name)
@@ -53,9 +53,12 @@ def tail_client_log(client_log, timeout):
     return output
 
 def dump_logs(content, filepath, filename):
-    os.makedirs(filepath, exist_ok=True)
+    try:
+        os.makedirs(filepath)
+    except:
+        pass
     with open(os.path.join(filepath, filename), 'wt') as log_file:
-        log_file.writelines(content)
+        log_file.write(content.encode("utf-8"))
 
 def do_experiment(experiment, injector_path, client_name, client_log):
     global INJECTOR
