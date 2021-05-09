@@ -1,0 +1,46 @@
+2021-05-09 10:36:41 UTC Syncing #12399447 0x52a5…5cad     0.00 blk/s    0.0 tx/s    0.0 Mgas/s     30+   41 Qed Ancient:#12118719 LI:#12399520   24/25 peers    134 KiB chain   14 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:36:45 UTC Syncing #12399448 0x2ce9…2eb8     0.20 blk/s   61.4 tx/s    3.0 Mgas/s      0+   71 Qed Ancient:#12118719 LI:#12399520   24/25 peers    169 KiB chain   17 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:36:50 UTC Syncing #12399449 0x5146…6b1c     0.20 blk/s   54.2 tx/s    3.0 Mgas/s     69+   88 Qed Ancient:#12118719 LI:#12399611   24/25 peers    204 KiB chain   32 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:36:55 UTC Syncing #12399449 0x5146…6b1c     0.00 blk/s    0.0 tx/s    0.0 Mgas/s     12+  147 Qed Ancient:#12118719 LI:#12399611   24/25 peers    204 KiB chain   35 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:00 UTC Syncing #12399450 0x4f28…22ec     0.20 blk/s   61.6 tx/s    3.0 Mgas/s      0+  160 Qed Ancient:#12118719 LI:#12399611   23/25 peers    204 KiB chain   36 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:05 UTC Syncing #12399450 0x4f28…22ec     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+  197 Qed Ancient:#12118719 LI:#12399648   23/25 peers    204 KiB chain   45 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:10 UTC Syncing #12399451 0xaa4f…7eed     0.20 blk/s   61.0 tx/s    3.0 Mgas/s      0+  196 Qed Ancient:#12118719 LI:#12399648   20/25 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:15 UTC Syncing #12399451 0xaa4f…7eed     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+  196 Qed Ancient:#12118719 LI:#12399648   24/25 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:20 UTC Syncing #12399452 0xbf32…5536     0.20 blk/s   60.4 tx/s    3.0 Mgas/s      0+  195 Qed Ancient:#12118719 LI:#12399648   24/25 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:25 UTC Syncing #12399453 0x10c6…2208     0.20 blk/s   52.4 tx/s    3.0 Mgas/s      0+  194 Qed Ancient:#12118719 LI:#12399648   26/50 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:30 UTC Syncing #12399453 0x10c6…2208     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+  194 Qed Ancient:#12118719 LI:#12399648   26/50 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:32 UTC Panic occured, see stderr for details
+
+
+====================
+
+stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: clone
+
+
+Thread 'Worker Client2' panicked at 'Low level database error when updating blooms. Some issue with disk?: Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" }', crates/ethcore/blockchain/src/blockchain.rs:1438
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-05-09 10:37:32 UTC Finishing work, please wait...
+Error: 1

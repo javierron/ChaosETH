@@ -1,0 +1,22 @@
+The futex facility returned an unexpected error code.2021-05-09 10:36:22 UTC Starting OpenEthereum/v3.2.4-stable-09967329a-20210415/x86_64-linux-gnu/rustc1.51.0
+2021-05-09 10:36:22 UTC Keys path /data/blockchain/eth-data/keys/ethereum
+2021-05-09 10:36:22 UTC DB path /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d
+2021-05-09 10:36:22 UTC State DB configuration: fast
+2021-05-09 10:36:22 UTC Operating mode: active
+2021-05-09 10:36:24 UTC Configured for Ethereum using Ethash engine
+2021-05-09 10:36:25 UTC Downloading old blocks from 0x140fa256873e11920b27ed9e001f0cb0c75f3fb8e7d8f2170bac2acc720bdf62 (#12118719) till Some(0x08cdcd2056f0430fc8b21369de6cda1b19822a0ec12e5523382e3c565e004d03) (#Some(12345001))
+2021-05-09 10:36:25 UTC Listening for new connections on 127.0.0.1:8546.
+2021-05-09 10:36:25 UTC Removed existing file '/data/blockchain/eth-data/jsonrpc.ipc'.
+2021-05-09 10:36:25 UTC Updated conversion rate to Ξ1 = US$3888.15 (1224722.4 wei/gas)
+2021-05-09 10:36:30 UTC Public node URL: enode://d440dace1e4954e36e7f85d5d1d26fe17040f4a0b325f3c59c55bc5fae4b9e0ca4f81baef14bd09bdb9dbdcaf516f204a0194e43c6e3aae03b7ab23339ce6d4b@10.0.0.5:30303
+2021-05-09 10:36:35 UTC Syncing #12399447 0x52a5…5cad     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    0 Qed Ancient:#12118719 LI:#12399447   24/25 peers    134 KiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:36:41 UTC Syncing #12399447 0x52a5…5cad     0.00 blk/s    0.0 tx/s    0.0 Mgas/s     30+   41 Qed Ancient:#12118719 LI:#12399520   24/25 peers    134 KiB chain   14 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:36:45 UTC Syncing #12399448 0x2ce9…2eb8     0.20 blk/s   61.4 tx/s    3.0 Mgas/s      0+   71 Qed Ancient:#12118719 LI:#12399520   24/25 peers    169 KiB chain   17 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:36:50 UTC Syncing #12399449 0x5146…6b1c     0.20 blk/s   54.2 tx/s    3.0 Mgas/s     69+   88 Qed Ancient:#12118719 LI:#12399611   24/25 peers    204 KiB chain   32 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:36:55 UTC Syncing #12399449 0x5146…6b1c     0.00 blk/s    0.0 tx/s    0.0 Mgas/s     12+  147 Qed Ancient:#12118719 LI:#12399611   24/25 peers    204 KiB chain   35 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:00 UTC Syncing #12399450 0x4f28…22ec     0.20 blk/s   61.6 tx/s    3.0 Mgas/s      0+  160 Qed Ancient:#12118719 LI:#12399611   23/25 peers    204 KiB chain   36 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:05 UTC Syncing #12399450 0x4f28…22ec     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+  197 Qed Ancient:#12118719 LI:#12399648   23/25 peers    204 KiB chain   45 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:10 UTC Syncing #12399451 0xaa4f…7eed     0.20 blk/s   61.0 tx/s    3.0 Mgas/s      0+  196 Qed Ancient:#12118719 LI:#12399648   20/25 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:15 UTC Syncing #12399451 0xaa4f…7eed     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+  196 Qed Ancient:#12118719 LI:#12399648   24/25 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:20 UTC Syncing #12399452 0xbf32…5536     0.20 blk/s   60.4 tx/s    3.0 Mgas/s      0+  195 Qed Ancient:#12118719 LI:#12399648   24/25 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-09 10:37:25 UTC Syncing #12399453 0x10c6…2208     0.20 blk/s   52.4 tx/s    3.0 Mgas/s      0+  194 Qed Ancient:#12118719 LI:#12399648   26/50 peers    275 KiB chain   44 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
