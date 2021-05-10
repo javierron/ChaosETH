@@ -1,0 +1,26 @@
+INFO [05-09|13:19:57.630] Imported new block headers               count=1   elapsed=9.340ms     number=12400382 hash="3db002…4b8a4f"
+INFO [05-09|13:20:00.675] Initializing state bloom                 items=19857566 errorrate=0.000 elapsed=48.002s
+INFO [05-09|13:20:01.350] Upgrading chain index                    type=bloombits               percentage=5
+INFO [05-09|13:20:02.517] Imported new state entries               count=484 elapsed="3.4µs"     processed=572827365 pending=6705 trieretry=308 coderetry=0 duplicate=0 unexpected=630
+INFO [05-09|13:20:03.269] Looking for peers                        peercount=14 tried=4 static=0
+INFO [05-09|13:20:07.057] Imported new block headers               count=1   elapsed=18.950ms    number=12400383 hash="ae20a6…2cb458"
+INFO [05-09|13:20:08.676] Initializing state bloom                 items=22735259 errorrate=0.000 elapsed=56.002s
+INFO [05-09|13:20:09.502] Upgrading chain index                    type=bloombits               percentage=6
+INFO [05-09|13:20:12.757] Imported new state entries               count=489 elapsed="3.8µs"     processed=572827854 pending=9181 trieretry=0   coderetry=0 duplicate=0 unexpected=630
+INFO [05-09|13:20:13.271] Looking for peers                        peercount=16 tried=4 static=0
+INFO [05-09|13:20:16.676] Initializing state bloom                 items=25703575 errorrate=0.000 elapsed=1m4.003s
+INFO [05-09|13:20:17.514] Upgrading chain index                    type=bloombits               percentage=7
+INFO [05-09|13:20:23.343] Imported new state entries               count=384 elapsed="3.4µs"     processed=572828238 pending=11139 trieretry=0   coderetry=0 duplicate=0 unexpected=630
+INFO [05-09|13:20:23.501] Looking for peers                        peercount=11 tried=7 static=0
+INFO [05-09|13:20:24.678] Initializing state bloom                 items=28657787 errorrate=0.000 elapsed=1m12.005s
+INFO [05-09|13:20:25.598] Upgrading chain index                    type=bloombits               percentage=8
+INFO [05-09|13:20:32.368] Imported new state entries               count=384 elapsed="3.1µs"     processed=572828622 pending=13962 trieretry=0   coderetry=0 duplicate=0 unexpected=630
+INFO [05-09|13:20:32.679] Initializing state bloom                 items=31700315 errorrate=0.000 elapsed=1m20.005s
+INFO [05-09|13:20:33.570] Looking for peers                        peercount=7  tried=7 static=0
+INFO [05-09|13:20:33.721] Upgrading chain index                    type=bloombits               percentage=9
+INFO [05-09|13:20:40.679] Initializing state bloom                 items=34617065 errorrate=0.000 elapsed=1m28.005s
+INFO [05-09|13:20:40.840] Imported new state entries               count=384 elapsed="3.7µs"     processed=572829006 pending=16186 trieretry=0   coderetry=0 duplicate=0 unexpected=630
+INFO [05-09|13:20:40.845] Imported new state entries               count=0   elapsed="9.1µs"     processed=572829006 pending=16186 trieretry=2   coderetry=0 duplicate=0 unexpected=632
+INFO [05-09|13:20:41.773] Upgrading chain index                    type=bloombits               percentage=10
+ERROR[05-09|13:20:42.516] Snapshot extension registration failed   peer=02d90bad err="peer connected on snap without compatible eth support"
+INFO [05-09|13:20:43.596] Looking for peers                        peercount=7  tried=4 static=0

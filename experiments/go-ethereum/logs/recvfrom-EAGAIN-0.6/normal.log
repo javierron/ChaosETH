@@ -1,0 +1,42 @@
+WARN [05-09|13:25:44.640] Stalling state sync, dropping peer       peer=2df3117a8b10a3d020bae52f0300bb646f43f1756b2c8bb2643cfe42b5d4c71c
+ERROR[05-09|13:25:44.641] Ethereum peer removal failed             peer=e9b288e4 err="peer not registered"
+ERROR[05-09|13:25:44.641] Ethereum peer removal failed             peer=2df3117a err="peer not registered"
+INFO [05-09|13:25:44.683] Looking for peers                        peercount=33 tried=4 static=0
+INFO [05-09|13:25:45.200] Initializing state bloom                 items=144454996 errorrate=0.000 elapsed=6m32.526s
+INFO [05-09|13:25:49.517] Imported new state entries               count=384 elapsed="3.8µs"     processed=572844240 pending=48041 trieretry=4    coderetry=0 duplicate=0 unexpected=1016
+WARN [05-09|13:25:49.524] Stalling state sync, dropping peer       peer=3aaff351b9ce42f0530b9e531514f44f56a3d4715fd1e02be4ffbe071f634632
+ERROR[05-09|13:25:49.543] Ethereum peer removal failed             peer=3aaff351 err="peer not registered"
+INFO [05-09|13:25:51.973] Upgrading chain index                    type=bloombits               percentage=41
+INFO [05-09|13:25:53.201] Initializing state bloom                 items=146091857 errorrate=0.000 elapsed=6m40.527s
+INFO [05-09|13:25:54.741] Looking for peers                        peercount=33 tried=3 static=0
+INFO [05-09|13:25:54.992] Imported new state entries               count=384 elapsed="3.3µs"     processed=572844624 pending=51008 trieretry=2    coderetry=0 duplicate=0 unexpected=1016
+INFO [05-09|13:26:00.141] Upgrading chain index                    type=bloombits               percentage=42
+INFO [05-09|13:26:01.201] Initializing state bloom                 items=148912536 errorrate=0.000 elapsed=6m48.527s
+INFO [05-09|13:26:03.189] Imported new block headers               count=1   elapsed=688.823ms   number=12400404 hash="2634c0…afd9d4" age=1m18s
+INFO [05-09|13:26:03.314] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=272.50KiB throttle=241
+INFO [05-09|13:26:04.119] Imported new state entries               count=384 elapsed="3.1µs"     processed=572845008 pending=51397 trieretry=0    coderetry=0 duplicate=0 unexpected=1016
+INFO [05-09|13:26:04.865] Looking for peers                        peercount=34 tried=4 static=0
+INFO [05-09|13:26:08.152] Upgrading chain index                    type=bloombits               percentage=42
+INFO [05-09|13:26:08.783] Imported new block headers               count=1   elapsed=23.596ms    number=12400405 hash="c0280d…ad9431" age=1m13s
+INFO [05-09|13:26:09.202] Initializing state bloom                 items=151590940 errorrate=0.000 elapsed=6m56.528s
+INFO [05-09|13:26:13.711] Imported new state entries               count=522 elapsed=1.094ms     processed=572845530 pending=51860 trieretry=246  coderetry=0 duplicate=0 unexpected=1016
+INFO [05-09|13:26:15.386] Looking for peers                        peercount=33 tried=4 static=0
+INFO [05-09|13:26:16.249] Upgrading chain index                    type=bloombits               percentage=43
+INFO [05-09|13:26:17.202] Initializing state bloom                 items=154254096 errorrate=0.000 elapsed=7m4.528s
+WARN [05-09|13:26:19.540] Dropping unsynced node during sync       id=b6053b348ae2185a conn=inbound addr=149.28.211.167:35134  type=Geth/v1.10.3-unstabl...
+INFO [05-09|13:26:21.305] Imported new block headers               count=1   elapsed=51.755ms    number=12400406 hash="43b0a9…2343c7" age=1m12s
+INFO [05-09|13:26:24.250] Upgrading chain index                    type=bloombits               percentage=44
+INFO [05-09|13:26:25.202] Initializing state bloom                 items=157079677 errorrate=0.000 elapsed=7m12.528s
+INFO [05-09|13:26:25.414] Looking for peers                        peercount=35 tried=4 static=0
+INFO [05-09|13:26:27.574] Imported new block headers               count=1   elapsed=13.206ms    number=12400407 hash="b2d22f…bd78f5"
+INFO [05-09|13:26:28.367] Imported new state entries               count=768 elapsed="201.001µs" processed=572846298 pending=52579 trieretry=382  coderetry=0 duplicate=0 unexpected=1016
+INFO [05-09|13:26:32.507] Upgrading chain index                    type=bloombits               percentage=44
+INFO [05-09|13:26:33.203] Initializing state bloom                 items=158702187 errorrate=0.000 elapsed=7m20.529s
+INFO [05-09|13:26:37.306] Looking for peers                        peercount=35 tried=4 static=0
+INFO [05-09|13:26:39.822] Imported new state entries               count=543 elapsed="53.2µs"    processed=572846841 pending=53127 trieretry=0    coderetry=0 duplicate=0 unexpected=1016
+INFO [05-09|13:26:40.565] Upgrading chain index                    type=bloombits               percentage=45
+INFO [05-09|13:26:41.203] Initializing state bloom                 items=159382033 errorrate=0.000 elapsed=7m28.529s
+INFO [05-09|13:26:47.317] Looking for peers                        peercount=35 tried=4 static=0
+INFO [05-09|13:26:48.818] Upgrading chain index                    type=bloombits               percentage=46
+INFO [05-09|13:26:49.204] Initializing state bloom                 items=160025398 errorrate=0.000 elapsed=7m36.530s
+INFO [05-09|13:26:50.390] Imported new state entries               count=576 elapsed="4.2µs"     processed=572847417 pending=53783 trieretry=0    coderetry=0 duplicate=0 unexpected=1016

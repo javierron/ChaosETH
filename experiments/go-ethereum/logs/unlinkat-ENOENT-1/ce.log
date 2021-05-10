@@ -1,0 +1,20 @@
+INFO [05-09|14:32:30.366] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=289.16KiB throttle=227
+INFO [05-09|14:32:35.261] Imported new state entries               count=768  elapsed="308.201µs" processed=573149476 pending=123704 trieretry=0    coderetry=0 duplicate=0 unexpected=3282
+INFO [05-09|14:32:41.427] Imported new state entries               count=768  elapsed="488.801µs" processed=573150244 pending=124425 trieretry=0    coderetry=0 duplicate=0 unexpected=3282
+INFO [05-09|14:32:41.825] Imported new block headers               count=1    elapsed=7.498ms     number=12400703 hash="eacc92…633068"
+INFO [05-09|14:32:47.122] Imported new state entries               count=768  elapsed="325.401µs" processed=573151012 pending=125148 trieretry=0    coderetry=0 duplicate=0 unexpected=3282
+INFO [05-09|14:32:52.848] Imported new state entries               count=768  elapsed="271.901µs" processed=573151780 pending=125864 trieretry=0    coderetry=0 duplicate=0 unexpected=3282
+INFO [05-09|14:33:00.172] Imported new state entries               count=768  elapsed=5.009ms     processed=573152548 pending=126571 trieretry=0    coderetry=0 duplicate=0 unexpected=3282
+INFO [05-09|14:33:04.008] Imported new state entries               count=0    elapsed="9.8µs"     processed=573152548 pending=126909 trieretry=2    coderetry=0 duplicate=0 unexpected=3284
+INFO [05-09|14:33:09.320] Imported new state entries               count=768  elapsed="648.002µs" processed=573153316 pending=127279 trieretry=0    coderetry=0 duplicate=0 unexpected=3284
+INFO [05-09|14:33:09.655] Imported new block headers               count=1    elapsed=6.407ms     number=12400704 hash="5b26f7…4586c1"
+INFO [05-09|14:33:17.028] Imported new state entries               count=768  elapsed="897.803µs" processed=573154084 pending=127978 trieretry=0    coderetry=0 duplicate=0 unexpected=3284
+INFO [05-09|14:33:23.447] Imported new state entries               count=768  elapsed="420.501µs" processed=573154852 pending=128687 trieretry=2    coderetry=0 duplicate=0 unexpected=3284
+INFO [05-09|14:33:28.242] Imported new block headers               count=1    elapsed=7.237ms     number=12400705 hash="879dad…966451" age=1m2s
+INFO [05-09|14:33:30.932] Imported new state entries               count=768  elapsed="215.901µs" processed=573155620 pending=129435 trieretry=2    coderetry=0 duplicate=0 unexpected=3284
+ERROR[05-09|14:33:37.319] Ethereum peer removal failed             peer=b9207ef4 err="peer not registered"
+INFO [05-09|14:33:38.390] Imported new state entries               count=768  elapsed="217.4µs"   processed=573156388 pending=130172 trieretry=0    coderetry=0 duplicate=0 unexpected=3284
+WARN [05-09|14:33:38.395] Synchronisation failed, dropping peer    peer=b9207ef4ad6202ce52f22d15d0ebfbc952c92dc4a33cc59fa55073c9d7b9766d err="action from bad peer ignored: header request timed out"
+ERROR[05-09|14:33:38.396] Ethereum peer removal failed             peer=b9207ef4 err="peer not registered"
+WARN [05-09|14:33:44.400] Synchronisation failed, dropping peer    peer=9e8fd5cdf84aff5082ac5913be0bf87ccf632278f5316e2ea4974ad979212c0d err=timeout
+ERROR[05-09|14:33:44.400] Ethereum peer removal failed             peer=9e8fd5cd err="peer not registered"

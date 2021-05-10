@@ -1,0 +1,53 @@
+WARN [05-09|13:19:12.632] Loaded snapshot journal                  diskroot="d7f897…0f0544" diffs=missing
+INFO [05-09|13:19:12.632] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-09|13:19:12.632] Upgrading chain index                    type=bloombits percentage=0
+INFO [05-09|13:19:12.632] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [05-09|13:19:12.661] Allocated fast sync bloom                size=1.29GiB
+WARN [05-09|13:19:12.675] Unclean shutdown detected                booted=2021-05-06T21:38:45+0000 age=2d15h40m
+INFO [05-09|13:19:12.675] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
+INFO [05-09|13:19:13.181] New local node record                    seq=3 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-09|13:19:13.194] IPC endpoint opened                      url=/data/eth-data/geth.ipc
+INFO [05-09|13:19:13.212] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
+INFO [05-09|13:19:16.617] New local node record                    seq=4 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
+INFO [05-09|13:19:17.988] Block synchronisation started 
+INFO [05-09|13:19:19.816] Disabling direct-ancient mode            origin=12400296 ancient=12189695
+INFO [05-09|13:19:20.548] Imported new block headers               count=3 elapsed=544.445ms number=12400377 hash="8cc5b9…1d2097" ignored=78
+INFO [05-09|13:19:20.674] Initializing state bloom                 items=3197663 errorrate=0.000 elapsed=8.000s
+INFO [05-09|13:19:20.712] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=54.70KiB throttle=1199
+INFO [05-09|13:19:20.716] Imported new block receipts              count=2 elapsed=4.394ms   number=12400298 hash="00cf99…52b2b0" age=18m41s   size=258.27KiB
+INFO [05-09|13:19:20.726] Upgrading chain index                    type=bloombits percentage=0
+INFO [05-09|13:19:20.727] Imported new block receipts              count=2 elapsed=5.066ms   number=12400300 hash="433400…d056a6" age=18m11s   size=249.43KiB
+INFO [05-09|13:19:20.965] Imported new block receipts              count=4 elapsed=8.805ms   number=12400304 hash="792dca…14c1ee" age=16m41s   size=505.06KiB
+INFO [05-09|13:19:21.397] Imported new block receipts              count=4 elapsed=19.931ms  number=12400308 hash="606487…0a95e6" age=15m48s   size=488.77KiB
+INFO [05-09|13:19:22.149] Imported new block receipts              count=6 elapsed=50.321ms  number=12400314 hash="fcf000…717d8c" age=14m47s   size=743.57KiB
+INFO [05-09|13:19:23.217] Imported new block headers               count=1 elapsed=6.855ms   number=12400378 hash="b1b4e9…5a176c"
+INFO [05-09|13:19:23.226] Looking for peers                        peercount=8 tried=2 static=0
+INFO [05-09|13:19:25.785] Imported new state entries               count=252 elapsed="2.9µs"   processed=572826608 pending=4024 trieretry=0 coderetry=0 duplicate=0 unexpected=0
+INFO [05-09|13:19:28.674] Initializing state bloom                 items=6286237 errorrate=0.000 elapsed=16.000s
+INFO [05-09|13:19:28.857] Upgrading chain index                    type=bloombits percentage=1
+INFO [05-09|13:19:29.487] Imported new block headers               count=1   elapsed=7.650ms   number=12400379 hash="41f904…06f4e6"
+INFO [05-09|13:19:33.237] Looking for peers                        peercount=11 tried=3 static=0
+INFO [05-09|13:19:36.674] Initializing state bloom                 items=9957134 errorrate=0.000 elapsed=24.000s
+INFO [05-09|13:19:37.052] Upgrading chain index                    type=bloombits percentage=2
+INFO [05-09|13:19:41.923] Imported new block headers               count=1   elapsed=6.193ms   number=12400380 hash="da0290…a03835"
+WARN [05-09|13:19:43.162] Dropping unsynced node during sync       id=c3ce42a8b5ccb91f conn=inbound addr=143.198.114.251:37696 type=Geth/v1.10.1-stable-...
+INFO [05-09|13:19:43.247] Looking for peers                        peercount=11 tried=3 static=0
+INFO [05-09|13:19:44.674] Initializing state bloom                 items=13569602 errorrate=0.000 elapsed=32.000s
+INFO [05-09|13:19:45.152] Upgrading chain index                    type=bloombits               percentage=3
+INFO [05-09|13:19:52.675] Initializing state bloom                 items=17090086 errorrate=0.000 elapsed=40.001s
+INFO [05-09|13:19:53.196] Upgrading chain index                    type=bloombits               percentage=4
+INFO [05-09|13:19:53.249] Looking for peers                        peercount=11 tried=7 static=0
+INFO [05-09|13:19:54.337] Imported new state entries               count=273 elapsed="3.1µs"   processed=572826881 pending=4360 trieretry=0 coderetry=0 duplicate=0 unexpected=0
+INFO [05-09|13:19:54.389] Imported new block headers               count=1   elapsed=5.390ms   number=12400381 hash="dbd26e…c6be2e"
+INFO [05-09|13:19:54.436] Imported new state entries               count=0   elapsed=9.920ms   processed=572826881 pending=4388 trieretry=320 coderetry=0 duplicate=0 unexpected=320
+INFO [05-09|13:19:55.971] Imported new state entries               count=0   elapsed="589.101µs" processed=572826881 pending=4855 trieretry=310 coderetry=0 duplicate=0 unexpected=630
+INFO [05-09|13:19:57.630] Imported new block headers               count=1   elapsed=9.340ms     number=12400382 hash="3db002…4b8a4f"
+INFO [05-09|13:20:00.675] Initializing state bloom                 items=19857566 errorrate=0.000 elapsed=48.002s
+INFO [05-09|13:20:01.350] Upgrading chain index                    type=bloombits               percentage=5
+INFO [05-09|13:20:02.517] Imported new state entries               count=484 elapsed="3.4µs"     processed=572827365 pending=6705 trieretry=308 coderetry=0 duplicate=0 unexpected=630
+INFO [05-09|13:20:03.269] Looking for peers                        peercount=14 tried=4 static=0
+INFO [05-09|13:20:07.057] Imported new block headers               count=1   elapsed=18.950ms    number=12400383 hash="ae20a6…2cb458"
+INFO [05-09|13:20:08.676] Initializing state bloom                 items=22735259 errorrate=0.000 elapsed=56.002s
+INFO [05-09|13:20:09.502] Upgrading chain index                    type=bloombits               percentage=6
+INFO [05-09|13:20:12.757] Imported new state entries               count=489 elapsed="3.8µs"     processed=572827854 pending=9181 trieretry=0   coderetry=0 duplicate=0 unexpected=630
+INFO [05-09|13:20:13.271] Looking for peers                        peercount=16 tried=4 static=0
