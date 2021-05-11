@@ -1,52 +1,44 @@
-$ python realistic_failures.py -h http://13.80.15.244:9090 --start=2021-05-02T09:30:00Z --end=2021-05-03T09:30:00Z
+$ python realistic_failures.py -h http://20.86.123.32:9090 --start=2021-05-10T16:00:00Z --end=2021-05-11T16:00:00Z
 WARNING:root:You didn't specify query resolution step width, will use default value 15s
 
 +--------------+--------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
 | Syscall Name |  Error Code  | Samples in Total | Invocations in Total |         Failure Rate         |        Variance        |                        Samples                         |
 +--------------+--------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
-|   accept4    |    EAGAIN    |       5749       |        199872        | 0.500000, 0.499918, 0.500000 | 1.666296551539977e-05  | localtime: 2021-05-02 11:32:45, failure rate: 0.500000 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 11:30:00, failure rate: 0.500000 |
-|   accept4    |   SUCCESS    |        -         |        199902        |              -               |           -            |                           -                            |
-|    access    |    ENOENT    |        1         |          2           | 0.400000, 0.400000, 0.400000 |          0.0           | localtime: 2021-05-02 11:32:45, failure rate: 0.400000 |
-|    access    |   SUCCESS    |        -         |          7           |              -               |           -            |                           -                            |
-|   connect    | EINPROGRESS  |        45        |        13853         | 1.000000, 1.000000, 1.000000 |          0.0           | localtime: 2021-05-02 11:32:45, failure rate: 1.000000 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-02 12:08:45, failure rate: 1.000000 |
-|   connect    |   SUCCESS    |        -         |          0           |              -               |           -            |                           -                            |
-|    futex     |    EAGAIN    |       5750       |       4049324        | 0.004407, 0.005754, 0.007197 | 7.563593452953282e-06  | localtime: 2021-05-02 11:32:45, failure rate: 0.003041 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 11:30:00, failure rate: 0.005887 |
-|    futex     |  ETIMEDOUT   |       5750       |       1494168        | 0.001371, 0.002330, 0.003862 | 8.875773657544889e-07  | localtime: 2021-05-02 11:32:45, failure rate: 0.010002 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 11:30:00, failure rate: 0.001616 |
-|    futex     |   SUCCESS    |        -         |      704567888       |              -               |           -            |                           -                            |
-|    ioctl     |    ENOTTY    |       3831       |        124070        | 0.006680, 0.090070, 0.295082 |  0.011564008970685966  | localtime: 2021-05-02 11:32:45, failure rate: 0.402985 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 11:30:00, failure rate: 0.007547 |
-|    ioctl     |   SUCCESS    |        -         |       12103966       |              -               |           -            |                           -                            |
-|    mkdir     |    EEXIST    |       287        |         333          | 1.000000, 0.999164, 1.000000 | 0.0001999975719020536  | localtime: 2021-05-02 11:32:45, failure rate: 0.760000 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 11:27:30, failure rate: 1.000000 |
-|    mkdir     |    ENOENT    |        1         |          1           | 0.040000, 0.040000, 0.040000 |          0.0           | localtime: 2021-05-02 11:32:45, failure rate: 0.040000 |
-|    mkdir     |   SUCCESS    |        -         |          6           |              -               |           -            |                           -                            |
-|    openat    |    ENOENT    |        2         |          3           | 0.000427, 0.003252, 0.006076 | 9.847483306671304e-06  | localtime: 2021-05-02 11:32:45, failure rate: 0.006390 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 03:26:45, failure rate: 0.000114 |
-|    openat    |   SUCCESS    |        -         |       23992664       |              -               |           -            |                           -                            |
-|     read     |    EAGAIN    |       5750       |      153665593       | 0.447837, 0.484809, 0.499725 | 0.00042658410263830365 | localtime: 2021-05-02 11:32:45, failure rate: 0.427044 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 11:30:00, failure rate: 0.462205 |
-|     read     |   SUCCESS    |        -         |      165804270       |              -               |           -            |                           -                            |
-|   recvfrom   |    EAGAIN    |       5750       |       97437879       | 0.271358, 0.291573, 0.305993 | 0.00015063238851740427 | localtime: 2021-05-02 11:32:45, failure rate: 0.254241 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 11:30:00, failure rate: 0.301742 |
-|   recvfrom   |  ECONNRESET  |        9         |          10          | 0.000026, 0.000061, 0.000140 | 2.3879802386241857e-09 | localtime: 2021-05-02 11:33:15, failure rate: 0.000196 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 01:01:00, failure rate: 0.000018 |
-|   recvfrom   |   SUCCESS    |        -         |      235238861       |              -               |           -            |                           -                            |
-|    rename    |    ENOENT    |        1         |          2           | 0.142857, 0.142857, 0.142857 |          0.0           | localtime: 2021-05-02 11:32:45, failure rate: 0.142857 |
-|    rename    |   SUCCESS    |        -         |          19          |              -               |           -            |                           -                            |
-|    sendto    | EAFNOSUPPORT |        5         |          16          | 0.002012, 0.010739, 0.036203 | 0.00028739846135575244 | localtime: 2021-05-02 11:36:45, failure rate: 0.002429 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 07:33:30, failure rate: 0.044643 |
-|    sendto    |    EAGAIN    |        20        |          29          | 0.000722, 0.001190, 0.002464 | 3.3210594160277466e-07 | localtime: 2021-05-02 11:32:45, failure rate: 0.000726 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-02 11:39:00, failure rate: 0.002560 |
-|    sendto    |    EPIPE     |        19        |         125          | 0.000770, 0.019617, 0.045839 | 0.0003918762444449199  | localtime: 2021-05-02 11:33:45, failure rate: 0.000907 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 11:18:45, failure rate: 0.003115 |
-|    sendto    |   SUCCESS    |        -         |       1673657        |              -               |           -            |                           -                            |
-|    statx     |    ENOENT    |        2         |          6           | 0.143182, 0.204545, 0.265909 |  0.004648760330578512  | localtime: 2021-05-02 11:32:45, failure rate: 0.272727 |
-|              |              |                  |                      |                              |                        | localtime: 2021-05-03 03:02:30, failure rate: 0.136364 |
-|    statx     |   SUCCESS    |        -         |         346          |              -               |           -            |                           -                            |
-|    unlink    |    ENOENT    |        1         |          1           | 0.017544, 0.017544, 0.017544 |          0.0           | localtime: 2021-05-02 11:32:45, failure rate: 0.017544 |
-|    unlink    |   SUCCESS    |        -         |        74916         |              -               |           -            |                           -                            |
+|   accept4    |    EAGAIN    |       5233       |        135104        | 0.500000, 0.499682, 0.500000 | 7.468903878437777e-05  | localtime: 2021-05-10 18:00:00, failure rate: 0.500000 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:48:30, failure rate: 0.500000 |
+|   accept4    |   SUCCESS    |        -         |        135215        |              -               |           -            |                           -                            |
+|   connect    | EINPROGRESS  |        37        |         1218         | 0.200000, 0.545946, 1.000000 |  0.15707815924032145   | localtime: 2021-05-10 18:59:15, failure rate: 0.200000 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:02:30, failure rate: 0.200000 |
+|   connect    |   SUCCESS    |        -         |          84          |              -               |           -            |                           -                            |
+|  epoll_ctl   |    ENOENT    |        1         |          1           | 0.000482, 0.000482, 0.000482 |          0.0           | localtime: 2021-05-11 13:26:00, failure rate: 0.000482 |
+|  epoll_ctl   |   SUCCESS    |        -         |       17245876       |              -               |           -            |                           -                            |
+|    futex     |    EAGAIN    |       5234       |       4466695        | 0.005439, 0.012470, 0.021130 | 2.7026060003710176e-05 | localtime: 2021-05-10 18:00:00, failure rate: 0.013184 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:48:30, failure rate: 0.012077 |
+|    futex     |  ETIMEDOUT   |       5234       |       1426103        | 0.002519, 0.004184, 0.007287 | 2.3750238954624962e-05 | localtime: 2021-05-10 18:00:00, failure rate: 0.004263 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:48:30, failure rate: 0.015825 |
+|    futex     |   SUCCESS    |        -         |      373921294       |              -               |           -            |                           -                            |
+| getpeername  |   ENOTCONN   |        1         |          1           | 0.024390, 0.024390, 0.024390 |          0.0           | localtime: 2021-05-11 01:25:00, failure rate: 0.024390 |
+| getpeername  |   SUCCESS    |        -         |        134264        |              -               |           -            |                           -                            |
+|    ioctl     |    ENOTTY    |       4074       |        24028         | 0.000457, 0.007309, 0.030575 | 0.00027018905265383886 | localtime: 2021-05-10 18:00:00, failure rate: 0.000715 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:43:15, failure rate: 0.007428 |
+|    ioctl     |   SUCCESS    |        -         |       7327565        |              -               |           -            |                           -                            |
+|    mkdir     |    EEXIST    |       260        |         260          | 1.000000, 1.000000, 1.000000 |          0.0           | localtime: 2021-05-10 18:01:15, failure rate: 1.000000 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:41:15, failure rate: 1.000000 |
+|    mkdir     |   SUCCESS    |        -         |          0           |              -               |           -            |                           -                            |
+|     read     |    EAGAIN    |       5234       |       66048746       | 0.450608, 0.473358, 0.496141 | 0.00020472099850241376 | localtime: 2021-05-10 18:00:00, failure rate: 0.475159 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:48:30, failure rate: 0.492439 |
+|     read     |   SUCCESS    |        -         |       73346450       |              -               |           -            |                           -                            |
+|   recvfrom   |    EAGAIN    |       5233       |       36986057       | 0.201942, 0.222253, 0.238547 | 0.00015272239575359213 | localtime: 2021-05-10 18:00:00, failure rate: 0.240105 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:48:30, failure rate: 0.213470 |
+|   recvfrom   | ECONNREFUSED |        1         |          1           | 0.000228, 0.000228, 0.000228 |          0.0           | localtime: 2021-05-11 13:26:00, failure rate: 0.000228 |
+|   recvfrom   |  ECONNRESET  |        1         |          1           | 0.000037, 0.000037, 0.000037 |          0.0           | localtime: 2021-05-11 13:25:45, failure rate: 0.000037 |
+|   recvfrom   |   SUCCESS    |        -         |      129032008       |              -               |           -            |                           -                            |
+|    sendto    |    EAGAIN    |        40        |         197          | 0.000542, 0.003864, 0.021899 | 4.116296657349362e-05  | localtime: 2021-05-10 21:49:00, failure rate: 0.002780 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:41:15, failure rate: 0.002049 |
+|    sendto    | ECONNREFUSED |        1         |          1           | 0.001189, 0.001189, 0.001189 |          0.0           | localtime: 2021-05-11 13:26:00, failure rate: 0.001189 |
+|    sendto    |  ECONNRESET  |        4         |          4           | 0.000478, 0.000763, 0.001306 | 1.490684751526656e-07  | localtime: 2021-05-10 18:20:45, failure rate: 0.001422 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 14:19:45, failure rate: 0.000644 |
+|    sendto    |    EPIPE     |       144        |         3006         | 0.000451, 0.007197, 0.006367 |  0.004085607072206874  | localtime: 2021-05-10 18:05:30, failure rate: 0.000422 |
+|              |              |                  |                      |                              |                        | localtime: 2021-05-11 15:33:00, failure rate: 0.000932 |
+|    sendto    |   SUCCESS    |        -         |       8373426        |              -               |           -            |                           -                            |
 +--------------+--------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
