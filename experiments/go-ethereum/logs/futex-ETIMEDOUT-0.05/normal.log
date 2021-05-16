@@ -1,64 +1,23 @@
-INFO [05-09|14:46:43.325] Imported new state entries               count=404  elapsed="776.302µs" processed=573272651 pending=44400  trieretry=0    coderetry=0 duplicate=0 unexpected=3290
-WARN [05-09|14:46:43.327] Synchronisation failed, dropping peer    peer=730ff9215b5862c6901af15ee06b3c8a11f6acac9c4c321191ca8c8dd1f0190b err="action from bad peer ignored: header request timed out"
-INFO [05-09|14:47:02.488] Starting Geth on Ethereum mainnet... 
-INFO [05-09|14:47:02.489] Bumping default cache on mainnet         provided=1024 updated=4096
-INFO [05-09|14:47:02.491] Maximum peer count                       ETH=50 LES=0 total=50
-INFO [05-09|14:47:02.492] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
-WARN [05-09|14:47:02.494] Sanitizing cache to Go's GC limits       provided=4096 updated=2654
-INFO [05-09|14:47:02.495] Set global gas cap                       cap=25000000
-INFO [05-09|14:47:02.495] Allocated trie memory caches             clean=398.00MiB dirty=663.00MiB
-INFO [05-09|14:47:02.496] Allocated cache and file handles         database=/data/eth-data/geth/chaindata cache=1.29GiB handles=524288
-INFO [05-09|14:47:12.023] Opened ancient database                  database=/data/eth-data/geth/chaindata/ancient readonly=false
-INFO [05-09|14:47:12.052] Initialised chain configuration          config="{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: 7280000 Petersburg: 7280000 Istanbul: 9069000, Muir Glacier: 9200000, Berlin: 12244000, YOLO v3: <nil>, Engine: ethash}"
-INFO [05-09|14:47:12.284] Disk storage enabled for ethash caches   dir=/data/eth-data/geth/ethash count=3
-INFO [05-09|14:47:12.284] Disk storage enabled for ethash DAGs     dir=/home/longz/.ethash        count=2
-INFO [05-09|14:47:12.290] Initialising Ethereum protocol           network=1 dbversion=8
-INFO [05-09|14:47:12.468] Loaded most recent local header          number=12400764 hash="a20d4d…8251a6" td=24431374226515851822500 age=1m23s
-INFO [05-09|14:47:12.468] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo6d
-INFO [05-09|14:47:12.468] Loaded most recent local fast block      number=12400642 hash="db26d6…673567" td=24430439011115617130484 age=29m26s
-INFO [05-09|14:47:12.468] Loaded last fast-sync pivot marker       number=12400643
-WARN [05-09|14:47:12.482] Loaded snapshot journal                  diskroot="d7f897…0f0544" diffs=missing
-INFO [05-09|14:47:12.483] Loaded local transaction journal         transactions=0 dropped=0
-INFO [05-09|14:47:12.483] Regenerated local transaction journal    transactions=0 accounts=0
-INFO [05-09|14:47:12.505] Allocated fast sync bloom                size=1.29GiB
-WARN [05-09|14:47:12.520] Unclean shutdown detected                booted=2021-05-06T21:38:45+0000 age=2d17h8m
-WARN [05-09|14:47:12.520] Unclean shutdown detected                booted=2021-05-09T13:19:12+0000 age=1h28m
-INFO [05-09|14:47:12.520] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
-INFO [05-09|14:47:12.666] New local node record                    seq=6 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
-INFO [05-09|14:47:12.669] IPC endpoint opened                      url=/data/eth-data/geth.ipc
-INFO [05-09|14:47:12.684] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
-INFO [05-09|14:47:17.893] New local node record                    seq=7 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
-INFO [05-09|14:47:20.370] Block synchronisation started 
-INFO [05-09|14:47:20.506] Initializing state bloom                 items=2868813 errorrate=0.000 elapsed=8.000s
-INFO [05-09|14:47:22.109] Disabling direct-ancient mode            origin=12400642 ancient=12189695
-INFO [05-09|14:47:22.686] Looking for peers                        peercount=8 tried=3 static=0
-INFO [05-09|14:47:22.908] Imported new block headers               count=5 elapsed=583.667ms number=12400769 hash="c381b9…f7a22e" ignored=122
-INFO [05-09|14:47:23.134] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=54.51KiB throttle=1203
-INFO [05-09|14:47:23.139] Imported new block receipts              count=2 elapsed=5.006ms   number=12400644 hash="78c9c6…f7e1a9" age=28m27s   size=245.57KiB
-INFO [05-09|14:47:23.570] Imported new block receipts              count=32 elapsed=211.056ms number=12400676 hash="d8b8ab…6e6086" age=21m29s   size=3.60MiB
-INFO [05-09|14:47:23.670] Imported new block receipts              count=16 elapsed=99.531ms  number=12400692 hash="617020…98cec0" age=18m30s   size=1.87MiB
-INFO [05-09|14:47:23.833] Imported new block receipts              count=14 elapsed=59.708ms  number=12400706 hash="a862c1…6809d0" age=14m45s   size=1.57MiB
-WARN [05-09|14:47:25.421] Dropping unsynced node during sync       id=8a5178fa92553794 conn=inbound addr=162.55.80.254:34450 type=OpenEthereum/v3.2.5-...
-INFO [05-09|14:47:25.529] Imported new state entries               count=273 elapsed="3µs"     processed=573272924 pending=4347 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:47:26.141] Imported new state entries               count=273 elapsed="2.4µs"   processed=573273197 pending=4347 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:47:27.459] Imported new state entries               count=384 elapsed="3.2µs"   processed=573273581 pending=5868 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:47:28.506] Initializing state bloom                 items=5532795 errorrate=0.000 elapsed=16.000s
-INFO [05-09|14:47:28.554] Imported new state entries               count=402 elapsed="3.7µs"   processed=573273983 pending=7368 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:47:29.529] Imported new state entries               count=384 elapsed="3.5µs"   processed=573274367 pending=8817 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:47:32.707] Looking for peers                        peercount=12 tried=4 static=0
-INFO [05-09|14:47:35.237] Imported new state entries               count=384 elapsed="2.8µs"   processed=573274751 pending=9252 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:47:36.508] Initializing state bloom                 items=8636336 errorrate=0.000 elapsed=24.001s
-INFO [05-09|14:47:39.400] Imported new state entries               count=234 elapsed="4.2µs"   processed=573274985 pending=9516 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:47:40.952] Imported new block headers               count=1   elapsed=9.317ms   number=12400770 hash="3d80d4…15f3a7"
-INFO [05-09|14:47:42.709] Looking for peers                        peercount=12 tried=4 static=0
-INFO [05-09|14:47:44.169] Imported new state entries               count=227 elapsed="3.2µs"   processed=573275212 pending=9774 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:47:44.508] Initializing state bloom                 items=11822863 errorrate=0.000 elapsed=32.001s
-WARN [05-09|14:47:52.080] Dropping unsynced node during sync       id=034232f104e76954 conn=inbound addr=144.91.127.238:35068 type=OpenEthereum/v3.2.3-...
-INFO [05-09|14:47:52.508] Initializing state bloom                 items=15110867 errorrate=0.000 elapsed=40.002s
-INFO [05-09|14:47:52.710] Looking for peers                        peercount=14 tried=3 static=0
-INFO [05-09|14:47:54.262] Imported new state entries               count=427 elapsed="3.3µs"   processed=573275639 pending=10253 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:48:00.508] Initializing state bloom                 items=18532696 errorrate=0.000 elapsed=48.002s
-INFO [05-09|14:48:02.821] Looking for peers                        peercount=16 tried=5 static=0
-INFO [05-09|14:48:03.638] Imported new state entries               count=384 elapsed="2.8µs"   processed=573276023 pending=10684 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-09|14:48:05.724] Imported new block headers               count=1   elapsed=7.149ms   number=12400771 hash="d72015…57b702" age=1m8s
-INFO [05-09|14:48:08.508] Initializing state bloom                 items=22081244 errorrate=0.000 elapsed=56.002s
+INFO [05-11|22:47:25.271] Downloader queue stats                   receiptTasks=0   blockTasks=0  itemSize=235.13KiB throttle=279
+INFO [05-11|22:47:30.045] Imported new state entries               count=384  elapsed="2.3µs"     processed=606037377 pending=73685 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:47:36.907] Imported new state entries               count=384  elapsed="21.1µs"    processed=606037761 pending=74076 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:47:41.915] Imported new state entries               count=384  elapsed="734.004µs" processed=606038145 pending=74468 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:47:50.355] Imported new block headers               count=1    elapsed=26.127ms    number=12415904 hash="407f36…e4a14e" age=1m37s
+INFO [05-11|22:47:51.036] Imported new state entries               count=384  elapsed="3µs"       processed=606038529 pending=74856 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:47:59.830] Imported new state entries               count=384  elapsed="2.1µs"     processed=606038913 pending=75243 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:48:04.677] Imported new state entries               count=384  elapsed="2.4µs"     processed=606039297 pending=75686 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:48:13.313] Imported new state entries               count=384  elapsed="2.4µs"     processed=606039681 pending=76076 trieretry=2   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:48:21.790] Imported new state entries               count=384  elapsed="7.2µs"     processed=606040065 pending=76463 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:48:28.931] Imported new state entries               count=384  elapsed="2µs"       processed=606040449 pending=76850 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:48:34.592] Imported new state entries               count=384  elapsed="3.2µs"     processed=606040833 pending=77239 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:48:42.588] Imported new state entries               count=384  elapsed="2.9µs"     processed=606041217 pending=77655 trieretry=2   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:48:47.516] Imported new state entries               count=384  elapsed="2.501µs"   processed=606041601 pending=78074 trieretry=2   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:48:54.400] Imported new state entries               count=384  elapsed="3.8µs"     processed=606041985 pending=78489 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:49:02.797] Imported new state entries               count=384  elapsed="2.3µs"     processed=606042369 pending=78888 trieretry=0   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:49:03.237] Imported new block headers               count=1    elapsed=17.761ms    number=12415905 hash="0e5f36…961166" age=2m
+INFO [05-11|22:49:03.322] Downloader queue stats                   receiptTasks=0   blockTasks=0  itemSize=246.42KiB throttle=266
+INFO [05-11|22:49:11.129] Imported new state entries               count=384  elapsed="2.5µs"     processed=606042753 pending=79315 trieretry=2   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:49:12.875] Imported new block headers               count=1    elapsed=6.839ms     number=12415906 hash="7a3cbe…e38014" age=1m49s
+INFO [05-11|22:49:19.609] Imported new state entries               count=384  elapsed="43.7µs"    processed=606043137 pending=79710 trieretry=4   coderetry=0 duplicate=0 unexpected=400
+INFO [05-11|22:49:25.684] Imported new block headers               count=1    elapsed=6.392ms     number=12415907 hash="68d393…31b916" age=1m38s
+INFO [05-11|22:49:27.790] Imported new state entries               count=384  elapsed="2.8µs"     processed=606043521 pending=80109 trieretry=0   coderetry=0 duplicate=0 unexpected=400

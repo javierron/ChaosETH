@@ -1,23 +1,15 @@
-INFO [05-09|13:11:26.664] Imported new state entries               count=384  elapsed="3.2µs"     processed=572778324 pending=40529  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:11:29.118] Imported new state entries               count=212  elapsed="2.4µs"     processed=572778536 pending=40763  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:11:33.609] Imported new state entries               count=384  elapsed="2.4µs"     processed=572778920 pending=41196  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:11:38.172] Imported new state entries               count=384  elapsed="4µs"       processed=572779304 pending=41635  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:11:42.933] Imported new state entries               count=384  elapsed="48.7µs"    processed=572779688 pending=42059  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:11:47.594] Imported new state entries               count=384  elapsed="3.1µs"     processed=572780072 pending=42496  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:11:50.702] Imported new state entries               count=264  elapsed="4.3µs"     processed=572780336 pending=42792  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:11:54.209] Imported new block headers               count=1    elapsed=8.223ms     number=12400348 hash="dfe133…f0acf3"
-INFO [05-09|13:11:54.340] Downloader queue stats                   receiptTasks=0     blockTasks=0     itemSize=278.80KiB throttle=236
-INFO [05-09|13:11:55.493] Imported new state entries               count=384  elapsed="4µs"       processed=572780720 pending=43219  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:12:00.475] Imported new state entries               count=384  elapsed="4.4µs"     processed=572781104 pending=43654  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:12:03.276] Imported new block headers               count=2    elapsed=14.337ms    number=12400350 hash="fa9868…e297cb"
-INFO [05-09|13:12:04.903] Imported new state entries               count=384  elapsed="2.8µs"     processed=572781488 pending=44079  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:12:08.169] Imported new state entries               count=311  elapsed="2.5µs"     processed=572781799 pending=44431  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:12:12.511] Imported new state entries               count=384  elapsed="2.6µs"     processed=572782183 pending=44855  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:12:16.190] Imported new state entries               count=384  elapsed="3µs"       processed=572782567 pending=45299  trieretry=0   coderetry=0 duplicate=6212 unexpected=270684
-INFO [05-09|13:12:16.195] Imported new state entries               count=0    elapsed="9.3µs"     processed=572782567 pending=45299  trieretry=2   coderetry=0 duplicate=6212 unexpected=270686
-INFO [05-09|13:12:20.094] Imported new state entries               count=384  elapsed="3.9µs"     processed=572782951 pending=45804  trieretry=4   coderetry=0 duplicate=6212 unexpected=270686
-INFO [05-09|13:12:20.245] Imported new state entries               count=402  elapsed="6.9µs"     processed=572783353 pending=51932  trieretry=4   coderetry=0 duplicate=6212 unexpected=270686
-ERROR[05-09|13:12:21.149] Ethereum peer removal failed             peer=840aaeaa         err="peer not registered"
-INFO [05-09|13:12:21.852] Imported new state entries               count=384  elapsed="3.6µs"     processed=572783737 pending=53685  trieretry=6   coderetry=0 duplicate=6212 unexpected=270686
-WARN [05-09|13:12:21.852] Synchronisation failed, dropping peer    peer=840aaeaa419f1b8f2eb193c9703890aa407ffbab56d55c43d5f73e02f8d5a4eb err="action from bad peer ignored: header request timed out"
-ERROR[05-09|13:12:21.853] Ethereum peer removal failed             peer=840aaeaa         err="peer not registered"
+INFO [05-11|22:01:44.942] Imported new block headers               count=1    elapsed=22.113ms    number=12415687 hash="c5de90…d164ba"
+INFO [05-11|22:01:52.649] Initializing state bloom                 items=233429166 errorrate=0.000 elapsed=14m48.317s
+INFO [05-11|22:01:53.229] Imported new state entries               count=768  elapsed=2.608ms     processed=605897359 pending=33233 trieretry=0    coderetry=0 duplicate=0 unexpected=1092
+INFO [05-11|22:01:54.080] Imported new block headers               count=1    elapsed=33.927ms    number=12415688 hash="e8e6d3…1ab705"
+INFO [05-11|22:02:00.650] Initializing state bloom                 items=236937582 errorrate=0.000 elapsed=14m56.318s
+INFO [05-11|22:02:02.799] Imported new state entries               count=768  elapsed=3.387ms     processed=605898127 pending=33213 trieretry=0    coderetry=0 duplicate=0 unexpected=1092
+INFO [05-11|22:02:09.229] Imported new block headers               count=1    elapsed=19.181ms    number=12415689 hash="8da9e0…e3b772"
+INFO [05-11|22:02:09.421] Downloader queue stats                   receiptTasks=0    blockTasks=0    itemSize=265.80KiB throttle=247
+INFO [05-11|22:02:13.767] Imported new state entries               count=384  elapsed="3.3µs"     processed=605898511 pending=33626 trieretry=0    coderetry=0 duplicate=0 unexpected=1092
+INFO [05-11|22:02:19.845] Initializing state bloom                 items=237387282 errorrate=0.000 elapsed=15m15.513s
+INFO [05-11|22:02:23.700] Imported new state entries               count=768  elapsed=3.310ms     processed=605899279 pending=33961 trieretry=0    coderetry=0 duplicate=0 unexpected=1092
+INFO [05-11|22:02:24.440] Imported new state entries               count=0    elapsed=658.438ms   processed=605899279 pending=33655 trieretry=164  coderetry=0 duplicate=0 unexpected=1254
+INFO [05-11|22:02:27.845] Initializing state bloom                 items=239553681 errorrate=0.000 elapsed=15m23.513s
+INFO [05-11|22:02:27.931] Imported new state entries               count=608  elapsed="1.6µs"     processed=605899887 pending=33477 trieretry=0    coderetry=0 duplicate=0 unexpected=1254
+CRIT [05-11|22:02:27.931] Failed to store fast sync trie progress  err="write /data/eth-data/geth/chaindata/608758.log: resource temporarily unavailable"

@@ -1,0 +1,33 @@
+INFO [05-11|21:47:41.724] Imported new block headers               count=1   elapsed=6.128ms   number=12415621 hash="edb5aa…cddd44" age=1m19s
+INFO [05-11|21:47:44.352] Initializing state bloom                 items=9214692 errorrate=0.000 elapsed=40.020s
+INFO [05-11|21:47:44.957] Looking for peers                        peercount=4 tried=2 static=0
+INFO [05-11|21:47:50.811] Imported new block headers               count=1   elapsed=5.791ms   number=12415622 hash="ccdf5b…b78925" age=1m13s
+INFO [05-11|21:47:52.086] Imported new state entries               count=384 elapsed="3.2µs"   processed=605845969 pending=6885 trieretry=0 coderetry=0 duplicate=0 unexpected=0
+INFO [05-11|21:47:52.352] Initializing state bloom                 items=11058798 errorrate=0.000 elapsed=48.020s
+INFO [05-11|21:47:54.958] Looking for peers                        peercount=3 tried=6 static=0
+INFO [05-11|21:48:00.352] Initializing state bloom                 items=12998081 errorrate=0.000 elapsed=56.020s
+INFO [05-11|21:48:05.000] Looking for peers                        peercount=6 tried=4 static=0
+WARN [05-11|21:48:06.786] Dropping unsynced node during sync       id=19d66f5b188578dd conn=inbound addr=107.2.102.25:63514  type=Geth/v1.10.3-stable-...
+INFO [05-11|21:48:08.353] Initializing state bloom                 items=14829473 errorrate=0.000 elapsed=1m4.021s
+INFO [05-11|21:48:14.692] Imported new state entries               count=384 elapsed="3.3µs"   processed=605846353 pending=7272 trieretry=0 coderetry=0 duplicate=0 unexpected=0
+INFO [05-11|21:48:15.004] Looking for peers                        peercount=1 tried=2 static=0
+INFO [05-11|21:48:16.355] Initializing state bloom                 items=16783472 errorrate=0.000 elapsed=1m12.023s
+INFO [05-11|21:48:24.363] Initializing state bloom                 items=18943755 errorrate=0.000 elapsed=1m20.031s
+INFO [05-11|21:48:25.006] Looking for peers                        peercount=2 tried=5 static=0
+INFO [05-11|21:48:32.363] Initializing state bloom                 items=20990605 errorrate=0.000 elapsed=1m28.031s
+INFO [05-11|21:48:33.056] Imported new state entries               count=384 elapsed="4µs"     processed=605846737 pending=7658 trieretry=0 coderetry=0 duplicate=0 unexpected=0
+WARN [05-11|21:48:35.030] Dropping unsynced node during sync       id=d89d8c8886fdee08 conn=inbound addr=45.76.245.47:47894  type=Geth/v1.10.3-unstabl...
+INFO [05-11|21:48:35.035] Looking for peers                        peercount=4 tried=7 static=0
+INFO [05-11|21:48:40.363] Initializing state bloom                 items=22931665 errorrate=0.000 elapsed=1m36.031s
+INFO [05-11|21:48:41.556] Imported new state entries               count=384 elapsed="3.3µs"   processed=605847121 pending=8103 trieretry=0 coderetry=0 duplicate=0 unexpected=0
+INFO [05-11|21:48:45.368] Looking for peers                        peercount=6 tried=4 static=0
+INFO [05-11|21:48:46.280] Imported new state entries               count=384 elapsed="3.9µs"   processed=605847505 pending=9817 trieretry=1152 coderetry=0 duplicate=0 unexpected=0
+INFO [05-11|21:48:48.363] Initializing state bloom                 items=24968549 errorrate=0.000 elapsed=1m44.031s
+INFO [05-11|21:48:51.060] Imported new state entries               count=384 elapsed="3.1µs"   processed=605847889 pending=11453 trieretry=768  coderetry=0 duplicate=0 unexpected=0
+INFO [05-11|21:48:55.368] Looking for peers                        peercount=6 tried=4 static=0
+WARN [05-11|21:48:56.022] Checkpoint challenge timed out, dropping id=8dde24ee548a4507 conn=inbound addr=184.103.182.10:52743 type=Nethermind/v1.10.67-...
+ERROR[05-11|21:48:56.023] Ethereum peer removal failed             peer=8dde24ee err="peer not registered"
+INFO [05-11|21:48:56.380] Initializing state bloom                 items=27000623 errorrate=0.000 elapsed=1m52.048s
+INFO [05-11|21:48:59.351] Imported new state entries               count=384 elapsed="3.1µs"   processed=605848273 pending=11847 trieretry=766  coderetry=0 duplicate=0 unexpected=0
+INFO [05-11|21:49:04.403] Initializing state bloom                 items=29123236 errorrate=0.000 elapsed=2m0.071s
+INFO [05-11|21:49:05.371] Looking for peers                        peercount=6 tried=4 static=0
