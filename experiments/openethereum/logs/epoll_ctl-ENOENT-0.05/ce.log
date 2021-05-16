@@ -1,0 +1,54 @@
+2021-05-11 22:47:52 UTC Imported #12415906 0x7a3c…8014 (312 txs, 14.98 Mgas, 4890 ms, 58.12 KiB)
+2021-05-11 22:48:17 UTC  43/50 peers      6 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-11 22:48:47 UTC  42/50 peers      6 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-11 22:49:06 UTC Imported #12415907 0x68d3…b916 (367 txs, 14.99 Mgas, 5819 ms, 68.05 KiB)
+2021-05-11 22:49:17 UTC  42/50 peers      6 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-11 22:49:19 UTC Imported #12415908 0x689b…8426 (222 txs, 14.98 Mgas, 2393 ms, 53.95 KiB)
+2021-05-11 22:49:29 UTC Imported #12415909 0x875d…300e (392 txs, 15.00 Mgas, 6864 ms, 63.83 KiB)
+2021-05-11 22:49:45 UTC Imported #12415910 0xe3db…3268 (283 txs, 15.02 Mgas, 4083 ms, 54.03 KiB)
+2021-05-11 22:49:50 UTC  42/50 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-11 22:49:57 UTC Imported #12415912 0xbb87…b742 (310 txs, 14.62 Mgas, 3747 ms, 58.83 KiB)
+2021-05-11 22:50:07 UTC Imported #12415913 0x3081…3505 (290 txs, 14.97 Mgas, 5465 ms, 57.12 KiB)
+2021-05-11 22:50:10 UTC Panic occured, see stderr for details
+
+
+====================
+
+stack backtrace:
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:595
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:497
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/sys_common/backtrace.rs:141
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:493
+   5: core::panicking::panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/core/src/panicking.rs:92
+   6: core::option::expect_none_failed
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/core/src/option.rs:1300
+   7: <ethcore_network_devp2p::host::Host as ethcore_io::IoHandler<ethcore_network::NetworkIoMessage>>::update_stream
+   8: mio::deprecated::event_loop::EventLoop<H>::run
+   9: std::sys_common::backtrace::__rust_begin_short_backtrace
+  10: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  11: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/sys/unix/thread.rs:71
+  12: start_thread
+  13: __clone
+
+
+Thread '<unnamed>' panicked at 'Error reregistering UDP socket: Os { code: 2, kind: NotFound, message: "No such file or directory" }', crates/net/network-devp2p/src/host.rs:1425
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-05-11 22:50:10 UTC Finishing work, please wait...
+2021-05-11 22:50:10 UTC Error on IO service shutdown: NotifyError::Closed(..)
+Error: 1

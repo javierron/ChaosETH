@@ -1,131 +1,117 @@
 nohup: ignoring input
-2021-05-09 10:21:35,292 INFO     openethereum's pid detected: 2866
-2021-05-09 10:21:35,293 INFO     begin the following experiment
-2021-05-09 10:21:35,293 INFO     {u'original_min_rate': 0.002012086431024738, u'syscall_name': u'sendto', u'original_max_rate': 0.036203283269297934, u'failure_rate': 0.05, u'original_mean_rate': 0.010739014785887268, u'error_code': u'-EAFNOSUPPORT', u'experiment_duration': 30}
-2021-05-09 10:21:35,293 INFO     1 min normal execution begins
-2021-05-09 10:22:35,334 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 10:23:08,411 INFO     5 min recovery phase observation begins
-2021-05-09 10:28:08,431 INFO     {'client_crashed': False, 'injection_count': 9}
-2021-05-09 10:28:13,478 INFO     openethereum's pid detected: 2866
-2021-05-09 10:28:13,479 INFO     begin the following experiment
-2021-05-09 10:28:13,479 INFO     {u'original_min_rate': 0.5, u'syscall_name': u'accept4', u'original_max_rate': 0.5, u'failure_rate': 0.6, u'original_mean_rate': 0.4999184382560267, u'error_code': u'-EAGAIN', u'experiment_duration': 30}
-2021-05-09 10:28:13,479 INFO     1 min normal execution begins
-2021-05-09 10:29:13,494 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 10:29:46,607 INFO     5 min recovery phase observation begins
-2021-05-09 10:34:46,646 INFO     {'client_crashed': False, 'injection_count': 24}
-2021-05-09 10:34:51,684 INFO     openethereum's pid detected: 2866
-2021-05-09 10:34:51,685 INFO     begin the following experiment
-2021-05-09 10:34:51,685 INFO     {u'original_min_rate': 0.004407055777424734, u'syscall_name': u'futex', u'original_max_rate': 0.00719681953747045, u'failure_rate': 0.05, u'original_mean_rate': 0.005754308019914177, u'error_code': u'-EAGAIN', u'experiment_duration': 30}
-2021-05-09 10:34:51,685 INFO     1 min normal execution begins
-2021-05-09 10:35:51,877 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 10:36:21,950 INFO     this experiment makes the client crash!
-2021-05-09 10:36:21,950 INFO     {'client_crashed': True, 'injection_count': 3}
-2021-05-09 10:36:24,970 INFO     successfully restart the client, new pid: 8371
-2021-05-09 10:36:29,983 INFO     openethereum's pid detected: 8371
-2021-05-09 10:36:29,983 INFO     begin the following experiment
-2021-05-09 10:36:29,983 INFO     {u'original_min_rate': 0.447836533956226, u'syscall_name': u'read', u'original_max_rate': 0.4997246213004723, u'failure_rate': 0.5996695455605667, u'original_mean_rate': 0.484808960798566, u'error_code': u'-EAGAIN', u'experiment_duration': 30}
-2021-05-09 10:36:29,983 INFO     1 min normal execution begins
-2021-05-09 10:37:30,000 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 10:38:00,063 INFO     this experiment makes the client crash!
-2021-05-09 10:38:00,063 INFO     {'client_crashed': True, 'injection_count': 252}
-2021-05-09 10:38:03,111 INFO     successfully restart the client, new pid: 8453
-2021-05-09 10:38:08,127 INFO     openethereum's pid detected: 8453
-2021-05-09 10:38:08,128 INFO     begin the following experiment
-2021-05-09 10:38:08,128 INFO     {u'original_min_rate': 0.27135822316311053, u'syscall_name': u'recvfrom', u'original_max_rate': 0.3059934080827284, u'failure_rate': 0.3671920896992741, u'original_mean_rate': 0.29157325753056756, u'error_code': u'-EAGAIN', u'experiment_duration': 30}
-2021-05-09 10:38:08,128 INFO     1 min normal execution begins
-2021-05-09 10:39:08,148 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 10:39:41,219 INFO     5 min recovery phase observation begins
-2021-05-09 10:44:41,247 INFO     {'client_crashed': False, 'injection_count': 861}
-2021-05-09 10:44:46,302 INFO     openethereum's pid detected: 8453
-2021-05-09 10:44:46,302 INFO     begin the following experiment
-2021-05-09 10:44:46,302 INFO     {u'original_min_rate': 0.0007222284928789974, u'syscall_name': u'sendto', u'original_max_rate': 0.002464051921893359, u'failure_rate': 0.05, u'original_mean_rate': 0.0011897172182701943, u'error_code': u'-EAGAIN', u'experiment_duration': 30}
-2021-05-09 10:44:46,302 INFO     1 min normal execution begins
-2021-05-09 10:45:46,324 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 10:46:19,406 INFO     5 min recovery phase observation begins
-2021-05-09 10:51:19,422 INFO     {'client_crashed': False, 'injection_count': 27}
-2021-05-09 10:51:24,465 INFO     openethereum's pid detected: 8453
-2021-05-09 10:51:24,466 INFO     begin the following experiment
-2021-05-09 10:51:24,466 INFO     {u'original_min_rate': 2.6055827253715773e-05, u'syscall_name': u'recvfrom', u'original_max_rate': 0.00014040768397327808, u'failure_rate': 0.05, u'original_mean_rate': 6.0929830365961746e-05, u'error_code': u'-ECONNRESET', u'experiment_duration': 30}
-2021-05-09 10:51:24,466 INFO     1 min normal execution begins
-2021-05-09 10:52:24,727 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 10:52:57,815 INFO     5 min recovery phase observation begins
-2021-05-09 10:57:57,838 INFO     {'client_crashed': False, 'injection_count': 268}
-2021-05-09 10:58:02,873 INFO     openethereum's pid detected: 8453
-2021-05-09 10:58:02,873 INFO     begin the following experiment
-2021-05-09 10:58:02,873 INFO     {u'original_min_rate': 1.0, u'syscall_name': u'mkdir', u'original_max_rate': 1.0, u'failure_rate': 1, u'original_mean_rate': 0.999163763066202, u'error_code': u'-EEXIST', u'experiment_duration': 30}
-2021-05-09 10:58:02,873 INFO     1 min normal execution begins
-2021-05-09 10:59:03,029 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 10:59:36,121 INFO     5 min recovery phase observation begins
-2021-05-09 11:04:36,144 INFO     {'client_crashed': False, 'injection_count': 0}
-2021-05-09 11:04:41,183 INFO     openethereum's pid detected: 8453
-2021-05-09 11:04:41,184 INFO     begin the following experiment
-2021-05-09 11:04:41,184 INFO     {u'original_min_rate': 1.0, u'syscall_name': u'connect', u'original_max_rate': 1.0, u'failure_rate': 1, u'original_mean_rate': 1.0, u'error_code': u'-EINPROGRESS', u'experiment_duration': 30}
-2021-05-09 11:04:41,185 INFO     1 min normal execution begins
-2021-05-09 11:05:41,197 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:06:14,267 INFO     5 min recovery phase observation begins
-2021-05-09 11:11:14,527 INFO     {'client_crashed': False, 'injection_count': 0}
-2021-05-09 11:11:19,586 INFO     openethereum's pid detected: 8453
-2021-05-09 11:11:19,586 INFO     begin the following experiment
-2021-05-09 11:11:19,587 INFO     {u'original_min_rate': 0.4, u'syscall_name': u'access', u'original_max_rate': 0.4, u'failure_rate': 0.48, u'original_mean_rate': 0.4, u'error_code': u'-ENOENT', u'experiment_duration': 30}
-2021-05-09 11:11:19,587 INFO     1 min normal execution begins
-2021-05-09 11:12:19,604 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:12:52,679 INFO     5 min recovery phase observation begins
-2021-05-09 11:17:52,701 INFO     {'client_crashed': False, 'injection_count': 0}
-2021-05-09 11:17:57,732 INFO     openethereum's pid detected: 8453
-2021-05-09 11:17:57,732 INFO     begin the following experiment
-2021-05-09 11:17:57,732 INFO     {u'original_min_rate': 0.04, u'syscall_name': u'mkdir', u'original_max_rate': 0.04, u'failure_rate': 0.05, u'original_mean_rate': 0.04, u'error_code': u'-ENOENT', u'experiment_duration': 30}
-2021-05-09 11:17:57,732 INFO     1 min normal execution begins
-2021-05-09 11:18:57,748 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:19:30,813 INFO     5 min recovery phase observation begins
-2021-05-09 11:24:30,830 INFO     {'client_crashed': False, 'injection_count': 0}
-2021-05-09 11:24:35,869 INFO     openethereum's pid detected: 8453
-2021-05-09 11:24:35,870 INFO     begin the following experiment
-2021-05-09 11:24:35,871 INFO     {u'original_min_rate': 0.0004274433633459193, u'syscall_name': u'openat', u'original_max_rate': 0.0060759693581179195, u'failure_rate': 0.05, u'original_mean_rate': 0.0032517063607319196, u'error_code': u'-ENOENT', u'experiment_duration': 30}
-2021-05-09 11:24:35,871 INFO     1 min normal execution begins
-2021-05-09 11:25:35,881 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:26:05,946 INFO     this experiment makes the client crash!
-2021-05-09 11:26:05,946 INFO     {'client_crashed': True, 'injection_count': 3}
-2021-05-09 11:26:08,959 INFO     successfully restart the client, new pid: 9465
-2021-05-09 11:26:13,973 INFO     openethereum's pid detected: 9465
-2021-05-09 11:26:13,974 INFO     begin the following experiment
-2021-05-09 11:26:13,974 INFO     {u'original_min_rate': 0.14285714285714285, u'syscall_name': u'rename', u'original_max_rate': 0.14285714285714285, u'failure_rate': 0.1714285714285714, u'original_mean_rate': 0.14285714285714285, u'error_code': u'-ENOENT', u'experiment_duration': 30}
-2021-05-09 11:26:13,974 INFO     1 min normal execution begins
-2021-05-09 11:27:13,992 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:27:47,127 INFO     5 min recovery phase observation begins
-2021-05-09 11:32:47,158 INFO     {'client_crashed': False, 'injection_count': 0}
-2021-05-09 11:32:52,495 INFO     openethereum's pid detected: 9465
-2021-05-09 11:32:52,495 INFO     begin the following experiment
-2021-05-09 11:32:52,495 INFO     {u'original_min_rate': 0.14318181818181816, u'syscall_name': u'statx', u'original_max_rate': 0.2659090909090909, u'failure_rate': 0.31909090909090904, u'original_mean_rate': 0.20454545454545453, u'error_code': u'-ENOENT', u'experiment_duration': 30}
-2021-05-09 11:32:52,496 INFO     1 min normal execution begins
-2021-05-09 11:33:52,564 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:34:25,651 INFO     5 min recovery phase observation begins
-2021-05-09 11:39:25,675 INFO     {'client_crashed': False, 'injection_count': 0}
-2021-05-09 11:39:30,743 INFO     openethereum's pid detected: 9465
-2021-05-09 11:39:30,746 INFO     begin the following experiment
-2021-05-09 11:39:30,746 INFO     {u'original_min_rate': 0.017543859649122806, u'syscall_name': u'unlink', u'original_max_rate': 0.017543859649122806, u'failure_rate': 0.05, u'original_mean_rate': 0.017543859649122806, u'error_code': u'-ENOENT', u'experiment_duration': 30}
-2021-05-09 11:39:30,746 INFO     1 min normal execution begins
-2021-05-09 11:40:30,768 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:41:03,837 INFO     5 min recovery phase observation begins
-2021-05-09 11:46:03,856 INFO     {'client_crashed': False, 'injection_count': 0}
-2021-05-09 11:46:08,897 INFO     openethereum's pid detected: 9465
-2021-05-09 11:46:08,899 INFO     begin the following experiment
-2021-05-09 11:46:08,899 INFO     {u'original_min_rate': 0.006679655013851558, u'syscall_name': u'ioctl', u'original_max_rate': 0.29508196721311475, u'failure_rate': 0.29508196721311475, u'original_mean_rate': 0.09006997398338952, u'error_code': u'-ENOTTY', u'experiment_duration': 30}
-2021-05-09 11:46:08,899 INFO     1 min normal execution begins
-2021-05-09 11:47:08,926 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:47:42,052 INFO     5 min recovery phase observation begins
-2021-05-09 11:52:42,075 INFO     {'client_crashed': False, 'injection_count': 16}
-2021-05-09 11:52:47,134 INFO     openethereum's pid detected: 9465
-2021-05-09 11:52:47,135 INFO     begin the following experiment
-2021-05-09 11:52:47,135 INFO     {u'original_min_rate': 0.0007700889898539349, u'syscall_name': u'sendto', u'original_max_rate': 0.045839086422201636, u'failure_rate': 0.05, u'original_mean_rate': 0.019617166622191033, u'error_code': u'-EPIPE', u'experiment_duration': 30}
-2021-05-09 11:52:47,135 INFO     1 min normal execution begins
-2021-05-09 11:53:47,356 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 11:54:20,435 INFO     5 min recovery phase observation begins
-2021-05-09 11:59:20,457 INFO     {'client_crashed': False, 'injection_count': 26}
-2021-05-09 11:59:25,481 INFO     openethereum's pid detected: 9465
-2021-05-09 11:59:25,482 INFO     begin the following experiment
-2021-05-09 11:59:25,482 INFO     {u'original_min_rate': 0.001370751247099857, u'syscall_name': u'futex', u'original_max_rate': 0.0038621321112973267, u'failure_rate': 0.05, u'original_mean_rate': 0.0023304895412674387, u'error_code': u'-ETIMEDOUT', u'experiment_duration': 30}
-2021-05-09 11:59:25,482 INFO     1 min normal execution begins
-2021-05-09 12:00:25,500 INFO     30 seconds chaos engineering experiment begins
-2021-05-09 12:00:55,558 INFO     this experiment makes the client crash!
-2021-05-09 12:00:55,559 INFO     {'client_crashed': True, 'injection_count': 1}
-2021-05-09 12:00:58,577 INFO     successfully restart the client, new pid: 10171
+2021-05-11 21:40:34,131 INFO     openethereum's pid detected: 10171
+2021-05-11 21:40:34,134 INFO     begin the following experiment
+2021-05-11 21:40:34,134 INFO     {u'original_min_rate': 0.5, u'syscall_name': u'accept4', u'original_max_rate': 0.5, u'failure_rate': 0.6, u'original_mean_rate': 0.49968235351323975, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-05-11 21:40:34,134 INFO     1 min normal execution begins
+2021-05-11 21:41:34,173 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 21:42:37,290 INFO     5 min recovery phase observation begins
+2021-05-11 21:47:37,315 INFO     {'client_crashed': False, 'injection_count': 42}
+2021-05-11 21:47:42,393 INFO     openethereum's pid detected: 10171
+2021-05-11 21:47:42,394 INFO     begin the following experiment
+2021-05-11 21:47:42,394 INFO     {u'original_min_rate': 0.00543884569638481, u'syscall_name': u'futex', u'original_max_rate': 0.021130060603005287, u'failure_rate': 0.05, u'original_mean_rate': 0.012469558111804098, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-05-11 21:47:42,394 INFO     1 min normal execution begins
+2021-05-11 21:48:42,412 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 21:49:42,522 INFO     this experiment makes the client crash!
+2021-05-11 21:49:42,523 INFO     {'client_crashed': True, 'injection_count': 19}
+2021-05-11 21:49:45,535 INFO     successfully restart the client, new pid: 27254
+2021-05-11 21:49:50,554 INFO     openethereum's pid detected: 27254
+2021-05-11 21:49:50,554 INFO     begin the following experiment
+2021-05-11 21:49:50,554 INFO     {u'original_min_rate': 0.45060808281703724, u'syscall_name': u'read', u'original_max_rate': 0.4961405200004464, u'failure_rate': 0.5953686240005357, u'original_mean_rate': 0.47335801180453435, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-05-11 21:49:50,555 INFO     1 min normal execution begins
+2021-05-11 21:50:50,559 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 21:51:50,618 INFO     this experiment makes the client crash!
+2021-05-11 21:51:50,618 INFO     {'client_crashed': True, 'injection_count': 858}
+2021-05-11 21:51:53,632 INFO     successfully restart the client, new pid: 27319
+2021-05-11 21:51:58,647 INFO     openethereum's pid detected: 27319
+2021-05-11 21:51:58,647 INFO     begin the following experiment
+2021-05-11 21:51:58,647 INFO     {u'original_min_rate': 0.20194159725092337, u'syscall_name': u'recvfrom', u'original_max_rate': 0.23854656296327426, u'failure_rate': 0.2862558755559291, u'original_mean_rate': 0.222253198211835, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-05-11 21:51:58,647 INFO     1 min normal execution begins
+2021-05-11 21:52:58,668 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 21:54:01,751 INFO     5 min recovery phase observation begins
+2021-05-11 21:59:01,787 INFO     {'client_crashed': False, 'injection_count': 1017}
+2021-05-11 21:59:06,837 INFO     openethereum's pid detected: 27319
+2021-05-11 21:59:06,837 INFO     begin the following experiment
+2021-05-11 21:59:06,837 INFO     {u'original_min_rate': 0.0005422706192144233, u'syscall_name': u'sendto', u'original_max_rate': 0.02189920569706929, u'failure_rate': 0.05, u'original_mean_rate': 0.003863511348504983, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-05-11 21:59:06,837 INFO     1 min normal execution begins
+2021-05-11 22:00:06,885 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:01:09,987 INFO     5 min recovery phase observation begins
+2021-05-11 22:06:10,009 INFO     {'client_crashed': False, 'injection_count': 220}
+2021-05-11 22:06:15,042 INFO     openethereum's pid detected: 27319
+2021-05-11 22:06:15,042 INFO     begin the following experiment
+2021-05-11 22:06:15,042 INFO     {u'original_min_rate': 0.00022779043280182233, u'syscall_name': u'recvfrom', u'original_max_rate': 0.00022779043280182233, u'failure_rate': 0.05, u'original_mean_rate': 0.00022779043280182233, u'error_code': u'-ECONNREFUSED', u'experiment_duration': 60}
+2021-05-11 22:06:15,042 INFO     1 min normal execution begins
+2021-05-11 22:07:15,063 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:08:18,132 INFO     5 min recovery phase observation begins
+2021-05-11 22:13:18,156 INFO     {'client_crashed': False, 'injection_count': 405}
+2021-05-11 22:13:23,197 INFO     openethereum's pid detected: 27319
+2021-05-11 22:13:23,198 INFO     begin the following experiment
+2021-05-11 22:13:23,198 INFO     {u'original_min_rate': 0.0011890606420927466, u'syscall_name': u'sendto', u'original_max_rate': 0.0011890606420927466, u'failure_rate': 0.05, u'original_mean_rate': 0.0011890606420927466, u'error_code': u'-ECONNREFUSED', u'experiment_duration': 60}
+2021-05-11 22:13:23,198 INFO     1 min normal execution begins
+2021-05-11 22:14:23,224 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:15:26,322 INFO     5 min recovery phase observation begins
+2021-05-11 22:20:26,373 INFO     {'client_crashed': False, 'injection_count': 258}
+2021-05-11 22:20:31,415 INFO     openethereum's pid detected: 27319
+2021-05-11 22:20:31,416 INFO     begin the following experiment
+2021-05-11 22:20:31,416 INFO     {u'original_min_rate': 3.7267543696194986e-05, u'syscall_name': u'recvfrom', u'original_max_rate': 3.7267543696194986e-05, u'failure_rate': 0.05, u'original_mean_rate': 3.7267543696194986e-05, u'error_code': u'-ECONNRESET', u'experiment_duration': 60}
+2021-05-11 22:20:31,416 INFO     1 min normal execution begins
+2021-05-11 22:21:31,431 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:22:34,517 INFO     5 min recovery phase observation begins
+2021-05-11 22:27:34,541 INFO     {'client_crashed': False, 'injection_count': 457}
+2021-05-11 22:27:39,583 INFO     openethereum's pid detected: 27319
+2021-05-11 22:27:39,584 INFO     begin the following experiment
+2021-05-11 22:27:39,584 INFO     {u'original_min_rate': 0.00047809515461638463, u'syscall_name': u'sendto', u'original_max_rate': 0.0013056910911657242, u'failure_rate': 0.05, u'original_mean_rate': 0.0007628486149642043, u'error_code': u'-ECONNRESET', u'experiment_duration': 60}
+2021-05-11 22:27:39,584 INFO     1 min normal execution begins
+2021-05-11 22:28:39,623 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:29:42,690 INFO     5 min recovery phase observation begins
+2021-05-11 22:34:42,709 INFO     {'client_crashed': False, 'injection_count': 238}
+2021-05-11 22:34:47,753 INFO     openethereum's pid detected: 27319
+2021-05-11 22:34:47,753 INFO     begin the following experiment
+2021-05-11 22:34:47,754 INFO     {u'original_min_rate': 1.0, u'syscall_name': u'mkdir', u'original_max_rate': 1.0, u'failure_rate': 1, u'original_mean_rate': 1.0, u'error_code': u'-EEXIST', u'experiment_duration': 60}
+2021-05-11 22:34:47,754 INFO     1 min normal execution begins
+2021-05-11 22:35:47,773 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:36:50,870 INFO     5 min recovery phase observation begins
+2021-05-11 22:41:50,880 INFO     {'client_crashed': False, 'injection_count': 0}
+2021-05-11 22:41:55,921 INFO     openethereum's pid detected: 27319
+2021-05-11 22:41:55,922 INFO     begin the following experiment
+2021-05-11 22:41:55,922 INFO     {u'original_min_rate': 0.2, u'syscall_name': u'connect', u'original_max_rate': 1.0, u'failure_rate': 1, u'original_mean_rate': 0.5459459459459458, u'error_code': u'-EINPROGRESS', u'experiment_duration': 60}
+2021-05-11 22:41:55,922 INFO     1 min normal execution begins
+2021-05-11 22:42:55,942 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:43:59,067 INFO     5 min recovery phase observation begins
+2021-05-11 22:48:59,084 INFO     {'client_crashed': False, 'injection_count': 0}
+2021-05-11 22:49:04,122 INFO     openethereum's pid detected: 27319
+2021-05-11 22:49:04,122 INFO     begin the following experiment
+2021-05-11 22:49:04,123 INFO     {u'original_min_rate': 0.0004816955684007707, u'syscall_name': u'epoll_ctl', u'original_max_rate': 0.0004816955684007707, u'failure_rate': 0.05, u'original_mean_rate': 0.0004816955684007707, u'error_code': u'-ENOENT', u'experiment_duration': 60}
+2021-05-11 22:49:04,123 INFO     1 min normal execution begins
+2021-05-11 22:50:04,137 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:51:04,216 INFO     this experiment makes the client crash!
+2021-05-11 22:51:04,217 INFO     {'client_crashed': True, 'injection_count': 9}
+2021-05-11 22:51:07,230 INFO     successfully restart the client, new pid: 27848
+2021-05-11 22:51:12,248 INFO     openethereum's pid detected: 27848
+2021-05-11 22:51:12,248 INFO     begin the following experiment
+2021-05-11 22:51:12,248 INFO     {u'original_min_rate': 0.024390243902439025, u'syscall_name': u'getpeername', u'original_max_rate': 0.024390243902439025, u'failure_rate': 0.05, u'original_mean_rate': 0.024390243902439025, u'error_code': u'-ENOTCONN', u'experiment_duration': 60}
+2021-05-11 22:51:12,248 INFO     1 min normal execution begins
+2021-05-11 22:52:12,276 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 22:53:15,391 INFO     5 min recovery phase observation begins
+2021-05-11 22:58:15,412 INFO     {'client_crashed': False, 'injection_count': 15}
+2021-05-11 22:58:20,459 INFO     openethereum's pid detected: 27848
+2021-05-11 22:58:20,463 INFO     begin the following experiment
+2021-05-11 22:58:20,464 INFO     {u'original_min_rate': 0.00045681936324184775, u'syscall_name': u'ioctl', u'original_max_rate': 0.0305752975929338, u'failure_rate': 0.05, u'original_mean_rate': 0.007308626397000068, u'error_code': u'-ENOTTY', u'experiment_duration': 60}
+2021-05-11 22:58:20,464 INFO     1 min normal execution begins
+2021-05-11 22:59:20,485 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 23:00:23,587 INFO     5 min recovery phase observation begins
+2021-05-11 23:05:23,609 INFO     {'client_crashed': False, 'injection_count': 510}
+2021-05-11 23:05:28,654 INFO     openethereum's pid detected: 27848
+2021-05-11 23:05:28,655 INFO     begin the following experiment
+2021-05-11 23:05:28,655 INFO     {u'original_min_rate': 0.0004507144290208624, u'syscall_name': u'sendto', u'original_max_rate': 0.006366710604776699, u'failure_rate': 0.05, u'original_mean_rate': 0.007197382802330018, u'error_code': u'-EPIPE', u'experiment_duration': 60}
+2021-05-11 23:05:28,655 INFO     1 min normal execution begins
+2021-05-11 23:06:28,664 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 23:07:31,717 INFO     5 min recovery phase observation begins
+2021-05-11 23:12:31,969 INFO     {'client_crashed': False, 'injection_count': 297}
+2021-05-11 23:12:37,043 INFO     openethereum's pid detected: 27848
+2021-05-11 23:12:37,043 INFO     begin the following experiment
+2021-05-11 23:12:37,044 INFO     {u'original_min_rate': 0.0025191390048762093, u'syscall_name': u'futex', u'original_max_rate': 0.007287172155517628, u'failure_rate': 0.05, u'original_mean_rate': 0.004184365463961644, u'error_code': u'-ETIMEDOUT', u'experiment_duration': 60}
+2021-05-11 23:12:37,044 INFO     1 min normal execution begins
+2021-05-11 23:13:37,062 INFO     60 seconds chaos engineering experiment begins
+2021-05-11 23:14:37,144 INFO     this experiment makes the client crash!
+2021-05-11 23:14:37,145 INFO     {'client_crashed': True, 'injection_count': 1}
+2021-05-11 23:14:40,159 INFO     successfully restart the client, new pid: 28060

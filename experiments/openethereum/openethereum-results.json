@@ -2,112 +2,125 @@
   "experiment_name": "Error Models for Chaos Engineering Experiments on Openethereum", 
   "experiments": [
     {
-      "original_min_rate": 0.002012086431024738, 
-      "syscall_name": "sendto", 
-      "original_max_rate": 0.036203283269297934, 
-      "failure_rate": 0.05, 
-      "result": {
-        "client_crashed": false, 
-        "injection_count": 9
-      }, 
-      "original_mean_rate": 0.010739014785887268, 
-      "error_code": "-EAFNOSUPPORT", 
-      "experiment_duration": 30
-    }, 
-    {
       "original_min_rate": 0.5, 
       "syscall_name": "accept4", 
       "original_max_rate": 0.5, 
       "failure_rate": 0.6, 
       "result": {
         "client_crashed": false, 
-        "injection_count": 24
+        "injection_count": 42
       }, 
-      "original_mean_rate": 0.4999184382560267, 
+      "original_mean_rate": 0.49968235351323975, 
       "error_code": "-EAGAIN", 
-      "experiment_duration": 30
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.004407055777424734, 
+      "original_min_rate": 0.00543884569638481, 
       "syscall_name": "futex", 
-      "original_max_rate": 0.00719681953747045, 
+      "original_max_rate": 0.021130060603005287, 
       "failure_rate": 0.05, 
       "result": {
         "client_crashed": true, 
-        "injection_count": 3
+        "injection_count": 19
       }, 
-      "original_mean_rate": 0.005754308019914177, 
+      "original_mean_rate": 0.012469558111804098, 
       "error_code": "-EAGAIN", 
-      "experiment_duration": 30
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.447836533956226, 
+      "original_min_rate": 0.45060808281703724, 
       "syscall_name": "read", 
-      "original_max_rate": 0.4997246213004723, 
-      "failure_rate": 0.5996695455605667, 
+      "original_max_rate": 0.4961405200004464, 
+      "failure_rate": 0.5953686240005357, 
       "result": {
         "client_crashed": true, 
-        "injection_count": 252
+        "injection_count": 858
       }, 
-      "original_mean_rate": 0.484808960798566, 
+      "original_mean_rate": 0.47335801180453435, 
       "error_code": "-EAGAIN", 
-      "experiment_duration": 30
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.27135822316311053, 
+      "original_min_rate": 0.20194159725092337, 
       "syscall_name": "recvfrom", 
-      "original_max_rate": 0.3059934080827284, 
-      "failure_rate": 0.3671920896992741, 
+      "original_max_rate": 0.23854656296327426, 
+      "failure_rate": 0.2862558755559291, 
       "result": {
         "client_crashed": false, 
-        "injection_count": 861
+        "injection_count": 1017
       }, 
-      "original_mean_rate": 0.29157325753056756, 
+      "original_mean_rate": 0.222253198211835, 
       "error_code": "-EAGAIN", 
-      "experiment_duration": 30
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.0007222284928789974, 
+      "original_min_rate": 0.0005422706192144233, 
       "syscall_name": "sendto", 
-      "original_max_rate": 0.002464051921893359, 
+      "original_max_rate": 0.02189920569706929, 
       "failure_rate": 0.05, 
       "result": {
         "client_crashed": false, 
-        "injection_count": 27
+        "injection_count": 220
       }, 
-      "original_mean_rate": 0.0011897172182701943, 
+      "original_mean_rate": 0.003863511348504983, 
       "error_code": "-EAGAIN", 
-      "experiment_duration": 30
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 2.6055827253715773e-05, 
+      "original_min_rate": 0.00022779043280182233, 
       "syscall_name": "recvfrom", 
-      "original_max_rate": 0.00014040768397327808, 
+      "original_max_rate": 0.00022779043280182233, 
       "failure_rate": 0.05, 
       "result": {
         "client_crashed": false, 
-        "injection_count": 268
+        "injection_count": 405
       }, 
-      "original_mean_rate": 6.0929830365961746e-05, 
+      "original_mean_rate": 0.00022779043280182233, 
+      "error_code": "-ECONNREFUSED", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 0.0011890606420927466, 
+      "syscall_name": "sendto", 
+      "original_max_rate": 0.0011890606420927466, 
+      "failure_rate": 0.05, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 258
+      }, 
+      "original_mean_rate": 0.0011890606420927466, 
+      "error_code": "-ECONNREFUSED", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 3.7267543696194986e-05, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": 3.7267543696194986e-05, 
+      "failure_rate": 0.05, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 457
+      }, 
+      "original_mean_rate": 3.7267543696194986e-05, 
       "error_code": "-ECONNRESET", 
-      "experiment_duration": 30
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 0.00047809515461638463, 
+      "syscall_name": "sendto", 
+      "original_max_rate": 0.0013056910911657242, 
+      "failure_rate": 0.05, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 238
+      }, 
+      "original_mean_rate": 0.0007628486149642043, 
+      "error_code": "-ECONNRESET", 
+      "experiment_duration": 60
     }, 
     {
       "original_min_rate": 1.0, 
       "syscall_name": "mkdir", 
-      "original_max_rate": 1.0, 
-      "failure_rate": 1, 
-      "result": {
-        "client_crashed": false, 
-        "injection_count": 0
-      }, 
-      "original_mean_rate": 0.999163763066202, 
-      "error_code": "-EEXIST", 
-      "experiment_duration": 30
-    }, 
-    {
-      "original_min_rate": 1.0, 
-      "syscall_name": "connect", 
       "original_max_rate": 1.0, 
       "failure_rate": 1, 
       "result": {
@@ -115,126 +128,87 @@
         "injection_count": 0
       }, 
       "original_mean_rate": 1.0, 
+      "error_code": "-EEXIST", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 0.2, 
+      "syscall_name": "connect", 
+      "original_max_rate": 1.0, 
+      "failure_rate": 1, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": 0.5459459459459458, 
       "error_code": "-EINPROGRESS", 
-      "experiment_duration": 30
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.4, 
-      "syscall_name": "access", 
-      "original_max_rate": 0.4, 
-      "failure_rate": 0.48, 
-      "result": {
-        "client_crashed": false, 
-        "injection_count": 0
-      }, 
-      "original_mean_rate": 0.4, 
-      "error_code": "-ENOENT", 
-      "experiment_duration": 30
-    }, 
-    {
-      "original_min_rate": 0.04, 
-      "syscall_name": "mkdir", 
-      "original_max_rate": 0.04, 
-      "failure_rate": 0.05, 
-      "result": {
-        "client_crashed": false, 
-        "injection_count": 0
-      }, 
-      "original_mean_rate": 0.04, 
-      "error_code": "-ENOENT", 
-      "experiment_duration": 30
-    }, 
-    {
-      "original_min_rate": 0.0004274433633459193, 
-      "syscall_name": "openat", 
-      "original_max_rate": 0.0060759693581179195, 
+      "original_min_rate": 0.0004816955684007707, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": 0.0004816955684007707, 
       "failure_rate": 0.05, 
       "result": {
         "client_crashed": true, 
-        "injection_count": 3
+        "injection_count": 9
       }, 
-      "original_mean_rate": 0.0032517063607319196, 
+      "original_mean_rate": 0.0004816955684007707, 
       "error_code": "-ENOENT", 
-      "experiment_duration": 30
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.14285714285714285, 
-      "syscall_name": "rename", 
-      "original_max_rate": 0.14285714285714285, 
-      "failure_rate": 0.1714285714285714, 
-      "result": {
-        "client_crashed": false, 
-        "injection_count": 0
-      }, 
-      "original_mean_rate": 0.14285714285714285, 
-      "error_code": "-ENOENT", 
-      "experiment_duration": 30
-    }, 
-    {
-      "original_min_rate": 0.14318181818181816, 
-      "syscall_name": "statx", 
-      "original_max_rate": 0.2659090909090909, 
-      "failure_rate": 0.31909090909090904, 
-      "result": {
-        "client_crashed": false, 
-        "injection_count": 0
-      }, 
-      "original_mean_rate": 0.20454545454545453, 
-      "error_code": "-ENOENT", 
-      "experiment_duration": 30
-    }, 
-    {
-      "original_min_rate": 0.017543859649122806, 
-      "syscall_name": "unlink", 
-      "original_max_rate": 0.017543859649122806, 
+      "original_min_rate": 0.024390243902439025, 
+      "syscall_name": "getpeername", 
+      "original_max_rate": 0.024390243902439025, 
       "failure_rate": 0.05, 
       "result": {
         "client_crashed": false, 
-        "injection_count": 0
+        "injection_count": 15
       }, 
-      "original_mean_rate": 0.017543859649122806, 
-      "error_code": "-ENOENT", 
-      "experiment_duration": 30
+      "original_mean_rate": 0.024390243902439025, 
+      "error_code": "-ENOTCONN", 
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.006679655013851558, 
+      "original_min_rate": 0.00045681936324184775, 
       "syscall_name": "ioctl", 
-      "original_max_rate": 0.29508196721311475, 
-      "failure_rate": 0.29508196721311475, 
-      "result": {
-        "client_crashed": false, 
-        "injection_count": 16
-      }, 
-      "original_mean_rate": 0.09006997398338952, 
-      "error_code": "-ENOTTY", 
-      "experiment_duration": 30
-    }, 
-    {
-      "original_min_rate": 0.0007700889898539349, 
-      "syscall_name": "sendto", 
-      "original_max_rate": 0.045839086422201636, 
+      "original_max_rate": 0.0305752975929338, 
       "failure_rate": 0.05, 
       "result": {
         "client_crashed": false, 
-        "injection_count": 26
+        "injection_count": 510
       }, 
-      "original_mean_rate": 0.019617166622191033, 
-      "error_code": "-EPIPE", 
-      "experiment_duration": 30
+      "original_mean_rate": 0.007308626397000068, 
+      "error_code": "-ENOTTY", 
+      "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.001370751247099857, 
+      "original_min_rate": 0.0004507144290208624, 
+      "syscall_name": "sendto", 
+      "original_max_rate": 0.006366710604776699, 
+      "failure_rate": 0.05, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 297
+      }, 
+      "original_mean_rate": 0.007197382802330018, 
+      "error_code": "-EPIPE", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 0.0025191390048762093, 
       "syscall_name": "futex", 
-      "original_max_rate": 0.0038621321112973267, 
+      "original_max_rate": 0.007287172155517628, 
       "failure_rate": 0.05, 
       "result": {
         "client_crashed": true, 
         "injection_count": 1
       }, 
-      "original_mean_rate": 0.0023304895412674387, 
+      "original_mean_rate": 0.004184365463961644, 
       "error_code": "-ETIMEDOUT", 
-      "experiment_duration": 30
+      "experiment_duration": 60
     }
   ], 
-  "experiment_description": "Automatically generated based on monitoring data from 2021-05-02T09:30:00Z to 2021-05-03T09:30:00Z"
+  "experiment_description": "Automatically generated based on monitoring data from 2021-05-10T16:00:00Z to 2021-05-11T16:00:00Z"
 }
