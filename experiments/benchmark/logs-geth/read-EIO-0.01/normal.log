@@ -1,0 +1,22 @@
+INFO [05-16|21:42:51.936] Imported new chain segment               blocks=1      txs=244      mgas=14.982 elapsed=1.233s        mgasps=12.142  number=12447973 hash="3a1e4a…6cb11a" dirty=661.41MiB
+INFO [05-16|21:42:51.943] Unindexed transactions                   blocks=1      txs=212      tail=10097974 elapsed=3.997ms
+INFO [05-16|21:42:54.883] Aborting state snapshot generation       root="2062be…37ab3e" in="0b74bb…9c95e8" at="d2f287…b2235b" accounts=5954562 slots=22950536 storage=2.01GiB    elapsed=33h33m4.562s  eta=716h11m56.562s
+INFO [05-16|21:42:54.919] Resuming state snapshot generation       root="3e92fa…7b3289" in="0b74bb…9c95e8" at="d2f287…b2235b" accounts=5954562 slots=22950536 storage=2.01GiB    elapsed=33h33m4.598s  eta=716h11m57.33s
+INFO [05-16|21:42:54.954] Imported new chain segment               blocks=1      txs=233      mgas=14.983 elapsed=642.007ms     mgasps=23.338  number=12447974 hash="90ee92…0fc1c6" dirty=661.46MiB
+INFO [05-16|21:42:54.976] Unindexed transactions                   blocks=1      txs=130      tail=10097975 elapsed=6.027ms
+INFO [05-16|21:43:01.490] Aborting state snapshot generation       root="3e92fa…7b3289" in="0b74bb…9c95e8" at="d6a33d…22af04" accounts=5954562 slots=22952131 storage=2.01GiB    elapsed=33h33m11.169s eta=716h14m17.597s
+INFO [05-16|21:43:01.498] Resuming state snapshot generation       root="86c7ae…6835ba" in="0b74bb…9c95e8" at="d6a33d…22af04" accounts=5954562 slots=22952131 storage=2.01GiB    elapsed=33h33m11.177s eta=716h14m17.768s
+INFO [05-16|21:43:01.601] Imported new chain segment               blocks=1      txs=212      mgas=14.982 elapsed=859.891ms     mgasps=17.423  number=12447975 hash="bb3b22…0d1a96" dirty=661.26MiB
+INFO [05-16|21:43:01.655] Unindexed transactions                   blocks=1      txs=92       tail=10097976 elapsed=37.159ms
+WARN [05-16|21:43:07.532] Checkpoint challenge timed out, dropping id=253e921aa69fa76e conn=dyndial addr=47.241.33.82:30303    type=Geth/v1.10.1-stable-...
+ERROR[05-16|21:43:07.537] Ethereum peer removal failed             peer=253e921a err="peer not registered"
+INFO [05-16|21:43:17.961] Deep froze chain segment                 blocks=5      elapsed=61.919ms      number=12357975 hash="70e2bc…8190f9"
+INFO [05-16|21:43:59.257] Aborting state snapshot generation       root="86c7ae…6835ba" in="0b74bb…9c95e8" at="f7215d…54ac8b" accounts=5954562 slots=22966296 storage=2.01GiB    elapsed=33h34m8.937s  eta=716h34m50.737s
+INFO [05-16|21:43:59.292] Resuming state snapshot generation       root="aafc38…989eb8" in="0b74bb…9c95e8" at="f7215d…54ac8b" accounts=5954562 slots=22966296 storage=2.01GiB    elapsed=33h34m8.971s  eta=716h34m51.463s
+INFO [05-16|21:43:59.443] Imported new chain segment               blocks=1      txs=243      mgas=14.985 elapsed=3.554s        mgasps=4.215   number=12447976 hash="724767…f2b3e9" dirty=661.15MiB
+INFO [05-16|21:43:59.549] Unindexed transactions                   blocks=1      txs=231      tail=10097977 elapsed=51.987ms
+INFO [05-16|21:44:01.761] Downloader queue stats                   receiptTasks=0 blockTasks=0    itemSize=51.57KiB  throttle=1271
+INFO [05-16|21:44:04.616] Aborting state snapshot generation       root="aafc38…989eb8" in="0b74bb…9c95e8" at="f80532…ffd70d" accounts=5954562 slots=22966692 storage=2.01GiB    elapsed=33h34m14.296s eta=716h36m45.132s
+INFO [05-16|21:44:04.640] Resuming state snapshot generation       root="89a614…250eeb" in="0b74bb…9c95e8" at="f80532…ffd70d" accounts=5954562 slots=22966692 storage=2.01GiB    elapsed=33h34m14.319s eta=716h36m45.623s
+INFO [05-16|21:44:04.678] Imported new chain segment               blocks=1      txs=209      mgas=14.985 elapsed=5.208s        mgasps=2.877   number=12447977 hash="388897…c04271" dirty=661.12MiB
+INFO [05-16|21:44:04.710] Unindexed transactions                   blocks=1      txs=161      tail=10097978 elapsed=5.060ms

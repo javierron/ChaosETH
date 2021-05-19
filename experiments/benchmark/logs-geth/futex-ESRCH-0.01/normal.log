@@ -1,0 +1,40 @@
+INFO [05-17|02:14:49.235] Imported new state entries               count=384  elapsed=3.334ms     processed=817197964 pending=15439 trieretry=4   coderetry=0 duplicate=0 unexpected=26
+WARN [05-17|02:14:51.198] Stalling state sync, dropping peer       peer=ee33e29fac4071be8c11615997bae0dad0e06702bb4e0ba0397b514cbfaa1494
+ERROR[05-17|02:14:51.199] Ethereum peer removal failed             peer=ee33e29f err="peer not registered"
+INFO [05-17|02:14:52.400] Imported new block headers               count=1    elapsed=116.584ms   number=12449187 hash="c516f1…a04944" age=1m6s
+ERROR[05-17|02:14:53.091] Snapshot extension registration failed   peer=101502b5 err="peer connected on snap without compatible eth support"
+WARN [05-17|02:14:53.172] Checkpoint challenge timed out, dropping id=253e921aa69fa76e conn=dyndial addr=47.241.33.82:30303   type=Geth/v1.10.1-stable-...
+ERROR[05-17|02:14:53.173] Ethereum peer removal failed             peer=253e921a err="peer not registered"
+INFO [05-17|02:14:55.201] Initializing state bloom                 items=203733650 errorrate=0.000 elapsed=7m4.082s
+INFO [05-17|02:14:55.392] Imported new block headers               count=1    elapsed=26.525ms    number=12449188 hash="efcfbb…aec4bc"
+INFO [05-17|02:14:57.642] Looking for peers                        peercount=8  tried=5 static=0
+INFO [05-17|02:15:00.929] Imported new state entries               count=466  elapsed="683.902µs" processed=817198430 pending=15815 trieretry=2   coderetry=0 duplicate=0 unexpected=26
+INFO [05-17|02:15:03.201] Initializing state bloom                 items=203749112 errorrate=0.000 elapsed=7m12.082s
+INFO [05-17|02:15:07.644] Looking for peers                        peercount=8  tried=4 static=0
+INFO [05-17|02:15:07.800] Imported new block headers               count=1    elapsed=11.086ms    number=12449189 hash="6b6daa…9407b8"
+INFO [05-17|02:15:11.202] Initializing state bloom                 items=205966166 errorrate=0.000 elapsed=7m20.083s
+INFO [05-17|02:15:16.801] Imported new state entries               count=768  elapsed=2.168ms     processed=817199198 pending=16303 trieretry=0   coderetry=0 duplicate=0 unexpected=26
+INFO [05-17|02:15:17.645] Looking for peers                        peercount=8  tried=4 static=0
+INFO [05-17|02:15:19.203] Initializing state bloom                 items=208581871 errorrate=0.000 elapsed=7m28.084s
+INFO [05-17|02:15:23.751] Imported new block headers               count=1    elapsed=10.966ms    number=12449190 hash="8a6449…c2ad0d"
+INFO [05-17|02:15:24.558] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=273.72KiB throttle=240
+INFO [05-17|02:15:27.207] Initializing state bloom                 items=211148348 errorrate=0.000 elapsed=7m36.088s
+INFO [05-17|02:15:27.646] Looking for peers                        peercount=8  tried=4 static=0
+INFO [05-17|02:15:28.836] Imported new state entries               count=854  elapsed=11.103ms    processed=817200052 pending=16302 trieretry=626 coderetry=0 duplicate=0 unexpected=26
+INFO [05-17|02:15:32.088] Imported new state entries               count=0    elapsed=10.816ms    processed=817200052 pending=16466 trieretry=132 coderetry=0 duplicate=0 unexpected=27
+INFO [05-17|02:15:35.207] Initializing state bloom                 items=213659741 errorrate=0.000 elapsed=7m44.088s
+INFO [05-17|02:15:37.650] Looking for peers                        peercount=7  tried=4 static=0
+INFO [05-17|02:15:39.642] Imported new state entries               count=496  elapsed=1.020ms     processed=817200548 pending=16785 trieretry=130 coderetry=0 duplicate=0 unexpected=27
+WARN [05-17|02:15:39.643] Stalling state sync, dropping peer       peer=1f293ac1fd2d81f4e2b586830b7c1378f815f2e62ca701daf47ae869c46075a2
+ERROR[05-17|02:15:39.643] Ethereum peer removal failed             peer=1f293ac1 err="peer not registered"
+WARN [05-17|02:15:39.643] Stalling state sync, dropping peer       peer=58bab0cc27a56f2683c5706b277db22d7c6cc2e32457225e00a2af22d4182d29
+ERROR[05-17|02:15:39.643] Ethereum peer removal failed             peer=58bab0cc err="peer not registered"
+INFO [05-17|02:15:43.208] Initializing state bloom                 items=216180167 errorrate=0.000 elapsed=7m52.089s
+INFO [05-17|02:15:45.101] Imported new block headers               count=1    elapsed=15.582ms    number=12449191 hash="15e0e7…7ac13f"
+INFO [05-17|02:15:47.053] Imported new state entries               count=384  elapsed="974.202µs" processed=817200932 pending=17070 trieretry=4   coderetry=0 duplicate=0 unexpected=27
+INFO [05-17|02:15:47.652] Looking for peers                        peercount=6  tried=2 static=0
+WARN [05-17|02:15:48.953] Stalling state sync, dropping peer       peer=2cc809bc9f90daac80ca873a760beaea68d716d85bf48402ea65b00cccc9c83a
+ERROR[05-17|02:15:48.953] Ethereum peer removal failed             peer=2cc809bc err="peer not registered"
+INFO [05-17|02:15:51.208] Initializing state bloom                 items=218799729 errorrate=0.000 elapsed=8m0.089s
+INFO [05-17|02:15:52.977] Imported new state entries               count=476  elapsed=2.047ms     processed=817201408 pending=17230 trieretry=2   coderetry=0 duplicate=0 unexpected=27
+INFO [05-17|02:15:57.666] Looking for peers                        peercount=5  tried=6 static=0

@@ -1,0 +1,656 @@
+{
+  "experiment_name": "Error Models for Benchmark Experiments on Openethereum", 
+  "experiments": [
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "read", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 35
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "read", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 29
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EBADF", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "read", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 22
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EFAULT", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "read", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 18
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINTR", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "read", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 24
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINVAL", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "read", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 24
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EIO", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "read", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 22
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EISDIR", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 1
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EBADF", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 1
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EEXIST", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINVAL", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ELOOP", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 1
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOENT", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOMEM", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOSPC", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 3
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EPERM", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 3
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 1
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EBADF", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ECONNREFUSED", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EFAULT", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINTR", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINVAL", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOMEM", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOTCONN", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOTSOCK", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EBADF", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ECONNABORTED", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EFAULT", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINTR", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINVAL", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EMFILE", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENFILE", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOBUFS", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOMEM", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOTSOCK", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EOPNOTSUPP", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EPROTO", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "accept4", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EPERM", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 6
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EACCES", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 3
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 1
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EDEADLK", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 4
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EFAULT", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 8
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINTR", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 1
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EINVAL", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 5
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENFILE", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 5
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOMEM", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 1
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ENOSYS", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": false, 
+        "injection_count": 0
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-EPERM", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 19
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ESRCH", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": -1, 
+      "syscall_name": "futex", 
+      "original_max_rate": -1, 
+      "failure_rate": 0.01, 
+      "result": {
+        "client_crashed": true, 
+        "injection_count": 6
+      }, 
+      "original_mean_rate": -1, 
+      "error_code": "-ETIMEDOUT", 
+      "experiment_duration": 60
+    }
+  ], 
+  "experiment_description": ""
+}

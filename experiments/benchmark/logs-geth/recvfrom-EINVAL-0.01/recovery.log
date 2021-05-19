@@ -1,0 +1,148 @@
+INFO [05-16|23:31:36.508] Resuming state snapshot generation       root="310fa2…5bc300" in="0c1fb6…39545b" at="cd1612…b45894" accounts=6302483 slots=24027272 storage=2.10GiB    elapsed=35h21m46.187s eta=711h20m9.98s
+INFO [05-16|23:31:36.583] Imported new chain segment               blocks=1      txs=220      mgas=14.976 elapsed=1.890s        mgasps=7.924   number=12448476 hash="0c6972…733666" dirty=661.43MiB
+INFO [05-16|23:31:36.597] Unindexed transactions                   blocks=1      txs=90       tail=10098477 elapsed=1.288ms
+INFO [05-16|23:31:44.200] Aborting state snapshot generation       root="310fa2…5bc300" at="0c2024…df1714" accounts=6303353 slots=24028222 storage=2.10GiB    elapsed=35h21m53.879s eta=711h16m31.937s
+INFO [05-16|23:31:44.208] Resuming state snapshot generation       root="6abd30…a8ee36" at="0c2024…df1714" accounts=6303353 slots=24028222 storage=2.10GiB    elapsed=35h21m53.887s eta=711h16m32.098s
+INFO [05-16|23:31:44.268] Imported new chain segment               blocks=1      txs=174      mgas=14.965 elapsed=1.137s        mgasps=13.160  number=12448477 hash="7dd32a…124bae" dirty=661.22MiB
+INFO [05-16|23:31:44.276] Unindexed transactions                   blocks=1      txs=68       tail=10098478 elapsed=6.982ms
+INFO [05-16|23:31:52.221] Generating state snapshot                root="6abd30…a8ee36" at="0c2104…b3f592" accounts=6305017 slots=24028584 storage=2.10GiB    elapsed=35h22m1.900s  eta=711h6m36.639s
+INFO [05-16|23:32:00.223] Generating state snapshot                root="6abd30…a8ee36" at="0c21c5…b5cf05" accounts=6306567 slots=24029151 storage=2.10GiB    elapsed=35h22m9.903s  eta=710h58m23.436s
+INFO [05-16|23:32:08.226] Generating state snapshot                root="6abd30…a8ee36" at="0c22a3…c0e100" accounts=6308374 slots=24029522 storage=2.10GiB    elapsed=35h22m17.905s eta=710h48m36.351s
+INFO [05-16|23:32:12.454] Aborting state snapshot generation       root="6abd30…a8ee36" in="0c22cc…9dbfec" at="04870e…dd74d0" accounts=6308703 slots=24030173 storage=2.10GiB    elapsed=35h22m22.134s eta=710h47m41.785s
+INFO [05-16|23:32:12.468] Resuming state snapshot generation       root="f0cc8c…8db9d4" in="0c22cc…9dbfec" at="04870e…dd74d0" accounts=6308703 slots=24030173 storage=2.10GiB    elapsed=35h22m22.147s eta=710h47m42.047s
+INFO [05-16|23:32:12.561] Imported new chain segment               blocks=1      txs=301      mgas=14.986 elapsed=2.074s        mgasps=7.224   number=12448478 hash="0365b2…77815d" dirty=661.41MiB
+INFO [05-16|23:32:12.613] Unindexed transactions                   blocks=1      txs=153      tail=10098479 elapsed=9.359ms
+INFO [05-16|23:32:20.392] Aborting state snapshot generation       root="f0cc8c…8db9d4" in="0c22cc…9dbfec" at="09a1a7…142a40" accounts=6308703 slots=24030840 storage=2.10GiB    elapsed=35h22m30.071s eta=710h50m21.275s
+INFO [05-16|23:32:20.402] Resuming state snapshot generation       root="4fd321…593e49" in="0c22cc…9dbfec" at="09a1a7…142a40" accounts=6308703 slots=24030840 storage=2.10GiB    elapsed=35h22m30.081s eta=710h50m21.475s
+INFO [05-16|23:32:20.524] Imported new chain segment               blocks=1      txs=175      mgas=14.981 elapsed=5.768s        mgasps=2.597   number=12448479 hash="130a70…e93f5b" dirty=661.10MiB
+INFO [05-16|23:32:20.573] Unindexed transactions                   blocks=1      txs=0        tail=10098480 elapsed=5.408ms
+INFO [05-16|23:32:21.892] Downloader queue stats                   receiptTasks=0 blockTasks=0    itemSize=53.51KiB  throttle=1225
+INFO [05-16|23:32:24.314] Aborting state snapshot generation       root="4fd321…593e49" in="0c22cc…9dbfec" at="0f2f6c…c2bddc" accounts=6308703 slots=24031537 storage=2.10GiB    elapsed=35h22m33.994s eta=710h51m40.105s
+INFO [05-16|23:32:24.316] Resuming state snapshot generation       root="dde56b…1ca7d8" in="0c22cc…9dbfec" at="0f2f6c…c2bddc" accounts=6308703 slots=24031537 storage=2.10GiB    elapsed=35h22m33.995s eta=710h51m40.125s
+INFO [05-16|23:32:24.351] Imported new chain segment               blocks=1      txs=475      mgas=14.979 elapsed=3.813s        mgasps=3.928   number=12448480 hash="33456c…5e6277" dirty=661.17MiB
+INFO [05-16|23:32:24.361] Unindexed transactions                   blocks=1      txs=106      tail=10098481 elapsed=2.306ms
+INFO [05-16|23:32:24.956] Imported new chain segment               blocks=1      txs=375      mgas=14.991 elapsed=550.993ms     mgasps=27.207  number=12448480 hash="5d76b2…d7d070" dirty=662.35MiB
+INFO [05-16|23:32:29.932] Aborting state snapshot generation       root="dde56b…1ca7d8" in="0c22cc…9dbfec" at="193d54…1707e0" accounts=6308703 slots=24032827 storage=2.10GiB    elapsed=35h22m39.611s eta=710h53m32.975s
+INFO [05-16|23:32:29.939] Resuming state snapshot generation       root="e572a3…b78406" in="0c22cc…9dbfec" at="193d54…1707e0" accounts=6308703 slots=24032827 storage=2.10GiB    elapsed=35h22m39.618s eta=710h53m33.116s
+INFO [05-16|23:32:30.052] Chain reorg detected                     number=12448479 hash="130a70…e93f5b" drop=1 dropfrom="33456c…5e6277" add=2 addfrom="38bb0a…b086f5"
+INFO [05-16|23:32:30.066] Imported new chain segment               blocks=1      txs=124      mgas=14.976 elapsed=931.294ms     mgasps=16.081  number=12448481 hash="38bb0a…b086f5" dirty=661.29MiB
+INFO [05-16|23:32:30.069] Unindexed transactions                   blocks=1      txs=0        tail=10098482 elapsed="423.801µs"
+INFO [05-16|23:32:31.572] Deep froze chain segment                 blocks=6      elapsed=103.170ms     number=12358481 hash="606142…e97dc0"
+INFO [05-16|23:32:35.330] Aborting state snapshot generation       root="e572a3…b78406" in="0c22cc…9dbfec" at="22c86f…e50e3e" accounts=6308703 slots=24034027 storage=2.10GiB    elapsed=35h22m45.009s eta=710h55m21.444s
+INFO [05-16|23:32:35.331] Resuming state snapshot generation       root="147e3f…6225fd" in="0c22cc…9dbfec" at="22c86f…e50e3e" accounts=6308703 slots=24034027 storage=2.10GiB    elapsed=35h22m45.010s eta=710h55m21.465s
+INFO [05-16|23:32:35.373] Imported new chain segment               blocks=1      txs=198      mgas=14.274 elapsed=530.678ms     mgasps=26.897  number=12448482 hash="ab04fb…7fb5cd" dirty=661.60MiB
+INFO [05-16|23:32:35.409] Unindexed transactions                   blocks=1      txs=75       tail=10098483 elapsed=20.135ms
+INFO [05-16|23:32:35.491] Aborting state snapshot generation       root="147e3f…6225fd" in="0c22cc…9dbfec" at="22edb5…50aa3a" accounts=6308703 slots=24034054 storage=2.10GiB    elapsed=35h22m45.170s eta=710h55m24.68s
+INFO [05-16|23:32:35.499] Resuming state snapshot generation       root="84a2be…fc5b3a" in="0c22cc…9dbfec" at="22edb5…50aa3a" accounts=6308703 slots=24034054 storage=2.10GiB    elapsed=35h22m45.178s eta=710h55m24.841s
+INFO [05-16|23:32:35.538] Imported new chain segment               blocks=1      txs=17       mgas=14.983 elapsed=156.683ms     mgasps=95.627  number=12448483 hash="07dc95…b7a4ad" dirty=660.40MiB
+INFO [05-16|23:32:35.540] Unindexed transactions                   blocks=1      txs=74       tail=10098484 elapsed=1.636ms
+INFO [05-16|23:32:36.967] Aborting state snapshot generation       root="84a2be…fc5b3a" in="0c22cc…9dbfec" at="251d48…5305e0" accounts=6308703 slots=24034350 storage=2.10GiB    elapsed=35h22m46.646s eta=710h55m54.339s
+INFO [05-16|23:32:36.971] Resuming state snapshot generation       root="9bfd85…ac91dc" in="0c22cc…9dbfec" at="251d48…5305e0" accounts=6308703 slots=24034350 storage=2.10GiB    elapsed=35h22m46.650s eta=710h55m54.419s
+INFO [05-16|23:32:36.992] Imported new chain segment               blocks=1      txs=139      mgas=12.307 elapsed=1.389s        mgasps=8.858   number=12448484 hash="d229a3…bbe6d8" dirty=660.25MiB
+INFO [05-16|23:32:37.009] Unindexed transactions                   blocks=1      txs=65       tail=10098485 elapsed=1.229ms
+INFO [05-16|23:32:41.166] Aborting state snapshot generation       root="9bfd85…ac91dc" in="0c22cc…9dbfec" at="2d148b…e8bec9" accounts=6308703 slots=24035337 storage=2.10GiB    elapsed=35h22m50.845s eta=710h57m18.715s
+INFO [05-16|23:32:41.183] Resuming state snapshot generation       root="1f194c…945f93" in="0c22cc…9dbfec" at="2d148b…e8bec9" accounts=6308703 slots=24035337 storage=2.10GiB    elapsed=35h22m50.862s eta=710h57m19.057s
+INFO [05-16|23:32:41.220] Imported new chain segment               blocks=1      txs=140      mgas=14.971 elapsed=334.147ms     mgasps=44.802  number=12448485 hash="0ce9d9…266d1e" dirty=659.86MiB
+INFO [05-16|23:32:41.223] Unindexed transactions                   blocks=1      txs=96       tail=10098486 elapsed=1.721ms
+INFO [05-16|23:32:56.323] Aborting state snapshot generation       root="1f194c…945f93" in="0c22cc…9dbfec" at="45596f…6e1716" accounts=6308703 slots=24038438 storage=2.10GiB    elapsed=35h23m6.002s  eta=711h2m23.286s
+INFO [05-16|23:32:56.353] Imported new chain segment               blocks=1      txs=258      mgas=14.766 elapsed=4.133s        mgasps=3.572   number=12448486 hash="924a6b…ce42fe" dirty=660.47MiB
+INFO [05-16|23:32:56.353] Resuming state snapshot generation       root="1fdabd…878b5b" in="0c22cc…9dbfec" at="45596f…6e1716" accounts=6308703 slots=24038438 storage=2.10GiB    elapsed=35h23m6.033s  eta=711h2m23.909s
+INFO [05-16|23:32:56.387] Unindexed transactions                   blocks=1      txs=122      tail=10098487 elapsed=6.997ms
+INFO [05-16|23:33:02.206] Aborting state snapshot generation       root="1fdabd…878b5b" in="0c22cc…9dbfec" at="49194d…659298" accounts=6308703 slots=24038905 storage=2.10GiB    elapsed=35h23m11.885s eta=711h4m21.501s
+INFO [05-16|23:33:02.239] Resuming state snapshot generation       root="f6b914…f1a97d" in="0c22cc…9dbfec" at="49194d…659298" accounts=6308703 slots=24038905 storage=2.10GiB    elapsed=35h23m11.918s eta=711h4m22.164s
+INFO [05-16|23:33:02.257] Imported new chain segment               blocks=1      txs=299      mgas=14.587 elapsed=2.824s        mgasps=5.165   number=12448487 hash="a99f08…56f89e" dirty=660.31MiB
+INFO [05-16|23:33:02.266] Unindexed transactions                   blocks=1      txs=104      tail=10098488 elapsed=3.454ms
+INFO [05-16|23:33:04.768] Aborting state snapshot generation       root="f6b914…f1a97d" in="0c22cc…9dbfec" at="4cd823…2601cc" accounts=6308703 slots=24039350 storage=2.10GiB    elapsed=35h23m14.447s eta=711h5m12.983s
+INFO [05-16|23:33:04.795] Resuming state snapshot generation       root="0ec1b3…718219" in="0c22cc…9dbfec" at="4cd823…2601cc" accounts=6308703 slots=24039350 storage=2.10GiB    elapsed=35h23m14.474s eta=711h5m13.526s
+INFO [05-16|23:33:04.805] Imported new chain segment               blocks=1      txs=259      mgas=14.884 elapsed=2.513s        mgasps=5.921   number=12448488 hash="9ebbf8…07bcc6" dirty=660.18MiB
+INFO [05-16|23:33:04.834] Unindexed transactions                   blocks=1      txs=127      tail=10098489 elapsed=29.120ms
+INFO [05-16|23:33:10.044] Aborting state snapshot generation       root="0ec1b3…718219" in="0c22cc…9dbfec" at="55a533…0af2a7" accounts=6308703 slots=24040427 storage=2.10GiB    elapsed=35h23m19.723s eta=711h6m59.001s
+INFO [05-16|23:33:10.046] Resuming state snapshot generation       root="297e9f…91620f" in="0c22cc…9dbfec" at="55a533…0af2a7" accounts=6308703 slots=24040427 storage=2.10GiB    elapsed=35h23m19.725s eta=711h6m59.041s
+INFO [05-16|23:33:10.070] Imported new chain segment               blocks=1      txs=222      mgas=14.541 elapsed=854.449ms     mgasps=17.018  number=12448489 hash="02767d…d40078" dirty=660.29MiB
+INFO [05-16|23:33:10.090] Unindexed transactions                   blocks=1      txs=80       tail=10098490 elapsed=3.423ms
+INFO [05-16|23:33:31.690] Deep froze chain segment                 blocks=8      elapsed=116.527ms     number=12358489 hash="e6acb4…6887c5"
+INFO [05-16|23:33:37.678] Aborting state snapshot generation       root="297e9f…91620f" in="0c22cc…9dbfec" at="80895c…78dbdb" accounts=6308703 slots=24045787 storage=2.10GiB    elapsed=35h23m47.357s eta=711h16m14.289s
+INFO [05-16|23:33:37.679] Resuming state snapshot generation       root="044790…949b22" in="0c22cc…9dbfec" at="80895c…78dbdb" accounts=6308703 slots=24045787 storage=2.10GiB    elapsed=35h23m47.358s eta=711h16m14.309s
+INFO [05-16|23:33:37.725] Imported new chain segment               blocks=1      txs=280      mgas=14.983 elapsed=1.737s        mgasps=8.624   number=12448490 hash="01b15e…938a76" dirty=660.67MiB
+INFO [05-16|23:33:37.736] Unindexed transactions                   blocks=1      txs=129      tail=10098491 elapsed=5.250ms
+INFO [05-16|23:33:39.545] Aborting state snapshot generation       root="044790…949b22" in="0c22cc…9dbfec" at="8305be…631337" accounts=6308703 slots=24046090 storage=2.10GiB    elapsed=35h23m49.224s eta=711h16m51.805s
+INFO [05-16|23:33:39.545] Resuming state snapshot generation       root="b2e3a6…e50b21" in="0c22cc…9dbfec" at="8305be…631337" accounts=6308703 slots=24046090 storage=2.10GiB    elapsed=35h23m49.224s eta=711h16m51.805s
+INFO [05-16|23:33:39.584] Imported new chain segment               blocks=1      txs=163      mgas=14.998 elapsed=1.531s        mgasps=9.794   number=12448491 hash="8e916e…67d911" dirty=660.66MiB
+INFO [05-16|23:33:39.590] Unindexed transactions                   blocks=1      txs=64       tail=10098492 elapsed=1.617ms
+INFO [05-16|23:34:14.136] Generating state snapshot                root="b2e3a6…e50b21" in="0c22cc…9dbfec" at="b9b116…774f35" accounts=6308703 slots=24052957 storage=2.10GiB    elapsed=35h24m23.816s eta=711h28m26.91s
+INFO [05-16|23:34:17.932] Aborting state snapshot generation       root="b2e3a6…e50b21" in="0c22cc…9dbfec" at="c003a9…1039ed" accounts=6308703 slots=24053753 storage=2.10GiB    elapsed=35h24m27.611s eta=711h29m43.169s
+INFO [05-16|23:34:17.941] Resuming state snapshot generation       root="14b034…643778" in="0c22cc…9dbfec" at="c003a9…1039ed" accounts=6308703 slots=24053753 storage=2.10GiB    elapsed=35h24m27.621s eta=711h29m43.369s
+INFO [05-16|23:34:17.970] Imported new chain segment               blocks=1      txs=228      mgas=15.000 elapsed=1.999s        mgasps=7.500   number=12448492 hash="75169d…d06645" dirty=660.89MiB
+INFO [05-16|23:34:17.989] Unindexed transactions                   blocks=1      txs=0        tail=10098493 elapsed=18.550ms
+INFO [05-16|23:34:27.395] Aborting state snapshot generation       root="14b034…643778" in="0c22cc…9dbfec" at="d02012…e69937" accounts=6308703 slots=24055808 storage=2.10GiB    elapsed=35h24m37.074s eta=711h32m53.322s
+INFO [05-16|23:34:27.422] Imported new chain segment               blocks=1      txs=339      mgas=14.983 elapsed=1.032s        mgasps=14.518  number=12448493 hash="39c192…8230f6" dirty=661.25MiB
+INFO [05-16|23:34:27.422] Resuming state snapshot generation       root="b58dd0…156cc1" in="0c22cc…9dbfec" at="d02012…e69937" accounts=6308703 slots=24055808 storage=2.10GiB    elapsed=35h24m37.101s eta=711h32m53.864s
+INFO [05-16|23:34:27.444] Unindexed transactions                   blocks=1      txs=201      tail=10098494 elapsed=11.224ms
+INFO [05-16|23:34:31.742] Deep froze chain segment                 blocks=4      elapsed=51.738ms      number=12358493 hash="4fd75c…a6a1e1"
+INFO [05-16|23:34:35.318] Aborting state snapshot generation       root="b58dd0…156cc1" in="0c22cc…9dbfec" at="dbfa48…124429" accounts=6308703 slots=24057264 storage=2.10GiB    elapsed=35h24m44.997s eta=711h35m32.529s
+INFO [05-16|23:34:35.334] Resuming state snapshot generation       root="242864…90b598" in="0c22cc…9dbfec" at="dbfa48…124429" accounts=6308703 slots=24057264 storage=2.10GiB    elapsed=35h24m45.013s eta=711h35m32.851s
+INFO [05-16|23:34:35.382] Imported new chain segment               blocks=1      txs=330      mgas=14.982 elapsed=1.617s        mgasps=9.261   number=12448494 hash="d683fd…10bd3b" dirty=661.24MiB
+INFO [05-16|23:34:35.402] Unindexed transactions                   blocks=1      txs=111      tail=10098495 elapsed=2.932ms
+INFO [05-16|23:34:41.523] Downloader queue stats                   receiptTasks=0 blockTasks=0    itemSize=49.78KiB  throttle=1317
+INFO [05-16|23:34:41.960] Aborting state snapshot generation       root="242864…90b598" in="0c22cc…9dbfec" at="df15c6…0b0585" accounts=6308703 slots=24057646 storage=2.10GiB    elapsed=35h24m51.640s eta=711h37m46.016s
+INFO [05-16|23:34:42.013] Imported new chain segment               blocks=1      txs=149      mgas=14.974 elapsed=4.567s        mgasps=3.279   number=12448495 hash="b6dd4e…1d02a3" dirty=661.19MiB
+INFO [05-16|23:34:42.034] Resuming state snapshot generation       root="f259ac…650e02" in="0c22cc…9dbfec" at="df15c6…0b0585" accounts=6308703 slots=24057646 storage=2.10GiB    elapsed=35h24m51.713s eta=711h37m47.483s
+INFO [05-16|23:34:42.086] Unindexed transactions                   blocks=1      txs=82       tail=10098496 elapsed=38.740ms
+INFO [05-16|23:34:42.093] Aborting state snapshot generation       root="f259ac…650e02" in="0c22cc…9dbfec" at="df1ba0…b8a973" accounts=6308703 slots=24057650 storage=2.10GiB    elapsed=35h24m51.772s eta=711h37m48.669s
+INFO [05-16|23:34:42.128] Imported new chain segment               blocks=1      txs=0        mgas=0.000  elapsed=105.479ms     mgasps=0.000   number=12448496 hash="32a86b…ef8512" dirty=659.50MiB
+INFO [05-16|23:34:42.162] Resuming state snapshot generation       root="0fc4bb…249eb7" in="0c22cc…9dbfec" at="df1ba0…b8a973" accounts=6308703 slots=24057650 storage=2.10GiB    elapsed=35h24m51.841s eta=711h37m50.055s
+INFO [05-16|23:34:42.216] Unindexed transactions                   blocks=1      txs=143      tail=10098497 elapsed=54.045ms
+INFO [05-16|23:34:46.192] Aborting state snapshot generation       root="0fc4bb…249eb7" in="0c22cc…9dbfec" at="e424de…7cbc9a" accounts=6308703 slots=24058254 storage=2.10GiB    elapsed=35h24m55.871s eta=711h39m11.036s
+INFO [05-16|23:34:46.199] Resuming state snapshot generation       root="ae385d…224fcf" in="0c22cc…9dbfec" at="e424de…7cbc9a" accounts=6308703 slots=24058254 storage=2.10GiB    elapsed=35h24m55.878s eta=711h39m11.177s
+INFO [05-16|23:34:46.226] Imported new chain segment               blocks=1      txs=146      mgas=14.980 elapsed=2.555s        mgasps=5.861   number=12448497 hash="51aa17…c604e1" dirty=659.82MiB
+INFO [05-16|23:34:46.254] Unindexed transactions                   blocks=1      txs=193      tail=10098498 elapsed=19.807ms
+INFO [05-16|23:34:46.258] Aborting state snapshot generation       root="ae385d…224fcf" in="0c22cc…9dbfec" at="e42c6b…7d82a4" accounts=6308703 slots=24058259 storage=2.10GiB    elapsed=35h24m55.937s eta=711h39m12.362s
+INFO [05-16|23:34:46.285] Imported new chain segment               blocks=1      txs=0        mgas=0.000  elapsed=50.900ms      mgasps=0.000   number=12448498 hash="be00bf…8643c3" dirty=658.07MiB
+INFO [05-16|23:34:46.285] Resuming state snapshot generation       root="f080b9…caf25e" in="0c22cc…9dbfec" at="e42c6b…7d82a4" accounts=6308703 slots=24058259 storage=2.10GiB    elapsed=35h24m55.964s eta=711h39m12.904s
+INFO [05-16|23:34:46.312] Unindexed transactions                   blocks=1      txs=149      tail=10098499 elapsed=7.853ms
+INFO [05-16|23:35:02.967] Generating state snapshot                root="f080b9…caf25e" at="0c22cc…9dbfec" accounts=6308703 slots=24061899 storage=2.10GiB    elapsed=35h25m12.646s eta=711h44m48.119s
+INFO [05-16|23:35:10.969] Generating state snapshot                root="f080b9…caf25e" at="0c237e…a79651" accounts=6310097 slots=24062258 storage=2.10GiB    elapsed=35h25m20.648s eta=711h37m25.192s
+INFO [05-16|23:35:18.972] Generating state snapshot                root="f080b9…caf25e" at="0c240a…f72cd3" accounts=6311170 slots=24062523 storage=2.10GiB    elapsed=35h25m28.651s eta=711h32m15.767s
+INFO [05-16|23:35:26.975] Generating state snapshot                root="f080b9…caf25e" at="0c248f…0b42e6" accounts=6312189 slots=24063420 storage=2.10GiB    elapsed=35h25m36.654s eta=711h27m26.631s
+INFO [05-16|23:35:31.809] Deep froze chain segment                 blocks=5      elapsed=65.900ms      number=12358498 hash="a11972…7ca911"
+INFO [05-16|23:35:37.708] Aborting state snapshot generation       root="f080b9…caf25e" in="0c253e…136cf5" at="c5912f…e7350e" accounts=6313594 slots=24064706 storage=2.10GiB    elapsed=35h25m47.387s eta=711h21m8.97s
+INFO [05-16|23:35:37.747] Resuming state snapshot generation       root="0029f3…05c5ea" in="0c253e…136cf5" at="c5912f…e7350e" accounts=6313594 slots=24064706 storage=2.10GiB    elapsed=35h25m47.427s eta=711h21m9.773s
+INFO [05-16|23:35:37.808] Imported new chain segment               blocks=1      txs=254      mgas=14.949 elapsed=2.192s        mgasps=6.818   number=12448499 hash="84ba8c…51ed2b" dirty=658.27MiB
+INFO [05-16|23:35:37.853] Unindexed transactions                   blocks=1      txs=233      tail=10098500 elapsed=44.167ms
+INFO [05-16|23:35:38.146] Imported new chain segment               blocks=1      txs=254      mgas=14.949 elapsed=336.385ms     mgasps=44.439  number=12448499 hash="a9de6a…4f75c5" dirty=658.30MiB
+INFO [05-16|23:35:40.184] Aborting state snapshot generation       root="0029f3…05c5ea" at="0c254b…359437" accounts=6313694 slots=24064995 storage=2.10GiB    elapsed=35h25m49.863s eta=711h21m15.174s
+INFO [05-16|23:35:40.212] Imported new chain segment               blocks=1      txs=228      mgas=14.933 elapsed=2.048s        mgasps=7.290   number=12448500 hash="cbe0d8…083022" dirty=658.69MiB
+INFO [05-16|23:35:40.212] Resuming state snapshot generation       root="c97710…e15388" at="0c254b…359437" accounts=6313694 slots=24064995 storage=2.10GiB    elapsed=35h25m49.891s eta=711h21m15.736s
+INFO [05-16|23:35:40.237] Unindexed transactions                   blocks=1      txs=91       tail=10098501 elapsed=10.779ms
+INFO [05-16|23:35:48.219] Generating state snapshot                root="c97710…e15388" at="0c25b4…1d3dff" accounts=6314509 slots=24065211 storage=2.10GiB    elapsed=35h25m57.899s eta=711h18m2.069s
+INFO [05-16|23:35:53.656] Aborting state snapshot generation       root="c97710…e15388" at="0c262d…0c5994" accounts=6315435 slots=24065372 storage=2.10GiB    elapsed=35h26m3.335s  eta=711h13m4.652s
+INFO [05-16|23:35:53.684] Resuming state snapshot generation       root="7e94f6…e94db7" at="0c262d…0c5994" accounts=6315435 slots=24065372 storage=2.10GiB    elapsed=35h26m3.363s  eta=711h13m5.214s
+INFO [05-16|23:35:53.703] Imported new chain segment               blocks=1      txs=226      mgas=14.954 elapsed=1.143s        mgasps=13.072  number=12448501 hash="51091d…d63fd0" dirty=658.80MiB
+INFO [05-16|23:35:53.730] Unindexed transactions                   blocks=1      txs=144      tail=10098502 elapsed=3.951ms
+INFO [05-16|23:35:59.951] Aborting state snapshot generation       root="7e94f6…e94db7" at="0c26cc…656563" accounts=6316676 slots=24065621 storage=2.10GiB    elapsed=35h26m9.630s  eta=711h6m11.851s
+INFO [05-16|23:35:59.990] Resuming state snapshot generation       root="0e4b36…f763f8" at="0c26cc…656563" accounts=6316676 slots=24065621 storage=2.10GiB    elapsed=35h26m9.669s  eta=711h6m12.634s
+INFO [05-16|23:35:59.992] Imported new chain segment               blocks=1      txs=181      mgas=14.681 elapsed=882.537ms     mgasps=16.635  number=12448502 hash="ba61f2…cc41a2" dirty=658.59MiB
+INFO [05-16|23:35:59.997] Unindexed transactions                   blocks=1      txs=71       tail=10098503 elapsed=4.113ms
+INFO [05-16|23:36:01.899] Aborting state snapshot generation       root="0e4b36…f763f8" at="0c26ec…8afca4" accounts=6316932 slots=24065731 storage=2.10GiB    elapsed=35h26m11.578s eta=711h5m3.808s
+INFO [05-16|23:36:01.900] Resuming state snapshot generation       root="6634e3…83bf87" at="0c26ec…8afca4" accounts=6316932 slots=24065731 storage=2.10GiB    elapsed=35h26m11.579s eta=711h5m3.828s
+INFO [05-16|23:36:01.925] Imported new chain segment               blocks=1      txs=147      mgas=14.949 elapsed=596.522ms     mgasps=25.059  number=12448503 hash="645887…d29fa8" dirty=658.80MiB
+INFO [05-16|23:36:01.929] Unindexed transactions                   blocks=1      txs=74       tail=10098504 elapsed="916.303µs"
+INFO [05-16|23:36:09.901] Generating state snapshot                root="6634e3…83bf87" at="0c2788…24fcc6" accounts=6318129 slots=24066362 storage=2.10GiB    elapsed=35h26m19.580s eta=710h58m56.912s
+INFO [05-16|23:36:17.918] Generating state snapshot                root="6634e3…83bf87" at="0c27fb…52574c" accounts=6319108 slots=24066611 storage=2.10GiB    elapsed=35h26m27.597s eta=710h55m10.715s
+INFO [05-16|23:36:25.926] Generating state snapshot                root="6634e3…83bf87" at="0c28ae…3a39a3" accounts=6320539 slots=24066904 storage=2.10GiB    elapsed=35h26m35.605s eta=710h47m48.332s
+INFO [05-16|23:36:31.880] Deep froze chain segment                 blocks=5      elapsed=69.913ms      number=12358503 hash="2a1925…bee329"
+INFO [05-16|23:36:33.959] Generating state snapshot                root="6634e3…83bf87" at="0c2981…75e718" accounts=6322178 slots=24067318 storage=2.10GiB    elapsed=35h26m43.638s eta=710h38m38.116s
+INFO [05-16|23:36:41.961] Generating state snapshot                root="6634e3…83bf87" at="0c29db…657bdc" accounts=6322883 slots=24068528 storage=2.10GiB    elapsed=35h26m51.641s eta=710h36m16.382s
+INFO [05-16|23:36:49.963] Generating state snapshot                root="6634e3…83bf87" at="0c2ab2…2f3df1" accounts=6324509 slots=24068934 storage=2.10GiB    elapsed=35h26m59.642s eta=710h26m49.801s
+INFO [05-16|23:36:51.327] Aborting state snapshot generation       root="6634e3…83bf87" at="0c2ad3…78e907" accounts=6324767 slots=24068993 storage=2.10GiB    elapsed=35h27m1.006s  eta=710h25m26.021s
+INFO [05-16|23:36:51.327] Resuming state snapshot generation       root="66048b…a84344" at="0c2ad3…78e907" accounts=6324767 slots=24068993 storage=2.10GiB    elapsed=35h27m1.006s  eta=710h25m26.021s
+INFO [05-16|23:36:51.352] Imported new chain segment               blocks=1      txs=278      mgas=14.934 elapsed=2.102s        mgasps=7.103   number=12448504 hash="d4ca7b…a35059" dirty=658.57MiB
+INFO [05-16|23:36:51.375] Unindexed transactions                   blocks=1      txs=194      tail=10098505 elapsed=8.651ms
+INFO [05-16|23:36:59.213] Aborting state snapshot generation       root="66048b…a84344" at="0c2b71…dbf83b" accounts=6326029 slots=24069229 storage=2.10GiB    elapsed=35h27m8.892s  eta=710h19m12.389s
+INFO [05-16|23:36:59.226] Resuming state snapshot generation       root="7f54d1…e84659" at="0c2b71…dbf83b" accounts=6326029 slots=24069229 storage=2.10GiB    elapsed=35h27m8.905s  eta=710h19m12.649s
+INFO [05-16|23:36:59.362] Imported new chain segment               blocks=1      txs=235      mgas=14.937 elapsed=2.008s        mgasps=7.437   number=12448505 hash="7de265…5e8684" dirty=658.84MiB
+INFO [05-16|23:36:59.510] Unindexed transactions                   blocks=1      txs=202      tail=10098506 elapsed=60.455ms
+INFO [05-16|23:37:07.075] Aborting state snapshot generation       root="7f54d1…e84659" at="0c2bb2…7cc411" accounts=6326522 slots=24069342 storage=2.10GiB    elapsed=35h27m16.754s eta=710h18m13.675s
+INFO [05-16|23:37:07.111] Resuming state snapshot generation       root="4848b3…484ca2" at="0c2bb2…7cc411" accounts=6326522 slots=24069342 storage=2.10GiB    elapsed=35h27m16.790s eta=710h18m14.396s
+INFO [05-16|23:37:07.132] Imported new chain segment               blocks=1      txs=195      mgas=14.927 elapsed=1.213s        mgasps=12.298  number=12448506 hash="868188…fe9f73" dirty=658.81MiB
+INFO [05-16|23:37:07.136] Unindexed transactions                   blocks=1      txs=115      tail=10098507 elapsed=2.136ms

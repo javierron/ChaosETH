@@ -1,0 +1,16 @@
+The futex facility returned an unexpected error code.2021-05-17 01:17:38 UTC Starting OpenEthereum/v3.2.4-stable-09967329a-20210415/x86_64-linux-gnu/rustc1.51.0
+2021-05-17 01:17:38 UTC Keys path /data/blockchain/eth-data/keys/ethereum
+2021-05-17 01:17:38 UTC DB path /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d
+2021-05-17 01:17:38 UTC State DB configuration: fast
+2021-05-17 01:17:38 UTC Operating mode: active
+2021-05-17 01:17:39 UTC Configured for Ethereum using Ethash engine
+2021-05-17 01:17:40 UTC Listening for new connections on 127.0.0.1:8546.
+2021-05-17 01:17:40 UTC Removed existing file '/data/blockchain/eth-data/jsonrpc.ipc'.
+2021-05-17 01:17:40 UTC Updated conversion rate to Ξ1 = US$3423.12 (1391100.6 wei/gas)
+2021-05-17 01:17:45 UTC Public node URL: enode://d440dace1e4954e36e7f85d5d1d26fe17040f4a0b325f3c59c55bc5fae4b9e0ca4f81baef14bd09bdb9dbdcaf516f204a0194e43c6e3aae03b7ab23339ce6d4b@10.0.0.5:30303
+2021-05-17 01:17:50 UTC Syncing #12448942 0x88ea…f41f     0.10 blk/s   20.3 tx/s    1.4 Mgas/s      0+    5 Qed LI:#12448948   21/25 peers    140 KiB chain  877 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-17 01:17:55 UTC Syncing #12448943 0x28f4…14d5     0.20 blk/s   49.8 tx/s    3.0 Mgas/s      0+    4 Qed LI:#12448948   21/25 peers    456 KiB chain  695 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-17 01:18:00 UTC Syncing #12448943 0x28f4…14d5     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    4 Qed LI:#12448948   23/25 peers    456 KiB chain  695 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-17 01:18:18 UTC Imported #12448948 0x3f53…43e3 (273 txs, 14.98 Mgas, 4847 ms, 70.15 KiB)
+2021-05-17 01:18:36 UTC  25/25 peers    526 KiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-17 01:18:44 UTC Imported #12448949 0xf652…9160 (239 txs, 14.98 Mgas, 4088 ms, 82.92 KiB)

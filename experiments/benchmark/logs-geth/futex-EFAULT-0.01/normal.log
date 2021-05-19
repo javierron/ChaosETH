@@ -1,0 +1,37 @@
+INFO [05-17|01:49:54.104] Opened ancient database                  database=/data/eth-data/geth/chaindata/ancient readonly=false
+INFO [05-17|01:49:54.106] Initialised chain configuration          config="{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: 7280000 Petersburg: 7280000 Istanbul: 9069000, Muir Glacier: 9200000, Berlin: 12244000, YOLO v3: <nil>, Engine: ethash}"
+INFO [05-17|01:49:54.513] Disk storage enabled for ethash caches   dir=/data/eth-data/geth/ethash count=3
+INFO [05-17|01:49:54.513] Disk storage enabled for ethash DAGs     dir=/home/longz/.ethash        count=2
+INFO [05-17|01:49:54.513] Initialising Ethereum protocol           network=1 dbversion=8
+INFO [05-17|01:49:55.134] Loaded most recent local header          number=12449074 hash="d7872e…6f4386" td=24807749253399760873930 age=3m22s
+INFO [05-17|01:49:55.134] Loaded most recent local full block      number=12448553 hash="404c96…41052e" td=24803547503099260713353 age=2h1m37s
+INFO [05-17|01:49:55.134] Loaded most recent local fast block      number=12449074 hash="d7872e…6f4386" td=24807749253399760873930 age=3m22s
+INFO [05-17|01:49:55.134] Loaded last fast-sync pivot marker       number=12435443
+WARN [05-17|01:49:55.134] Head state missing, repairing            number=12448553 hash="404c96…41052e" snaproot="57b116…8baed6"
+INFO [05-17|01:50:51.820] Loaded most recent local header          number=12449074 hash="d7872e…6f4386" td=24807749253399760873930 age=4m18s
+INFO [05-17|01:50:51.820] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo2w
+INFO [05-17|01:50:51.820] Loaded most recent local fast block      number=12448553 hash="404c96…41052e" td=24803547503099260713353 age=2h2m33s
+INFO [05-17|01:50:51.820] Loaded last fast-sync pivot marker       number=12435443
+WARN [05-17|01:50:51.820] Enabling snapshot recovery               chainhead=0 diskbase=12449066
+WARN [05-17|01:50:51.821] Loaded snapshot journal                  diskroot="57b116…8baed6" diffs=missing
+WARN [05-17|01:50:51.821] Snapshot is not continuous with chain    snaproot="57b116…8baed6" chainroot="d7f897…0f0544"
+INFO [05-17|01:50:51.821] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-17|01:50:51.821] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [05-17|01:50:51.849] Trie missing, state snapshotting paused  root="57b116…8baed6" in="0d144b…a27e36" at="7a52a6…5c9720" accounts=6799005 slots=25242189 storage=2.21GiB elapsed=28.387ms
+INFO [05-17|01:50:51.849] Allocated fast sync bloom                size=1.29GiB
+WARN [05-17|01:50:51.947] Unclean shutdown detected                booted=2021-05-06T21:38:45+0000 age=1w3d4h
+WARN [05-17|01:50:51.947] Unclean shutdown detected                booted=2021-05-09T13:19:12+0000 age=1w12h31m
+WARN [05-17|01:50:51.947] Unclean shutdown detected                booted=2021-05-09T14:47:12+0000 age=1w11h3m
+WARN [05-17|01:50:51.947] Unclean shutdown detected                booted=2021-05-09T14:48:41+0000 age=1w11h2m
+WARN [05-17|01:50:51.947] Unclean shutdown detected                booted=2021-05-11T21:47:04+0000 age=5d4h3m
+WARN [05-17|01:50:51.947] Unclean shutdown detected                booted=2021-05-11T22:03:29+0000 age=5d3h47m
+WARN [05-17|01:50:51.947] Unclean shutdown detected                booted=2021-05-11T22:12:41+0000 age=5d3h38m
+WARN [05-17|01:50:51.947] Unclean shutdown detected                booted=2021-05-11T22:50:38+0000 age=5d3h13s
+WARN [05-17|01:50:51.948] Unclean shutdown detected                booted=2021-05-17T01:48:10+0000 age=2m41s
+INFO [05-17|01:50:51.948] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
+INFO [05-17|01:50:52.072] New local node record                    seq=21 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-17|01:50:52.094] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
+INFO [05-17|01:50:52.116] IPC endpoint opened                      url=/data/eth-data/geth.ipc
+INFO [05-17|01:50:56.932] New local node record                    seq=22 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-17|01:50:57.142] New local node record                    seq=23 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
+INFO [05-17|01:50:59.892] Initializing state bloom                 items=1911261 errorrate=0.000 elapsed=8.000s

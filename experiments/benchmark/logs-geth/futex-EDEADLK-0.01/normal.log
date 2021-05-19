@@ -1,0 +1,54 @@
+created by github.com/ethereum/go-ethereum/eth/protocols/eth.NewPeer
+	github.com/ethereum/go-ethereum/eth/protocols/eth/peer.go:112 +0x40b
+INFO [05-17|01:47:45.339] Starting Geth on Ethereum mainnet... 
+INFO [05-17|01:47:45.339] Bumping default cache on mainnet         provided=1024 updated=4096
+INFO [05-17|01:47:45.342] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [05-17|01:47:45.343] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+WARN [05-17|01:47:45.350] Sanitizing cache to Go's GC limits       provided=4096 updated=2654
+INFO [05-17|01:47:45.355] Set global gas cap                       cap=25000000
+INFO [05-17|01:47:45.355] Allocated trie memory caches             clean=398.00MiB dirty=663.00MiB
+INFO [05-17|01:47:45.356] Allocated cache and file handles         database=/data/eth-data/geth/chaindata cache=1.29GiB handles=524288
+INFO [05-17|01:47:56.719] Opened ancient database                  database=/data/eth-data/geth/chaindata/ancient readonly=false
+INFO [05-17|01:47:57.001] Initialised chain configuration          config="{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: 7280000 Petersburg: 7280000 Istanbul: 9069000, Muir Glacier: 9200000, Berlin: 12244000, YOLO v3: <nil>, Engine: ethash}"
+INFO [05-17|01:47:57.071] Deep froze chain segment                 blocks=7 elapsed=131.318ms number=12359074 hash="7b32f3…6b9500"
+INFO [05-17|01:47:57.926] Disk storage enabled for ethash caches   dir=/data/eth-data/geth/ethash count=3
+INFO [05-17|01:47:57.926] Disk storage enabled for ethash DAGs     dir=/home/longz/.ethash        count=2
+INFO [05-17|01:47:57.936] Initialising Ethereum protocol           network=1 dbversion=8
+INFO [05-17|01:48:08.103] Loaded most recent local header          number=12449074 hash="d7872e…6f4386" td=24807749253399760873930 age=1m35s
+INFO [05-17|01:48:08.103] Loaded most recent local full block      number=12449074 hash="d7872e…6f4386" td=24807749253399760873930 age=1m35s
+INFO [05-17|01:48:08.103] Loaded most recent local fast block      number=12449074 hash="d7872e…6f4386" td=24807749253399760873930 age=1m35s
+INFO [05-17|01:48:08.109] Loaded last fast-sync pivot marker       number=12435443
+WARN [05-17|01:48:08.111] Head state missing, repairing            number=12449074 hash="d7872e…6f4386" snaproot="57b116…8baed6"
+INFO [05-17|01:48:10.434] Loaded most recent local header          number=12449074 hash="d7872e…6f4386" td=24807749253399760873930 age=1m37s
+INFO [05-17|01:48:10.434] Loaded most recent local full block      number=12448545 hash="4d276e…ac2ff2" td=24803482672331464290536 age=2h2m9s
+INFO [05-17|01:48:10.434] Loaded most recent local fast block      number=12449074 hash="d7872e…6f4386" td=24807749253399760873930 age=1m37s
+INFO [05-17|01:48:10.434] Loaded last fast-sync pivot marker       number=12435443
+WARN [05-17|01:48:10.447] Enabling snapshot recovery               chainhead=12448545 diskbase=12449066
+WARN [05-17|01:48:10.455] Loaded snapshot journal                  diskroot="57b116…8baed6" diffs=missing
+WARN [05-17|01:48:10.456] Snapshot is not continuous with chain    snaproot="57b116…8baed6" chainroot="dc967d…352815"
+INFO [05-17|01:48:10.456] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-17|01:48:10.456] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [05-17|01:48:10.456] Switch sync mode from fast sync to full sync 
+INFO [05-17|01:48:10.459] Trie missing, state snapshotting paused  root="57b116…8baed6" in="0d144b…a27e36" at="7a52a6…5c9720" accounts=6799005 slots=25242189 storage=2.21GiB elapsed=3.115ms
+WARN [05-17|01:48:10.459] Unclean shutdown detected                booted=2021-05-06T21:38:45+0000 age=1w3d4h
+WARN [05-17|01:48:10.459] Unclean shutdown detected                booted=2021-05-09T13:19:12+0000 age=1w12h28m
+WARN [05-17|01:48:10.459] Unclean shutdown detected                booted=2021-05-09T14:47:12+0000 age=1w11h58s
+WARN [05-17|01:48:10.459] Unclean shutdown detected                booted=2021-05-09T14:48:41+0000 age=1w10h59m
+WARN [05-17|01:48:10.459] Unclean shutdown detected                booted=2021-05-11T21:47:04+0000 age=5d4h1m
+WARN [05-17|01:48:10.460] Unclean shutdown detected                booted=2021-05-11T22:03:29+0000 age=5d3h44m
+WARN [05-17|01:48:10.460] Unclean shutdown detected                booted=2021-05-11T22:12:41+0000 age=5d3h35m
+WARN [05-17|01:48:10.460] Unclean shutdown detected                booted=2021-05-11T22:50:38+0000 age=5d2h57m
+INFO [05-17|01:48:10.460] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
+INFO [05-17|01:48:10.658] New local node record                    seq=19 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-17|01:48:10.663] IPC endpoint opened                      url=/data/eth-data/geth.ipc
+INFO [05-17|01:48:10.701] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
+INFO [05-17|01:48:16.628] New local node record                    seq=20 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
+INFO [05-17|01:48:20.702] Block synchronisation started 
+INFO [05-17|01:48:20.702] Looking for peers                        peercount=1 tried=3 static=0
+INFO [05-17|01:48:21.663] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=11.20KiB throttle=5854
+INFO [05-17|01:48:22.583] Importing sidechain segment              start=12448546 end=12449065
+INFO [05-17|01:48:30.705] Looking for peers                        peercount=1 tried=4 static=0
+INFO [05-17|01:48:34.558] Imported new chain segment               blocks=2 txs=377 mgas=29.785 elapsed=11.973s   mgasps=2.488 number=12448547 hash="9afe20…d48d9e" age=2h2m19s  dirty=3.50MiB
+INFO [05-17|01:48:40.706] Looking for peers                        peercount=2 tried=4 static=0
+INFO [05-17|01:48:46.455] Imported new chain segment               blocks=3 txs=683 mgas=44.946 elapsed=11.896s   mgasps=3.778 number=12448550 hash="cdc1c3…390eab" age=2h2m9s   dirty=9.19MiB
+INFO [05-17|01:48:50.709] Looking for peers                        peercount=2 tried=4 static=0

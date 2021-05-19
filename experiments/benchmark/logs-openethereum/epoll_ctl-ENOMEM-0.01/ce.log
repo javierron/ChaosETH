@@ -1,0 +1,53 @@
+2021-05-16 22:07:53 UTC State DB configuration: fast
+2021-05-16 22:07:53 UTC Operating mode: active
+2021-05-16 22:07:53 UTC Configured for Ethereum using Ethash engine
+2021-05-16 22:07:54 UTC Listening for new connections on 127.0.0.1:8546.
+2021-05-16 22:07:55 UTC Updated conversion rate to Ξ1 = US$3517.66 (1353713.8 wei/gas)
+2021-05-16 22:08:00 UTC Public node URL: enode://d440dace1e4954e36e7f85d5d1d26fe17040f4a0b325f3c59c55bc5fae4b9e0ca4f81baef14bd09bdb9dbdcaf516f204a0194e43c6e3aae03b7ab23339ce6d4b@10.0.0.5:30303
+2021-05-16 22:08:25 UTC  21/25 peers    147 KiB chain  396 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-16 22:08:37 UTC Imported #12448094 0xef27…956c (168 txs, 14.98 Mgas, 4977 ms, 52.15 KiB)
+2021-05-16 22:08:55 UTC  22/25 peers    358 KiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-05-16 22:09:00 UTC Imported #12448095 0x86c0…ecf4 (265 txs, 14.96 Mgas, 5889 ms, 67.27 KiB)
+2021-05-16 22:09:07 UTC Panic occured, see stderr for details
+
+
+====================
+
+stack backtrace:
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:595
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:497
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/sys_common/backtrace.rs:141
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:493
+   5: core::panicking::panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/core/src/panicking.rs:92
+   6: core::option::expect_none_failed
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/core/src/option.rs:1300
+   7: <ethcore_network_devp2p::host::Host as ethcore_io::IoHandler<ethcore_network::NetworkIoMessage>>::update_stream
+   8: mio::deprecated::event_loop::EventLoop<H>::run
+   9: std::sys_common::backtrace::__rust_begin_short_backtrace
+  10: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  11: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/sys/unix/thread.rs:71
+  12: start_thread
+  13: __clone
+
+
+Thread '<unnamed>' panicked at 'Error reregistering UDP socket: Os { code: 12, kind: Other, message: "Cannot allocate memory" }', crates/net/network-devp2p/src/host.rs:1425
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-05-16 22:09:07 UTC Finishing work, please wait...
+2021-05-16 22:09:30 UTC Error on IO service shutdown: NotifyError::Closed(..)
+Error: 1

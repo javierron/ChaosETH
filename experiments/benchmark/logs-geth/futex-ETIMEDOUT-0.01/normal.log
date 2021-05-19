@@ -1,0 +1,56 @@
+INFO [05-17|02:16:58.417] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+WARN [05-17|02:16:58.420] Sanitizing cache to Go's GC limits       provided=4096 updated=2654
+INFO [05-17|02:16:58.421] Set global gas cap                       cap=25000000
+INFO [05-17|02:16:58.422] Allocated trie memory caches             clean=398.00MiB dirty=663.00MiB
+INFO [05-17|02:16:58.422] Allocated cache and file handles         database=/data/eth-data/geth/chaindata cache=1.29GiB handles=524288
+INFO [05-17|02:17:03.471] Opened ancient database                  database=/data/eth-data/geth/chaindata/ancient readonly=false
+INFO [05-17|02:17:03.496] Initialised chain configuration          config="{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: 7280000 Petersburg: 7280000 Istanbul: 9069000, Muir Glacier: 9200000, Berlin: 12244000, YOLO v3: <nil>, Engine: ethash}"
+INFO [05-17|02:17:04.156] Disk storage enabled for ethash caches   dir=/data/eth-data/geth/ethash count=3
+INFO [05-17|02:17:04.156] Disk storage enabled for ethash DAGs     dir=/home/longz/.ethash        count=2
+INFO [05-17|02:17:04.158] Initialising Ethereum protocol           network=1 dbversion=8
+INFO [05-17|02:17:11.151] Loaded most recent local header          number=12449191 hash="15e0e7…7ac13f" td=24808690613043935886034 age=2m22s
+INFO [05-17|02:17:11.151] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo2w
+INFO [05-17|02:17:11.151] Loaded most recent local fast block      number=12449115 hash="f9bbd7…76ddc7" td=24808079323819939415077 age=20m49s
+INFO [05-17|02:17:11.152] Loaded last fast-sync pivot marker       number=12449116
+WARN [05-17|02:17:11.154] Enabling snapshot recovery               chainhead=0 diskbase=12449066
+WARN [05-17|02:17:11.156] Loaded snapshot journal                  diskroot="57b116…8baed6" diffs=missing
+WARN [05-17|02:17:11.157] Snapshot is not continuous with chain    snaproot="57b116…8baed6" chainroot="d7f897…0f0544"
+INFO [05-17|02:17:11.157] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-17|02:17:11.157] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [05-17|02:17:11.182] Allocated fast sync bloom                size=1.29GiB
+INFO [05-17|02:17:11.198] Trie missing, state snapshotting paused  root="57b116…8baed6" in="0d144b…a27e36" at="7a52a6…5c9720" accounts=6799005 slots=25242189 storage=2.21GiB elapsed=41.074ms
+WARN [05-17|02:17:11.209] Old unclean shutdowns found              count=4
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-11T21:47:04+0000 age=5d4h30m
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-11T22:03:29+0000 age=5d4h13m
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-11T22:12:41+0000 age=5d4h4m
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-11T22:50:38+0000 age=5d3h26m
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-17T01:48:10+0000 age=29m1s
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-17T01:50:51+0000 age=26m20s
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-17T01:52:08+0000 age=25m3s
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-17T01:54:16+0000 age=22m55s
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-17T01:56:25+0000 age=20m46s
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-17T01:58:33+0000 age=18m38s
+WARN [05-17|02:17:11.209] Unclean shutdown detected                booted=2021-05-17T02:07:51+0000 age=9m20s
+INFO [05-17|02:17:11.209] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
+INFO [05-17|02:17:11.322] New local node record                    seq=34 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-17|02:17:11.325] IPC endpoint opened                      url=/data/eth-data/geth.ipc
+INFO [05-17|02:17:11.341] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
+INFO [05-17|02:17:19.197] Initializing state bloom                 items=2755618 errorrate=0.000 elapsed=8.000s
+INFO [05-17|02:17:21.081] New local node record                    seq=35 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
+INFO [05-17|02:17:21.343] Looking for peers                        peercount=2 tried=3 static=0
+INFO [05-17|02:17:21.343] Block synchronisation started 
+INFO [05-17|02:17:21.858] Disabling direct-ancient mode            origin=12449115 ancient=12359074
+INFO [05-17|02:17:22.580] Imported new block headers               count=9 elapsed=653.155ms number=12449200 hash="a1f82b…f0f45a" ignored=76
+INFO [05-17|02:17:24.434] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=277.21KiB throttle=237
+INFO [05-17|02:17:24.543] Imported new block receipts              count=22 elapsed=108.724ms number=12449137 hash="701856…3b7dc4" age=16m35s   size=2.41MiB
+INFO [05-17|02:17:27.197] Initializing state bloom                 items=5892140 errorrate=0.000 elapsed=16.000s
+INFO [05-17|02:17:31.345] Looking for peers                        peercount=3 tried=4 static=0
+INFO [05-17|02:17:35.197] Initializing state bloom                 items=9184678 errorrate=0.000 elapsed=24.000s
+INFO [05-17|02:17:41.348] Looking for peers                        peercount=4 tried=4 static=0
+INFO [05-17|02:17:43.197] Initializing state bloom                 items=12983577 errorrate=0.000 elapsed=32.000s
+WARN [05-17|02:17:43.496] Dropping unsynced node during sync       id=542edbadfff003de conn=inbound addr=182.140.240.50:1799 type=OpenEthereum/v3.2.5-...
+INFO [05-17|02:17:51.198] Initializing state bloom                 items=17008262 errorrate=0.000 elapsed=40.001s
+INFO [05-17|02:17:51.356] Looking for peers                        peercount=5 tried=3 static=0
+INFO [05-17|02:17:59.201] Initializing state bloom                 items=20409689 errorrate=0.000 elapsed=48.004s
+WARN [05-17|02:18:00.815] Dropping unsynced node during sync       id=486e27127e92d00f conn=inbound addr=113.104.250.211:6432 type=OpenEthereum/v3.2.4-...
+INFO [05-17|02:18:01.422] Looking for peers                        peercount=4 tried=5 static=0

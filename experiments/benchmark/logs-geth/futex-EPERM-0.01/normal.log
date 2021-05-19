@@ -1,0 +1,59 @@
+INFO [05-17|02:07:42.533] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+WARN [05-17|02:07:42.538] Sanitizing cache to Go's GC limits       provided=4096 updated=2654
+INFO [05-17|02:07:42.540] Set global gas cap                       cap=25000000
+INFO [05-17|02:07:42.543] Allocated trie memory caches             clean=398.00MiB dirty=663.00MiB
+INFO [05-17|02:07:42.544] Allocated cache and file handles         database=/data/eth-data/geth/chaindata cache=1.29GiB handles=524288
+INFO [05-17|02:07:45.538] Opened ancient database                  database=/data/eth-data/geth/chaindata/ancient readonly=false
+INFO [05-17|02:07:45.555] Initialised chain configuration          config="{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: 7280000 Petersburg: 7280000 Istanbul: 9069000, Muir Glacier: 9200000, Berlin: 12244000, YOLO v3: <nil>, Engine: ethash}"
+INFO [05-17|02:07:46.019] Disk storage enabled for ethash caches   dir=/data/eth-data/geth/ethash count=3
+INFO [05-17|02:07:46.020] Disk storage enabled for ethash DAGs     dir=/home/longz/.ethash        count=2
+INFO [05-17|02:07:46.024] Initialising Ethereum protocol           network=1 dbversion=8
+INFO [05-17|02:07:50.494] Loaded most recent local header          number=12449154 hash="e2530d…d6c616" td=24808393531116809884955 age=2m
+INFO [05-17|02:07:50.495] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo2w
+INFO [05-17|02:07:50.495] Loaded most recent local fast block      number=12449073 hash="d24a67…d631d7" td=24807741194229848038321 age=21m25s
+INFO [05-17|02:07:50.495] Loaded last fast-sync pivot marker       number=12449074
+WARN [05-17|02:07:50.499] Enabling snapshot recovery               chainhead=0 diskbase=12449066
+WARN [05-17|02:07:50.501] Loaded snapshot journal                  diskroot="57b116…8baed6" diffs=missing
+WARN [05-17|02:07:50.501] Snapshot is not continuous with chain    snaproot="57b116…8baed6" chainroot="d7f897…0f0544"
+INFO [05-17|02:07:50.501] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-17|02:07:50.501] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [05-17|02:07:50.505] Trie missing, state snapshotting paused  root="57b116…8baed6" in="0d144b…a27e36" at="7a52a6…5c9720" accounts=6799005 slots=25242189 storage=2.21GiB elapsed=4.354ms
+INFO [05-17|02:07:51.118] Allocated fast sync bloom                size=1.29GiB
+WARN [05-17|02:07:51.136] Old unclean shutdowns found              count=3
+WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-09T14:48:41+0000 age=1w11h19m
+WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-11T21:47:04+0000 age=5d4h20m
+WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-11T22:03:29+0000 age=5d4h4m
+WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-11T22:12:41+0000 age=5d3h55m
+WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-11T22:50:38+0000 age=5d3h17m
+WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:48:10+0000 age=19m41s
+WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:50:51+0000 age=17m
+WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:52:08+0000 age=15m43s
+WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:54:16+0000 age=13m35s
+WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:56:25+0000 age=11m26s
+WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:58:33+0000 age=9m18s
+INFO [05-17|02:07:51.137] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
+INFO [05-17|02:07:51.226] New local node record                    seq=32 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-17|02:07:51.229] IPC endpoint opened                      url=/data/eth-data/geth.ipc
+INFO [05-17|02:07:51.245] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
+INFO [05-17|02:07:59.120] Initializing state bloom                 items=5558723 errorrate=0.000 elapsed=8.001s
+INFO [05-17|02:08:00.395] New local node record                    seq=33 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
+INFO [05-17|02:08:01.248] Looking for peers                        peercount=2 tried=3 static=0
+INFO [05-17|02:08:01.251] Block synchronisation started 
+INFO [05-17|02:08:03.034] Disabling direct-ancient mode            origin=12449073 ancient=12359074
+INFO [05-17|02:08:03.857] Imported new block headers               count=4 elapsed=512.317ms number=12449158 hash="f8fe66…c830c1" ignored=81
+INFO [05-17|02:08:04.137] Downloader queue stats                   receiptTasks=2 blockTasks=0 itemSize=93.95KiB throttle=698
+INFO [05-17|02:08:04.152] Imported new block receipts              count=4 elapsed=14.268ms  number=12449077 hash="e5924f…af63c9" age=20m22s   size=506.95KiB
+INFO [05-17|02:08:04.766] Imported new block receipts              count=18 elapsed=76.260ms  number=12449095 hash="517e4a…639a64" age=16m51s   size=2.17MiB
+INFO [05-17|02:08:07.120] Initializing state bloom                 items=10554984 errorrate=0.000 elapsed=16.001s
+INFO [05-17|02:08:09.683] Imported new block headers               count=1  elapsed=7.575ms   number=12449159 hash="1453cb…010c01"
+INFO [05-17|02:08:11.250] Looking for peers                        peercount=2 tried=4 static=0
+INFO [05-17|02:08:15.121] Initializing state bloom                 items=16124415 errorrate=0.000 elapsed=24.002s
+INFO [05-17|02:08:21.252] Looking for peers                        peercount=2 tried=4 static=0
+INFO [05-17|02:08:23.122] Initializing state bloom                 items=21762832 errorrate=0.000 elapsed=32.003s
+INFO [05-17|02:08:27.207] Imported new block headers               count=3  elapsed=20.852ms  number=12449162 hash="3a7c7c…77920f"
+INFO [05-17|02:08:31.122] Initializing state bloom                 items=27300145 errorrate=0.000 elapsed=40.003s
+INFO [05-17|02:08:31.254] Looking for peers                        peercount=3 tried=2 static=0
+INFO [05-17|02:08:39.123] Initializing state bloom                 items=32795069 errorrate=0.000 elapsed=48.004s
+INFO [05-17|02:08:40.277] Imported new block headers               count=1  elapsed=11.986ms  number=12449163 hash="5edbb7…fd29e2"
+INFO [05-17|02:08:41.299] Looking for peers                        peercount=3 tried=7 static=0
+INFO [05-17|02:08:47.125] Initializing state bloom                 items=38318846 errorrate=0.000 elapsed=56.006s

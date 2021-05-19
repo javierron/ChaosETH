@@ -1,0 +1,35 @@
+WARN [05-17|01:58:33.100] Unclean shutdown detected                booted=2021-05-11T22:50:38+0000 age=5d3h7m
+WARN [05-17|01:58:33.100] Unclean shutdown detected                booted=2021-05-17T01:48:10+0000 age=10m23s
+WARN [05-17|01:58:33.100] Unclean shutdown detected                booted=2021-05-17T01:50:51+0000 age=7m42s
+WARN [05-17|01:58:33.100] Unclean shutdown detected                booted=2021-05-17T01:52:08+0000 age=6m25s
+WARN [05-17|01:58:33.100] Unclean shutdown detected                booted=2021-05-17T01:54:16+0000 age=4m17s
+WARN [05-17|01:58:33.100] Unclean shutdown detected                booted=2021-05-17T01:56:25+0000 age=2m8s
+INFO [05-17|01:58:33.100] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
+INFO [05-17|01:58:33.218] New local node record                    seq=30 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-17|01:58:33.220] IPC endpoint opened                      url=/data/eth-data/geth.ipc
+INFO [05-17|01:58:33.235] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
+ERROR[05-17|01:58:33.757] Snapshot extension registration failed   peer=3e409f66 err="peer connected on snap without compatible eth support"
+INFO [05-17|01:58:40.068] New local node record                    seq=31 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
+INFO [05-17|01:58:41.078] Initializing state bloom                 items=4999676 errorrate=0.000 elapsed=8.000s
+INFO [05-17|01:58:43.248] Looking for peers                        peercount=0 tried=3 static=0
+INFO [05-17|01:58:45.320] Block synchronisation started 
+INFO [05-17|01:58:46.392] Disabling direct-ancient mode            origin=12449050 ancient=12359074
+INFO [05-17|01:58:47.195] Imported new block headers               count=0 elapsed=445.484ms number=12449113 hash="cd6c5a…be0acf" age=2m31s    ignored=63
+INFO [05-17|01:58:47.579] Downloader queue stats                   receiptTasks=50 blockTasks=39 itemSize=47.53KiB throttle=1379
+INFO [05-17|01:58:49.078] Initializing state bloom                 items=10101277 errorrate=0.000 elapsed=16.000s
+INFO [05-17|01:58:53.262] Looking for peers                        peercount=1 tried=4 static=0
+INFO [05-17|01:58:53.262] Imported new block headers               count=0 elapsed=7.216ms   number=12449114 hash="24a9af…c8e2af" age=2m35s    ignored=1
+INFO [05-17|01:58:57.078] Initializing state bloom                 items=15754733 errorrate=0.000 elapsed=24.000s
+WARN [05-17|01:59:00.681] Dropping unsynced node during sync       id=3fcd85dbbe078cef conn=inbound addr=63.34.178.85:38486 type=OpenEthereum/v3.2.4-...
+INFO [05-17|01:59:02.932] Imported new block headers               count=0 elapsed=7.515ms   number=12449115 hash="f9bbd7…76ddc7" age=2m40s    ignored=1
+INFO [05-17|01:59:03.272] Looking for peers                        peercount=2 tried=4 static=0
+INFO [05-17|01:59:05.081] Initializing state bloom                 items=19669630 errorrate=0.000 elapsed=32.003s
+INFO [05-17|01:59:12.596] Imported new block headers               count=0 elapsed=17.409ms  number=12449116 hash="df905b…ba7f98" age=2m48s    ignored=1
+INFO [05-17|01:59:13.082] Initializing state bloom                 items=23006209 errorrate=0.000 elapsed=40.003s
+INFO [05-17|01:59:13.290] Looking for peers                        peercount=5 tried=4 static=0
+INFO [05-17|01:59:19.618] Imported new block headers               count=0 elapsed=534.902ms number=12449117 hash="0a1a40…3382d6" age=2m51s    ignored=1
+INFO [05-17|01:59:21.095] Initializing state bloom                 items=26450914 errorrate=0.000 elapsed=48.017s
+INFO [05-17|01:59:23.335] Looking for peers                        peercount=5 tried=4 static=0
+INFO [05-17|01:59:28.763] Imported new block headers               count=0 elapsed=57.199ms  number=12449118 hash="f24f66…2f7938" age=2m35s    ignored=1
+INFO [05-17|01:59:29.098] Initializing state bloom                 items=29854245 errorrate=0.000 elapsed=56.019s
+INFO [05-17|01:59:33.346] Looking for peers                        peercount=5 tried=4 static=0

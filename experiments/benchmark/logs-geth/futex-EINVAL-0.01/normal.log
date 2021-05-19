@@ -1,0 +1,32 @@
+WARN [05-17|01:54:16.734] Unclean shutdown detected                booted=2021-05-11T22:03:29+0000 age=5d3h50m
+WARN [05-17|01:54:16.734] Unclean shutdown detected                booted=2021-05-11T22:12:41+0000 age=5d3h41m
+WARN [05-17|01:54:16.734] Unclean shutdown detected                booted=2021-05-11T22:50:38+0000 age=5d3h3m
+WARN [05-17|01:54:16.734] Unclean shutdown detected                booted=2021-05-17T01:48:10+0000 age=6m6s
+WARN [05-17|01:54:16.734] Unclean shutdown detected                booted=2021-05-17T01:50:51+0000 age=3m25s
+WARN [05-17|01:54:16.735] Unclean shutdown detected                booted=2021-05-17T01:52:08+0000 age=2m8s
+INFO [05-17|01:54:16.735] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
+INFO [05-17|01:54:16.866] New local node record                    seq=26 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-17|01:54:16.869] IPC endpoint opened                      url=/data/eth-data/geth.ipc
+INFO [05-17|01:54:16.909] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
+INFO [05-17|01:54:22.999] New local node record                    seq=27 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
+INFO [05-17|01:54:24.746] Initializing state bloom                 items=4863679 errorrate=0.000 elapsed=8.004s
+INFO [05-17|01:54:26.910] Block synchronisation started 
+INFO [05-17|01:54:26.910] Looking for peers                        peercount=1 tried=3 static=0
+INFO [05-17|01:54:27.293] Disabling direct-ancient mode            origin=12449041 ancient=12359074
+INFO [05-17|01:54:28.355] Imported new block headers               count=5 elapsed=482.889ms   number=12449104 hash="88e670…4c86fd" ignored=58
+INFO [05-17|01:54:28.705] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=91.24KiB throttle=719
+INFO [05-17|01:54:32.746] Initializing state bloom                 items=8147334 errorrate=0.000 elapsed=16.004s
+INFO [05-17|01:54:36.928] Looking for peers                        peercount=1 tried=4 static=0
+INFO [05-17|01:54:40.746] Initializing state bloom                 items=11729111 errorrate=0.000 elapsed=24.004s
+INFO [05-17|01:54:45.842] Imported new block headers               count=1 elapsed=8.109ms     number=12449105 hash="de6961…002451"
+INFO [05-17|01:54:46.939] Looking for peers                        peercount=2 tried=4 static=0
+INFO [05-17|01:54:47.692] Imported new block headers               count=1 elapsed=7.400ms     number=12449106 hash="b0ebe8…f23f8a"
+INFO [05-17|01:54:48.749] Initializing state bloom                 items=15564356 errorrate=0.000 elapsed=32.007s
+INFO [05-17|01:54:56.749] Initializing state bloom                 items=20437856 errorrate=0.000 elapsed=40.007s
+INFO [05-17|01:54:56.952] Looking for peers                        peercount=2 tried=4 static=0
+INFO [05-17|01:54:57.700] Imported new block headers               count=1 elapsed=10.130ms    number=12449107 hash="f3078b…8597a1"
+INFO [05-17|01:55:04.749] Initializing state bloom                 items=23641975 errorrate=0.000 elapsed=48.007s
+INFO [05-17|01:55:07.004] Looking for peers                        peercount=2 tried=4 static=0
+INFO [05-17|01:55:07.861] Imported new block headers               count=1 elapsed=14.432ms    number=12449108 hash="a1471c…380aa6"
+INFO [05-17|01:55:12.750] Initializing state bloom                 items=26976199 errorrate=0.000 elapsed=56.007s
+INFO [05-17|01:55:17.007] Looking for peers                        peercount=2 tried=4 static=0

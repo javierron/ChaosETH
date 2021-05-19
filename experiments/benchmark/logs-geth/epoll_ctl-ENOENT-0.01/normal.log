@@ -1,0 +1,36 @@
+INFO [05-16|22:25:30.601] Resuming state snapshot generation       root="446e73…61b584" in="0b98f9…8c2caf" at="c60407…120d74" accounts=6028282 slots=23482128 storage=2.05GiB    elapsed=34h15m40.280s eta=722h0m24.505s
+INFO [05-16|22:25:30.610] Unindexed transactions                   blocks=1      txs=43       tail=10098168 elapsed=9.539ms
+INFO [05-16|22:25:34.430] Aborting state snapshot generation       root="446e73…61b584" in="0b98f9…8c2caf" at="c65c81…5f5e97" accounts=6028282 slots=23482821 storage=2.05GiB    elapsed=34h15m44.110s eta=722h1m45.217s
+INFO [05-16|22:25:34.446] Resuming state snapshot generation       root="de7d75…5f3c4d" in="0b98f9…8c2caf" at="c65c81…5f5e97" accounts=6028282 slots=23482821 storage=2.05GiB    elapsed=34h15m44.125s eta=722h1m45.533s
+INFO [05-16|22:25:34.499] Imported new chain segment               blocks=1      txs=221      mgas=14.983 elapsed=697.412ms     mgasps=21.484  number=12448168 hash="fb7abf…4eed6e" dirty=661.32MiB
+INFO [05-16|22:25:34.504] Unindexed transactions                   blocks=1      txs=57       tail=10098169 elapsed=4.132ms
+INFO [05-16|22:25:46.291] Aborting state snapshot generation       root="de7d75…5f3c4d" in="0b98f9…8c2caf" at="c7f957…a5bf30" accounts=6028282 slots=23486107 storage=2.05GiB    elapsed=34h15m55.970s eta=722h5m55.15s
+INFO [05-16|22:25:46.300] Resuming state snapshot generation       root="5f2939…4e6efc" in="0b98f9…8c2caf" at="c7f957…a5bf30" accounts=6028282 slots=23486107 storage=2.05GiB    elapsed=34h15m55.979s eta=722h5m55.339s
+INFO [05-16|22:25:46.344] Imported new chain segment               blocks=1      txs=181      mgas=14.823 elapsed=960.888ms     mgasps=15.426  number=12448169 hash="a99808…dff5e0" dirty=661.05MiB
+INFO [05-16|22:25:46.386] Unindexed transactions                   blocks=1      txs=168      tail=10098170 elapsed=39.703ms
+INFO [05-16|22:26:00.588] Aborting state snapshot generation       root="5f2939…4e6efc" in="0b98f9…8c2caf" at="c9240c…ffcd86" accounts=6028282 slots=23488516 storage=2.05GiB    elapsed=34h16m10.267s eta=722h10m56.439s
+INFO [05-16|22:26:00.637] Imported new chain segment               blocks=1      txs=204      mgas=14.964 elapsed=1.841s        mgasps=8.127   number=12448170 hash="1176f1…5f3d0b" dirty=661.29MiB
+INFO [05-16|22:26:00.637] Resuming state snapshot generation       root="57da11…5c8793" in="0b98f9…8c2caf" at="c9240c…ffcd86" accounts=6028282 slots=23488516 storage=2.05GiB    elapsed=34h16m10.316s eta=722h10m57.472s
+INFO [05-16|22:26:00.668] Unindexed transactions                   blocks=1      txs=91       tail=10098171 elapsed=2.205ms
+INFO [05-16|22:26:22.672] Deep froze chain segment                 blocks=4      elapsed=74.845ms      number=12358170 hash="cb8a6f…bead98"
+INFO [05-16|22:26:25.152] Generating state snapshot                root="57da11…5c8793" in="0b98f9…8c2caf" at="cc0bea…4337b2" accounts=6028282 slots=23494473 storage=2.05GiB    elapsed=34h16m34.831s eta=722h19m34.091s
+INFO [05-16|22:26:26.176] Aborting state snapshot generation       root="57da11…5c8793" in="0b98f9…8c2caf" at="cc1b08…fe50dc" accounts=6028282 slots=23494603 storage=2.05GiB    elapsed=34h16m35.856s eta=722h19m55.692s
+INFO [05-16|22:26:26.189] Resuming state snapshot generation       root="b4764d…13eb21" in="0b98f9…8c2caf" at="cc1b08…fe50dc" accounts=6028282 slots=23494603 storage=2.05GiB    elapsed=34h16m35.869s eta=722h19m55.965s
+INFO [05-16|22:26:26.260] Imported new chain segment               blocks=1      txs=247      mgas=14.974 elapsed=3.966s        mgasps=3.775   number=12448171 hash="444721…76d193" dirty=661.24MiB
+INFO [05-16|22:26:26.283] Unindexed transactions                   blocks=1      txs=94       tail=10098172 elapsed=5.419ms
+ERROR[05-16|22:26:30.264] Ethereum peer removal failed             peer=58bab0cc err="peer not registered"
+INFO [05-16|22:26:30.508] Aborting state snapshot generation       root="b4764d…13eb21" in="0b98f9…8c2caf" at="cc42ed…c4465d" accounts=6028282 slots=23494917 storage=2.05GiB    elapsed=34h16m40.187s eta=722h21m26.961s
+INFO [05-16|22:26:30.520] Resuming state snapshot generation       root="68259b…b3db4c" in="0b98f9…8c2caf" at="cc42ed…c4465d" accounts=6028282 slots=23494917 storage=2.05GiB    elapsed=34h16m40.199s eta=722h21m27.214s
+INFO [05-16|22:26:30.597] Imported new chain segment               blocks=1      txs=143      mgas=14.979 elapsed=3.969s        mgasps=3.774   number=12448172 hash="056565…e0eb5b" dirty=661.00MiB
+INFO [05-16|22:26:30.634] Unindexed transactions                   blocks=1      txs=103      tail=10098173 elapsed=18.180ms
+INFO [05-16|22:26:34.709] Aborting state snapshot generation       root="68259b…b3db4c" in="0b98f9…8c2caf" at="cc703a…9e8cde" accounts=6028282 slots=23495269 storage=2.05GiB    elapsed=34h16m44.388s eta=722h22m55.492s
+INFO [05-16|22:26:34.712] Resuming state snapshot generation       root="b94230…ee18b9" in="0b98f9…8c2caf" at="cc703a…9e8cde" accounts=6028282 slots=23495269 storage=2.05GiB    elapsed=34h16m44.391s eta=722h22m55.555s
+INFO [05-16|22:26:34.740] Imported new chain segment               blocks=1      txs=127      mgas=14.978 elapsed=4.058s        mgasps=3.691   number=12448173 hash="2af4b9…b84d44" dirty=660.79MiB
+INFO [05-16|22:26:34.760] Unindexed transactions                   blocks=1      txs=73       tail=10098174 elapsed=6.108ms
+ERROR[05-16|22:26:36.760] Ethereum peer removal failed             peer=93108d50 err="peer not registered"
+INFO [05-16|22:26:36.791] Imported new chain segment               blocks=1      txs=143      mgas=14.986 elapsed=226.026ms     mgasps=66.302  number=12448172 hash="80c73d…f6d958" dirty=660.90MiB
+INFO [05-16|22:26:37.348] Downloader queue stats                   receiptTasks=0 blockTasks=0    itemSize=56.59KiB  throttle=1159
+INFO [05-16|22:26:50.859] Aborting state snapshot generation       root="b94230…ee18b9" in="0b98f9…8c2caf" at="cea888…886153" accounts=6028282 slots=23499683 storage=2.05GiB    elapsed=34h17m0.538s  eta=722h28m35.83s
+INFO [05-16|22:26:50.885] Imported new chain segment               blocks=1      txs=242      mgas=14.982 elapsed=1.513s        mgasps=9.900   number=12448174 hash="71d4f0…dbdadd" dirty=661.25MiB
+INFO [05-16|22:26:50.898] Resuming state snapshot generation       root="c61c7d…692e8e" in="0b98f9…8c2caf" at="cea888…886153" accounts=6028282 slots=23499683 storage=2.05GiB    elapsed=34h17m0.577s  eta=722h28m36.652s
+INFO [05-16|22:26:50.904] Unindexed transactions                   blocks=1      txs=45       tail=10098175 elapsed=2.293ms

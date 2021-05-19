@@ -1,0 +1,23 @@
+INFO [05-16|23:23:51.493] Imported new chain segment               blocks=1      txs=475      mgas=14.971 elapsed=2.151s        mgasps=6.958   number=12448438 hash="f8ed74…6a0b5b" dirty=661.34MiB
+INFO [05-16|23:23:51.536] Unindexed transactions                   blocks=1      txs=46       tail=10098439 elapsed=33.713ms
+INFO [05-16|23:23:52.073] Downloader queue stats                   receiptTasks=0 blockTasks=0    itemSize=51.84KiB  throttle=1265
+INFO [05-16|23:23:53.275] Aborting state snapshot generation       root="b376e3…dd2f59" at="0c0dbf…88fdd5" accounts=6265741 slots=23978007 storage=2.09GiB    elapsed=35h14m2.954s  eta=713h4m45.011s
+INFO [05-16|23:23:53.284] Resuming state snapshot generation       root="782f6e…2156fc" at="0c0dbf…88fdd5" accounts=6265741 slots=23978007 storage=2.09GiB    elapsed=35h14m2.963s  eta=713h4m45.193s
+INFO [05-16|23:23:53.358] Imported new chain segment               blocks=1      txs=405      mgas=14.963 elapsed=1.857s        mgasps=8.054   number=12448439 hash="262d48…9d3b87" dirty=662.48MiB
+INFO [05-16|23:23:53.375] Unindexed transactions                   blocks=1      txs=136      tail=10098440 elapsed=4.131ms
+INFO [05-16|23:23:53.620] Imported new chain segment               blocks=1      txs=478      mgas=14.944 elapsed=232.687ms     mgasps=64.225  number=12448438 hash="2b8b6d…7176f0" dirty=662.51MiB
+INFO [05-16|23:23:54.138] Chain reorg detected                     number=12448437 hash="a961ad…97eeb3" drop=2 dropfrom="262d48…9d3b87" add=2 addfrom="353245…1a6e52"
+INFO [05-16|23:23:54.159] Imported new chain segment               blocks=1      txs=398      mgas=14.915 elapsed=308.845ms     mgasps=48.294  number=12448439 hash="353245…1a6e52" dirty=662.56MiB
+INFO [05-16|23:24:15.825] Aborting state snapshot generation       root="782f6e…2156fc" in="0c0e00…82491f" at="1dc15a…f112ea" accounts=6266267 slots=23981030 storage=2.09GiB    elapsed=35h14m25.504s eta=713h8m37.866s
+INFO [05-16|23:24:15.833] Resuming state snapshot generation       root="bed4a5…4dd4a3" in="0c0e00…82491f" at="1dc15a…f112ea" accounts=6266267 slots=23981030 storage=2.09GiB    elapsed=35h14m25.512s eta=713h8m38.028s
+INFO [05-16|23:24:15.980] Imported new chain segment               blocks=1      txs=188      mgas=14.927 elapsed=4.753s        mgasps=3.140   number=12448440 hash="9688ab…cd0b3b" dirty=660.80MiB
+INFO [05-16|23:24:15.998] Unindexed transactions                   blocks=1      txs=118      tail=10098441 elapsed=4.733ms
+INFO [05-16|23:24:18.156] Aborting state snapshot generation       root="bed4a5…4dd4a3" in="0c0e00…82491f" at="21ac4e…715c2f" accounts=6266267 slots=23981419 storage=2.09GiB    elapsed=35h14m27.836s eta=713h9m25.058s
+INFO [05-16|23:24:18.175] Resuming state snapshot generation       root="017cef…b5be32" in="0c0e00…82491f" at="21ac4e…715c2f" accounts=6266267 slots=23981419 storage=2.09GiB    elapsed=35h14m27.855s eta=713h9m25.442s
+INFO [05-16|23:24:18.207] Imported new chain segment               blocks=1      txs=224      mgas=14.598 elapsed=730.688ms     mgasps=19.978  number=12448441 hash="b7a8ba…d8e30d" dirty=659.81MiB
+INFO [05-16|23:24:18.212] Unindexed transactions                   blocks=1      txs=92       tail=10098442 elapsed=4.597ms
+INFO [05-16|23:24:29.735] Deep froze chain segment                 blocks=9      elapsed=73.527ms      number=12358441 hash="11a702…649e7b"
+INFO [05-16|23:24:45.038] Aborting state snapshot generation       root="017cef…b5be32" in="0c0e00…82491f" at="62df53…ef7f5d" accounts=6266267 slots=23987735 storage=2.09GiB    elapsed=35h14m54.717s eta=713h18m29.036s
+INFO [05-16|23:24:45.039] Resuming state snapshot generation       root="081667…4afde2" in="0c0e00…82491f" at="62df53…ef7f5d" accounts=6266267 slots=23987735 storage=2.09GiB    elapsed=35h14m54.718s eta=713h18m29.056s
+INFO [05-16|23:24:45.074] Imported new chain segment               blocks=1      txs=254      mgas=14.946 elapsed=1.435s        mgasps=10.410  number=12448442 hash="4319e7…fe1d9a" dirty=659.81MiB
+INFO [05-16|23:24:45.081] Unindexed transactions                   blocks=1      txs=73       tail=10098443 elapsed=4.688ms
