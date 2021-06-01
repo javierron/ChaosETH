@@ -60,7 +60,7 @@ def dump_logs(content, filepath, filename):
     with open(os.path.join(filepath, filename), 'wt') as log_file:
         log_file.write(content.encode("utf-8"))
 
-def do_experiment(experiment, injector_path, client_name, client_log):
+def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_path):
     global INJECTOR
 
     # experiment principle
@@ -77,7 +77,7 @@ def do_experiment(experiment, injector_path, client_name, client_log):
     logging.info("begin the following experiment")
     logging.info(experiment)
 
-    dump_logs_folder = "./%s/logs/%s%s-%s"%(client_name, experiment["syscall_name"], experiment["error_code"], experiment["failure_rate"])
+    dump_logs_folder = "%s/%s%s-%s"%(dump_logs_path, experiment["syscall_name"], experiment["error_code"], experiment["failure_rate"])
 
     # step 1: 1 min normal execution, tail the log
     logging.info("1 min normal execution begins")
@@ -134,6 +134,7 @@ def main(config):
 
     error_models = config["ChaosEVM"]["error_models"]
     syscall_injector = config["ChaosEVM"]["syscall_injector"]
+    dump_logs_path = config["ChaosEVM"]["dump_logs_path"]
     client_name = config["EthClient"]["client_name"]
     client_path = config["EthClient"]["client_path"]
     restart_cmd = config["EthClient"]["restart_cmd"]
@@ -143,7 +144,7 @@ def main(config):
         experiments = json.load(file)
 
         for experiment in experiments["experiments"]:
-            experiment = do_experiment(experiment, syscall_injector, client_name, client_log)
+            experiment = do_experiment(experiment, syscall_injector, client_name, client_log, dump_logs_path)
             save_experiment_result(experiments, "%s-results.json"%client_name)
             if experiment["result"]["client_crashed"]:
                 new_pid = restart_client(client_name, client_path, restart_cmd, client_log)
