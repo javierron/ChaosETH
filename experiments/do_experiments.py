@@ -123,11 +123,11 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     dump_logs_folder = "%s/%s%s-%s"%(dump_logs_path, experiment["syscall_name"], experiment["error_code"], experiment["failure_rate"])
 
     result = dict()
-    # step 1: 1 min normal execution, tail the log
-    logging.info("1 min normal execution begins")
-    normal_execution_log = tail_client_log(client_log, 60)
+    # step 1: 5 mins normal execution, tail the log
+    logging.info("5 min normal execution begins")
+    normal_execution_log = tail_client_log(client_log, 60*5)
     dump_logs(normal_execution_log, dump_logs_folder, "normal.log")
-    normal_execution_peer_stat = query_peer_stats(client_name, peer_stats_url, 60)
+    normal_execution_peer_stat = query_peer_stats(client_name, peer_stats_url, 60*5)
     dump_metric(normal_execution_peer_stat, dump_logs_folder, "normal_peer_stat.json")
     result["peer_stat"] = dict()
     result["peer_stat"]["normal"] = normal_execution_peer_stat["stat"]
@@ -164,7 +164,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     else:
         result["client_crashed"] = False
 
-    # step 3: 5min recovery phase observation
+    # step 3: 5 mins recovery phase observation
     if not result["client_crashed"]:
         time.sleep(3)
         logging.info("5 min recovery phase observation begins")
@@ -203,6 +203,9 @@ def main(config):
             if experiment["result"]["client_crashed"]:
                 new_pid = restart_client(client_name, client_path, restart_cmd, client_log)
                 if new_pid == None: break
+                # sleep for another 5 mins here if the client crashed due to the previous experiment
+                # this helps the client to warm up before a new experiment
+                time.sleep(60*5)
             time.sleep(5)
 
     if (INJECTOR != None): os.killpg(os.getpgid(INJECTOR.pid), signal.SIGTERM)
