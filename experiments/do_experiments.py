@@ -152,9 +152,6 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
         logging.warning(injector_stdout.decode("utf-8"))
         logging.warning(injector_stderr.decode("utf-8"))
     dump_logs(ce_execution_log, dump_logs_folder, "ce.log")
-    ce_execution_peer_stat = query_peer_stats(client_name, peer_stats_url, experiment["experiment_duration"])
-    dump_metric(ce_execution_peer_stat, dump_logs_folder, "ce_peer_stat.json")
-    result["peer_stat"]["ce"] = ce_execution_peer_stat["stat"]
 
     # check if the chaos engineering experiment breaks the client
     pid = pgrep_the_client(client_name)
@@ -163,6 +160,10 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
         result["client_crashed"] = True
     else:
         result["client_crashed"] = False
+        # only query peer stats when the client is not crashed
+        ce_execution_peer_stat = query_peer_stats(client_name, peer_stats_url, experiment["experiment_duration"])
+        dump_metric(ce_execution_peer_stat, dump_logs_folder, "ce_peer_stat.json")
+        result["peer_stat"]["ce"] = ce_execution_peer_stat["stat"]
 
     # step 3: 5 mins recovery phase observation
     if not result["client_crashed"]:
