@@ -73,7 +73,6 @@ def query_peer_stats(client_name, query_url, last_n_seconds):
             logging.error("peer stats query failed")
             logging.error(response.json())
         else:
-            logging.info(response.json())
             results = response.json()["results"][0]["series"][0]
 
     # calculate statistic information of the values
