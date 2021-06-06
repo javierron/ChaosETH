@@ -1,36 +1,44 @@
-WARN [05-11|22:04:16.945] Dropping unsynced node during sync       id=e9dbc5436977b26a conn=inbound addr=149.28.62.58:39572  type=Geth/v1.10.3-unstabl...
-INFO [05-11|22:04:17.057] Initializing state bloom                 items=19193360 errorrate=0.000 elapsed=48.005s
-INFO [05-11|22:04:18.231] Imported new state entries               count=768 elapsed=2.053ms   processed=605901727 pending=6298 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:04:18.960] Imported new block headers               count=1   elapsed=5.482ms   number=12415698 hash="2ef042…9539f0"
-INFO [05-11|22:04:19.216] Looking for peers                        peercount=3 tried=5 static=0
-INFO [05-11|22:04:21.123] Imported new state entries               count=384 elapsed=2.404ms   processed=605902111 pending=6025 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:04:25.058] Initializing state bloom                 items=22420658 errorrate=0.000 elapsed=56.006s
-INFO [05-11|22:04:28.854] Imported new state entries               count=384 elapsed="395.801µs" processed=605902495 pending=6548 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:04:29.218] Looking for peers                        peercount=4 tried=4 static=0
-WARN [05-11|22:04:29.516] Dropping unsynced node during sync       id=c0e37fc2470a8366 conn=inbound addr=143.198.119.232:59182 type=Geth/v1.10.1-stable-...
-ERROR[05-11|22:04:32.693] Snapshot extension registration failed   peer=b2a05910 err="peer connected on snap without compatible eth support"
-INFO [05-11|22:04:33.058] Initializing state bloom                 items=25301090 errorrate=0.000 elapsed=1m4.006s
-INFO [05-11|22:04:34.272] Imported new state entries               count=384 elapsed="374.701µs" processed=605902879 pending=6934 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:04:39.219] Looking for peers                        peercount=1 tried=4 static=0
-INFO [05-11|22:04:41.061] Initializing state bloom                 items=28258176 errorrate=0.000 elapsed=1m12.009s
-INFO [05-11|22:04:49.065] Initializing state bloom                 items=31740938 errorrate=0.000 elapsed=1m20.013s
-INFO [05-11|22:04:49.221] Looking for peers                        peercount=1 tried=4 static=0
-WARN [05-11|22:04:49.514] Node data write error                    err="trie node 4f1666…3c8d44 failed with all peers (0 tries, 0 peers)"
-WARN [05-11|22:04:49.514] Rewinding blockchain                     target=12413649
-INFO [05-11|22:04:52.797] Loaded most recent local header          number=12413649 hash="cc9392…aa6f98" td=24530198118172867479551 age=7h37m3s
-INFO [05-11|22:04:52.797] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo1w
-INFO [05-11|22:04:52.797] Loaded most recent local fast block      number=12413649 hash="cc9392…aa6f98" td=24530198118172867479551 age=7h37m3s
-INFO [05-11|22:04:52.797] Loaded last fast-sync pivot marker       number=12415634
-WARN [05-11|22:04:52.797] Rolled back chain segment                header=12415698->12413649 fast=12415633->12413649 block=0->0 reason="syncing canceled (requested)"
-WARN [05-11|22:04:52.797] Synchronisation failed, retrying         err="trie node 4f1666…3c8d44 failed with all peers (0 tries, 0 peers)"
-INFO [05-11|22:04:57.066] Initializing state bloom                 items=35034364 errorrate=0.000 elapsed=1m28.014s
-INFO [05-11|22:04:59.222] Looking for peers                        peercount=0 tried=4 static=0
-INFO [05-11|22:05:05.068] Initializing state bloom                 items=38343109 errorrate=0.000 elapsed=1m36.016s
-INFO [05-11|22:05:09.224] Looking for peers                        peercount=1 tried=3 static=0
-WARN [05-11|22:05:10.685] Dropping unsynced node during sync       id=6b0cbeb8cd4dc6af conn=inbound addr=24.145.80.80:43257    type=OpenEthereum/v3.2.5-...
-INFO [05-11|22:05:13.070] Initializing state bloom                 items=41884186 errorrate=0.000 elapsed=1m44.018s
-ERROR[05-11|22:05:13.783] Snapshot extension registration failed   peer=63cbe74f err="peer connected on snap without compatible eth support"
-INFO [05-11|22:05:19.225] Looking for peers                        peercount=3 tried=4 static=0
-INFO [05-11|22:05:21.073] Initializing state bloom                 items=45440272 errorrate=0.000 elapsed=1m52.021s
-INFO [05-11|22:05:29.075] Initializing state bloom                 items=49005675 errorrate=0.000 elapsed=2m0.023s
-INFO [05-11|22:05:29.226] Looking for peers                        peercount=4 tried=5 static=0
+INFO [06-03|23:01:02.844] Imported new state entries               count=384  elapsed="133.2µs"   processed=993917695 pending=33899  trieretry=456  coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:01:05.469] Looking for peers                        peercount=36 tried=4 static=0
+INFO [06-03|23:01:07.442] Initializing state bloom                 items=350151442 errorrate=0.000 elapsed=42m51.806s
+INFO [06-03|23:01:15.442] Initializing state bloom                 items=350183892 errorrate=0.000 elapsed=42m59.806s
+INFO [06-03|23:01:15.471] Looking for peers                        peercount=35 tried=3 static=0
+INFO [06-03|23:01:21.522] Imported new block headers               count=1    elapsed=10.123ms    number=12564363 hash="7d16bb…f253d0"
+INFO [06-03|23:01:23.443] Initializing state bloom                 items=350216484 errorrate=0.000 elapsed=43m7.807s
+INFO [06-03|23:01:25.471] Looking for peers                        peercount=35 tried=5 static=0
+INFO [06-03|23:01:28.795] Imported new state entries               count=384  elapsed="37µs"      processed=993918079 pending=34318  trieretry=382  coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:01:31.443] Initializing state bloom                 items=350247786 errorrate=0.000 elapsed=43m15.808s
+INFO [06-03|23:01:33.640] Imported new block headers               count=1    elapsed=22.977ms    number=12564364 hash="fc5cf8…c0dcb4" age=1m4s
+INFO [06-03|23:01:34.246] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=227.12KiB throttle=289
+INFO [06-03|23:01:35.481] Looking for peers                        peercount=36 tried=4 static=0
+ERROR[06-03|23:01:37.324] Empty cpu stats 
+INFO [06-03|23:01:39.448] Initializing state bloom                 items=350276259 errorrate=0.000 elapsed=43m23.812s
+WARN [06-03|23:01:41.651] Dropping unsynced node during sync       id=0459767b7650f113 conn=dyndial addr=43.128.61.151:30303   type=OpenEthereum/v3.2.6-...
+WARN [06-03|23:01:42.348] Dropping unsynced node during sync       id=2e4b7ef9693f6e7d conn=inbound addr=88.3.230.35:42942     type=Geth/v1.10.3-stable-...
+ERROR[06-03|23:01:43.645] Snapshot extension registration failed   peer=cb5b9771 err="peer connected on snap without compatible eth support"
+INFO [06-03|23:01:45.483] Looking for peers                        peercount=18 tried=4 static=0
+INFO [06-03|23:01:46.047] Imported new state entries               count=384  elapsed="220.3µs"   processed=993918463 pending=34704  trieretry=0    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:01:47.450] Initializing state bloom                 items=350304470 errorrate=0.000 elapsed=43m31.815s
+INFO [06-03|23:01:55.477] Initializing state bloom                 items=350330959 errorrate=0.000 elapsed=43m39.841s
+INFO [06-03|23:01:55.499] Looking for peers                        peercount=18 tried=1 static=0
+ERROR[06-03|23:01:55.870] Ethereum peer removal failed             peer=6d6d8dd8 err="peer not registered"
+INFO [06-03|23:01:56.925] Imported new state entries               count=384  elapsed="3.6µs"     processed=993918847 pending=36449  trieretry=384  coderetry=0 duplicate=0 unexpected=2674
+WARN [06-03|23:01:56.926] Synchronisation failed, dropping peer    peer=6d6d8dd877c10181dd4650df8bfebc5dff3b9924cf07b89242c1c255d79b97d0 err="action from bad peer ignored: header request timed out"
+ERROR[06-03|23:01:56.927] Ethereum peer removal failed             peer=6d6d8dd8 err="peer not registered"
+INFO [06-03|23:02:02.078] Disabling direct-ancient mode            origin=12564259 ancient=12359074
+INFO [06-03|23:02:02.922] Imported new block headers               count=3    elapsed=661.844ms   number=12564367 hash="12e1e1…1a1af6" ignored=105
+INFO [06-03|23:02:03.477] Initializing state bloom                 items=350368907 errorrate=0.000 elapsed=43m47.842s
+INFO [06-03|23:02:05.501] Looking for peers                        peercount=18 tried=5 static=0
+INFO [06-03|23:02:05.982] Imported new block receipts              count=4    elapsed=37.998ms    number=12564263 hash="54f7f8…ac829e" age=23m21s   size=440.79KiB
+INFO [06-03|23:02:07.346] Imported new block receipts              count=4    elapsed=18.609ms    number=12564267 hash="a8d958…9ce630" age=22m13s   size=430.24KiB
+INFO [06-03|23:02:11.484] Initializing state bloom                 items=350395424 errorrate=0.000 elapsed=43m55.848s
+INFO [06-03|23:02:14.166] Imported new block headers               count=1    elapsed=6.245ms     number=12564368 hash="655ca6…a24aa0"
+INFO [06-03|23:02:15.508] Looking for peers                        peercount=21 tried=4 static=0
+INFO [06-03|23:02:19.492] Initializing state bloom                 items=350425286 errorrate=0.000 elapsed=44m3.857s
+INFO [06-03|23:02:23.387] Imported new state entries               count=564  elapsed="2.3µs"     processed=993919411 pending=4399   trieretry=0    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:02:25.508] Looking for peers                        peercount=22 tried=5 static=0
+WARN [06-03|23:02:26.259] Dropping unsynced node during sync       id=da1e6b3a618981e0 conn=inbound addr=111.193.164.143:42610 type=OpenEthereum/v3.2.6-...
+INFO [06-03|23:02:27.495] Initializing state bloom                 items=350455245 errorrate=0.000 elapsed=44m11.859s
+ERROR[06-03|23:02:28.782] Ethereum peer removal failed             peer=f9eb51a8 err="peer not registered"
+ERROR[06-03|23:02:28.783] Ethereum peer removal failed             peer=139b1d5f err="peer not registered"
+INFO [06-03|23:02:29.092] Imported new block receipts              count=35   elapsed=200.574ms   number=12564302 hash="4e877b…4949f3" age=14m58s   size=3.81MiB

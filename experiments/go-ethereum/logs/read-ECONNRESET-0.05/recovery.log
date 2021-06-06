@@ -1,290 +1,245 @@
-INFO [05-11|22:04:59.222] Looking for peers                        peercount=0 tried=4 static=0
-INFO [05-11|22:05:05.068] Initializing state bloom                 items=38343109 errorrate=0.000 elapsed=1m36.016s
-INFO [05-11|22:05:09.224] Looking for peers                        peercount=1 tried=3 static=0
-WARN [05-11|22:05:10.685] Dropping unsynced node during sync       id=6b0cbeb8cd4dc6af conn=inbound addr=24.145.80.80:43257    type=OpenEthereum/v3.2.5-...
-INFO [05-11|22:05:13.070] Initializing state bloom                 items=41884186 errorrate=0.000 elapsed=1m44.018s
-ERROR[05-11|22:05:13.783] Snapshot extension registration failed   peer=63cbe74f err="peer connected on snap without compatible eth support"
-INFO [05-11|22:05:19.225] Looking for peers                        peercount=3 tried=4 static=0
-INFO [05-11|22:05:21.073] Initializing state bloom                 items=45440272 errorrate=0.000 elapsed=1m52.021s
-INFO [05-11|22:05:29.075] Initializing state bloom                 items=49005675 errorrate=0.000 elapsed=2m0.023s
-INFO [05-11|22:05:29.226] Looking for peers                        peercount=4 tried=5 static=0
-INFO [05-11|22:05:37.075] Initializing state bloom                 items=52442473 errorrate=0.000 elapsed=2m8.023s
-INFO [05-11|22:05:37.765] Disabling direct-ancient mode            origin=12413649 ancient=12189695
-INFO [05-11|22:05:39.238] Imported new block headers               count=768 elapsed=994.727ms   number=12414417 hash="498bf9…bbf954" age=4h45m55s
-INFO [05-11|22:05:39.240] Looking for peers                        peercount=5 tried=4 static=0
-INFO [05-11|22:05:39.518] Downloader queue stats                   receiptTasks=720 blockTasks=705 itemSize=263.32KiB throttle=249
-INFO [05-11|22:05:39.523] Imported new block receipts              count=2   elapsed=4.878ms     number=12413651 hash="5fefe2…95d0f8" age=7h37m35s size=207.08KiB
-INFO [05-11|22:05:45.078] Initializing state bloom                 items=55344724 errorrate=0.000 elapsed=2m16.026s
-INFO [05-11|22:05:49.242] Looking for peers                        peercount=6 tried=4 static=0
-INFO [05-11|22:05:53.078] Initializing state bloom                 items=58797668 errorrate=0.000 elapsed=2m24.026s
-INFO [05-11|22:05:59.379] Imported new block headers               count=1152 elapsed=166.078ms   number=12415569 hash="4a8d14…b27ba8" age=29m53s
-INFO [05-11|22:05:59.521] Looking for peers                        peercount=7 tried=6 static=0
-INFO [05-11|22:06:01.079] Initializing state bloom                 items=62150186 errorrate=0.000 elapsed=2m32.027s
-INFO [05-11|22:06:01.333] Imported new block receipts              count=249  elapsed=672.258ms   number=12413900 hash="a2b8d1…c04404" age=6h37m53s size=27.27MiB
-INFO [05-11|22:06:01.993] Imported new block receipts              count=31   elapsed=99.763ms    number=12413931 hash="078101…7b73ce" age=6h31m50s size=3.54MiB
-INFO [05-11|22:06:02.526] Imported new block receipts              count=33   elapsed=127.102ms   number=12413964 hash="bc581f…35aaf0" age=6h24m19s size=3.63MiB
-INFO [05-11|22:06:03.064] Imported new block receipts              count=34   elapsed=150.187ms   number=12413998 hash="b22304…64bd9d" age=6h17m29s size=3.72MiB
-INFO [05-11|22:06:03.462] Imported new block receipts              count=32   elapsed=113.042ms   number=12414030 hash="06dae4…07dfab" age=6h11m35s size=3.75MiB
-INFO [05-11|22:06:07.781] Imported new block receipts              count=75   elapsed=470.604ms   number=12414105 hash="3a9a55…bba745" age=5h54m37s size=8.28MiB
-INFO [05-11|22:06:08.118] Imported new block headers               count=138  elapsed=817.788ms   number=12415707 hash="c138fd…1a180a"
-INFO [05-11|22:06:08.897] Imported new block receipts              count=161  elapsed=1.107s      number=12414266 hash="047a02…c9bc22" age=5h18m53s size=18.00MiB
-INFO [05-11|22:06:09.084] Initializing state bloom                 items=64742027 errorrate=0.000 elapsed=2m40.032s
-INFO [05-11|22:06:09.442] Imported new block receipts              count=66   elapsed=543.085ms   number=12414332 hash="6a67a0…1107df" age=5h3m5s   size=7.20MiB
-INFO [05-11|22:06:09.523] Looking for peers                        peercount=6 tried=4 static=0
-INFO [05-11|22:06:09.611] Imported new block receipts              count=10   elapsed=54.609ms    number=12414342 hash="e6874d…102bdf" age=5h1m45s  size=1.18MiB
-INFO [05-11|22:06:10.185] Imported new block receipts              count=86   elapsed=531.801ms   number=12414428 hash="27677b…13a13b" age=4h43m54s size=9.65MiB
-INFO [05-11|22:06:10.341] Imported new block receipts              count=33   elapsed=106.374ms   number=12414461 hash="c953b1…f4272a" age=4h37m6s  size=3.65MiB
-INFO [05-11|22:06:10.770] Imported new block receipts              count=34   elapsed=120.825ms   number=12414495 hash="d78a0f…2fde4e" age=4h29m41s size=3.70MiB
-INFO [05-11|22:06:11.448] Imported new block receipts              count=88   elapsed=407.966ms   number=12414583 hash="7bf9eb…44e16e" age=4h9m44s  size=9.02MiB
-INFO [05-11|22:06:11.694] Imported new block receipts              count=53   elapsed=243.753ms   number=12414636 hash="e58e80…2bc665" age=3h59m13s size=5.58MiB
-INFO [05-11|22:06:12.157] Imported new block receipts              count=34   elapsed=139.926ms   number=12414670 hash="aa33ea…d7db30" age=3h50m41s size=3.55MiB
-INFO [05-11|22:06:12.546] Imported new block receipts              count=33   elapsed=230.407ms   number=12414703 hash="f5f409…55d4cb" age=3h43m36s size=3.57MiB
-INFO [05-11|22:06:13.184] Imported new block receipts              count=99   elapsed=525.941ms   number=12414802 hash="18ef11…961887" age=3h23m13s size=10.90MiB
-INFO [05-11|22:06:13.354] Imported new block receipts              count=36   elapsed=128.000ms   number=12414838 hash="0c9988…7def17" age=3h16m37s size=3.64MiB
-INFO [05-11|22:06:13.739] Imported new block receipts              count=37   elapsed=187.240ms   number=12414875 hash="889712…351231" age=3h8m22s  size=3.51MiB
-INFO [05-11|22:06:15.279] Imported new block receipts              count=213  elapsed=1.086s      number=12415088 hash="6da253…184262" age=2h21m19s size=23.32MiB
-INFO [05-11|22:06:15.541] Imported new block receipts              count=48   elapsed=260.056ms   number=12415136 hash="07e7be…565d5e" age=2h5m10s  size=5.35MiB
-INFO [05-11|22:06:15.739] Imported new block receipts              count=33   elapsed=196.158ms   number=12415169 hash="14f8b2…99bfcb" age=1h59m21s size=3.86MiB
-INFO [05-11|22:06:15.891] Imported new block receipts              count=34   elapsed=150.735ms   number=12415203 hash="ede3b6…9e4563" age=1h52m26s size=3.78MiB
-INFO [05-11|22:06:16.309] Imported new block receipts              count=34   elapsed=211.404ms   number=12415237 hash="90701b…0f25f9" age=1h43m41s size=3.58MiB
-INFO [05-11|22:06:16.528] Imported new block receipts              count=32   elapsed=114.562ms   number=12415269 hash="98cd65…fca501" age=1h36m13s size=3.50MiB
-INFO [05-11|22:06:17.057] Imported new block receipts              count=34   elapsed=125.939ms   number=12415303 hash="54a3d9…85acfc" age=1h29m33s size=3.75MiB
-INFO [05-11|22:06:17.088] Initializing state bloom                 items=66320904 errorrate=0.000 elapsed=2m48.036s
-INFO [05-11|22:06:17.329] Imported new block receipts              count=32   elapsed=128.729ms   number=12415335 hash="bb8edf…930840" age=1h22m6s  size=3.62MiB
-INFO [05-11|22:06:17.632] Imported new block receipts              count=32   elapsed=168.602ms   number=12415367 hash="a67a0d…32ae01" age=1h12m37s size=3.50MiB
-INFO [05-11|22:06:18.641] Imported new block receipts              count=157  elapsed=808.600ms   number=12415524 hash="3b3dae…577105" age=38m25s   size=17.88MiB
-INFO [05-11|22:06:19.288] Imported new block receipts              count=113  elapsed=638.364ms   number=12415637 hash="bb6900…396295" age=16m31s   size=12.64MiB
-INFO [05-11|22:06:19.532] Looking for peers                        peercount=8 tried=4 static=0
-INFO [05-11|22:06:20.245] Imported new block headers               count=1    elapsed=6.875ms     number=12415708 hash="75718f…583f62" age=1m4s
-WARN [05-11|22:06:24.139] Dropping unsynced node during sync       id=1e3cc8006a825d81 conn=inbound addr=91.121.83.222:54814   type=Geth/v1.10.3-stable-...
-INFO [05-11|22:06:25.090] Initializing state bloom                 items=69254470 errorrate=0.000 elapsed=2m56.038s
-INFO [05-11|22:06:29.533] Looking for peers                        peercount=8 tried=3 static=0
-INFO [05-11|22:06:33.091] Initializing state bloom                 items=72610445 errorrate=0.000 elapsed=3m4.038s
-INFO [05-11|22:06:39.672] Looking for peers                        peercount=10 tried=10 static=0
-INFO [05-11|22:06:41.092] Initializing state bloom                 items=75912092 errorrate=0.000 elapsed=3m12.040s
-INFO [05-11|22:06:49.094] Initializing state bloom                 items=78910641 errorrate=0.000 elapsed=3m20.042s
-INFO [05-11|22:06:49.714] Looking for peers                        peercount=11 tried=6  static=0
-INFO [05-11|22:06:57.096] Initializing state bloom                 items=82412685 errorrate=0.000 elapsed=3m28.044s
-INFO [05-11|22:06:59.726] Looking for peers                        peercount=11 tried=4  static=0
-INFO [05-11|22:07:05.096] Initializing state bloom                 items=85809795 errorrate=0.000 elapsed=3m36.044s
-INFO [05-11|22:07:06.842] Imported new block headers               count=1    elapsed=37.737ms    number=12415709 hash="b079a7…118097" age=1m38s
-INFO [05-11|22:07:07.784] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=246.13KiB throttle=267
-INFO [05-11|22:07:10.133] Looking for peers                        peercount=14 tried=5  static=0
-WARN [05-11|22:07:10.248] Stalling state sync, dropping peer       peer=e491d2f9b144b0780c9904e97fda66d7a7a97d9df025b754151803de88889c5b
-WARN [05-11|22:07:10.249] Rewinding blockchain                     target=12413660
-ERROR[05-11|22:07:10.254] Ethereum peer removal failed             peer=e491d2f9 err="peer not registered"
-INFO [05-11|22:07:12.682] Loaded most recent local header          number=12413660 hash="316170…9af134" td=24530282205631480579314 age=7h37m14s
-INFO [05-11|22:07:12.682] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo1w
-INFO [05-11|22:07:12.682] Loaded most recent local fast block      number=12413660 hash="316170…9af134" td=24530282205631480579314 age=7h37m14s
-INFO [05-11|22:07:12.682] Loaded last fast-sync pivot marker       number=12415638
-WARN [05-11|22:07:12.682] Rolled back chain segment                header=12415709->12413660 fast=12415637->12413660 block=0->0 reason="syncing canceled (requested)"
-WARN [05-11|22:07:12.682] Synchronisation failed, dropping peer    peer=e491d2f9b144b0780c9904e97fda66d7a7a97d9df025b754151803de88889c5b err=timeout
-ERROR[05-11|22:07:12.682] Ethereum peer removal failed             peer=e491d2f9 err="peer not registered"
-WARN [05-11|22:07:12.841] Dropping unsynced node during sync       id=121b056db03a1564 conn=inbound addr=24.23.24.225:62132    type=Geth/v1.10.1-stable-...
-INFO [05-11|22:07:12.918] Disabling direct-ancient mode            origin=12413660 ancient=12189695
-INFO [05-11|22:07:13.096] Initializing state bloom                 items=89042114 errorrate=0.000 elapsed=3m44.044s
-INFO [05-11|22:07:15.664] Imported new block headers               count=768  elapsed=80.773ms    number=12414428 hash="27677b…13a13b" age=4h44m59s
-INFO [05-11|22:07:20.403] Looking for peers                        peercount=13 tried=3  static=0
-INFO [05-11|22:07:21.096] Initializing state bloom                 items=91466182 errorrate=0.000 elapsed=3m52.044s
-WARN [05-11|22:07:23.062] Dropping unsynced node during sync       id=417322eba04091f7 conn=inbound addr=67.7.75.3:38278       type=Geth/v1.10.3-stable-...
-ERROR[05-11|22:07:25.334] Ethereum peer removal failed             peer=a1ea248b err="peer not registered"
-INFO [05-11|22:07:25.463] Imported new block headers               count=1152 elapsed=95.969ms    number=12415580 hash="ef57c2…f2197a" age=28m9s
-INFO [05-11|22:07:29.135] Initializing state bloom                 items=93994654 errorrate=0.000 elapsed=4m0.083s
-INFO [05-11|22:07:29.264] Imported new block headers               count=133  elapsed=824.565ms   number=12415713 hash="728c7b…a3a35c"
-INFO [05-11|22:07:30.406] Imported new block receipts              count=768  elapsed=4.889s      number=12414428 hash="27677b…13a13b" age=4h45m14s size=85.32MiB
-INFO [05-11|22:07:30.571] Looking for peers                        peercount=12 tried=4  static=0
-INFO [05-11|22:07:32.239] Imported new block receipts              count=294  elapsed=1.818s      number=12414722 hash="ec0ae9…bbe97d" age=3h39m36s size=31.09MiB
-INFO [05-11|22:07:32.777] Imported new block receipts              count=100  elapsed=533.318ms   number=12414822 hash="c34257…0ba5d9" age=3h21m12s size=10.84MiB
-INFO [05-11|22:07:32.903] Imported new block receipts              count=28   elapsed=115.434ms   number=12414850 hash="5c4261…16cca0" age=3h15m14s size=2.57MiB
-INFO [05-11|22:07:34.979] Imported new block receipts              count=209  elapsed=1.513s      number=12415059 hash="4ecb7b…a967cd" age=2h27m55s size=22.68MiB
-INFO [05-11|22:07:35.571] Imported new block receipts              count=105  elapsed=587.394ms   number=12415164 hash="dd2785…1b39a6" age=2h2m     size=11.89MiB
-INFO [05-11|22:07:36.625] Imported new block receipts              count=182  elapsed=1.037s      number=12415346 hash="334d5a…eb37ff" age=1h20m9s  size=19.93MiB
-INFO [05-11|22:07:37.138] Initializing state bloom                 items=95252320 errorrate=0.000 elapsed=4m8.086s
-WARN [05-11|22:07:37.590] Stalling state sync, dropping peer       peer=2df3117a8b10a3d020bae52f0300bb646f43f1756b2c8bb2643cfe42b5d4c71c
-ERROR[05-11|22:07:37.591] Ethereum peer removal failed             peer=2df3117a err="peer not registered"
-INFO [05-11|22:07:37.650] Imported new block receipts              count=2    elapsed=9.194ms     number=12415348 hash="eb8509…89330a" age=1h19m44s size=237.75KiB
-INFO [05-11|22:07:40.543] Imported new block receipts              count=247  elapsed=1.094s      number=12415595 hash="fc857b…075ea4" age=24m55s   size=27.80MiB
-INFO [05-11|22:07:40.713] Looking for peers                        peercount=10 tried=5  static=0
-INFO [05-11|22:07:40.789] Imported new block receipts              count=52   elapsed=242.575ms   number=12415647 hash="fed53a…2e6ca8" age=15m28s   size=6.07MiB
-INFO [05-11|22:07:45.139] Initializing state bloom                 items=98293033 errorrate=0.000 elapsed=4m16.087s
-WARN [05-11|22:07:49.396] Dropping unsynced node during sync       id=02c7753131d128f8 conn=inbound addr=161.117.250.168:39070 type=
-INFO [05-11|22:07:51.269] Looking for peers                        peercount=10 tried=2  static=0
-WARN [05-11|22:07:52.193] Stalling state sync, dropping peer       peer=698099def3bd349ecf1b724d1d5efff21c373f0361814c32b0019099701a39b0
-ERROR[05-11|22:07:52.194] Ethereum peer removal failed             peer=698099de err="peer not registered"
-INFO [05-11|22:07:53.139] Initializing state bloom                 items=101574552 errorrate=0.000 elapsed=4m24.087s
-INFO [05-11|22:07:53.168] Imported new block headers               count=1    elapsed=8.121ms     number=12415714 hash="4cad4a…6072c8"
-INFO [05-11|22:07:57.208] Imported new state entries               count=201  elapsed="3.3µs"     processed=605903080 pending=1937 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-WARN [05-11|22:08:00.575] Dropping unsynced node during sync       id=fefccf7184403586 conn=inbound addr=149.28.43.32:33706    type=Geth/v1.10.3-unstabl...
-INFO [05-11|22:08:01.141] Initializing state bloom                 items=104791655 errorrate=0.000 elapsed=4m32.089s
-INFO [05-11|22:08:01.278] Looking for peers                        peercount=9  tried=3  static=0
-INFO [05-11|22:08:05.226] Imported new block headers               count=2    elapsed=13.619ms    number=12415716 hash="d21212…d842a5"
-INFO [05-11|22:08:07.043] Imported new state entries               count=399  elapsed="2.7µs"     processed=605903479 pending=2582 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-WARN [05-11|22:08:07.490] Stalling state sync, dropping peer       peer=5c412cb9532a3001242bf2290e307dd8f3c929db5abb00feef938b5206205703
-INFO [05-11|22:08:07.490] Imported new state entries               count=30   elapsed="3.1µs"     processed=605903509 pending=2625 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-ERROR[05-11|22:08:07.491] Ethereum peer removal failed             peer=5c412cb9 err="peer not registered"
-WARN [05-11|22:08:07.492] Rewinding blockchain                     target=12413667
-INFO [05-11|22:08:09.141] Initializing state bloom                 items=107307213 errorrate=0.000 elapsed=4m40.089s
-INFO [05-11|22:08:10.389] Loaded most recent local header          number=12413667 hash="876b1c…d2a345" td=24530335739760181510529 age=7h36m36s
-INFO [05-11|22:08:10.389] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo1w
-INFO [05-11|22:08:10.389] Loaded most recent local fast block      number=12413667 hash="876b1c…d2a345" td=24530335739760181510529 age=7h36m36s
-INFO [05-11|22:08:10.389] Loaded last fast-sync pivot marker       number=12415648
-WARN [05-11|22:08:10.389] Rolled back chain segment                header=12415716->12413667 fast=12415647->12413667 block=0->0 reason="syncing canceled (requested)"
-WARN [05-11|22:08:10.389] Synchronisation failed, dropping peer    peer=5c412cb9532a3001242bf2290e307dd8f3c929db5abb00feef938b5206205703 err=timeout
-ERROR[05-11|22:08:10.389] Ethereum peer removal failed             peer=5c412cb9 err="peer not registered"
-INFO [05-11|22:08:11.315] Looking for peers                        peercount=9  tried=5  static=0
-INFO [05-11|22:08:17.143] Initializing state bloom                 items=110453635 errorrate=0.000 elapsed=4m48.091s
-INFO [05-11|22:08:20.020] Disabling direct-ancient mode            origin=12413667 ancient=12189695
-INFO [05-11|22:08:20.637] Imported new block headers               count=192  elapsed=30.047ms    number=12413859 hash="d8529a…e0e459" age=6h52m51s
-INFO [05-11|22:08:20.655] Imported new block headers               count=192  elapsed=15.548ms    number=12414051 hash="99802f…f91ebe" age=6h9m32s
-INFO [05-11|22:08:21.317] Looking for peers                        peercount=11 tried=4  static=0
-INFO [05-11|22:08:21.359] Imported new block headers               count=768  elapsed=147.331ms   number=12414819 hash="d6d8f5…b37d59" age=3h22m23s
-INFO [05-11|22:08:21.416] Imported new block headers               count=384  elapsed=50.654ms    number=12415203 hash="ede3b6…9e4563" age=1h54m32s
-INFO [05-11|22:08:21.855] Downloader queue stats                   receiptTasks=1312 blockTasks=1201 itemSize=258.02KiB throttle=254
-INFO [05-11|22:08:21.898] Imported new block receipts              count=6    elapsed=41.043ms    number=12413673 hash="aef497…f3d991" age=7h35m4s  size=631.53KiB
-INFO [05-11|22:08:24.356] Imported new state entries               count=193  elapsed="3µs"       processed=605903702 pending=3054 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:08:25.143] Initializing state bloom                 items=113074061 errorrate=0.000 elapsed=4m56.091s
-INFO [05-11|22:08:25.560] Imported new block headers               count=384  elapsed=45.512ms    number=12415587 hash="e9f011…9845a0" age=27m31s
-INFO [05-11|22:08:25.776] Imported new block receipts              count=6    elapsed=29.958ms    number=12413679 hash="811fca…ca5710" age=7h34m20s size=621.76KiB
-WARN [05-11|22:08:26.995] Dropping unsynced node during sync       id=9ad84a851f324f79 conn=inbound addr=47.241.60.194:35786   type=OpenEthereum/v3.2.5-...
-INFO [05-11|22:08:27.671] Imported new block receipts              count=248  elapsed=1.882s      number=12413927 hash="279011…05ea9c" age=6h34m41s size=27.56MiB
-INFO [05-11|22:08:27.963] Imported new block receipts              count=56   elapsed=290.781ms   number=12413983 hash="332d97…ec36e0" age=6h23m20s size=6.13MiB
-INFO [05-11|22:08:28.151] Imported new block receipts              count=28   elapsed=186.302ms   number=12414011 hash="f32a1f…614744" age=6h17m22s size=3.22MiB
-INFO [05-11|22:08:29.183] Imported new state entries               count=396  elapsed="4.4µs"     processed=605904098 pending=4687 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:08:30.083] Imported new block receipts              count=113  elapsed=815.954ms   number=12414124 hash="4ed6a8…2171d2" age=5h54m21s size=12.70MiB
-WARN [05-11|22:08:30.267] Stalling state sync, dropping peer       peer=64e4462ea4443b89a76d3b4a601cb5ce463884a48910d3e6364c34c92201b781
-WARN [05-11|22:08:30.267] Stalling state sync, dropping peer       peer=dbfd13e264d3b304576be7bf3b228ad0b04adefeb3f1002026007ebaff5dbf2c
-INFO [05-11|22:08:30.267] Imported new state entries               count=25   elapsed="2.7µs"     processed=605904123 pending=4768 trieretry=2 coderetry=0 duplicate=0 unexpected=0
-ERROR[05-11|22:08:30.267] Ethereum peer removal failed             peer=64e4462e err="peer not registered"
-WARN [05-11|22:08:30.267] Rewinding blockchain                     target=12413538
-ERROR[05-11|22:08:30.276] Ethereum peer removal failed             peer=dbfd13e2 err="peer not registered"
-INFO [05-11|22:08:31.324] Looking for peers                        peercount=10 tried=3  static=0
-INFO [05-11|22:08:31.348] Loaded most recent local header          number=12413538 hash="98d2cb…45461f" td=24529345629222486342679 age=8h8m57s
-INFO [05-11|22:08:31.348] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo1w
-INFO [05-11|22:08:31.348] Loaded most recent local fast block      number=12413538 hash="98d2cb…45461f" td=24529345629222486342679 age=8h8m57s
-INFO [05-11|22:08:31.349] Loaded last fast-sync pivot marker       number=12415653
-WARN [05-11|22:08:31.349] Rolled back chain segment                header=12415587->12413538 fast=12414124->12413538 block=0->0 reason="syncing canceled (requested)"
-WARN [05-11|22:08:31.349] Synchronisation failed, dropping peer    peer=dbfd13e264d3b304576be7bf3b228ad0b04adefeb3f1002026007ebaff5dbf2c err=timeout
-ERROR[05-11|22:08:31.349] Ethereum peer removal failed             peer=dbfd13e2 err="peer not registered"
-INFO [05-11|22:08:33.143] Initializing state bloom                 items=115344188 errorrate=0.000 elapsed=5m4.091s
-INFO [05-11|22:08:41.143] Initializing state bloom                 items=118454479 errorrate=0.000 elapsed=5m12.091s
-INFO [05-11|22:08:42.373] Looking for peers                        peercount=12 tried=5  static=0
-INFO [05-11|22:08:45.665] Disabling direct-ancient mode            origin=12413538 ancient=12189695
-INFO [05-11|22:08:46.330] Imported new block headers               count=192  elapsed=28.601ms    number=12413730 hash="50e530…2cc8a6" age=7h21m5s
-INFO [05-11|22:08:47.530] Imported new block headers               count=1728 elapsed=353.563ms   number=12415458 hash="5c37bc…b63133" age=55m48s
-INFO [05-11|22:08:47.789] Imported new block receipts              count=19   elapsed=264.710ms   number=12413557 hash="b60405…ab6ba5" age=8h4m19s  size=2.03MiB
-INFO [05-11|22:08:48.340] Imported new state entries               count=195  elapsed="2.9µs"     processed=605904318 pending=2998 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:08:49.144] Initializing state bloom                 items=121239778 errorrate=0.000 elapsed=5m20.092s
-INFO [05-11|22:08:49.212] Imported new state entries               count=402  elapsed="2.3µs"     processed=605904720 pending=4544 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-ERROR[05-11|22:08:52.057] Ethereum peer removal failed             peer=0f2a6fbd err="peer not registered"
-INFO [05-11|22:08:52.637] Looking for peers                        peercount=11 tried=6  static=0
-INFO [05-11|22:08:53.898] Imported new block headers               count=192  elapsed=1.762s      number=12415650 hash="e07a1c…9f40ec" age=16m
-INFO [05-11|22:08:55.084] Imported new block receipts              count=237  elapsed=2.829s      number=12413794 hash="9d2880…c7bd71" age=7h6m31s  size=26.00MiB
-INFO [05-11|22:08:56.930] Imported new block receipts              count=218  elapsed=1.836s      number=12414012 hash="a7ba97…d51191" age=6h17m48s size=24.29MiB
-INFO [05-11|22:08:57.144] Initializing state bloom                 items=123100861 errorrate=0.000 elapsed=5m28.092s
-INFO [05-11|22:08:57.495] Imported new block receipts              count=86   elapsed=561.147ms   number=12414098 hash="098ed1…624f6b" age=5h58m35s size=9.69MiB
-INFO [05-11|22:08:58.117] Imported new block receipts              count=87   elapsed=617.763ms   number=12414185 hash="009438…bab135" age=5h41m19s size=9.82MiB
-INFO [05-11|22:08:58.669] Imported new block receipts              count=67   elapsed=548.494ms   number=12414252 hash="d1b214…2ab363" age=5h24m4s  size=7.26MiB
-INFO [05-11|22:08:59.222] Imported new block receipts              count=33   elapsed=416.832ms   number=12414285 hash="32ad0d…b4f283" age=5h17m48s size=3.68MiB
-INFO [05-11|22:08:59.501] Imported new block receipts              count=33   elapsed=209.912ms   number=12414318 hash="26a1fb…9f7892" age=5h10m9s  size=3.59MiB
-INFO [05-11|22:09:00.082] Imported new block receipts              count=33   elapsed=274.494ms   number=12414351 hash="2653bd…56337e" age=5h3m11s  size=3.74MiB
-INFO [05-11|22:09:00.546] Imported new block receipts              count=31   elapsed=152.948ms   number=12414382 hash="f35cb6…30e24b" age=4h56m39s size=3.54MiB
-INFO [05-11|22:09:01.594] Imported new block headers               count=69   elapsed=529.794ms   number=12415719 hash="0d9607…fc3406"
-INFO [05-11|22:09:01.595] Imported new block receipts              count=94   elapsed=728.516ms   number=12414476 hash="ac6bc7…86f647" age=4h36m47s size=10.41MiB
-INFO [05-11|22:09:02.712] Looking for peers                        peercount=11 tried=4  static=0
-INFO [05-11|22:09:03.086] Imported new block receipts              count=160  elapsed=1.478s      number=12414636 hash="e58e80…2bc665" age=4h2m5s   size=16.63MiB
-INFO [05-11|22:09:03.572] Imported new block receipts              count=34   elapsed=484.185ms   number=12414670 hash="aa33ea…d7db30" age=3h53m32s size=3.55MiB
-INFO [05-11|22:09:03.953] Imported new block receipts              count=33   elapsed=380.333ms   number=12414703 hash="f5f409…55d4cb" age=3h46m27s size=3.57MiB
-INFO [05-11|22:09:04.643] Imported new block receipts              count=59   elapsed=462.470ms   number=12414762 hash="2fabc4…71a2da" age=3h32m17s size=6.41MiB
-INFO [05-11|22:09:05.141] Imported new block receipts              count=33   elapsed=397.009ms   number=12414795 hash="09bbd5…442d9e" age=3h27m21s size=3.75MiB
-INFO [05-11|22:09:05.220] Initializing state bloom                 items=124291589 errorrate=0.000 elapsed=5m36.168s
-INFO [05-11|22:09:05.443] Imported new block receipts              count=78   elapsed=229.126ms   number=12414873 hash="d3a9d9…2a5284" age=3h11m17s size=7.66MiB
-INFO [05-11|22:09:07.740] Imported new state entries               count=431  elapsed="3.1µs"     processed=605905151 pending=5020 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:09:09.320] Imported new block receipts              count=264  elapsed=2.356s      number=12415137 hash="ee31a5…ba9e91" age=2h7m38s  size=29.02MiB
-INFO [05-11|22:09:10.452] Imported new block receipts              count=101  elapsed=1.127s      number=12415238 hash="4cfc77…54254a" age=1h46m34s size=11.21MiB
-INFO [05-11|22:09:11.939] Imported new block receipts              count=143  elapsed=1.479s      number=12415381 hash="c91acd…416e44" age=1h12m36s size=15.83MiB
-INFO [05-11|22:09:12.724] Looking for peers                        peercount=13 tried=3  static=0
-INFO [05-11|22:09:12.919] Imported new block receipts              count=160  elapsed=975.538ms   number=12415541 hash="0b881e…df3005" age=37m22s   size=18.27MiB
-INFO [05-11|22:09:13.266] Initializing state bloom                 items=125017184 errorrate=0.000 elapsed=5m44.214s
-INFO [05-11|22:09:13.675] Imported new block receipts              count=107  elapsed=750.625ms   number=12415648 hash="ed9438…8a3f2e" age=16m28s   size=11.87MiB
-INFO [05-11|22:09:13.714] Imported new block receipts              count=7    elapsed=37.166ms    number=12415655 hash="d8b474…9df088" age=15m33s   size=667.71KiB
-INFO [05-11|22:09:16.273] Imported new state entries               count=104  elapsed="3.4µs"     processed=605905255 pending=5134 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:09:19.443] Imported new state entries               count=273  elapsed="3.1µs"     processed=605905528 pending=4338 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:09:20.054] Imported new block headers               count=1    elapsed=8.783ms     number=12415720 hash="c13883…e01dd0"
-INFO [05-11|22:09:21.266] Initializing state bloom                 items=126821790 errorrate=0.000 elapsed=5m52.214s
-INFO [05-11|22:09:22.928] Looking for peers                        peercount=15 tried=4  static=0
-WARN [05-11|22:09:23.132] Dropping unsynced node during sync       id=76c7c91d30ad33e0 conn=inbound addr=69.167.51.250:6246    type=OpenEthereum/v3.2.4-...
-INFO [05-11|22:09:24.101] Imported new state entries               count=255  elapsed="2.8µs"     processed=605905783 pending=5717 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:09:29.266] Initializing state bloom                 items=128403945 errorrate=0.000 elapsed=6m0.214s
-INFO [05-11|22:09:29.503] Imported new state entries               count=384  elapsed="4µs"       processed=605906167 pending=7361 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:09:30.826] Imported new state entries               count=413  elapsed="2.8µs"     processed=605906580 pending=9048 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:09:33.404] Looking for peers                        peercount=13 tried=5  static=0
-INFO [05-11|22:09:37.287] Initializing state bloom                 items=130340595 errorrate=0.000 elapsed=6m8.235s
-INFO [05-11|22:09:41.647] Imported new block headers               count=1    elapsed=64.305ms    number=12415721 hash="2a6b77…4bc0ec" age=1m16s
-INFO [05-11|22:09:42.431] Downloader queue stats                   receiptTasks=0    blockTasks=0    itemSize=258.77KiB throttle=254
-INFO [05-11|22:09:43.595] Imported new state entries               count=388  elapsed="2.2µs"     processed=605906968 pending=9519 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:09:43.623] Looking for peers                        peercount=15 tried=4  static=0
-INFO [05-11|22:09:45.293] Initializing state bloom                 items=132029723 errorrate=0.000 elapsed=6m16.241s
-INFO [05-11|22:09:50.883] Imported new state entries               count=304  elapsed="45.5µs"    processed=605907272 pending=9900 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-WARN [05-11|22:09:50.884] Stalling state sync, dropping peer       peer=58660d2e21300b61b2cd31143b8843eee4b3347f6b26c1675840579a0b601a1b
-ERROR[05-11|22:09:50.884] Ethereum peer removal failed             peer=58660d2e err="peer not registered"
-WARN [05-11|22:09:50.884] Rewinding blockchain                     target=12413672
-INFO [05-11|22:09:53.295] Initializing state bloom                 items=133786045 errorrate=0.000 elapsed=6m24.243s
-INFO [05-11|22:09:53.922] Looking for peers                        peercount=14 tried=4  static=0
-WARN [05-11|22:09:55.252] Dropping unsynced node during sync       id=4fec9d3badd46e4f conn=inbound addr=100.25.32.198:48217   type=Geth/v1.10.3-stable/...
-INFO [05-11|22:09:55.407] Loaded most recent local header          number=12413672 hash="0d55f9…ed1025" td=24530373911345521887953 age=7h36m45s
-INFO [05-11|22:09:55.407] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo1w
-INFO [05-11|22:09:55.407] Loaded most recent local fast block      number=12413672 hash="0d55f9…ed1025" td=24530373911345521887953 age=7h36m45s
-INFO [05-11|22:09:55.407] Loaded last fast-sync pivot marker       number=12415656
-WARN [05-11|22:09:55.407] Rolled back chain segment                header=12415721->12413672 fast=12415655->12413672 block=0->0 reason="syncing canceled (requested)"
-WARN [05-11|22:09:55.407] Synchronisation failed, dropping peer    peer=58660d2e21300b61b2cd31143b8843eee4b3347f6b26c1675840579a0b601a1b err=timeout
-ERROR[05-11|22:09:55.407] Ethereum peer removal failed             peer=58660d2e err="peer not registered"
-INFO [05-11|22:09:55.905] Disabling direct-ancient mode            origin=12413672 ancient=12189695
-INFO [05-11|22:09:56.837] Imported new block headers               count=1536 elapsed=224.140ms   number=12415208 hash="132581…d75e04" age=1h54m58s
-INFO [05-11|22:09:56.923] Imported new block receipts              count=2    elapsed=7.943ms     number=12413674 hash="963524…634954" age=7h36m35s size=218.28KiB
-INFO [05-11|22:09:57.137] Imported new block receipts              count=2    elapsed=7.169ms     number=12413676 hash="460b64…77d78a" age=7h36m15s size=212.33KiB
-INFO [05-11|22:09:57.386] Imported new block headers               count=384  elapsed=88.743ms    number=12415592 hash="c9df98…baf6df" age=27m45s
-INFO [05-11|22:09:58.707] Imported new block receipts              count=8    elapsed=89.699ms    number=12413684 hash="74ad33…6a9f43" age=7h35m15s size=840.48KiB
-INFO [05-11|22:09:59.674] Imported new block receipts              count=4    elapsed=11.730ms    number=12413688 hash="7ed7b9…7bb54a" age=7h34m2s  size=446.80KiB
-INFO [05-11|22:10:01.325] Initializing state bloom                 items=135208634 errorrate=0.000 elapsed=6m32.272s
-INFO [05-11|22:10:01.965] Imported new block receipts              count=256  elapsed=2.283s      number=12413944 hash="3a8f5c…d0651a" age=6h33m4s  size=28.39MiB
-INFO [05-11|22:10:02.025] Imported new block receipts              count=16   elapsed=58.437ms    number=12413960 hash="711789…d81e86" age=6h29m10s size=1.84MiB
-INFO [05-11|22:10:02.846] Imported new block receipts              count=18   elapsed=584.474ms   number=12413978 hash="217707…e60c8f" age=6h26m16s size=1.94MiB
-INFO [05-11|22:10:03.198] Imported new block headers               count=129  elapsed=1.059s      number=12415721 hash="2a6b77…4bc0ec" age=1m38s
-INFO [05-11|22:10:03.348] Imported new block receipts              count=16   elapsed=235.075ms   number=12413994 hash="fdcd51…f02692" age=6h21m54s size=1.82MiB
-INFO [05-11|22:10:03.947] Looking for peers                        peercount=13 tried=7  static=0
-WARN [05-11|22:10:04.110] Dropping unsynced node during sync       id=b1dfa2bafba70684 conn=inbound addr=142.4.214.189:47332   type=OpenEthereum/MY2COIN...
-INFO [05-11|22:10:05.503] Imported new block receipts              count=176  elapsed=2.140s      number=12414170 hash="074d0b…06594a" age=5h45m49s size=19.85MiB
-INFO [05-11|22:10:06.235] Imported new state entries               count=385  elapsed="2.5µs"     processed=605907657 pending=4669 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:10:08.172] Imported new block receipts              count=235  elapsed=2.649s      number=12414405 hash="ccbe84…c3704b" age=4h52m23s size=26.15MiB
-INFO [05-11|22:10:08.401] Imported new block receipts              count=33   elapsed=227.271ms   number=12414438 hash="380815…c1f7a3" age=4h45m55s size=3.60MiB
-INFO [05-11|22:10:08.689] Imported new block receipts              count=33   elapsed=286.388ms   number=12414471 hash="3d0ad6…d53e06" age=4h38m44s size=3.63MiB
-INFO [05-11|22:10:09.326] Initializing state bloom                 items=136268398 errorrate=0.000 elapsed=6m40.274s
-INFO [05-11|22:10:09.712] Imported new state entries               count=397  elapsed="2.9µs"     processed=605908054 pending=6271 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:10:11.198] Imported new block receipts              count=206  elapsed=2.408s      number=12414677 hash="51e341…f93bad" age=3h53m34s size=21.53MiB
-INFO [05-11|22:10:11.913] Imported new block receipts              count=76   elapsed=711.476ms   number=12414753 hash="7edc7b…e3bcab" age=3h34m23s size=8.20MiB
-WARN [05-11|22:10:13.040] Dropping unsynced node during sync       id=6b0cbeb8cd4dc6af conn=inbound addr=24.145.80.80:36312    type=OpenEthereum/v3.2.5-...
-INFO [05-11|22:10:13.732] Imported new block receipts              count=178  elapsed=1.795s      number=12414931 hash="83b64b…660c9b" age=2h59m14s size=18.65MiB
-INFO [05-11|22:10:13.943] Imported new block receipts              count=17   elapsed=209.935ms   number=12414948 hash="8f31c1…6cd8fa" age=2h53m55s size=1.87MiB
-INFO [05-11|22:10:14.517] Imported new block receipts              count=16   elapsed=108.969ms   number=12414964 hash="0d75ce…fe3f8a" age=2h49m15s size=1.77MiB
-INFO [05-11|22:10:14.680] Looking for peers                        peercount=14 tried=3  static=0
-INFO [05-11|22:10:15.148] Imported new block receipts              count=32   elapsed=152.605ms   number=12414996 hash="20fd04…4f5b09" age=2h42m4s  size=3.68MiB
-INFO [05-11|22:10:16.481] Imported new block headers               count=1    elapsed=8.451ms     number=12415722 hash="f50235…fad13d" age=1m48s
-INFO [05-11|22:10:17.326] Initializing state bloom                 items=137471364 errorrate=0.000 elapsed=6m48.274s
-INFO [05-11|22:10:17.488] Imported new block receipts              count=202  elapsed=2.201s      number=12415198 hash="1ceebb…27e9a0" age=1h57m17s size=22.43MiB
-INFO [05-11|22:10:17.971] Imported new block receipts              count=51   elapsed=480.506ms   number=12415249 hash="c549d1…ca0322" age=1h44m26s size=5.45MiB
-INFO [05-11|22:10:18.154] Imported new block receipts              count=32   elapsed=181.319ms   number=12415281 hash="361a34…551bec" age=1h37m12s size=3.58MiB
-INFO [05-11|22:10:19.564] Imported new block receipts              count=153  elapsed=1.089s      number=12415434 hash="f71483…ffde55" age=1h4m23s  size=17.27MiB
-INFO [05-11|22:10:19.774] Imported new block receipts              count=33   elapsed=208.320ms   number=12415467 hash="33cc2f…c1ef8c" age=54m11s   size=3.59MiB
-INFO [05-11|22:10:20.625] Imported new block receipts              count=84   elapsed=485.971ms   number=12415551 hash="671e3f…c4aede" age=36m47s   size=9.58MiB
-WARN [05-11|22:10:20.644] Dropping unsynced node during sync       id=e9dbc5436977b26a conn=inbound addr=149.28.62.58:46562    type=Geth/v1.10.3-unstabl...
-INFO [05-11|22:10:21.027] Imported new block receipts              count=107  elapsed=242.942ms   number=12415658 hash="e78298…21e4a8" age=16m22s   size=11.74MiB
-INFO [05-11|22:10:23.846] Imported new state entries               count=273  elapsed="2.9µs"     processed=605908327 pending=6882 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-WARN [05-11|22:10:23.850] Stalling state sync, dropping peer       peer=abdeb9db9f3f5d736be43896a1d5a4bfbdac6d9ca638bb7a844ded324288f2ef
-ERROR[05-11|22:10:23.850] Ethereum peer removal failed             peer=abdeb9db err="peer not registered"
-INFO [05-11|22:10:25.338] Initializing state bloom                 items=138463132 errorrate=0.000 elapsed=6m56.286s
-INFO [05-11|22:10:25.583] Imported new block headers               count=1    elapsed=10.449ms    number=12415723 hash="876c8c…ef364a" age=1m8s
-INFO [05-11|22:10:25.621] Looking for peers                        peercount=15 tried=6  static=0
-INFO [05-11|22:10:26.857] Imported new state entries               count=273  elapsed="2.3µs"     processed=605908600 pending=4344 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:10:27.786] Imported new state entries               count=384  elapsed="3.6µs"     processed=605908984 pending=5852 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:10:32.399] Imported new state entries               count=312  elapsed="2.7µs"     processed=605909296 pending=8092 trieretry=0 coderetry=0 duplicate=0 unexpected=0
-INFO [05-11|22:10:33.338] Initializing state bloom                 items=140405393 errorrate=0.000 elapsed=7m4.286s
+INFO [06-03|23:02:23.387] Imported new state entries               count=564  elapsed="2.3µs"     processed=993919411 pending=4399   trieretry=0    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:02:25.508] Looking for peers                        peercount=22 tried=5 static=0
+WARN [06-03|23:02:26.259] Dropping unsynced node during sync       id=da1e6b3a618981e0 conn=inbound addr=111.193.164.143:42610 type=OpenEthereum/v3.2.6-...
+INFO [06-03|23:02:27.495] Initializing state bloom                 items=350455245 errorrate=0.000 elapsed=44m11.859s
+ERROR[06-03|23:02:28.782] Ethereum peer removal failed             peer=f9eb51a8 err="peer not registered"
+ERROR[06-03|23:02:28.783] Ethereum peer removal failed             peer=139b1d5f err="peer not registered"
+INFO [06-03|23:02:29.092] Imported new block receipts              count=35   elapsed=200.574ms   number=12564302 hash="4e877b…4949f3" age=14m58s   size=3.81MiB
+INFO [06-03|23:02:34.890] Imported new state entries               count=384  elapsed="2.5µs"     processed=993919795 pending=6027   trieretry=0    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:02:35.504] Initializing state bloom                 items=350486285 errorrate=0.000 elapsed=44m19.868s
+INFO [06-03|23:02:35.512] Looking for peers                        peercount=21 tried=4 static=0
+INFO [06-03|23:02:39.642] Imported new block headers               count=1    elapsed=8.478ms     number=12564369 hash="819149…e22da3"
+INFO [06-03|23:02:43.504] Initializing state bloom                 items=350528131 errorrate=0.000 elapsed=44m27.868s
+INFO [06-03|23:02:45.513] Looking for peers                        peercount=21 tried=5 static=0
+INFO [06-03|23:02:48.499] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=236.49KiB throttle=278
+INFO [06-03|23:02:51.535] Initializing state bloom                 items=350560217 errorrate=0.000 elapsed=44m35.899s
+INFO [06-03|23:02:54.792] Imported new state entries               count=273  elapsed="2.7µs"     processed=993920068 pending=4369   trieretry=0    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:02:57.521] Looking for peers                        peercount=23 tried=4 static=0
+INFO [06-03|23:02:59.535] Initializing state bloom                 items=350581338 errorrate=0.000 elapsed=44m43.899s
+INFO [06-03|23:03:02.590] Imported new block headers               count=1    elapsed=15.444ms    number=12564370 hash="209408…822fb3" age=1m3s
+INFO [06-03|23:03:05.388] Imported new state entries               count=384  elapsed="2.6µs"     processed=993920452 pending=9479   trieretry=2    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:03:07.543] Initializing state bloom                 items=350601704 errorrate=0.000 elapsed=44m51.907s
+INFO [06-03|23:03:07.576] Looking for peers                        peercount=25 tried=4 static=0
+INFO [06-03|23:03:11.634] Imported new block headers               count=1    elapsed=86.536ms    number=12564371 hash="6be023…451cb6" age=1m4s
+INFO [06-03|23:03:13.895] Imported new state entries               count=298  elapsed="2.2µs"     processed=993920750 pending=14231  trieretry=2    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:03:15.577] Initializing state bloom                 items=350620977 errorrate=0.000 elapsed=44m59.942s
+INFO [06-03|23:03:18.535] Looking for peers                        peercount=26 tried=4 static=0
+WARN [06-03|23:03:19.379] Dropping unsynced node during sync       id=c0e37fc2470a8366 conn=inbound addr=143.198.119.232:52550 type=Geth/v1.10.1-stable-...
+WARN [06-03|23:03:19.596] Dropping unsynced node during sync       id=ee83a4d4bc45455e conn=inbound addr=119.178.100.30:36770  type=OpenEthereum/v3.2.6-...
+INFO [06-03|23:03:20.034] Imported new block headers               count=1    elapsed=38.439ms    number=12564372 hash="27fa7f…379dec"
+INFO [06-03|23:03:23.578] Initializing state bloom                 items=350640915 errorrate=0.000 elapsed=45m7.942s
+WARN [06-03|23:03:25.338] Dropping unsynced node during sync       id=697bc943a9aa2c9c conn=inbound addr=35.196.58.204:36888   type=Geth/v1.10.2-stable-...
+INFO [06-03|23:03:28.603] Looking for peers                        peercount=25 tried=4 static=0
+INFO [06-03|23:03:29.071] Imported new state entries               count=570  elapsed="2.7µs"     processed=993921320 pending=23193  trieretry=0    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:03:31.581] Initializing state bloom                 items=350658006 errorrate=0.000 elapsed=45m15.945s
+INFO [06-03|23:03:38.604] Looking for peers                        peercount=26 tried=4 static=0
+INFO [06-03|23:03:39.581] Initializing state bloom                 items=350677710 errorrate=0.000 elapsed=45m23.945s
+INFO [06-03|23:03:40.375] Imported new state entries               count=540  elapsed="6.1µs"     processed=993921860 pending=31772  trieretry=0    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:03:45.951] Imported new state entries               count=384  elapsed=2.454ms     processed=993922244 pending=32284  trieretry=2    coderetry=0 duplicate=0 unexpected=2674
+INFO [06-03|23:03:47.180] Imported new state entries               count=0    elapsed=1.226s      processed=993922244 pending=32413  trieretry=296  coderetry=0 duplicate=0 unexpected=2970
+INFO [06-03|23:03:47.581] Initializing state bloom                 items=350703209 errorrate=0.000 elapsed=45m31.945s
+INFO [06-03|23:03:48.605] Looking for peers                        peercount=27 tried=4 static=0
+INFO [06-03|23:03:52.393] Imported new block headers               count=1    elapsed=94.761ms    number=12564373 hash="c8be89…a5957f"
+INFO [06-03|23:03:52.572] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=240.11KiB throttle=273
+INFO [06-03|23:03:52.639] Imported new state entries               count=472  elapsed="2.7µs"     processed=993922716 pending=33421  trieretry=2    coderetry=0 duplicate=0 unexpected=2970
+INFO [06-03|23:03:55.581] Initializing state bloom                 items=350729183 errorrate=0.000 elapsed=45m39.945s
+INFO [06-03|23:03:58.606] Looking for peers                        peercount=29 tried=4 static=0
+INFO [06-03|23:03:58.747] Imported new state entries               count=384  elapsed="2.7µs"     processed=993923100 pending=34710  trieretry=2    coderetry=0 duplicate=0 unexpected=2970
+INFO [06-03|23:04:03.592] Initializing state bloom                 items=350754163 errorrate=0.000 elapsed=45m47.956s
+INFO [06-03|23:04:04.985] Imported new block headers               count=1    elapsed=79.780ms    number=12564374 hash="ae19d3…e39986" age=1m2s
+INFO [06-03|23:04:05.759] Imported new state entries               count=445  elapsed="24µs"      processed=993923545 pending=36206  trieretry=0    coderetry=0 duplicate=0 unexpected=2970
+WARN [06-03|23:04:05.761] Stalling state sync, dropping peer       peer=6947706974e54eba38fa8c8a8161ebc9b4b7d10e40c37c6310dcd7b16d1ee18a
+ERROR[06-03|23:04:05.762] Ethereum peer removal failed             peer=69477069 err="peer not registered"
+WARN [06-03|23:04:05.789] Rewinding blockchain                     target=12562325
+INFO [06-03|23:04:08.610] Looking for peers                        peercount=28 tried=4 static=0
+INFO [06-03|23:04:10.648] Loaded most recent local header          number=12562325 hash="6f9312…33effb" td=25690505662313324796175 age=7h41m44s
+INFO [06-03|23:04:10.648] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y2mo1d
+INFO [06-03|23:04:10.648] Loaded most recent local fast block      number=12562325 hash="6f9312…33effb" td=25690505662313324796175 age=7h41m44s
+INFO [06-03|23:04:10.648] Loaded last fast-sync pivot marker       number=12564303
+WARN [06-03|23:04:10.652] Rolled back chain segment                header=12564374->12562325 fast=12564302->12562325 block=0->0 reason="syncing canceled (requested)"
+WARN [06-03|23:04:10.654] Synchronisation failed, dropping peer    peer=6947706974e54eba38fa8c8a8161ebc9b4b7d10e40c37c6310dcd7b16d1ee18a err=timeout
+ERROR[06-03|23:04:10.654] Ethereum peer removal failed             peer=69477069 err="peer not registered"
+INFO [06-03|23:04:11.596] Initializing state bloom                 items=350782575 errorrate=0.000 elapsed=45m55.960s
+INFO [06-03|23:04:18.626] Looking for peers                        peercount=30 tried=4 static=0
+INFO [06-03|23:04:19.597] Initializing state bloom                 items=350823665 errorrate=0.000 elapsed=46m3.961s
+ERROR[06-03|23:04:22.224] Snapshot extension registration failed   peer=b2a05910 err="peer connected on snap without compatible eth support"
+INFO [06-03|23:04:27.597] Initializing state bloom                 items=350864844 errorrate=0.000 elapsed=46m11.961s
+INFO [06-03|23:04:28.628] Looking for peers                        peercount=29 tried=4 static=0
+INFO [06-03|23:04:35.609] Initializing state bloom                 items=350906228 errorrate=0.000 elapsed=46m19.973s
+INFO [06-03|23:04:37.980] Disabling direct-ancient mode            origin=12562325 ancient=12359074
+INFO [06-03|23:04:38.513] Imported new block headers               count=192  elapsed=76.235ms    number=12562517 hash="c5485d…1493a8" age=6h52m55s
+INFO [06-03|23:04:38.633] Looking for peers                        peercount=33 tried=4 static=0
+INFO [06-03|23:04:39.041] Imported new block headers               count=192  elapsed=124.427ms   number=12562709 hash="49afd1…890c4b" age=6h9m47s
+INFO [06-03|23:04:39.667] Imported new block headers               count=1536 elapsed=258.865ms   number=12564245 hash="f3c353…459cab" age=29m44s
+INFO [06-03|23:04:39.667] Imported new block receipts              count=9    elapsed=188.996ms   number=12562334 hash="d9cc27…06bbad" age=7h40m12s size=825.86KiB
+INFO [06-03|23:04:39.777] Imported new block receipts              count=12   elapsed=109.967ms   number=12562346 hash="716271…26caee" age=7h36m21s size=1.32MiB
+INFO [06-03|23:04:42.453] Imported new block receipts              count=4    elapsed=14.599ms    number=12562350 hash="5e8d15…216b99" age=7h35m25s size=455.36KiB
+INFO [06-03|23:04:42.667] Imported new block receipts              count=38   elapsed=118.706ms   number=12562388 hash="47e459…013127" age=7h25m3s  size=4.17MiB
+INFO [06-03|23:04:43.618] Initializing state bloom                 items=350945319 errorrate=0.000 elapsed=46m27.982s
+INFO [06-03|23:04:43.991] Imported new block headers               count=130  elapsed=630.321ms   number=12564375 hash="7de695…25e64e" age=1m30s
+INFO [06-03|23:04:51.618] Initializing state bloom                 items=350984400 errorrate=0.000 elapsed=46m35.983s
+WARN [06-03|23:04:55.245] Dropping unsynced node during sync       id=916ac52bc5192159 conn=inbound addr=213.31.124.180:16562  type=Geth/v1.10.3-stable-...
+INFO [06-03|23:04:55.943] Imported new block headers               count=1    elapsed=6.046ms     number=12564376 hash="853088…92c1c4" age=1m6s
+ERROR[06-03|23:04:56.583] Ethereum peer removal failed             peer=263e3aae err="peer not registered"
+INFO [06-03|23:04:56.623] Downloader queue stats                   receiptTasks=1677 blockTasks=1727 itemSize=241.53KiB throttle=272
+INFO [06-03|23:04:57.875] Imported new block receipts              count=261  elapsed=1.248s      number=12562649 hash="4b879f…f1dcfd" age=6h23m44s size=27.83MiB
+INFO [06-03|23:04:58.425] Imported new block receipts              count=97   elapsed=545.284ms   number=12562746 hash="bed631…2b23aa" age=6h1m11s  size=10.19MiB
+INFO [06-03|23:04:58.686] Imported new block receipts              count=40   elapsed=259.663ms   number=12562786 hash="6f0c31…e96a93" age=5h53m39s size=4.22MiB
+INFO [06-03|23:04:58.866] Imported new block receipts              count=4    elapsed=14.526ms    number=12562790 hash="da1066…978a89" age=5h52m6s  size=481.55KiB
+INFO [06-03|23:04:59.620] Initializing state bloom                 items=351022528 errorrate=0.000 elapsed=46m43.984s
+WARN [06-03|23:05:01.326] Stalling state sync, dropping peer       peer=9d7f1eb241cde6712b8432dc05101047db199a4ef9c72899cb16d9cf33e6d4a9
+ERROR[06-03|23:05:01.326] Ethereum peer removal failed             peer=9d7f1eb2 err="peer not registered"
+INFO [06-03|23:05:03.439] Imported new state entries               count=0    elapsed="6.9µs"     processed=993923545 pending=273    trieretry=5    coderetry=0 duplicate=0 unexpected=2975
+INFO [06-03|23:05:03.497] Imported new block receipts              count=221  elapsed=2.087s      number=12563011 hash="d4259c…e6e91f" age=5h4m49s  size=23.92MiB
+INFO [06-03|23:05:04.955] Imported new block receipts              count=140  elapsed=1.445s      number=12563151 hash="12ca57…7a7cbe" age=4h32m45s size=15.12MiB
+INFO [06-03|23:05:06.225] Imported new block receipts              count=113  elapsed=1.252s      number=12563264 hash="4a78f8…c7d63a" age=4h6m46s  size=12.43MiB
+INFO [06-03|23:05:06.630] Imported new state entries               count=0    elapsed="9.8µs"     processed=993923545 pending=1297   trieretry=2    coderetry=0 duplicate=0 unexpected=2977
+INFO [06-03|23:05:07.293] Imported new block receipts              count=113  elapsed=1.062s      number=12563377 hash="2dd1be…35da89" age=3h41m36s size=12.60MiB
+INFO [06-03|23:05:07.686] Initializing state bloom                 items=351051989 errorrate=0.000 elapsed=46m52.050s
+INFO [06-03|23:05:07.871] Imported new block receipts              count=79   elapsed=574.758ms   number=12563456 hash="178bd5…ef5f47" age=3h26m4s  size=8.47MiB
+INFO [06-03|23:05:08.130] Imported new block receipts              count=36   elapsed=256.978ms   number=12563492 hash="029649…04cf89" age=3h17m23s size=3.94MiB
+INFO [06-03|23:05:08.200] Imported new block receipts              count=19   elapsed=69.505ms    number=12563511 hash="b23e17…5412d5" age=3h13m20s size=2.04MiB
+INFO [06-03|23:05:08.390] Imported new block receipts              count=18   elapsed=60.836ms    number=12563529 hash="068ad3…47d3dc" age=3h8m50s  size=1.97MiB
+INFO [06-03|23:05:08.803] Imported new block receipts              count=59   elapsed=278.109ms   number=12563588 hash="5ad6e7…177383" age=2h53m43s size=6.51MiB
+INFO [06-03|23:05:08.899] Imported new block receipts              count=19   elapsed=74.772ms    number=12563607 hash="71f023…2d650f" age=2h48m9s  size=2.09MiB
+INFO [06-03|23:05:09.199] Imported new block receipts              count=19   elapsed=160.244ms   number=12563626 hash="16ac64…a99128" age=2h43m32s size=2.09MiB
+INFO [06-03|23:05:10.133] Imported new block receipts              count=83   elapsed=885.821ms   number=12563709 hash="e1dba0…95840f" age=2h25m28s size=8.72MiB
+INFO [06-03|23:05:10.250] Imported new block receipts              count=21   elapsed=116.468ms   number=12563730 hash="5d27cd…3304cc" age=2h20m26s size=2.14MiB
+INFO [06-03|23:05:10.591] Imported new block receipts              count=39   elapsed=110.285ms   number=12563769 hash="75836e…25ab12" age=2h11m58s size=4.31MiB
+INFO [06-03|23:05:11.199] Imported new block receipts              count=129  elapsed=528.642ms   number=12563898 hash="3125a5…17354c" age=1h42m4s  size=14.15MiB
+INFO [06-03|23:05:11.521] Imported new block receipts              count=19   elapsed=91.564ms    number=12563917 hash="cf213d…e83929" age=1h37m49s size=2.25MiB
+INFO [06-03|23:05:11.800] Imported new block receipts              count=34   elapsed=212.844ms   number=12563951 hash="61c41a…8be27a" age=1h30m5s  size=3.79MiB
+INFO [06-03|23:05:12.717] Imported new block receipts              count=173  elapsed=882.508ms   number=12564124 hash="98a293…458c37" age=53m43s   size=18.65MiB
+INFO [06-03|23:05:12.940] Imported new block receipts              count=102  elapsed=219.682ms   number=12564226 hash="6195f3…da6b95" age=35m34s   size=9.88MiB
+INFO [06-03|23:05:13.159] Imported new block receipts              count=18   elapsed=48.765ms    number=12564244 hash="c29267…f76db2" age=30m32s   size=2.08MiB
+INFO [06-03|23:05:13.287] Imported new block receipts              count=21   elapsed=59.646ms    number=12564265 hash="a2553d…8c6c01" age=26m14s   size=2.24MiB
+INFO [06-03|23:05:13.397] Imported new block receipts              count=20   elapsed=63.192ms    number=12564285 hash="a4ffa7…bf61bd" age=22m3s    size=2.24MiB
+INFO [06-03|23:05:13.585] Imported new block receipts              count=22   elapsed=106.226ms   number=12564307 hash="5ae880…099ab2" age=17m3s    size=2.32MiB
+INFO [06-03|23:05:13.623] Imported new block receipts              count=3    elapsed=6.992ms     number=12564310 hash="4a9c6e…5ae96f" age=16m12s   size=330.84KiB
+INFO [06-03|23:05:15.697] Initializing state bloom                 items=351058903 errorrate=0.000 elapsed=47m0.061s
+INFO [06-03|23:05:17.810] Imported new state entries               count=197  elapsed="3.7µs"     processed=993923742 pending=3141   trieretry=2    coderetry=0 duplicate=0 unexpected=2977
+INFO [06-03|23:05:19.404] Imported new state entries               count=38   elapsed="3.4µs"     processed=993923780 pending=3743   trieretry=0    coderetry=0 duplicate=0 unexpected=2977
+ERROR[06-03|23:05:22.694] Ethereum peer removal failed             peer=98c4b91a err="peer not registered"
+INFO [06-03|23:05:23.697] Initializing state bloom                 items=351081455 errorrate=0.000 elapsed=47m8.062s
+INFO [06-03|23:05:26.050] Imported new state entries               count=273  elapsed="3.1µs"     processed=993924053 pending=4369   trieretry=0    coderetry=0 duplicate=0 unexpected=2977
+WARN [06-03|23:05:26.052] Synchronisation failed, dropping peer    peer=98c4b91a0060ad26d05f9efdd023f478fb6a717cfb3d67c4f0c3d0a023b8d0a4 err="action from bad peer ignored: header request timed out"
+ERROR[06-03|23:05:26.053] Ethereum peer removal failed             peer=98c4b91a err="peer not registered"
+INFO [06-03|23:05:31.698] Initializing state bloom                 items=351117219 errorrate=0.000 elapsed=47m16.062s
+INFO [06-03|23:05:37.556] Disabling direct-ancient mode            origin=12564310 ancient=12359074
+INFO [06-03|23:05:38.238] Imported new block headers               count=3    elapsed=431.581ms   number=12564379 hash="f344f1…b213de" ignored=66
+INFO [06-03|23:05:38.680] Imported new state entries               count=0    elapsed="6.4µs"     processed=993924053 pending=305    trieretry=2    coderetry=0 duplicate=0 unexpected=2979
+INFO [06-03|23:05:38.697] Imported new block receipts              count=4    elapsed=100.717ms   number=12564314 hash="9ad411…79e683" age=15m48s   size=465.68KiB
+INFO [06-03|23:05:38.709] Imported new state entries               count=21   elapsed="2.7µs"     processed=993924074 pending=337    trieretry=0    coderetry=0 duplicate=0 unexpected=2979
+INFO [06-03|23:05:39.701] Initializing state bloom                 items=351156746 errorrate=0.000 elapsed=47m24.065s
+ERROR[06-03|23:05:44.484] Ethereum peer removal failed             peer=293f9dcd err="peer not registered"
+ERROR[06-03|23:05:44.484] Ethereum peer removal failed             peer=e26ee76c err="peer not registered"
+ERROR[06-03|23:05:44.484] Ethereum peer removal failed             peer=715d3645 err="peer not registered"
+INFO [06-03|23:05:47.701] Initializing state bloom                 items=351189706 errorrate=0.000 elapsed=47m32.065s
+INFO [06-03|23:05:48.693] Looking for peers                        peercount=33 tried=4 static=0
+INFO [06-03|23:05:49.311] Imported new state entries               count=273  elapsed="5.1µs"     processed=993924347 pending=4369   trieretry=0    coderetry=0 duplicate=0 unexpected=2979
+INFO [06-03|23:05:49.312] Imported new state entries               count=0    elapsed="9.501µs"   processed=993924347 pending=4369   trieretry=2    coderetry=0 duplicate=0 unexpected=2981
+WARN [06-03|23:05:52.652] Dropping unsynced node during sync       id=144dba2d6b03ad38 conn=inbound addr=47.94.242.18:56014    type=
+INFO [06-03|23:05:55.701] Initializing state bloom                 items=351210984 errorrate=0.000 elapsed=47m40.065s
+INFO [06-03|23:05:57.943] Imported new block headers               count=2    elapsed=8.052ms     number=12564381 hash="1d264b…23a465"
+INFO [06-03|23:05:58.182] Downloader queue stats                   receiptTasks=0    blockTasks=0    itemSize=250.12KiB throttle=263
+INFO [06-03|23:05:58.693] Looking for peers                        peercount=34 tried=5 static=0
+INFO [06-03|23:05:58.858] Imported new state entries               count=267  elapsed="3.5µs"     processed=993924614 pending=8641   trieretry=0    coderetry=0 duplicate=0 unexpected=2981
+INFO [06-03|23:05:59.105] Imported new state entries               count=0    elapsed="8.9µs"     processed=993924614 pending=8769   trieretry=2    coderetry=0 duplicate=0 unexpected=2983
+INFO [06-03|23:06:03.703] Initializing state bloom                 items=351231367 errorrate=0.000 elapsed=47m48.068s
+INFO [06-03|23:06:04.820] Imported new block headers               count=1    elapsed=9.030ms     number=12564382 hash="c026ec…751e92"
+INFO [06-03|23:06:08.705] Looking for peers                        peercount=35 tried=2 static=0
+INFO [06-03|23:06:09.818] Imported new state entries               count=422  elapsed="3.4µs"     processed=993925036 pending=14345  trieretry=0    coderetry=0 duplicate=0 unexpected=2983
+INFO [06-03|23:06:11.705] Initializing state bloom                 items=351251495 errorrate=0.000 elapsed=47m56.069s
+WARN [06-03|23:06:14.913] Stalling state sync, dropping peer       peer=45a99bfba092587229c07f65c1dee043255028121fa911ab3a74878ac8b18937
+WARN [06-03|23:06:14.914] Stalling state sync, dropping peer       peer=573ab45a0f04b817f428677052ebc536fcdb228b0e378f4f404cf186a48d85fc
+WARN [06-03|23:06:14.914] Stalling state sync, dropping peer       peer=50813ce2d8d0abb91c105943371fa430529caa1b48ac14f3c4dca9996b31706d
+INFO [06-03|23:06:14.914] Imported new state entries               count=175  elapsed="3.5µs"     processed=993925211 pending=17143  trieretry=12   coderetry=0 duplicate=0 unexpected=2983
+ERROR[06-03|23:06:14.914] Ethereum peer removal failed             peer=45a99bfb err="peer not registered"
+WARN [06-03|23:06:14.914] Rewinding blockchain                     target=12562333
+ERROR[06-03|23:06:14.917] Ethereum peer removal failed             peer=573ab45a err="peer not registered"
+ERROR[06-03|23:06:14.917] Ethereum peer removal failed             peer=50813ce2 err="peer not registered"
+INFO [06-03|23:06:17.054] Loaded most recent local header          number=12562333 hash="aa3195…2bc5a2" td=25690567402399584117535 age=7h42m15s
+INFO [06-03|23:06:17.054] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y2mo1d
+INFO [06-03|23:06:17.054] Loaded most recent local fast block      number=12562333 hash="aa3195…2bc5a2" td=25690567402399584117535 age=7h42m15s
+INFO [06-03|23:06:17.055] Loaded last fast-sync pivot marker       number=12564315
+WARN [06-03|23:06:17.055] Rolled back chain segment                header=12564382->12562333 fast=12564314->12562333 block=0->0 reason="syncing canceled (requested)"
+WARN [06-03|23:06:17.055] Synchronisation failed, dropping peer    peer=50813ce2d8d0abb91c105943371fa430529caa1b48ac14f3c4dca9996b31706d err=timeout
+ERROR[06-03|23:06:17.057] Ethereum peer removal failed             peer=50813ce2 err="peer not registered"
+INFO [06-03|23:06:18.707] Looking for peers                        peercount=32 tried=6 static=0
+INFO [06-03|23:06:19.709] Initializing state bloom                 items=351284625 errorrate=0.000 elapsed=48m4.074s
+INFO [06-03|23:06:23.366] Disabling direct-ancient mode            origin=12562333 ancient=12359074
+INFO [06-03|23:06:24.021] Imported new state entries               count=0    elapsed="4.7µs"     processed=993925211 pending=337    trieretry=4    coderetry=0 duplicate=0 unexpected=2985
+INFO [06-03|23:06:24.921] Imported new block headers               count=192  elapsed=15.611ms    number=12562525 hash="505dcd…485d0c" age=6h52m23s
+INFO [06-03|23:06:24.924] Imported new block receipts              count=1    elapsed="326.901µs" number=12562334 hash="d9cc27…06bbad" age=7h41m57s size=4.00B
+INFO [06-03|23:06:25.075] Imported new block headers               count=192  elapsed=48.191ms    number=12562717 hash="65e93b…b15248" age=6h9m54s
+INFO [06-03|23:06:25.758] Imported new block headers               count=384  elapsed=78.008ms    number=12563101 hash="26e5ae…fdcbb0" age=4h46m30s
+INFO [06-03|23:06:25.890] Imported new block headers               count=192  elapsed=22.993ms    number=12563293 hash="5b6c92…17cba2" age=4h2m18s
+INFO [06-03|23:06:26.188] Imported new block receipts              count=4    elapsed=159.724ms   number=12562338 hash="2593b7…5443e1" age=7h41m7s  size=444.51KiB
+INFO [06-03|23:06:26.411] Imported new block receipts              count=12   elapsed=221.361ms   number=12562350 hash="5e8d15…216b99" age=7h37m9s  size=1.33MiB
+INFO [06-03|23:06:26.459] Imported new block receipts              count=2    elapsed=47.957ms    number=12562352 hash="b3f116…e404a6" age=7h36m48s size=229.13KiB
+INFO [06-03|23:06:26.614] Imported new block headers               count=192  elapsed=40.025ms    number=12563485 hash="6fae6d…5f1736" age=3h20m10s
+INFO [06-03|23:06:27.045] Imported new state entries               count=194  elapsed="2.7µs"     processed=993925405 pending=3092   trieretry=0    coderetry=0 duplicate=0 unexpected=2985
+INFO [06-03|23:06:27.157] Imported new block headers               count=768  elapsed=174.040ms   number=12564253 hash="26fe9d…f64e01" age=30m7s
+INFO [06-03|23:06:27.185] Imported new state entries               count=0    elapsed="7.7µs"     processed=993925405 pending=3252   trieretry=4    coderetry=0 duplicate=0 unexpected=2987
+INFO [06-03|23:06:27.787] Initializing state bloom                 items=351315709 errorrate=0.000 elapsed=48m12.151s
+INFO [06-03|23:06:28.728] Looking for peers                        peercount=32 tried=2 static=0
+INFO [06-03|23:06:30.821] Imported new block headers               count=130  elapsed=661.539ms   number=12564383 hash="f84bcb…64462a"
+INFO [06-03|23:06:31.922] Imported new block receipts              count=266  elapsed=4.399s      number=12562618 hash="5d878f…0c6ed6" age=6h32m9s  size=28.38MiB
+ERROR[06-03|23:06:33.772] Ethereum peer removal failed             peer=c8aeda4b err="peer not registered"
+INFO [06-03|23:06:35.105] Imported new block receipts              count=154  elapsed=3.177s      number=12562772 hash="517acc…b92146" age=5h57m25s size=16.28MiB
+INFO [06-03|23:06:35.802] Initializing state bloom                 items=351344550 errorrate=0.000 elapsed=48m20.166s
+INFO [06-03|23:06:38.707] Imported new block receipts              count=280  elapsed=3.584s      number=12563052 hash="3280c7…0894fa" age=4h59m35s size=30.28MiB
+INFO [06-03|23:06:38.739] Looking for peers                        peercount=29 tried=3 static=0
+INFO [06-03|23:06:40.848] Imported new block receipts              count=230  elapsed=2.115s      number=12563282 hash="4cc1fd…36b722" age=4h5m57s  size=25.17MiB
+INFO [06-03|23:06:43.923] Initializing state bloom                 items=351353000 errorrate=0.000 elapsed=48m28.287s
+ERROR[06-03|23:06:46.055] Ethereum peer removal failed             peer=e8c20590 err="peer not registered"
+WARN [06-03|23:06:46.055] Rewinding blockchain                     target=12562334
+INFO [06-03|23:06:47.369] Imported new state entries               count=396  elapsed="1.6µs"     processed=993925801 pending=4896   trieretry=0    coderetry=0 duplicate=0 unexpected=2987
+INFO [06-03|23:06:48.176] Loaded most recent local header          number=12562334 hash="d9cc27…06bbad" td=25690575110992589660381 age=7h42m21s
+INFO [06-03|23:06:48.177] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y2mo1d
+INFO [06-03|23:06:48.177] Loaded most recent local fast block      number=12562334 hash="d9cc27…06bbad" td=25690575110992589660381 age=7h42m21s
+INFO [06-03|23:06:48.177] Loaded last fast-sync pivot marker       number=12564320
+WARN [06-03|23:06:48.177] Rolled back chain segment                header=12564383->12562334 fast=12563282->12562334 block=0->0 reason=nil
+INFO [06-03|23:06:48.177] Imported new block receipts              count=280  elapsed=4.331s      number=12563562 hash="f59e79…0d47e7" age=3h3m12s  size=30.61MiB
+WARN [06-03|23:06:48.182] Synchronisation failed, dropping peer    peer=e8c205909d618eaf346b28f5ba9e86ab2e13176c1fabe376d456b53b8f30d8c0 err="action from bad peer ignored: header request timed out"
+ERROR[06-03|23:06:48.182] Ethereum peer removal failed             peer=e8c20590 err="peer not registered"
+INFO [06-03|23:06:48.741] Looking for peers                        peercount=29 tried=5 static=0
+INFO [06-03|23:06:51.923] Initializing state bloom                 items=351381758 errorrate=0.000 elapsed=48m36.287s
+WARN [06-03|23:06:53.006] Dropping unsynced node during sync       id=9e15c6b9ef3de5d8 conn=inbound addr=18.139.172.134:26863  type=OpenEthereum/v3.2.6-...
+INFO [06-03|23:06:53.076] Disabling direct-ancient mode            origin=12562334 ancient=12359074
+INFO [06-03|23:06:54.126] Imported new block headers               count=1344 elapsed=126.739ms   number=12563678 hash="9e1276…93873d" age=2h34m25s
+INFO [06-03|23:06:54.677] Imported new block headers               count=192  elapsed=109.927ms   number=12563870 hash="bb836c…f2a183" age=1h50m2s
+INFO [06-03|23:06:55.399] Imported new block receipts              count=4    elapsed=73.745ms    number=12562338 hash="2593b7…5443e1" age=7h41m36s size=444.51KiB
+INFO [06-03|23:06:56.557] Imported new block receipts              count=18   elapsed=357.409ms   number=12562356 hash="ed282d…4510d8" age=7h36m24s size=1.96MiB
+INFO [06-03|23:06:57.957] Imported new block receipts              count=126  elapsed=1.307s      number=12562482 hash="623fdc…47d2bf" age=7h1m56s  size=13.75MiB
+INFO [06-03|23:06:58.751] Looking for peers                        peercount=29 tried=4 static=0
+INFO [06-03|23:06:59.536] Imported new block receipts              count=181  elapsed=1.572s      number=12562663 hash="0e6589…e76a78" age=6h21m13s size=19.12MiB
+INFO [06-03|23:06:59.538] Downloader queue stats                   receiptTasks=931  blockTasks=935  itemSize=231.68KiB throttle=283
+INFO [06-03|23:06:59.933] Initializing state bloom                 items=351405074 errorrate=0.000 elapsed=48m44.297s
+INFO [06-03|23:07:00.161] Imported new block receipts              count=72   elapsed=621.813ms   number=12562735 hash="b01fc5…3c8a9e" age=6h5m28s  size=7.57MiB
+ERROR[06-03|23:07:00.264] Ethereum peer removal failed             peer=5ab558cb err="peer not registered"
+INFO [06-03|23:07:00.383] Imported new block headers               count=384  elapsed=49.625ms    number=12564254 hash="27926c…b75bc5" age=30m30s
+WARN [06-03|23:07:01.647] Dropping unsynced node during sync       id=284afbde1fce0eca conn=inbound addr=185.219.37.2:49160    type=OpenEthereum/v3.2.6-...
+INFO [06-03|23:07:05.461] Imported new block headers               count=131  elapsed=1.302s      number=12564385 hash="f739d9…274403" age=1m5s
+INFO [06-03|23:07:07.376] Imported new block receipts              count=283  elapsed=4.103s      number=12563018 hash="678c2d…173931" age=5h5m46s  size=30.49MiB
+INFO [06-03|23:07:07.942] Initializing state bloom                 items=351432928 errorrate=0.000 elapsed=48m52.306s
+INFO [06-03|23:07:08.776] Looking for peers                        peercount=27 tried=4 static=0
+ERROR[06-03|23:07:09.582] Ethereum peer removal failed             peer=34e1e8b6 err="peer not registered"
+WARN [06-03|23:07:09.855] Dropping unsynced node during sync       id=496aef249384e68c conn=inbound addr=173.24.209.48:39178   type=Geth/v1.10.4-unstabl...
+INFO [06-03|23:07:10.260] Imported new block receipts              count=268  elapsed=2.864s      number=12563286 hash="755826…94b695" age=4h4m52s  size=29.22MiB
+INFO [06-03|23:07:11.562] Imported new block headers               count=1    elapsed=6.906ms     number=12564386 hash="2252d7…93073f"
+INFO [06-03|23:07:13.225] Imported new state entries               count=571  elapsed="3.5µs"     processed=993926372 pending=4541   trieretry=0    coderetry=0 duplicate=0 unexpected=2987
+INFO [06-03|23:07:13.818] Imported new block receipts              count=240  elapsed=3.530s      number=12563526 hash="42adf1…e495e8" age=3h11m12s size=26.27MiB
+INFO [06-03|23:07:15.939] Imported new block receipts              count=257  elapsed=2.112s      number=12563783 hash="b791ba…c58396" age=2h10m47s size=27.78MiB
+INFO [06-03|23:07:15.958] Initializing state bloom                 items=351455899 errorrate=0.000 elapsed=49m0.322s
+INFO [06-03|23:07:16.372] Imported new block receipts              count=93   elapsed=429.985ms   number=12563876 hash="238df7…d3f4f8" age=1h48m22s size=10.20MiB
+INFO [06-03|23:07:16.440] Imported new block receipts              count=20   elapsed=67.792ms    number=12563896 hash="f9a750…2f073a" age=1h44m23s size=2.14MiB
+INFO [06-03|23:07:16.642] Imported new block receipts              count=19   elapsed=84.654ms    number=12563915 hash="8fb63e…aeb89d" age=1h40m51s size=2.23MiB
+INFO [06-03|23:07:16.830] Imported new block receipts              count=17   elapsed=64.925ms    number=12563932 hash="331c48…30c3a7" age=1h36m29s size=1.92MiB
+INFO [06-03|23:07:17.659] Imported new block receipts              count=159  elapsed=710.206ms   number=12564091 hash="664448…62d1f1" age=1h5m20s  size=16.99MiB
+INFO [06-03|23:07:18.777] Looking for peers                        peercount=26 tried=3 static=0
+INFO [06-03|23:07:21.407] Imported new block receipts              count=230  elapsed=1.600s      number=12564321 hash="33e59a…2d52db" age=16m37s   size=23.98MiB
+INFO [06-03|23:07:23.959] Initializing state bloom                 items=351471487 errorrate=0.000 elapsed=49m8.323s
+INFO [06-03|23:07:28.778] Looking for peers                        peercount=26 tried=5 static=0
+INFO [06-03|23:07:29.661] Imported new state entries               count=352  elapsed="3µs"       processed=993926724 pending=5953   trieretry=0    coderetry=0 duplicate=0 unexpected=2987
+INFO [06-03|23:07:31.965] Initializing state bloom                 items=351499862 errorrate=0.000 elapsed=49m16.329s
