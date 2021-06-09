@@ -1,59 +1,92 @@
-INFO [05-17|02:07:42.533] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
-WARN [05-17|02:07:42.538] Sanitizing cache to Go's GC limits       provided=4096 updated=2654
-INFO [05-17|02:07:42.540] Set global gas cap                       cap=25000000
-INFO [05-17|02:07:42.543] Allocated trie memory caches             clean=398.00MiB dirty=663.00MiB
-INFO [05-17|02:07:42.544] Allocated cache and file handles         database=/data/eth-data/geth/chaindata cache=1.29GiB handles=524288
-INFO [05-17|02:07:45.538] Opened ancient database                  database=/data/eth-data/geth/chaindata/ancient readonly=false
-INFO [05-17|02:07:45.555] Initialised chain configuration          config="{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: 7280000 Petersburg: 7280000 Istanbul: 9069000, Muir Glacier: 9200000, Berlin: 12244000, YOLO v3: <nil>, Engine: ethash}"
-INFO [05-17|02:07:46.019] Disk storage enabled for ethash caches   dir=/data/eth-data/geth/ethash count=3
-INFO [05-17|02:07:46.020] Disk storage enabled for ethash DAGs     dir=/home/longz/.ethash        count=2
-INFO [05-17|02:07:46.024] Initialising Ethereum protocol           network=1 dbversion=8
-INFO [05-17|02:07:50.494] Loaded most recent local header          number=12449154 hash="e2530d…d6c616" td=24808393531116809884955 age=2m
-INFO [05-17|02:07:50.495] Loaded most recent local full block      number=0        hash="d4e567…cb8fa3" td=17179869184             age=52y1mo2w
-INFO [05-17|02:07:50.495] Loaded most recent local fast block      number=12449073 hash="d24a67…d631d7" td=24807741194229848038321 age=21m25s
-INFO [05-17|02:07:50.495] Loaded last fast-sync pivot marker       number=12449074
-WARN [05-17|02:07:50.499] Enabling snapshot recovery               chainhead=0 diskbase=12449066
-WARN [05-17|02:07:50.501] Loaded snapshot journal                  diskroot="57b116…8baed6" diffs=missing
-WARN [05-17|02:07:50.501] Snapshot is not continuous with chain    snaproot="57b116…8baed6" chainroot="d7f897…0f0544"
-INFO [05-17|02:07:50.501] Loaded local transaction journal         transactions=0 dropped=0
-INFO [05-17|02:07:50.501] Regenerated local transaction journal    transactions=0 accounts=0
-INFO [05-17|02:07:50.505] Trie missing, state snapshotting paused  root="57b116…8baed6" in="0d144b…a27e36" at="7a52a6…5c9720" accounts=6799005 slots=25242189 storage=2.21GiB elapsed=4.354ms
-INFO [05-17|02:07:51.118] Allocated fast sync bloom                size=1.29GiB
-WARN [05-17|02:07:51.136] Old unclean shutdowns found              count=3
-WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-09T14:48:41+0000 age=1w11h19m
-WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-11T21:47:04+0000 age=5d4h20m
-WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-11T22:03:29+0000 age=5d4h4m
-WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-11T22:12:41+0000 age=5d3h55m
-WARN [05-17|02:07:51.136] Unclean shutdown detected                booted=2021-05-11T22:50:38+0000 age=5d3h17m
-WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:48:10+0000 age=19m41s
-WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:50:51+0000 age=17m
-WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:52:08+0000 age=15m43s
-WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:54:16+0000 age=13m35s
-WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:56:25+0000 age=11m26s
-WARN [05-17|02:07:51.137] Unclean shutdown detected                booted=2021-05-17T01:58:33+0000 age=9m18s
-INFO [05-17|02:07:51.137] Starting peer-to-peer node               instance=Geth/v1.10.2-stable-97d11b01/linux-amd64/go1.16.4
-INFO [05-17|02:07:51.226] New local node record                    seq=32 id=4b45e3f605e67703 ip=127.0.0.1 udp=30303 tcp=30303
-INFO [05-17|02:07:51.229] IPC endpoint opened                      url=/data/eth-data/geth.ipc
-INFO [05-17|02:07:51.245] Started P2P networking                   self=enode://0e59f622cfb5f023ed93731b4c92e8460bb91d659c949ab3b6fbf4fcf8124937a6b374fef19db0643488fe798344763324be8e27bba6436530661ddc7bceed25@127.0.0.1:30303
-INFO [05-17|02:07:59.120] Initializing state bloom                 items=5558723 errorrate=0.000 elapsed=8.001s
-INFO [05-17|02:08:00.395] New local node record                    seq=33 id=4b45e3f605e67703 ip=20.86.99.41 udp=30303 tcp=30303
-INFO [05-17|02:08:01.248] Looking for peers                        peercount=2 tried=3 static=0
-INFO [05-17|02:08:01.251] Block synchronisation started 
-INFO [05-17|02:08:03.034] Disabling direct-ancient mode            origin=12449073 ancient=12359074
-INFO [05-17|02:08:03.857] Imported new block headers               count=4 elapsed=512.317ms number=12449158 hash="f8fe66…c830c1" ignored=81
-INFO [05-17|02:08:04.137] Downloader queue stats                   receiptTasks=2 blockTasks=0 itemSize=93.95KiB throttle=698
-INFO [05-17|02:08:04.152] Imported new block receipts              count=4 elapsed=14.268ms  number=12449077 hash="e5924f…af63c9" age=20m22s   size=506.95KiB
-INFO [05-17|02:08:04.766] Imported new block receipts              count=18 elapsed=76.260ms  number=12449095 hash="517e4a…639a64" age=16m51s   size=2.17MiB
-INFO [05-17|02:08:07.120] Initializing state bloom                 items=10554984 errorrate=0.000 elapsed=16.001s
-INFO [05-17|02:08:09.683] Imported new block headers               count=1  elapsed=7.575ms   number=12449159 hash="1453cb…010c01"
-INFO [05-17|02:08:11.250] Looking for peers                        peercount=2 tried=4 static=0
-INFO [05-17|02:08:15.121] Initializing state bloom                 items=16124415 errorrate=0.000 elapsed=24.002s
-INFO [05-17|02:08:21.252] Looking for peers                        peercount=2 tried=4 static=0
-INFO [05-17|02:08:23.122] Initializing state bloom                 items=21762832 errorrate=0.000 elapsed=32.003s
-INFO [05-17|02:08:27.207] Imported new block headers               count=3  elapsed=20.852ms  number=12449162 hash="3a7c7c…77920f"
-INFO [05-17|02:08:31.122] Initializing state bloom                 items=27300145 errorrate=0.000 elapsed=40.003s
-INFO [05-17|02:08:31.254] Looking for peers                        peercount=3 tried=2 static=0
-INFO [05-17|02:08:39.123] Initializing state bloom                 items=32795069 errorrate=0.000 elapsed=48.004s
-INFO [05-17|02:08:40.277] Imported new block headers               count=1  elapsed=11.986ms  number=12449163 hash="5edbb7…fd29e2"
-INFO [05-17|02:08:41.299] Looking for peers                        peercount=3 tried=7 static=0
-INFO [05-17|02:08:47.125] Initializing state bloom                 items=38318846 errorrate=0.000 elapsed=56.006s
+INFO [06-08|21:37:36.506] Imported new block headers               count=1   elapsed=6.669ms   number=12596345 hash="123e58…2faa5c"
+ERROR[06-08|21:37:36.632] Snapshot extension registration failed   peer=c5b271da err="peer connected on snap without compatible eth support"
+INFO [06-08|21:37:40.194] Initializing state bloom                 items=52860120 errorrate=0.000 elapsed=4m40.107s
+INFO [06-08|21:37:41.015] Looking for peers                        peercount=29 tried=3 static=0
+INFO [06-08|21:37:48.195] Initializing state bloom                 items=54305241 errorrate=0.000 elapsed=4m48.108s
+INFO [06-08|21:37:52.198] Looking for peers                        peercount=30 tried=4 static=0
+WARN [06-08|21:37:55.200] Dropping unsynced node during sync       id=6a49a5cad0183935 conn=inbound addr=104.238.148.48:59230 type=Geth/v1.10.2-stable-...
+INFO [06-08|21:37:56.038] Imported new block headers               count=1   elapsed=6.105ms   number=12596346 hash="f7302b…7de06a"
+INFO [06-08|21:37:56.195] Initializing state bloom                 items=55682234 errorrate=0.000 elapsed=4m56.108s
+INFO [06-08|21:37:59.653] Imported new state entries               count=384 elapsed="4.1µs"   processed=1047777130 pending=41212 trieretry=0   coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:38:02.912] Looking for peers                        peercount=35 tried=4 static=0
+INFO [06-08|21:38:04.195] Initializing state bloom                 items=57185125 errorrate=0.000 elapsed=5m4.108s
+INFO [06-08|21:38:12.195] Initializing state bloom                 items=58787414 errorrate=0.000 elapsed=5m12.108s
+WARN [06-08|21:38:12.688] Dropping unsynced node during sync       id=f6fac97ae6ae58b3 conn=inbound addr=24.142.8.24:59760    type=OpenEthereum/v3.2.6-...
+INFO [06-08|21:38:13.551] Looking for peers                        peercount=33 tried=3 static=0
+INFO [06-08|21:38:20.196] Initializing state bloom                 items=60379829 errorrate=0.000 elapsed=5m20.109s
+INFO [06-08|21:38:23.551] Looking for peers                        peercount=34 tried=5 static=0
+INFO [06-08|21:38:23.742] Imported new state entries               count=384 elapsed="3.5µs"   processed=1047777514 pending=42429 trieretry=382 coderetry=0 duplicate=0 unexpected=0
+WARN [06-08|21:38:24.763] Dropping unsynced node during sync       id=0e27e47ab1fb89ba conn=inbound addr=158.132.255.119:50390 type=OpenEthereum/v3.2.5-...
+INFO [06-08|21:38:25.257] Imported new block headers               count=1   elapsed=44.271ms  number=12596347 hash="4b08ef…3f44fc"
+INFO [06-08|21:38:25.935] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=242.55KiB throttle=271
+INFO [06-08|21:38:28.196] Initializing state bloom                 items=61931069 errorrate=0.000 elapsed=5m28.109s
+INFO [06-08|21:38:28.686] Imported new block headers               count=2   elapsed=36.804ms  number=12596349 hash="44f07a…3adacb"
+WARN [06-08|21:38:31.538] Dropping unsynced node during sync       id=6a49a5cad0183935 conn=inbound addr=104.238.148.48:44758  type=Geth/v1.10.2-stable-...
+ERROR[06-08|21:38:31.999] Snapshot extension registration failed   peer=89027a8b err="peer connected on snap without compatible eth support"
+INFO [06-08|21:38:36.228] Initializing state bloom                 items=63434625 errorrate=0.000 elapsed=5m36.141s
+INFO [06-08|21:38:38.538] Imported new block headers               count=1   elapsed=7.279ms   number=12596350 hash="41f035…a339dc"
+INFO [06-08|21:38:43.341] Imported new state entries               count=384 elapsed="3.8µs"   processed=1047777898 pending=43712 trieretry=384 coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:38:44.247] Initializing state bloom                 items=64933390 errorrate=0.000 elapsed=5m44.160s
+INFO [06-08|21:38:52.248] Initializing state bloom                 items=66447130 errorrate=0.000 elapsed=5m52.161s
+INFO [06-08|21:38:53.649] Imported new state entries               count=196 elapsed="3.5µs"   processed=1047778094 pending=44797 trieretry=0   coderetry=0 duplicate=0 unexpected=0
+ERROR[06-08|21:38:57.177] Snapshot extension registration failed   peer=3af25a30 err="peer connected on snap without compatible eth support"
+INFO [06-08|21:39:00.248] Initializing state bloom                 items=67914670 errorrate=0.000 elapsed=6m0.161s
+WARN [06-08|21:39:07.599] Dropping unsynced node during sync       id=6a49a5cad0183935 conn=inbound addr=104.238.148.48:58668  type=Geth/v1.10.2-stable-...
+INFO [06-08|21:39:08.279] Initializing state bloom                 items=69347283 errorrate=0.000 elapsed=6m8.192s
+INFO [06-08|21:39:12.547] Imported new state entries               count=384 elapsed="3.8µs"   processed=1047778478 pending=46938 trieretry=0   coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:39:16.279] Initializing state bloom                 items=70800579 errorrate=0.000 elapsed=6m16.192s
+INFO [06-08|21:39:24.287] Initializing state bloom                 items=72260409 errorrate=0.000 elapsed=6m24.200s
+INFO [06-08|21:39:30.084] Imported new state entries               count=384 elapsed="3.6µs"   processed=1047778862 pending=48810 trieretry=0   coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:39:30.334] Imported new block headers               count=1   elapsed=79.913ms  number=12596351 hash="f89de7…aa9fca" age=1m5s
+INFO [06-08|21:39:31.016] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=255.67KiB throttle=257
+INFO [06-08|21:39:32.291] Initializing state bloom                 items=73719318 errorrate=0.000 elapsed=6m32.204s
+INFO [06-08|21:39:40.292] Initializing state bloom                 items=75091817 errorrate=0.000 elapsed=6m40.205s
+INFO [06-08|21:39:46.578] Imported new block headers               count=1   elapsed=7.425ms   number=12596352 hash="6bad41…6b88fb" age=1m20s
+INFO [06-08|21:39:48.292] Initializing state bloom                 items=76503347 errorrate=0.000 elapsed=6m48.205s
+INFO [06-08|21:39:56.293] Initializing state bloom                 items=77891082 errorrate=0.000 elapsed=6m56.206s
+INFO [06-08|21:39:56.644] Imported new state entries               count=384 elapsed="3.7µs"   processed=1047779246 pending=54954 trieretry=764 coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:39:59.693] Imported new block headers               count=1   elapsed=28.362ms  number=12596353 hash="9290f3…415661" age=1m22s
+INFO [06-08|21:40:03.108] Imported new block headers               count=1   elapsed=7.494ms   number=12596354 hash="3eb586…1ca0d4"
+INFO [06-08|21:40:04.293] Initializing state bloom                 items=79427598 errorrate=0.000 elapsed=7m4.206s
+INFO [06-08|21:40:05.345] Imported new state entries               count=224 elapsed="3.6µs"   processed=1047779470 pending=55220 trieretry=160 coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:40:12.293] Initializing state bloom                 items=80943009 errorrate=0.000 elapsed=7m12.206s
+INFO [06-08|21:40:15.643] Imported new state entries               count=276 elapsed="19.5µs"  processed=1047779746 pending=55604 trieretry=0   coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:40:20.293] Initializing state bloom                 items=82451191 errorrate=0.000 elapsed=7m20.206s
+INFO [06-08|21:40:28.293] Initializing state bloom                 items=83955316 errorrate=0.000 elapsed=7m28.206s
+INFO [06-08|21:40:29.104] Imported new block headers               count=2   elapsed=21.942ms  number=12596356 hash="274ab4…045014"
+INFO [06-08|21:40:36.296] Initializing state bloom                 items=85417385 errorrate=0.000 elapsed=7m36.209s
+INFO [06-08|21:40:44.297] Initializing state bloom                 items=86887998 errorrate=0.000 elapsed=7m44.210s
+INFO [06-08|21:40:45.851] Imported new state entries               count=384 elapsed="4.2µs"   processed=1047780130 pending=60235 trieretry=764 coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:40:52.297] Initializing state bloom                 items=88504786 errorrate=0.000 elapsed=7m52.210s
+WARN [06-08|21:40:57.369] Dropping unsynced node during sync       id=6a49a5cad0183935 conn=inbound addr=104.238.148.48:43780  type=Geth/v1.10.2-stable-...
+INFO [06-08|21:41:00.297] Initializing state bloom                 items=90172980 errorrate=0.000 elapsed=8m0.210s
+INFO [06-08|21:41:08.297] Initializing state bloom                 items=91829331 errorrate=0.000 elapsed=8m8.210s
+INFO [06-08|21:41:11.203] Imported new block headers               count=1   elapsed=46.945ms  number=12596357 hash="03a312…064e31" age=1m10s
+INFO [06-08|21:41:13.104] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=259.68KiB throttle=253
+INFO [06-08|21:41:16.298] Initializing state bloom                 items=93474159 errorrate=0.000 elapsed=8m16.211s
+INFO [06-08|21:41:24.298] Imported new block headers               count=1   elapsed=37.196ms  number=12596358 hash="80d991…a1d695"
+INFO [06-08|21:41:24.298] Initializing state bloom                 items=95125960 errorrate=0.000 elapsed=8m24.211s
+INFO [06-08|21:41:32.298] Initializing state bloom                 items=96781217 errorrate=0.000 elapsed=8m32.211s
+INFO [06-08|21:41:40.299] Initializing state bloom                 items=98428309 errorrate=0.000 elapsed=8m40.212s
+INFO [06-08|21:41:48.299] Initializing state bloom                 items=100074320 errorrate=0.000 elapsed=8m48.212s
+INFO [06-08|21:41:53.387] Imported new state entries               count=400 elapsed=1.043ms   processed=1047780530 pending=60667 trieretry=0   coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:41:56.299] Initializing state bloom                 items=101650012 errorrate=0.000 elapsed=8m56.212s
+INFO [06-08|21:41:56.944] Imported new block headers               count=1   elapsed=282.135ms number=12596359 hash="49c2ce…316d96" age=1m27s
+INFO [06-08|21:42:04.299] Initializing state bloom                 items=103249381 errorrate=0.000 elapsed=9m4.212s
+INFO [06-08|21:42:06.549] Imported new block headers               count=1   elapsed=13.015ms  number=12596360 hash="ad2f74…f7c335"
+INFO [06-08|21:42:06.761] Imported new block headers               count=1   elapsed=7.564ms   number=12596361 hash="e9552d…a8ea9e"
+WARN [06-08|21:42:08.520] Dropping unsynced node during sync       id=e90304d39f8c8bbd conn=inbound addr=180.102.114.228:4018  type=OpenEthereum/v3.2.6-...
+INFO [06-08|21:42:12.299] Initializing state bloom                 items=104897720 errorrate=0.000 elapsed=9m12.212s
+WARN [06-08|21:42:13.530] Dropping unsynced node during sync       id=6a49a5cad0183935 conn=inbound addr=104.238.148.48:44636  type=Geth/v1.10.2-stable-...
+INFO [06-08|21:42:19.880] Imported new block headers               count=1   elapsed=26.916ms  number=12596362 hash="e27a6b…6fcfba"
+INFO [06-08|21:42:20.151] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=255.57KiB throttle=257
+INFO [06-08|21:42:20.299] Initializing state bloom                 items=106537633 errorrate=0.000 elapsed=9m20.212s
+INFO [06-08|21:42:23.299] Imported new block headers               count=1   elapsed=8.201ms   number=12596363 hash="7ccbd8…768deb"
+INFO [06-08|21:42:28.300] Initializing state bloom                 items=108189543 errorrate=0.000 elapsed=9m28.213s
+INFO [06-08|21:42:36.332] Initializing state bloom                 items=109837125 errorrate=0.000 elapsed=9m36.245s
+INFO [06-08|21:42:39.607] Imported new block headers               count=1   elapsed=7.937ms   number=12596364 hash="2027c2…8d0ea0"
+INFO [06-08|21:42:44.344] Initializing state bloom                 items=111477683 errorrate=0.000 elapsed=9m44.257s
+WARN [06-08|21:42:49.288] Dropping unsynced node during sync       id=6a49a5cad0183935 conn=inbound addr=104.238.148.48:58136  type=Geth/v1.10.2-stable-...
+INFO [06-08|21:42:52.344] Initializing state bloom                 items=113126489 errorrate=0.000 elapsed=9m52.257s
+INFO [06-08|21:42:52.705] Imported new block headers               count=2   elapsed=15.824ms  number=12596366 hash="3fa220…9a5243"
+INFO [06-08|21:42:59.351] Imported new block headers               count=1   elapsed=8.066ms   number=12596367 hash="3c51dc…46bc71"

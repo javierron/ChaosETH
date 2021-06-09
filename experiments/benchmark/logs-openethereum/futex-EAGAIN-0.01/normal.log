@@ -1,14 +1,35 @@
-The futex facility returned an unexpected error code.2021-05-17 01:00:34 UTC Starting OpenEthereum/v3.2.4-stable-09967329a-20210415/x86_64-linux-gnu/rustc1.51.0
-2021-05-17 01:00:34 UTC Keys path /data/blockchain/eth-data/keys/ethereum
-2021-05-17 01:00:34 UTC DB path /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d
-2021-05-17 01:00:34 UTC State DB configuration: fast
-2021-05-17 01:00:34 UTC Operating mode: active
-2021-05-17 01:00:35 UTC Configured for Ethereum using Ethash engine
-2021-05-17 01:00:36 UTC Listening for new connections on 127.0.0.1:8546.
-2021-05-17 01:00:36 UTC Removed existing file '/data/blockchain/eth-data/jsonrpc.ipc'.
-2021-05-17 01:00:36 UTC Updated conversion rate to Ξ1 = US$3472.38 (1371366.3 wei/gas)
-2021-05-17 01:00:41 UTC Public node URL: enode://d440dace1e4954e36e7f85d5d1d26fe17040f4a0b325f3c59c55bc5fae4b9e0ca4f81baef14bd09bdb9dbdcaf516f204a0194e43c6e3aae03b7ab23339ce6d4b@10.0.0.5:30303
-2021-05-17 01:00:46 UTC Syncing #12448863 0xbfdb…2667     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    5 Qed LI:#12448869   20/25 peers    136 KiB chain    1 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:00:51 UTC Syncing #12448864 0xae30…8309     0.20 blk/s   42.6 tx/s    2.8 Mgas/s      0+    4 Qed LI:#12448869   24/25 peers    154 KiB chain  789 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:01:21 UTC  22/25 peers    501 KiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:01:27 UTC Imported #12448871 0x7115…f1e6 (400 txs, 14.98 Mgas, 6139 ms, 62.00 KiB)
+2021-06-08 20:07:57 UTC Imported #12595944 0x7637…4727 (174 txs, 15.01 Mgas, 4360 ms, 53.50 KiB)
+2021-06-08 20:08:05 UTC  28/50 peers      2 MiB chain  357 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:08:17 UTC Imported #12595947 0x11e3…2130 (137 txs, 14.84 Mgas, 4966 ms, 47.19 KiB)
+2021-06-08 20:08:26 UTC Imported #12595948 0xfae5…2d3e (126 txs, 15.02 Mgas, 5032 ms, 34.51 KiB)
+2021-06-08 20:08:36 UTC  30/50 peers      2 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:09:06 UTC  30/50 peers      2 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:09:08 UTC Imported #12595950 0xd407…b2fb (122 txs, 15.00 Mgas, 3977 ms, 49.20 KiB)
+2021-06-08 20:09:17 UTC Imported #12595951 0x117b…4792 (139 txs, 14.98 Mgas, 5142 ms, 39.09 KiB)
+2021-06-08 20:09:36 UTC  31/50 peers      6 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:09:45 UTC Imported #12595952 0x69ec…a15c (266 txs, 15.00 Mgas, 5252 ms, 57.03 KiB)
+2021-06-08 20:10:07 UTC Imported #12595953 0x3847…b3dc (142 txs, 14.97 Mgas, 4899 ms, 61.08 KiB)
+2021-06-08 20:10:07 UTC  34/50 peers    442 KiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:10:41 UTC  36/50 peers    548 KiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:10:43 UTC Imported #12595957 0x3211…2c08 (130 txs, 14.96 Mgas, 3261 ms, 49.20 KiB)
+2021-06-08 20:10:54 UTC Reorg to #12595958 0x22e6…ea5d (0x0798…540d #12595956 0xc1db…3315 0x3211…2c08)
+2021-06-08 20:10:59 UTC Imported #12595959 0x0b9d…f30d (96 txs, 14.92 Mgas, 1879 ms, 41.29 KiB)
+2021-06-08 20:11:07 UTC Imported #12595961 0x4c00…04d7 (185 txs, 14.96 Mgas, 4173 ms, 42.31 KiB)
+2021-06-08 20:11:14 UTC  38/50 peers      1 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:11:21 UTC Imported #12595962 0x2a9e…7c5b (202 txs, 14.96 Mgas, 4363 ms, 54.27 KiB)
+2021-06-08 20:11:40 UTC Imported #12595964 0xb58e…7b93 (111 txs, 14.97 Mgas, 4092 ms, 28.19 KiB)
+2021-06-08 20:11:45 UTC  37/50 peers      7 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:11:51 UTC Imported #12595965 0x63d7…7407 (145 txs, 14.95 Mgas, 2211 ms, 69.28 KiB)
+2021-06-08 20:12:15 UTC Imported #12595966 0x8add…7938 (270 txs, 15.00 Mgas, 4418 ms, 52.95 KiB)
+2021-06-08 20:12:23 UTC  39/50 peers      4 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:12:37 UTC Imported #12595967 0xd49c…b14a (274 txs, 14.98 Mgas, 4898 ms, 70.86 KiB)
+2021-06-08 20:12:57 UTC  42/50 peers      4 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:13:09 UTC Imported #12595969 0xed38…ae68 (312 txs, 14.99 Mgas, 4654 ms, 69.21 KiB)
+2021-06-08 20:13:19 UTC Imported #12595970 0xadf9…2099 (292 txs, 14.79 Mgas, 4982 ms, 91.42 KiB)
+2021-06-08 20:13:25 UTC Imported #12595971 0xbf29…7bf0 (195 txs, 14.98 Mgas, 5821 ms, 52.23 KiB)
+2021-06-08 20:13:28 UTC  42/50 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:13:56 UTC Imported #12595972 0x901b…84f3 (313 txs, 14.96 Mgas, 4888 ms, 72.45 KiB)
+2021-06-08 20:14:01 UTC  45/50 peers      7 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:14:22 UTC Imported #12595974 0x355b…6da0 (147 txs, 14.97 Mgas, 5534 ms, 53.94 KiB)
+2021-06-08 20:14:31 UTC  44/50 peers      6 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:14:50 UTC Imported #12595975 0xae13…8efb (217 txs, 14.99 Mgas, 4082 ms, 77.14 KiB)

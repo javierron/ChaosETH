@@ -1,31 +1,107 @@
-INFO [05-16|23:08:28.157] Unindexed transactions                   blocks=1      txs=127      tail=10098370 elapsed=7.008ms
-INFO [05-16|23:08:28.951] Aborting state snapshot generation       root="610515…4e989d" at="0be8f5…5b5e73" accounts=6190817 slots=23862486 storage=2.08GiB    elapsed=34h58m38.630s eta=716h50m44.613s
-INFO [05-16|23:08:28.951] Resuming state snapshot generation       root="baa0a5…d62c9c" at="0be8f5…5b5e73" accounts=6190817 slots=23862486 storage=2.08GiB    elapsed=34h58m38.631s eta=716h50m44.633s
-INFO [05-16|23:08:28.992] Imported new chain segment               blocks=1      txs=205      mgas=14.527 elapsed=818.470ms     mgasps=17.749  number=12448370 hash="2b8d79…bc7b5f" dirty=661.26MiB
-INFO [05-16|23:08:29.012] Unindexed transactions                   blocks=1      txs=147      tail=10098371 elapsed=2.606ms
-INFO [05-16|23:08:36.952] Generating state snapshot                root="baa0a5…d62c9c" at="0be98c…97162a" accounts=6192061 slots=23863068 storage=2.08GiB    elapsed=34h58m46.631s eta=716h44m45.299s
-INFO [05-16|23:08:42.608] Aborting state snapshot generation       root="baa0a5…d62c9c" in="0bea23…beab9d" at="036b63…bb3db0" accounts=6193184 slots=23863278 storage=2.08GiB    elapsed=34h58m52.287s eta=716h37m58.69s
-INFO [05-16|23:08:42.625] Resuming state snapshot generation       root="210d56…adcc35" in="0bea23…beab9d" at="036b63…bb3db0" accounts=6193184 slots=23863278 storage=2.08GiB    elapsed=34h58m52.304s eta=716h37m59.039s
-INFO [05-16|23:08:42.669] Imported new chain segment               blocks=1      txs=201      mgas=14.965 elapsed=1.781s        mgasps=8.399   number=12448371 hash="66a13b…f564a2" dirty=661.22MiB
-INFO [05-16|23:08:42.683] Unindexed transactions                   blocks=1      txs=120      tail=10098372 elapsed=4.221ms
-INFO [05-16|23:08:50.662] Generating state snapshot                root="210d56…adcc35" at="0bea78…026516" accounts=6193842 slots=23863472 storage=2.08GiB    elapsed=34h59m0.341s  eta=716h35m49.687s
-INFO [05-16|23:08:58.713] Generating state snapshot                root="210d56…adcc35" at="0beafd…e68349" accounts=6194976 slots=23864129 storage=2.08GiB    elapsed=34h59m8.393s  eta=716h30m52.708s
-INFO [05-16|23:09:06.719] Generating state snapshot                root="210d56…adcc35" at="0beb87…46a8bb" accounts=6196045 slots=23865010 storage=2.08GiB    elapsed=34h59m16.398s eta=716h25m40.205s
-INFO [05-16|23:09:08.196] Aborting state snapshot generation       root="210d56…adcc35" at="0bebaa…1ebc2d" accounts=6196326 slots=23865059 storage=2.08GiB    elapsed=34h59m17.875s eta=716h24m9.154s
-INFO [05-16|23:09:08.212] Resuming state snapshot generation       root="29493e…c95a33" at="0bebaa…1ebc2d" accounts=6196326 slots=23865059 storage=2.08GiB    elapsed=34h59m17.891s eta=716h24m9.482s
-INFO [05-16|23:09:08.237] Imported new chain segment               blocks=1      txs=211      mgas=14.965 elapsed=1.586s        mgasps=9.435   number=12448372 hash="d46b34…e039dd" dirty=661.28MiB
-INFO [05-16|23:09:08.257] Unindexed transactions                   blocks=1      txs=124      tail=10098373 elapsed=3.290ms
-INFO [05-16|23:09:15.214] Aborting state snapshot generation       root="29493e…c95a33" at="0bec39…697191" accounts=6197539 slots=23865354 storage=2.08GiB    elapsed=34h59m24.894s eta=716h18m16.758s
-INFO [05-16|23:09:15.259] Resuming state snapshot generation       root="d40b1b…36ae81" at="0bec39…697191" accounts=6197539 slots=23865354 storage=2.08GiB    elapsed=34h59m24.939s eta=716h18m17.679s
-INFO [05-16|23:09:15.300] Imported new chain segment               blocks=1      txs=201      mgas=14.967 elapsed=1.163s        mgasps=12.861  number=12448373 hash="1e7689…4268a2" dirty=661.22MiB
-INFO [05-16|23:09:15.303] Unindexed transactions                   blocks=1      txs=54       tail=10098374 elapsed=2.926ms
-INFO [05-16|23:09:23.264] Generating state snapshot                root="d40b1b…36ae81" at="0bec8c…aa6db3" accounts=6198236 slots=23865510 storage=2.08GiB    elapsed=34h59m32.943s eta=716h16m13.466s
-INFO [05-16|23:09:25.102] Aborting state snapshot generation       root="d40b1b…36ae81" in="0bec91…05227c" at="405787…bb5ace" accounts=6198274 slots=23865593 storage=2.08GiB    elapsed=34h59m34.781s eta=716h16m33.639s
-INFO [05-16|23:09:25.117] Resuming state snapshot generation       root="497622…c3aaf1" in="0bec91…05227c" at="405787…bb5ace" accounts=6198274 slots=23865593 storage=2.08GiB    elapsed=34h59m34.796s eta=716h16m33.946s
-INFO [05-16|23:09:25.172] Imported new chain segment               blocks=1      txs=236      mgas=14.997 elapsed=4.253s        mgasps=3.525   number=12448374 hash="7315e1…f193d5" dirty=661.39MiB
-INFO [05-16|23:09:25.179] Unindexed transactions                   blocks=1      txs=174      tail=10098375 elapsed=6.905ms
-INFO [05-16|23:09:25.884] Chain reorg detected                     number=12448373 hash="1e7689…4268a2" drop=1 dropfrom="7315e1…f193d5" add=1 addfrom="9ec262…d0f723"
-INFO [05-16|23:09:25.889] Imported new chain segment               blocks=1      txs=225      mgas=14.988 elapsed=713.495ms     mgasps=21.006  number=12448374 hash="9ec262…d0f723" dirty=661.55MiB
-INFO [05-16|23:09:27.155] Deep froze chain segment                 blocks=6      elapsed=69.116ms      number=12358374 hash="5de770…e813dc"
-INFO [05-16|23:09:33.120] Generating state snapshot                root="497622…c3aaf1" at="0bed47…41a650" accounts=6199696 slots=23866043 storage=2.08GiB    elapsed=34h59m42.800s eta=716h8m48.014s
-INFO [05-16|23:09:41.389] Generating state snapshot                root="497622…c3aaf1" at="0bed59…159570" accounts=6199844 slots=23867975 storage=2.08GiB    elapsed=34h59m51.068s eta=716h10m35.484s
+INFO [06-08|16:03:16.493] Imported new block headers               count=1    elapsed=246.510ms    number=12594836 hash="77a846…43f32b" age=1m
+INFO [06-08|16:03:19.311] Imported new block headers               count=1    elapsed=31.164ms     number=12594837 hash="f2d15d…f05ca6"
+INFO [06-08|16:03:20.313] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=267.09KiB throttle=246
+INFO [06-08|16:03:23.007] Imported new state entries               count=384  elapsed=2.467ms      processed=1045280805 pending=18025  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:03:28.421] Imported new state entries               count=384  elapsed="255.001µs"  processed=1045281189 pending=18446  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:03:33.074] Imported new state entries               count=384  elapsed="105µs"      processed=1045281573 pending=18868  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:03:37.446] Imported new block headers               count=1    elapsed=69.042ms     number=12594838 hash="49a194…7da8a3" age=1m7s
+INFO [06-08|16:03:40.424] Imported new block headers               count=1    elapsed=20.873ms     number=12594839 hash="35b3d4…f31043"
+INFO [06-08|16:03:41.302] Imported new state entries               count=768  elapsed=1.293ms      processed=1045282341 pending=19611  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:03:45.733] Imported new state entries               count=384  elapsed="214.101µs"  processed=1045282725 pending=20063  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:03:49.883] Imported new state entries               count=370  elapsed="74.8µs"     processed=1045283095 pending=20520  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:03:52.498] Imported new block headers               count=1    elapsed=14.610ms     number=12594840 hash="07ce45…8adce6"
+INFO [06-08|16:03:53.911] Imported new state entries               count=422  elapsed="76.4µs"     processed=1045283517 pending=22070  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:03:55.932] Imported new state entries               count=587  elapsed=2.671ms      processed=1045284104 pending=22393  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:03:59.654] Imported new state entries               count=863  elapsed=2.957ms      processed=1045284967 pending=22848  trieretry=8    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:01.546] Imported new block headers               count=1    elapsed=7.633ms      number=12594841 hash="1f49ee…760473"
+INFO [06-08|16:04:02.465] Imported new state entries               count=586  elapsed=7.268ms      processed=1045285553 pending=22499  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:04.571] Imported new block headers               count=1    elapsed=6.115ms      number=12594842 hash="766c23…db55d5"
+INFO [06-08|16:04:07.749] Imported new state entries               count=384  elapsed="733.103µs"  processed=1045285937 pending=22784  trieretry=4    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:10.613] Imported new block headers               count=1    elapsed=8.497ms      number=12594843 hash="f252fa…8b79be"
+INFO [06-08|16:04:14.378] Imported new state entries               count=768  elapsed="901.403µs"  processed=1045286705 pending=23442  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:17.554] Imported new state entries               count=384  elapsed="381.501µs"  processed=1045287089 pending=23786  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:21.981] Imported new state entries               count=768  elapsed=4.481ms      processed=1045287857 pending=23827  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:25.941] Imported new state entries               count=384  elapsed="744.602µs"  processed=1045288241 pending=24106  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:31.718] Imported new block headers               count=1    elapsed=8.867ms      number=12594844 hash="b9b3cb…d65437"
+INFO [06-08|16:04:31.839] Imported new state entries               count=384  elapsed="141µs"      processed=1045288625 pending=24491  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:32.370] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=268.95KiB throttle=244
+INFO [06-08|16:04:35.015] Imported new state entries               count=272  elapsed="499.302µs"  processed=1045288897 pending=24712  trieretry=380  coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:38.700] Imported new state entries               count=384  elapsed="385.301µs"  processed=1045289281 pending=25095  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:40.241] Imported new state entries               count=454  elapsed=2.404ms      processed=1045289735 pending=25358  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:44.293] Imported new state entries               count=269  elapsed="472.902µs"  processed=1045290004 pending=25584  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:45.844] Imported new state entries               count=863  elapsed=4.500ms      processed=1045290867 pending=25865  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:47.627] Imported new state entries               count=345  elapsed="336.801µs"  processed=1045291212 pending=26243  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:49.153] Imported new state entries               count=384  elapsed=4.362ms      processed=1045291596 pending=26152  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:52.247] Imported new state entries               count=768  elapsed=6.705ms      processed=1045292364 pending=26475  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:54.728] Imported new state entries               count=768  elapsed=2.600ms      processed=1045293132 pending=26838  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:56.123] Imported new state entries               count=384  elapsed=2.877ms      processed=1045293516 pending=27218  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:04:59.517] Imported new state entries               count=768  elapsed=2.531ms      processed=1045294284 pending=27692  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:01.929] Imported new block headers               count=1    elapsed=75.755ms     number=12594845 hash="26a965…a60bcb"
+INFO [06-08|16:05:06.546] Imported new state entries               count=768  elapsed="497.602µs"  processed=1045295052 pending=28458  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:10.105] Imported new state entries               count=866  elapsed=1.342ms      processed=1045295918 pending=29975  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:13.974] Imported new block headers               count=1    elapsed=55.711ms     number=12594846 hash="9ec3cd…fd4fb9" age=1m4s
+INFO [06-08|16:05:14.659] Imported new state entries               count=766  elapsed=1.853ms      processed=1045296684 pending=30867  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:18.928] Imported new state entries               count=523  elapsed="719.002µs"  processed=1045297207 pending=32221  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:21.913] Imported new state entries               count=385  elapsed="332.701µs"  processed=1045297592 pending=32606  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:25.647] Imported new state entries               count=384  elapsed="732.602µs"  processed=1045297976 pending=33085  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:27.985] Imported new state entries               count=768  elapsed=3.560ms      processed=1045298744 pending=33507  trieretry=4    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:29.883] Imported new state entries               count=768  elapsed=2.353ms      processed=1045299512 pending=33991  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:34.670] Imported new state entries               count=384  elapsed=1.087ms      processed=1045299896 pending=34863  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:36.587] Imported new state entries               count=768  elapsed=3.021ms      processed=1045300664 pending=35570  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:38.842] Imported new state entries               count=1156 elapsed=3.731ms      processed=1045301820 pending=36252  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:42.954] Imported new state entries               count=494  elapsed=1.203ms      processed=1045302314 pending=37406  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:50.011] Imported new state entries               count=570  elapsed=2.959ms      processed=1045302884 pending=39617  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:50.156] Imported new block headers               count=1    elapsed=68.187ms     number=12594847 hash="7c3c4b…58defb" age=1m19s
+INFO [06-08|16:05:50.414] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=265.81KiB throttle=247
+INFO [06-08|16:05:55.247] Imported new state entries               count=384  elapsed=1.342ms      processed=1045303268 pending=41249  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:05:56.148] Imported new block headers               count=1    elapsed=21.803ms     number=12594848 hash="66be7e…820f66"
+INFO [06-08|16:06:01.932] Imported new state entries               count=585  elapsed="616.202µs"  processed=1045303853 pending=43565  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:03.317] Imported new state entries               count=385  elapsed="49.9µs"     processed=1045304238 pending=45161  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:07.568] Imported new state entries               count=384  elapsed="958.603µs"  processed=1045304622 pending=45727  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:08.198] Imported new block headers               count=1    elapsed=6.692ms      number=12594849 hash="5c8146…13b43e"
+INFO [06-08|16:06:09.951] Imported new state entries               count=384  elapsed="578.202µs"  processed=1045305006 pending=47356  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:12.832] Imported new state entries               count=384  elapsed="430.201µs"  processed=1045305390 pending=48409  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:15.494] Imported new state entries               count=384  elapsed="159.3µs"    processed=1045305774 pending=50680  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:17.559] Imported new state entries               count=384  elapsed=1.655ms      processed=1045306158 pending=52182  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:19.978] Imported new state entries               count=384  elapsed="884.802µs"  processed=1045306542 pending=52632  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:28.708] Imported new state entries               count=384  elapsed="260.001µs"  processed=1045306926 pending=54306  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:36.605] Imported new state entries               count=777  elapsed=4.200ms      processed=1045307703 pending=55812  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:38.591] Imported new state entries               count=768  elapsed=5.222ms      processed=1045308471 pending=57330  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:41.919] Imported new state entries               count=558  elapsed=2.420ms      processed=1045309029 pending=57771  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:44.385] Imported new block headers               count=1    elapsed=21.992ms     number=12594850 hash="e1ffce…87c36c"
+INFO [06-08|16:06:47.398] Imported new block headers               count=1    elapsed=7.127ms      number=12594851 hash="6b1983…1c9758"
+INFO [06-08|16:06:54.849] Imported new state entries               count=655  elapsed="499.501µs"  processed=1045309684 pending=58959  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:06:57.431] Imported new state entries               count=384  elapsed=1.070ms      processed=1045310068 pending=59290  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:02.343] Imported new state entries               count=643  elapsed=2.275ms      processed=1045310711 pending=61460  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:05.180] Imported new state entries               count=385  elapsed="2.7µs"      processed=1045311096 pending=62271  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:09.088] Imported new state entries               count=384  elapsed=1.180ms      processed=1045311480 pending=62540  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:11.734] Imported new state entries               count=384  elapsed="830.003µs"  processed=1045311864 pending=63014  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:15.802] Imported new state entries               count=384  elapsed="393.401µs"  processed=1045312248 pending=64515  trieretry=4    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:18.959] Imported new state entries               count=384  elapsed=1.950ms      processed=1045312632 pending=65183  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:26.607] Imported new block headers               count=2    elapsed=34.144ms     number=12594853 hash="9751b7…30deb3"
+INFO [06-08|16:07:27.186] Imported new state entries               count=384  elapsed=1.628ms      processed=1045313016 pending=65723  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:27.478] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=270.15KiB throttle=243
+INFO [06-08|16:07:32.733] Imported new state entries               count=384  elapsed=1.147ms      processed=1045313400 pending=65988  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:37.869] Imported new state entries               count=787  elapsed=4.941ms      processed=1045314187 pending=65942  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:38.658] Imported new block headers               count=1    elapsed=6.943ms      number=12594854 hash="abf180…a991a5"
+INFO [06-08|16:07:47.069] Imported new state entries               count=768  elapsed=1.002ms      processed=1045314955 pending=66780  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:07:47.709] Imported new block headers               count=1    elapsed=6.616ms      number=12594855 hash="a23d46…02693a"
+INFO [06-08|16:07:52.285] Imported new state entries               count=768  elapsed=4.887ms      processed=1045315723 pending=66694  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:01.481] Imported new state entries               count=985  elapsed=4.563ms      processed=1045316708 pending=66804  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:05.807] Imported new block headers               count=1    elapsed=11.826ms     number=12594856 hash="848b45…df8a17"
+INFO [06-08|16:08:06.948] Imported new state entries               count=384  elapsed=1.434ms      processed=1045317092 pending=67017  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:08.827] Imported new block headers               count=1    elapsed=6.635ms      number=12594857 hash="77b527…83f3e3"
+INFO [06-08|16:08:09.994] Imported new state entries               count=1045 elapsed=8.794ms      processed=1045318137 pending=66806  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:11.852] Imported new block headers               count=1    elapsed=6.254ms      number=12594858 hash="14ff48…adcccb"
+INFO [06-08|16:08:13.699] Imported new state entries               count=768  elapsed=3.399ms      processed=1045318905 pending=67743  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:15.718] Imported new state entries               count=768  elapsed=1.342ms      processed=1045319673 pending=69434  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:17.892] Imported new block headers               count=1    elapsed=6.465ms      number=12594859 hash="5528ed…be9dd7"
+INFO [06-08|16:08:21.961] Imported new state entries               count=768  elapsed=7.521ms      processed=1045320441 pending=69304  trieretry=2    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:23.398] Imported new state entries               count=1573 elapsed=14.146ms     processed=1045322014 pending=68362  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:25.146] Imported new state entries               count=1405 elapsed=11.672ms     processed=1045323419 pending=67705  trieretry=1    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:28.068] Imported new state entries               count=1487 elapsed=15.031ms     processed=1045324906 pending=66290  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:28.854] Imported new state entries               count=1920 elapsed=19.008ms     processed=1045326826 pending=64379  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:29.083] Imported new state entries               count=1974 elapsed=23.283ms     processed=1045328800 pending=61966  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:29.457] Imported new state entries               count=1955 elapsed=26.858ms     processed=1045330755 pending=59271  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:33.361] Imported new state entries               count=1712 elapsed=14.570ms     processed=1045332467 pending=58035  trieretry=0    coderetry=0 duplicate=37 unexpected=74190
+INFO [06-08|16:08:39.957] Imported new state entries               count=768  elapsed=5.860ms      processed=1045333235 pending=57829  trieretry=2    coderetry=0 duplicate=37 unexpected=74190

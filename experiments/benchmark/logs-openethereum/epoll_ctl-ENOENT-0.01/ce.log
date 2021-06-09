@@ -1,14 +1,14 @@
-2021-05-16 22:05:45 UTC Keys path /data/blockchain/eth-data/keys/ethereum
-2021-05-16 22:05:45 UTC DB path /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d
-2021-05-16 22:05:45 UTC State DB configuration: fast
-2021-05-16 22:05:45 UTC Operating mode: active
-2021-05-16 22:05:45 UTC Configured for Ethereum using Ethash engine
-2021-05-16 22:05:46 UTC Listening for new connections on 127.0.0.1:8546.
-2021-05-16 22:05:46 UTC Updated conversion rate to Ξ1 = US$3511.27 (1356177.3 wei/gas)
-2021-05-16 22:05:51 UTC Public node URL: enode://d440dace1e4954e36e7f85d5d1d26fe17040f4a0b325f3c59c55bc5fae4b9e0ca4f81baef14bd09bdb9dbdcaf516f204a0194e43c6e3aae03b7ab23339ce6d4b@10.0.0.5:30303
-2021-05-16 22:06:16 UTC  20/25 peers    205 KiB chain  319 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-16 22:06:25 UTC Imported #12448086 0x2fb0…2b89 (331 txs, 14.98 Mgas, 7651 ms, 72.72 KiB)
-2021-05-16 22:07:00 UTC Panic occured, see stderr for details
+2021-06-08 15:00:31 UTC Imported #12594561 0xd09d…46d4 (187 txs, 15.00 Mgas, 7844 ms, 56.93 KiB)
+2021-06-08 15:00:52 UTC Imported #12594562 0x189a…81e4 (213 txs, 14.99 Mgas, 8029 ms, 58.19 KiB)
+2021-06-08 15:01:03 UTC  36/50 peers      3 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:01:08 UTC Imported #12594563 0xd2e0…e000 (155 txs, 14.98 Mgas, 8033 ms, 54.41 KiB)
+2021-06-08 15:01:35 UTC  36/50 peers      3 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:01:43 UTC Imported #12594564 0x3bad…5827 (232 txs, 14.98 Mgas, 7407 ms, 65.54 KiB)
+2021-06-08 15:02:07 UTC  36/50 peers      3 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:02:12 UTC Imported #12594565 0x28da…addb (187 txs, 14.97 Mgas, 5833 ms, 51.36 KiB)
+2021-06-08 15:02:41 UTC  37/50 peers      3 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:02:46 UTC Imported #12594569 0x10c9…e4d5 (195 txs, 14.98 Mgas, 6508 ms, 65.35 KiB)
+2021-06-08 15:03:06 UTC Panic occured, see stderr for details
 
 
 ====================
@@ -48,7 +48,7 @@ This is a bug. Please report it at:
     https://github.com/openethereum/openethereum/issues/new
 
 
-2021-05-16 22:07:00 UTC Finishing work, please wait...
-2021-05-16 22:07:06 UTC  26/50 peers    0 bytes chain  216 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-16 22:07:18 UTC Error on IO service shutdown: NotifyError::Closed(..)
+2021-06-08 15:03:06 UTC Finishing work, please wait...
+2021-06-08 15:03:08 UTC Imported #12594570 0xcfdf…ec25 (234 txs, 14.97 Mgas, 5847 ms, 55.79 KiB)
+2021-06-08 15:03:09 UTC Error on IO service shutdown: NotifyError::Closed(..)
 Error: 1

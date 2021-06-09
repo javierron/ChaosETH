@@ -1,30 +1,24 @@
-INFO [05-17|02:08:15.121] Initializing state bloom                 items=16124415 errorrate=0.000 elapsed=24.002s
-INFO [05-17|02:08:21.252] Looking for peers                        peercount=2 tried=4 static=0
-INFO [05-17|02:08:23.122] Initializing state bloom                 items=21762832 errorrate=0.000 elapsed=32.003s
-INFO [05-17|02:08:27.207] Imported new block headers               count=3  elapsed=20.852ms  number=12449162 hash="3a7c7c…77920f"
-INFO [05-17|02:08:31.122] Initializing state bloom                 items=27300145 errorrate=0.000 elapsed=40.003s
-INFO [05-17|02:08:31.254] Looking for peers                        peercount=3 tried=2 static=0
-INFO [05-17|02:08:39.123] Initializing state bloom                 items=32795069 errorrate=0.000 elapsed=48.004s
-INFO [05-17|02:08:40.277] Imported new block headers               count=1  elapsed=11.986ms  number=12449163 hash="5edbb7…fd29e2"
-INFO [05-17|02:08:41.299] Looking for peers                        peercount=3 tried=7 static=0
-INFO [05-17|02:08:47.125] Initializing state bloom                 items=38318846 errorrate=0.000 elapsed=56.006s
-INFO [05-17|02:08:51.309] Looking for peers                        peercount=3 tried=8 static=0
-INFO [05-17|02:08:53.844] Imported new block headers               count=1  elapsed=8.230ms   number=12449164 hash="3f6aea…65f9f9"
-INFO [05-17|02:08:55.125] Initializing state bloom                 items=43205017 errorrate=0.000 elapsed=1m4.006s
-INFO [05-17|02:09:01.312] Looking for peers                        peercount=3 tried=5 static=0
-INFO [05-17|02:09:03.126] Initializing state bloom                 items=48644459 errorrate=0.000 elapsed=1m12.007s
-INFO [05-17|02:09:10.031] Imported new block headers               count=1  elapsed=8.583ms   number=12449165 hash="e043ed…c209d9"
-INFO [05-17|02:09:11.044] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=275.46KiB throttle=238
-INFO [05-17|02:09:11.127] Initializing state bloom                 items=54179445 errorrate=0.000 elapsed=1m20.008s
-INFO [05-17|02:09:11.314] Looking for peers                        peercount=4 tried=4 static=0
-INFO [05-17|02:09:16.926] Imported new block headers               count=1  elapsed=8.094ms   number=12449166 hash="794872…3c4f02"
-INFO [05-17|02:09:19.127] Initializing state bloom                 items=59761120 errorrate=0.000 elapsed=1m28.008s
-INFO [05-17|02:09:20.871] Imported new block headers               count=1  elapsed=7.050ms   number=12449167 hash="f4ce00…bc7ab2"
-INFO [05-17|02:09:21.318] Looking for peers                        peercount=4 tried=4 static=0
-INFO [05-17|02:09:27.127] Initializing state bloom                 items=65267682 errorrate=0.000 elapsed=1m36.008s
-INFO [05-17|02:09:31.319] Looking for peers                        peercount=4 tried=4 static=0
-INFO [05-17|02:09:35.128] Initializing state bloom                 items=70789976 errorrate=0.000 elapsed=1m44.009s
-INFO [05-17|02:09:41.322] Looking for peers                        peercount=4 tried=4 static=0
-INFO [05-17|02:09:42.176] Imported new block headers               count=1  elapsed=7.198ms   number=12449168 hash="c0d71d…151a27"
-INFO [05-17|02:09:43.128] Initializing state bloom                 items=76242113 errorrate=0.000 elapsed=1m52.009s
-INFO [05-17|02:09:49.035] Imported new block headers               count=2  elapsed=14.461ms  number=12449170 hash="bd0bc7…faf855"
+INFO [06-08|21:42:20.299] Initializing state bloom                 items=106537633 errorrate=0.000 elapsed=9m20.212s
+INFO [06-08|21:42:23.299] Imported new block headers               count=1   elapsed=8.201ms   number=12596363 hash="7ccbd8…768deb"
+INFO [06-08|21:42:28.300] Initializing state bloom                 items=108189543 errorrate=0.000 elapsed=9m28.213s
+INFO [06-08|21:42:36.332] Initializing state bloom                 items=109837125 errorrate=0.000 elapsed=9m36.245s
+INFO [06-08|21:42:39.607] Imported new block headers               count=1   elapsed=7.937ms   number=12596364 hash="2027c2…8d0ea0"
+INFO [06-08|21:42:44.344] Initializing state bloom                 items=111477683 errorrate=0.000 elapsed=9m44.257s
+WARN [06-08|21:42:49.288] Dropping unsynced node during sync       id=6a49a5cad0183935 conn=inbound addr=104.238.148.48:58136  type=Geth/v1.10.2-stable-...
+INFO [06-08|21:42:52.344] Initializing state bloom                 items=113126489 errorrate=0.000 elapsed=9m52.257s
+INFO [06-08|21:42:52.705] Imported new block headers               count=2   elapsed=15.824ms  number=12596366 hash="3fa220…9a5243"
+INFO [06-08|21:42:59.351] Imported new block headers               count=1   elapsed=8.066ms   number=12596367 hash="3c51dc…46bc71"
+INFO [06-08|21:43:00.344] Initializing state bloom                 items=114763594 errorrate=0.000 elapsed=10m0.257s
+INFO [06-08|21:43:00.881] Imported new state entries               count=384 elapsed="190.701µs" processed=1047780914 pending=61056 trieretry=0   coderetry=0 duplicate=0 unexpected=0
+INFO [06-08|21:43:08.344] Initializing state bloom                 items=116386136 errorrate=0.000 elapsed=10m8.257s
+INFO [06-08|21:43:12.446] Imported new block headers               count=1   elapsed=12.145ms    number=12596368 hash="3a34e7…e8f5f5"
+INFO [06-08|21:43:16.345] Initializing state bloom                 items=118011257 errorrate=0.000 elapsed=10m16.258s
+INFO [06-08|21:43:19.105] Imported new block headers               count=1   elapsed=11.654ms    number=12596369 hash="4fcb3f…4758fe"
+INFO [06-08|21:43:20.213] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=241.41KiB throttle=272
+INFO [06-08|21:43:24.346] Initializing state bloom                 items=119640535 errorrate=0.000 elapsed=10m24.259s
+INFO [06-08|21:43:28.998] Imported new block headers               count=1   elapsed=29.864ms    number=12596370 hash="41d7ea…c42e25"
+INFO [06-08|21:43:32.346] Initializing state bloom                 items=121275285 errorrate=0.000 elapsed=10m32.259s
+INFO [06-08|21:43:40.346] Initializing state bloom                 items=122903098 errorrate=0.000 elapsed=10m40.259s
+INFO [06-08|21:43:48.346] Initializing state bloom                 items=124491909 errorrate=0.000 elapsed=10m48.259s
+INFO [06-08|21:43:54.948] Imported new block headers               count=1   elapsed=9.782ms     number=12596371 hash="6c9869…0d7680"
+INFO [06-08|21:43:56.347] Initializing state bloom                 items=126132913 errorrate=0.000 elapsed=10m56.260s

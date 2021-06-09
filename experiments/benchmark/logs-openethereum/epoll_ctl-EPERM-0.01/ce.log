@@ -1,15 +1,14 @@
-2021-05-16 22:12:09 UTC State DB configuration: fast
-2021-05-16 22:12:09 UTC Operating mode: active
-2021-05-16 22:12:10 UTC Configured for Ethereum using Ethash engine
-2021-05-16 22:12:11 UTC Listening for new connections on 127.0.0.1:8546.
-2021-05-16 22:12:11 UTC Updated conversion rate to Ξ1 = US$3534.68 (1347195.4 wei/gas)
-2021-05-16 22:12:17 UTC Public node URL: enode://d440dace1e4954e36e7f85d5d1d26fe17040f4a0b325f3c59c55bc5fae4b9e0ca4f81baef14bd09bdb9dbdcaf516f204a0194e43c6e3aae03b7ab23339ce6d4b@10.0.0.5:30303
-2021-05-16 22:12:41 UTC  26/50 peers    198 KiB chain  184 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-16 22:12:56 UTC Imported #12448109 0xeaa5…43fa (201 txs, 14.97 Mgas, 2270 ms, 56.90 KiB)
-2021-05-16 22:13:11 UTC Imported #12448110 0xe6ab…d977 (228 txs, 14.99 Mgas, 5201 ms, 68.84 KiB)
-2021-05-16 22:13:13 UTC  24/25 peers    661 KiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-16 22:13:46 UTC  24/25 peers    802 KiB chain  178 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-16 22:13:47 UTC Panic occured, see stderr for details
+2021-06-08 15:34:11 UTC Imported #12594712 0x972d…1883 (153 txs, 14.97 Mgas, 11454 ms, 46.65 KiB)
+2021-06-08 15:34:17 UTC  37/50 peers      3 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:34:47 UTC  37/50 peers      3 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:34:47 UTC Imported #12594713 0x9f2a…c786 (210 txs, 14.97 Mgas, 4288 ms, 76.55 KiB)
+2021-06-08 15:35:06 UTC Imported #12594715 0x16c0…b1da (205 txs, 14.98 Mgas, 6054 ms, 65.36 KiB)
+2021-06-08 15:35:18 UTC  37/50 peers      3 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:35:49 UTC  40/50 peers      3 MiB chain  198 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:36:03 UTC Imported #12594718 0x1b1d…878d (215 txs, 14.98 Mgas, 5874 ms, 62.75 KiB)
+2021-06-08 15:36:10 UTC Imported #12594719 0x6bf9…5ede (197 txs, 14.98 Mgas, 7086 ms, 60.76 KiB)
+2021-06-08 15:36:22 UTC  39/50 peers      4 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 15:36:36 UTC Panic occured, see stderr for details
 
 
 ====================
@@ -49,7 +48,5 @@ This is a bug. Please report it at:
     https://github.com/openethereum/openethereum/issues/new
 
 
-2021-05-16 22:13:47 UTC Finishing work, please wait...
-2021-05-16 22:13:51 UTC Imported #12448114 0xbe43…e42f (172 txs, 14.99 Mgas, 3762 ms, 45.61 KiB)
-2021-05-16 22:13:51 UTC Error on IO service shutdown: NotifyError::Closed(..)
+2021-06-08 15:36:36 UTC Finishing work, please wait...
 Error: 1

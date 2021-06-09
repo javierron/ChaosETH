@@ -7,8 +7,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 35.0, 
+            "mean": 34.666666666666664, 
+            "variance": 0.22222222222222218, 
+            "min": 34.0
+          }, 
+          "ce": {
+            "max": 35.0, 
+            "mean": 35.0, 
+            "variance": 0.0, 
+            "min": 35.0
+          }, 
+          "normal": {
+            "max": 35.0, 
+            "mean": 34.80952380952381, 
+            "variance": 0.15419501133786848, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 93
+        "injection_count": 259
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EAGAIN", 
@@ -20,8 +40,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 33.61904761904762, 
+            "variance": 0.23582766439909297, 
+            "min": 33.0
+          }, 
+          "ce": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 86
+        "injection_count": 88
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EBADF", 
@@ -33,8 +73,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 33.0, 
+            "mean": 32.666666666666664, 
+            "variance": 0.2222222222222221, 
+            "min": 32.0
+          }, 
+          "ce": {
+            "max": 32.0, 
+            "mean": 32.0, 
+            "variance": 0.0, 
+            "min": 32.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 32.714285714285715, 
+            "variance": 0.20408163265306117, 
+            "min": 32.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 406
+        "injection_count": 268
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EFAULT", 
@@ -46,8 +106,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 33.0, 
+            "mean": 32.95238095238095, 
+            "variance": 0.04535147392290254, 
+            "min": 33.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 32.61904761904762, 
+            "variance": 0.5215419501133787, 
+            "min": 32.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 322
+        "injection_count": 217
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EINTR", 
@@ -59,8 +139,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 454
+        "injection_count": 125
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EINVAL", 
@@ -72,8 +172,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 365
+        "injection_count": 243
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EIO", 
@@ -85,8 +205,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 32.0, 
+            "mean": 32.0, 
+            "variance": 0.0, 
+            "min": 32.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 356
+        "injection_count": 332
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EISDIR", 
@@ -98,8 +238,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 32.0, 
+            "mean": 31.952380952380953, 
+            "variance": 0.045351473922902494, 
+            "min": 32.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 4
+        "injection_count": 71
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EBADF", 
@@ -111,8 +259,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 35.0, 
+            "mean": 33.19047619047619, 
+            "variance": 1.9637188208616772, 
+            "min": 31.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 2
+        "injection_count": 15
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EEXIST", 
@@ -124,8 +280,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 44.0, 
+            "mean": 41.42857142857143, 
+            "variance": 5.006802721088435, 
+            "min": 37.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 6
+        "injection_count": 14
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EINVAL", 
@@ -137,8 +301,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 39.0, 
+            "mean": 37.76190476190476, 
+            "variance": 0.6575963718820862, 
+            "min": 37.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 7
+        "injection_count": 20
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ELOOP", 
@@ -150,8 +322,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 38.0, 
+            "mean": 34.80952380952381, 
+            "variance": 3.868480725623583, 
+            "min": 32.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 4
+        "injection_count": 1
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOENT", 
@@ -163,8 +343,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 34.0, 
+            "mean": 30.38095238095238, 
+            "variance": 2.3310657596371875, 
+            "min": 29.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 20
+        "injection_count": 4
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOMEM", 
@@ -176,8 +364,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 33.0, 
+            "mean": 32.04761904761905, 
+            "variance": 1.8548752834467113, 
+            "min": 30.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 5
+        "injection_count": 33
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOSPC", 
@@ -189,8 +385,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 39.0, 
+            "mean": 36.666666666666664, 
+            "variance": 1.5555555555555558, 
+            "min": 35.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 82
+        "injection_count": 12
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EPERM", 
@@ -202,6 +406,26 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 32.0, 
+            "mean": 28.38095238095238, 
+            "variance": 14.426303854875284, 
+            "min": 18.0
+          }, 
+          "ce": {
+            "max": 35.8, 
+            "mean": 22.0, 
+            "variance": 82.0, 
+            "min": 16.200000000000003
+          }, 
+          "normal": {
+            "max": 38.0, 
+            "mean": 33.61904761904762, 
+            "variance": 6.140589569160996, 
+            "min": 31.0
+          }
+        }, 
         "client_crashed": false, 
         "injection_count": 128
       }, 
@@ -215,8 +439,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 39.0, 
+            "mean": 30.952380952380953, 
+            "variance": 46.616780045351476, 
+            "min": 18.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 24.8, 
+            "variance": 28.96, 
+            "min": 20.2
+          }, 
+          "normal": {
+            "max": 36.0, 
+            "mean": 35.19047619047619, 
+            "variance": 0.7256235827664397, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 111
+        "injection_count": 101
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EBADF", 
@@ -228,8 +472,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 38.0, 
+            "mean": 35.23809523809524, 
+            "variance": 17.13378684807255, 
+            "min": 25.0
+          }, 
+          "ce": {
+            "max": 38.599999999999994, 
+            "mean": 27.0, 
+            "variance": 57.2, 
+            "min": 21.200000000000003
+          }, 
+          "normal": {
+            "max": 42.0, 
+            "mean": 40.95238095238095, 
+            "variance": 0.23582766439909303, 
+            "min": 40.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 66
+        "injection_count": 108
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ECONNREFUSED", 
@@ -241,8 +505,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 33.0, 
+            "mean": 28.0, 
+            "variance": 16.095238095238095, 
+            "min": 23.0
+          }, 
+          "ce": {
+            "max": 38.99999999999999, 
+            "mean": 25.4, 
+            "variance": 79.44, 
+            "min": 19.200000000000003
+          }, 
+          "normal": {
+            "max": 42.0, 
+            "mean": 38.80952380952381, 
+            "variance": 7.582766439909297, 
+            "min": 36.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 24
+        "injection_count": 126
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EFAULT", 
@@ -254,8 +538,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 28.0, 
+            "mean": 25.857142857142858, 
+            "variance": 3.741496598639457, 
+            "min": 23.0
+          }, 
+          "ce": {
+            "max": 36.4, 
+            "mean": 28.6, 
+            "variance": 27.04, 
+            "min": 24.000000000000004
+          }, 
+          "normal": {
+            "max": 40.0, 
+            "mean": 37.61904761904762, 
+            "variance": 4.521541950113376, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 18
+        "injection_count": 34
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EINTR", 
@@ -267,8 +571,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 31.0, 
+            "mean": 27.523809523809526, 
+            "variance": 4.820861678004535, 
+            "min": 25.0
+          }, 
+          "ce": {
+            "max": 34.4, 
+            "mean": 27.2, 
+            "variance": 22.16, 
+            "min": 23.200000000000003
+          }, 
+          "normal": {
+            "max": 35.099999999999994, 
+            "mean": 32.26315789473684, 
+            "variance": 7.667590027700831, 
+            "min": 27.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 23
+        "injection_count": 81
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EINVAL", 
@@ -280,8 +604,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 31.428571428571427, 
+            "variance": 9.6734693877551, 
+            "min": 28.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 27.4, 
+            "variance": 14.239999999999998, 
+            "min": 24.000000000000004
+          }, 
+          "normal": {
+            "max": 36.0, 
+            "mean": 34.57142857142857, 
+            "variance": 3.2925170068027203, 
+            "min": 31.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 59
+        "injection_count": 50
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOMEM", 
@@ -293,8 +637,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 31.0, 
+            "mean": 26.428571428571427, 
+            "variance": 6.435374149659865, 
+            "min": 23.0
+          }, 
+          "ce": {
+            "max": 34.4, 
+            "mean": 28.0, 
+            "variance": 17.2, 
+            "min": 25.0
+          }, 
+          "normal": {
+            "max": 38.0, 
+            "mean": 36.19047619047619, 
+            "variance": 1.7732426303854867, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 43
+        "injection_count": 25
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOTCONN", 
@@ -306,8 +670,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 36.0, 
+            "mean": 32.04761904761905, 
+            "variance": 15.283446712018142, 
+            "min": 26.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 28.0, 
+            "variance": 11.2, 
+            "min": 25.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 32.714285714285715, 
+            "variance": 1.1564625850340133, 
+            "min": 31.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 22
+        "injection_count": 33
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOTSOCK", 
@@ -319,8 +703,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 37.0, 
+            "mean": 35.714285714285715, 
+            "variance": 0.585034013605442, 
+            "min": 34.0
+          }, 
+          "ce": {
+            "max": 36.8, 
+            "mean": 36.2, 
+            "variance": 0.16, 
+            "min": 36.0
+          }, 
+          "normal": {
+            "max": 37.0, 
+            "mean": 36.57142857142857, 
+            "variance": 0.34013605442176875, 
+            "min": 36.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 2
+        "injection_count": 0
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EAGAIN", 
@@ -332,6 +736,26 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 36.0, 
+            "mean": 35.0, 
+            "variance": 0.2857142857142857, 
+            "min": 34.0
+          }, 
+          "ce": {
+            "max": 36.0, 
+            "mean": 36.0, 
+            "variance": 0.0, 
+            "min": 36.0
+          }, 
+          "normal": {
+            "max": 36.0, 
+            "mean": 35.38095238095238, 
+            "variance": 0.3310657596371882, 
+            "min": 35.0
+          }
+        }, 
         "client_crashed": false, 
         "injection_count": 0
       }, 
@@ -345,6 +769,26 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 32.857142857142854, 
+            "variance": 0.31292517006802706, 
+            "min": 32.0
+          }, 
+          "ce": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }, 
+          "normal": {
+            "max": 35.0, 
+            "mean": 34.61904761904762, 
+            "variance": 0.23582766439909297, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": false, 
         "injection_count": 1
       }, 
@@ -358,8 +802,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 33.95238095238095, 
+            "variance": 0.04535147392290252, 
+            "min": 34.0
+          }, 
+          "ce": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 33.714285714285715, 
+            "variance": 0.2993197278911563, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 1
+        "injection_count": 0
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EFAULT", 
@@ -371,6 +835,26 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 33.0, 
+            "mean": 32.76190476190476, 
+            "variance": 0.18140589569161, 
+            "min": 32.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 33.904761904761905, 
+            "variance": 0.08616780045351474, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
         "injection_count": 0
       }, 
@@ -384,8 +868,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 33.0, 
+            "mean": 32.285714285714285, 
+            "variance": 0.585034013605442, 
+            "min": 31.0
+          }, 
+          "ce": {
+            "max": 33.800000000000004, 
+            "mean": 33.2, 
+            "variance": 0.16, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 32.57142857142857, 
+            "variance": 0.5306122448979591, 
+            "min": 32.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 3
+        "injection_count": 2
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EINVAL", 
@@ -397,6 +901,26 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 33.38095238095238, 
+            "variance": 0.5215419501133787, 
+            "min": 32.0
+          }, 
+          "ce": {
+            "max": 32.0, 
+            "mean": 32.0, 
+            "variance": 0.0, 
+            "min": 32.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 32.38095238095238, 
+            "variance": 0.23582766439909297, 
+            "min": 32.0
+          }
+        }, 
         "client_crashed": false, 
         "injection_count": 1
       }, 
@@ -410,6 +934,26 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 33.04761904761905, 
+            "variance": 0.23582766439909303, 
+            "min": 32.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 32.80952380952381, 
+            "variance": 0.2494331065759637, 
+            "min": 32.0
+          }
+        }, 
         "client_crashed": false, 
         "injection_count": 0
       }, 
@@ -423,8 +967,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 33.23809523809524, 
+            "variance": 0.18140589569161, 
+            "min": 33.0
+          }, 
+          "ce": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 33.857142857142854, 
+            "variance": 0.12244897959183668, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 1
+        "injection_count": 2
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOBUFS", 
@@ -436,8 +1000,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 33.0, 
+            "mean": 32.904761904761905, 
+            "variance": 0.08616780045351474, 
+            "min": 32.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 33.19047619047619, 
+            "variance": 0.2494331065759637, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 1
+        "injection_count": 0
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOMEM", 
@@ -449,8 +1033,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 33.19047619047619, 
+            "variance": 0.34467120181405897, 
+            "min": 32.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 32.95238095238095, 
+            "variance": 0.045351473922902515, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 2
+        "injection_count": 1
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOTSOCK", 
@@ -462,8 +1066,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }, 
+          "ce": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 1
+        "injection_count": 0
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EOPNOTSUPP", 
@@ -475,8 +1099,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 33.19047619047619, 
+            "variance": 0.2494331065759637, 
+            "min": 33.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 34.0, 
+            "mean": 33.95238095238095, 
+            "variance": 0.045351473922902494, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 1
+        "injection_count": 0
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EPROTO", 
@@ -488,8 +1132,28 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 34.0, 
+            "mean": 33.523809523809526, 
+            "variance": 0.2494331065759636, 
+            "min": 33.0
+          }, 
+          "ce": {
+            "max": 33.0, 
+            "mean": 33.0, 
+            "variance": 0.0, 
+            "min": 33.0
+          }, 
+          "normal": {
+            "max": 33.0, 
+            "mean": 32.95238095238095, 
+            "variance": 0.0453514739229025, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": false, 
-        "injection_count": 0
+        "injection_count": 1
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EPERM", 
@@ -501,6 +1165,14 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 34.0, 
+            "mean": 34.0, 
+            "variance": 0.0, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": true, 
         "injection_count": 1
       }, 
@@ -514,8 +1186,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 45.0, 
+            "mean": 39.904761904761905, 
+            "variance": 12.086167800453515, 
+            "min": 34.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 1
+        "injection_count": 2
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EAGAIN", 
@@ -527,8 +1207,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 29.0, 
+            "mean": 28.142857142857142, 
+            "variance": 0.7891156462585033, 
+            "min": 27.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 5
+        "injection_count": 1
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EDEADLK", 
@@ -540,8 +1228,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 30.0, 
+            "mean": 28.857142857142858, 
+            "variance": 0.9795918367346934, 
+            "min": 27.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 1
+        "injection_count": 3
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EFAULT", 
@@ -553,8 +1249,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 36.0, 
+            "mean": 32.714285714285715, 
+            "variance": 7.4421768707482965, 
+            "min": 28.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 2
+        "injection_count": 1
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EINTR", 
@@ -566,8 +1270,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 35.0, 
+            "mean": 34.0, 
+            "variance": 0.38095238095238093, 
+            "min": 33.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 2
+        "injection_count": 3
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EINVAL", 
@@ -579,8 +1291,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 35.0, 
+            "mean": 33.142857142857146, 
+            "variance": 2.5034013605442182, 
+            "min": 31.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 1
+        "injection_count": 2
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENFILE", 
@@ -592,8 +1312,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 32.0, 
+            "mean": 31.333333333333332, 
+            "variance": 0.6031746031746034, 
+            "min": 30.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 3
+        "injection_count": 1
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOMEM", 
@@ -605,8 +1333,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 42.0, 
+            "mean": 38.61904761904762, 
+            "variance": 7.759637188208615, 
+            "min": 35.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 2
+        "injection_count": 1
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ENOSYS", 
@@ -618,8 +1354,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 37.0, 
+            "mean": 31.761904761904763, 
+            "variance": 13.514739229024949, 
+            "min": 27.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 7
+        "injection_count": 5
       }, 
       "original_mean_rate": -1, 
       "error_code": "-EPERM", 
@@ -631,8 +1375,16 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 36.0, 
+            "mean": 33.0, 
+            "variance": 6.380952380952381, 
+            "min": 28.0
+          }
+        }, 
         "client_crashed": true, 
-        "injection_count": 2
+        "injection_count": 1
       }, 
       "original_mean_rate": -1, 
       "error_code": "-ESRCH", 
@@ -644,6 +1396,14 @@
       "original_max_rate": -1, 
       "failure_rate": 0.01, 
       "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 29.0, 
+            "mean": 26.095238095238095, 
+            "variance": 4.657596371882085, 
+            "min": 23.0
+          }
+        }, 
         "client_crashed": true, 
         "injection_count": 2
       }, 

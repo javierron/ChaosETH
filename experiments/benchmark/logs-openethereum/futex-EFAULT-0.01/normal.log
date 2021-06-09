@@ -1,18 +1,27 @@
-The futex facility returned an unexpected error code.2021-05-17 01:04:50 UTC Starting OpenEthereum/v3.2.4-stable-09967329a-20210415/x86_64-linux-gnu/rustc1.51.0
-2021-05-17 01:04:50 UTC Keys path /data/blockchain/eth-data/keys/ethereum
-2021-05-17 01:04:50 UTC DB path /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d
-2021-05-17 01:04:50 UTC State DB configuration: fast
-2021-05-17 01:04:50 UTC Operating mode: active
-2021-05-17 01:04:51 UTC Configured for Ethereum using Ethash engine
-2021-05-17 01:04:51 UTC Listening for new connections on 127.0.0.1:8546.
-2021-05-17 01:04:51 UTC Removed existing file '/data/blockchain/eth-data/jsonrpc.ipc'.
-2021-05-17 01:04:52 UTC Updated conversion rate to Ξ1 = US$3441.67 (1383603 wei/gas)
-2021-05-17 01:04:57 UTC Public node URL: enode://d440dace1e4954e36e7f85d5d1d26fe17040f4a0b325f3c59c55bc5fae4b9e0ca4f81baef14bd09bdb9dbdcaf516f204a0194e43c6e3aae03b7ab23339ce6d4b@10.0.0.5:30303
-2021-05-17 01:05:01 UTC Syncing #12448879 0xef62…714e     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    7 Qed LI:#12448887   15/25 peers    132 KiB chain    1 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:05:06 UTC Syncing #12448880 0xce1f…0fa6     0.20 blk/s   60.0 tx/s    3.0 Mgas/s      0+    6 Qed LI:#12448887   18/25 peers    167 KiB chain    1 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:05:11 UTC Syncing #12448881 0xa916…73c3     0.20 blk/s   45.4 tx/s    3.0 Mgas/s      0+    6 Qed LI:#12448888   19/25 peers    203 KiB chain    1 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:05:16 UTC Syncing #12448881 0xa916…73c3     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    7 Qed LI:#12448889   24/25 peers    203 KiB chain    2 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:05:21 UTC Syncing #12448882 0xe75e…1cc4     0.20 blk/s   32.8 tx/s    3.0 Mgas/s      0+    6 Qed LI:#12448889   21/25 peers    203 KiB chain    1 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:05:26 UTC Syncing #12448883 0xad4f…ed3d     0.20 blk/s   37.6 tx/s    3.0 Mgas/s      0+    5 Qed LI:#12448889   21/25 peers    203 KiB chain    1 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:05:31 UTC Syncing #12448884 0x7c64…905a     0.20 blk/s   35.4 tx/s    3.0 Mgas/s      0+    4 Qed LI:#12448889   21/25 peers    273 KiB chain  875 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-05-17 01:05:36 UTC Syncing #12448885 0x7cc0…73e8     0.20 blk/s   53.8 tx/s    3.0 Mgas/s      0+    4 Qed LI:#12448890   22/25 peers    273 KiB chain  871 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:29:51 UTC  27/50 peers    956 KiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:30:04 UTC Imported #12596052 0xb6e3…22a2 (157 txs, 14.99 Mgas, 6509 ms, 59.62 KiB)
+2021-06-08 20:30:15 UTC Imported #12596053 0xaefc…1d95 (137 txs, 14.97 Mgas, 6220 ms, 77.35 KiB)
+2021-06-08 20:30:23 UTC  27/50 peers      1 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:30:55 UTC  27/50 peers      1 MiB chain  576 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:31:23 UTC Imported #12596059 0x589f…20b5 (62 txs, 14.96 Mgas, 8278 ms, 26.09 KiB)
+2021-06-08 20:31:26 UTC  28/50 peers      2 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:31:43 UTC Syncing #12596060 0xc52a…02a2     0.06 blk/s   11.5 tx/s    0.9 Mgas/s      0+    4 Qed LI:#12596064   28/50 peers      2 MiB chain  851 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:31:47 UTC Syncing #12596060 0xc52a…02a2     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    4 Qed LI:#12596064   28/50 peers      2 MiB chain  851 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:32:06 UTC Imported #12596064 0x1a68…4c20 (144 txs, 14.98 Mgas, 7715 ms, 45.44 KiB)
+2021-06-08 20:32:20 UTC  27/50 peers      2 MiB chain  228 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:32:32 UTC Imported #12596066 0x7abe…a045 (199 txs, 14.94 Mgas, 4604 ms, 72.26 KiB)
+2021-06-08 20:32:46 UTC Imported #12596067 0x270e…6fd0 (202 txs, 14.95 Mgas, 2997 ms, 51.97 KiB)
+2021-06-08 20:33:01 UTC  27/50 peers      2 MiB chain    2 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:33:07 UTC Imported #12596069 0xa02d…fadf (1 txs, 12.32 Mgas, 3455 ms, 0.67 KiB)
+2021-06-08 20:33:32 UTC  29/50 peers      2 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:34:02 UTC  30/50 peers      2 MiB chain  255 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:34:27 UTC Reorg to #12596075 0x56e0…9485 (0x8f2b…a87f #12596073 0x4a17…fb73 0xbd4f…22b7)
+2021-06-08 20:34:32 UTC  30/50 peers      3 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:35:03 UTC Syncing #12596077 0x31d5…0000     0.07 blk/s   18.8 tx/s    1.0 Mgas/s      0+    5 Qed LI:#12596082   29/50 peers      3 MiB chain  708 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:35:10 UTC Syncing #12596077 0x31d5…0000     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    4 Qed LI:#12596082   30/50 peers      3 MiB chain  495 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:35:37 UTC  28/50 peers      3 MiB chain  426 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:35:58 UTC Imported #12596085 0xd297…f346 (150 txs, 14.99 Mgas, 9064 ms, 51.70 KiB)
+2021-06-08 20:36:23 UTC  29/50 peers      3 MiB chain  568 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-06-08 20:36:50 UTC Imported #12596089 0xd892…71de (195 txs, 14.88 Mgas, 6905 ms, 56.29 KiB)
+2021-06-08 20:37:03 UTC Imported #12596090 0xcea1…1830 (275 txs, 14.96 Mgas, 8286 ms, 75.05 KiB)
+2021-06-08 20:37:08 UTC  28/50 peers      4 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
