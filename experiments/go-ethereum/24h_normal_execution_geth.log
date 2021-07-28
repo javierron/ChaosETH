@@ -1,63 +1,65 @@
-$ python realistic_failures.py -h http://20.86.99.41:9090 --start=2021-05-10T16:00:00Z --end=2021-05-11T16:00:00Z
+$ python realistic_failures.py -h http://13.95.229.116:9090 --start=2021-07-26T13:00:00Z --end=2021-07-27T13:00:00Z
 WARNING:root:You didn't specify query resolution step width, will use default value 15s
 
-+-------------------+------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
-|    Syscall Name   | Error Code | Samples in Total | Invocations in Total |         Failure Rate         |        Variance        |                        Samples                         |
-+-------------------+------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
-|      accept4      |   EAGAIN   |       5216       |        191543        | 0.500000, 0.499816, 0.500000 | 1.2884402949738032e-06 | localtime: 2021-05-10 18:00:00, failure rate: 0.500000 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 15:43:45, failure rate: 0.500000 |
-|      accept4      |  SUCCESS   |        -         |        191689        |              -               |           -            |                           -                            |
-|      adjtimex     |  SUCCESS   |        -         |          6           |              -               |           -            |                           -                            |
-|     epoll_ctl     |   EPERM    |       859        |        76514         | 0.019608, 0.115834, 0.910467 |  0.053785844255860436  | localtime: 2021-05-10 18:06:30, failure rate: 0.024691 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 15:43:45, failure rate: 0.027778 |
-|     epoll_ctl     |  SUCCESS   |        -         |        434389        |              -               |           -            |                           -                            |
-|    epoll_pwait    |   EINTR    |        60        |          60          | 0.000015, 0.000022, 0.000032 | 3.2359696430110283e-11 | localtime: 2021-05-10 18:27:45, failure rate: 0.000018 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 15:23:30, failure rate: 0.000035 |
-|    epoll_pwait    |  SUCCESS   |        -         |      254216091       |              -               |           -            |                           -                            |
-|       futex       |   EAGAIN   |       5216       |        832535        | 0.003761, 0.004802, 0.006411 | 7.217113555896331e-07  | localtime: 2021-05-10 18:00:00, failure rate: 0.004491 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 15:43:45, failure rate: 0.003898 |
-|       futex       | ETIMEDOUT  |       5216       |        473552        | 0.001920, 0.002739, 0.003547 | 1.2973306122270041e-06 | localtime: 2021-05-10 18:00:00, failure rate: 0.002352 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 15:43:45, failure rate: 0.002623 |
-|       futex       |  SUCCESS   |        -         |      174524126       |              -               |           -            |                           -                            |
-|   get_mempolicy   |  SUCCESS   |        -         |          8           |              -               |           -            |                           -                            |
-|       getcwd      |  SUCCESS   |        -         |          8           |              -               |           -            |                           -                            |
-|      getpgrp      |  SUCCESS   |        -         |          5           |              -               |           -            |                           -                            |
-|      getxattr     |  SUCCESS   |        -         |          4           |              -               |           -            |                           -                            |
-|    init_module    |  SUCCESS   |        -         |          3           |              -               |           -            |                           -                            |
-|  inotify_rm_watch |  SUCCESS   |        -         |          2           |              -               |           -            |                           -                            |
-|     io_destroy    |  SUCCESS   |        -         |          3           |              -               |           -            |                           -                            |
-|    memfd_create   |  SUCCESS   |        -         |          7           |              -               |           -            |                           -                            |
-| name_to_handle_at |  SUCCESS   |        -         |          1           |              -               |           -            |                           -                            |
-|     nanosleep     |  SUCCESS   |        -         |      383126649       |              -               |           -            |                           -                            |
-|     newfstatat    |   ENOENT   |        21        |          21          | 0.166667, 0.184127, 0.200000 | 0.0002771478961955156  | localtime: 2021-05-10 18:49:00, failure rate: 0.166667 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 14:49:00, failure rate: 0.166667 |
-|     newfstatat    |  SUCCESS   |        -         |         8118         |              -               |           -            |                           -                            |
-|       ppoll       |  SUCCESS   |        -         |          9           |              -               |           -            |                           -                            |
-|        read       |   EAGAIN   |       5216       |      108595161       | 0.264485, 0.270244, 0.274749 |  9.49140159396254e-06  | localtime: 2021-05-10 18:00:00, failure rate: 0.272249 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 15:43:45, failure rate: 0.272593 |
-|        read       | ECONNRESET |        10        |          10          | 0.000011, 0.000014, 0.000019 | 8.689474186105162e-12  | localtime: 2021-05-10 19:33:00, failure rate: 0.000011 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 15:34:30, failure rate: 0.000013 |
-|        read       |  SUCCESS   |        -         |      293696157       |              -               |           -            |                           -                            |
-|      recvfrom     |   EAGAIN   |       5216       |        397617        | 0.481993, 0.495600, 0.500000 | 8.917143054871787e-05  | localtime: 2021-05-10 18:00:00, failure rate: 0.496124 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 15:43:45, failure rate: 0.497268 |
-|      recvfrom     |  SUCCESS   |        -         |        411378        |              -               |           -            |                           -                            |
-|      recvmsg      |  SUCCESS   |        -         |          11          |              -               |           -            |                           -                            |
-|   rt_sigpending   |  SUCCESS   |        -         |          3           |              -               |           -            |                           -                            |
-|    rt_sigreturn   |  SUCCESS   |        -         |          15          |              -               |           -            |                           -                            |
-|   sched_getparam  |  SUCCESS   |        -         |          4           |              -               |           -            |                           -                            |
-|       shmctl      |  SUCCESS   |        -         |          7           |              -               |           -            |                           -                            |
-|   timer_settime   |  SUCCESS   |        -         |          9           |              -               |           -            |                           -                            |
-|  timerfd_gettime  |  SUCCESS   |        -         |          8           |              -               |           -            |                           -                            |
-|       umask       |  SUCCESS   |        -         |          8           |              -               |           -            |                           -                            |
-|       uname       |  SUCCESS   |        -         |          6           |              -               |           -            |                           -                            |
-|      unlinkat     |   EISDIR   |        21        |          42          | 0.333333, 0.333333, 0.333333 | 1.232595164407831e-32  | localtime: 2021-05-10 18:49:00, failure rate: 0.333333 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 14:49:00, failure rate: 0.333333 |
-|      unlinkat     | ENOTEMPTY  |        21        |          21          | 0.166667, 0.166667, 0.166667 | 3.0814879110195774e-33 | localtime: 2021-05-10 18:49:00, failure rate: 0.166667 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 14:49:00, failure rate: 0.166667 |
-|      unlinkat     |  SUCCESS   |        -         |        16310         |              -               |           -            |                           -                            |
-|       write       |   EAGAIN   |        48        |         277          | 0.000913, 0.005673, 0.010704 | 1.0196362801828995e-05 | localtime: 2021-05-10 23:43:15, failure rate: 0.000870 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 07:31:45, failure rate: 0.007609 |
-|       write       | ECONNRESET |        2         |          2           | 0.000745, 0.000751, 0.000758 | 5.385888355716901e-11  | localtime: 2021-05-10 19:33:00, failure rate: 0.000744 |
-|                   |            |                  |                      |                              |                        | localtime: 2021-05-11 08:04:30, failure rate: 0.000759 |
-|       write       |  SUCCESS   |        -         |       12425165       |              -               |           -            |                           -                            |
-+-------------------+------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
++-------------------+-------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
+|    Syscall Name   |  Error Code | Samples in Total | Invocations in Total |         Failure Rate         |        Variance        |                        Samples                         |
++-------------------+-------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
+|      accept4      |    EAGAIN   |       5760       |        353164        | 0.496350, 0.499720, 0.500000 | 1.276444108550864e-06  | localtime: 2021-07-26 15:00:00, failure rate: 0.500000 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 15:00:00, failure rate: 0.500000 |
+|      accept4      |   SUCCESS   |        -         |        353563        |              -               |           -            |                           -                            |
+|      adjtimex     |   SUCCESS   |        -         |          11          |              -               |           -            |                           -                            |
+|      connect      | EINPROGRESS |        45        |         205          | 0.166667, 0.327357, 0.493333 |  0.009974251218674363  | localtime: 2021-07-26 15:00:15, failure rate: 0.400000 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 03:21:30, failure rate: 0.272727 |
+|      connect      |   SUCCESS   |        -         |         1147         |              -               |           -            |                           -                            |
+|     epoll_ctl     |    EPERM    |       5760       |        159361        | 0.058824, 0.087036, 0.100719 |   0.0103157863103124   | localtime: 2021-07-26 15:00:00, failure rate: 0.075758 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 15:00:00, failure rate: 0.072993 |
+|     epoll_ctl     |   SUCCESS   |        -         |        767370        |              -               |           -            |                           -                            |
+|    epoll_pwait    |    EINTR    |       172        |         176          | 0.000024, 0.000039, 0.000063 | 1.5740556225366467e-10 | localtime: 2021-07-26 15:03:30, failure rate: 0.000045 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 14:25:15, failure rate: 0.000029 |
+|    epoll_pwait    |   SUCCESS   |        -         |      169384975       |              -               |           -            |                           -                            |
+|       futex       |    EAGAIN   |       5760       |        266675        | 0.003402, 0.005279, 0.007612 | 2.040576340271353e-06  | localtime: 2021-07-26 15:00:00, failure rate: 0.003570 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 15:00:00, failure rate: 0.006647 |
+|       futex       |  ETIMEDOUT  |       5760       |        268827        | 0.002352, 0.005273, 0.014807 | 4.9969338248486575e-05 | localtime: 2021-07-26 15:00:00, failure rate: 0.004543 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 15:00:00, failure rate: 0.003142 |
+|       futex       |   SUCCESS   |        -         |       50391401       |              -               |           -            |                           -                            |
+|   get_mempolicy   |   SUCCESS   |        -         |          7           |              -               |           -            |                           -                            |
+|       getcwd      |   SUCCESS   |        -         |          4           |              -               |           -            |                           -                            |
+|      getpgrp      |   SUCCESS   |        -         |          5           |              -               |           -            |                           -                            |
+|      getxattr     |   SUCCESS   |        -         |          5           |              -               |           -            |                           -                            |
+|    init_module    |   SUCCESS   |        -         |          5           |              -               |           -            |                           -                            |
+|  inotify_rm_watch |   SUCCESS   |        -         |          15          |              -               |           -            |                           -                            |
+|     io_destroy    |   SUCCESS   |        -         |          5           |              -               |           -            |                           -                            |
+|    memfd_create   |   SUCCESS   |        -         |          8           |              -               |           -            |                           -                            |
+| name_to_handle_at |   SUCCESS   |        -         |          7           |              -               |           -            |                           -                            |
+|     nanosleep     |   SUCCESS   |        -         |      297467812       |              -               |           -            |                           -                            |
+|     newfstatat    |    ENOENT   |        24        |          24          | 0.250000, 0.258333, 0.250000 |  0.002638888888888887  | localtime: 2021-07-26 15:24:15, failure rate: 0.250000 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 14:24:15, failure rate: 0.250000 |
+|     newfstatat    |   SUCCESS   |        -         |         367          |              -               |           -            |                           -                            |
+|       ppoll       |   SUCCESS   |        -         |          21          |              -               |           -            |                           -                            |
+|        read       |    EAGAIN   |       5760       |       37799061       | 0.475887, 0.483140, 0.487157 |  2.15031682204389e-05  | localtime: 2021-07-26 15:00:00, failure rate: 0.476346 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 15:00:00, failure rate: 0.485582 |
+|        read       |  ECONNRESET |        16        |          17          | 0.000056, 0.000083, 0.000128 | 5.589758773718883e-10  | localtime: 2021-07-26 15:07:15, failure rate: 0.000127 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 12:02:30, failure rate: 0.000080 |
+|        read       |   SUCCESS   |        -         |       40430911       |              -               |           -            |                           -                            |
+|      recvfrom     |    EAGAIN   |       5760       |        499535        | 0.485876, 0.495123, 0.500000 | 0.0002446803087155127  | localtime: 2021-07-26 15:00:00, failure rate: 0.500000 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 15:00:00, failure rate: 0.500000 |
+|      recvfrom     |   SUCCESS   |        -         |        534964        |              -               |           -            |                           -                            |
+|      recvmsg      |   SUCCESS   |        -         |          9           |              -               |           -            |                           -                            |
+|   rt_sigpending   |   SUCCESS   |        -         |          7           |              -               |           -            |                           -                            |
+|    rt_sigreturn   |   SUCCESS   |        -         |          50          |              -               |           -            |                           -                            |
+|   sched_getparam  |   SUCCESS   |        -         |          8           |              -               |           -            |                           -                            |
+|       shmctl      |   SUCCESS   |        -         |          25          |              -               |           -            |                           -                            |
+|   timer_settime   |   SUCCESS   |        -         |          7           |              -               |           -            |                           -                            |
+|  timerfd_gettime  |   SUCCESS   |        -         |          5           |              -               |           -            |                           -                            |
+|       uname       |   SUCCESS   |        -         |          5           |              -               |           -            |                           -                            |
+|      unlinkat     |    EISDIR   |        24        |          48          | 0.333333, 0.319752, 0.333333 |  0.004242442934371941  | localtime: 2021-07-26 15:24:15, failure rate: 0.333333 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 14:24:15, failure rate: 0.333333 |
+|      unlinkat     |  ENOTEMPTY  |        24        |          24          | 0.166667, 0.159876, 0.166667 | 0.0010606107335929852  | localtime: 2021-07-26 15:24:15, failure rate: 0.166667 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 14:24:15, failure rate: 0.166667 |
+|      unlinkat     |   SUCCESS   |        -         |        21255         |              -               |           -            |                           -                            |
+|       write       |    EAGAIN   |        16        |          75          | 0.001447, 0.008679, 0.023439 | 8.518310560959392e-05  | localtime: 2021-07-26 15:31:00, failure rate: 0.002070 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 14:49:30, failure rate: 0.001815 |
+|       write       |    EPIPE    |        4         |          4           | 0.001653, 0.002118, 0.002459 | 1.2401641900269097e-07 | localtime: 2021-07-26 15:12:00, failure rate: 0.001590 |
+|                   |             |                  |                      |                              |                        | localtime: 2021-07-27 12:19:15, failure rate: 0.002469 |
+|       write       |   SUCCESS   |        -         |       12701719       |              -               |           -            |                           -                            |
++-------------------+-------------+------------------+----------------------+------------------------------+------------------------+--------------------------------------------------------+
