@@ -1,24 +1,21 @@
-INFO [06-03|23:34:28.556] Imported new state entries               count=428  elapsed="3.6µs"     processed=993957857 pending=54373 trieretry=680  coderetry=0 duplicate=0 unexpected=824
-INFO [06-03|23:34:31.867] Initializing state bloom                 items=205843621 errorrate=0.000 elapsed=20m35.972s
-INFO [06-03|23:34:33.163] Imported new block headers               count=2    elapsed=22.478ms    number=12564493 hash="8483b8…a4b80b"
-INFO [06-03|23:34:36.236] Imported new block headers               count=1    elapsed=7.390ms     number=12564494 hash="9e5d36…044e64"
-INFO [06-03|23:34:39.867] Initializing state bloom                 items=207216015 errorrate=0.000 elapsed=20m43.973s
-INFO [06-03|23:34:42.388] Imported new block headers               count=1    elapsed=5.771ms     number=12564495 hash="599c45…1b099d"
-INFO [06-03|23:34:47.868] Initializing state bloom                 items=208564685 errorrate=0.000 elapsed=20m51.974s
-INFO [06-03|23:34:51.592] Imported new block headers               count=1    elapsed=6.419ms     number=12564496 hash="4b19e1…9c98e2"
-INFO [06-03|23:34:52.658] Imported new state entries               count=423  elapsed="2.8µs"     processed=993958280 pending=54936 trieretry=608  coderetry=0 duplicate=0 unexpected=824
-INFO [06-03|23:34:55.869] Initializing state bloom                 items=209939137 errorrate=0.000 elapsed=20m59.974s
-INFO [06-03|23:35:03.935] Initializing state bloom                 items=211221141 errorrate=0.000 elapsed=21m8.041s
-WARN [06-03|23:35:10.504] Dropping unsynced node during sync       id=8d13630bef38b16d conn=inbound addr=13.239.141.203:35276  type=Geth/v1.10.3-stable-...
-INFO [06-03|23:35:10.589] Imported new state entries               count=404  elapsed="763.101µs" processed=993958684 pending=55393 trieretry=575  coderetry=0 duplicate=0 unexpected=824
-INFO [06-03|23:35:11.943] Initializing state bloom                 items=212515812 errorrate=0.000 elapsed=21m16.049s
-INFO [06-03|23:35:19.944] Initializing state bloom                 items=213083730 errorrate=0.000 elapsed=21m24.050s
-INFO [06-03|23:35:25.207] Imported new block headers               count=2    elapsed=17.944ms    number=12564498 hash="ae9cfc…1e3de1"
-INFO [06-03|23:35:25.405] Downloader queue stats                   receiptTasks=0    blockTasks=0    itemSize=248.74KiB throttle=264
-INFO [06-03|23:35:27.945] Initializing state bloom                 items=213092247 errorrate=0.000 elapsed=21m32.051s
-INFO [06-03|23:35:35.838] Imported new state entries               count=388  elapsed="3.1µs"     processed=993959072 pending=55840 trieretry=184  coderetry=0 duplicate=0 unexpected=824
-INFO [06-03|23:35:35.945] Initializing state bloom                 items=213101050 errorrate=0.000 elapsed=21m40.051s
-INFO [06-03|23:35:40.480] Imported new block headers               count=1    elapsed=12.204ms    number=12564499 hash="391617…6e41bc"
-INFO [06-03|23:35:43.949] Initializing state bloom                 items=213110158 errorrate=0.000 elapsed=21m48.054s
-INFO [06-03|23:35:51.950] Initializing state bloom                 items=213119294 errorrate=0.000 elapsed=21m56.055s
-INFO [06-03|23:35:52.325] Imported new state entries               count=209  elapsed="3µs"       processed=993959281 pending=56059 trieretry=175  coderetry=0 duplicate=0 unexpected=824
+INFO [07-28|14:11:58.769] State heal in progress                   accounts=37485@1.90MiB    slots=5715@449.83KiB codes=2074@15.89MiB nodes=49,014,365@14.06GiB pending=169,812
+INFO [07-28|14:12:08.335] State heal in progress                   accounts=37799@1.92MiB    slots=5791@455.84KiB codes=2074@15.89MiB nodes=49,015,578@14.06GiB pending=170,152
+INFO [07-28|14:12:15.071] Imported new block headers               count=1    elapsed=6.124ms   number=12,914,879 hash=0d38ec..d37ce2
+INFO [07-28|14:12:16.632] State heal in progress                   accounts=37874@1.92MiB    slots=5838@459.62KiB codes=2074@15.89MiB nodes=49,016,262@14.06GiB pending=170,771
+INFO [07-28|14:12:26.355] State heal in progress                   accounts=38084@1.93MiB    slots=5915@465.76KiB codes=2074@15.89MiB nodes=49,017,278@14.06GiB pending=171,102
+INFO [07-28|14:12:35.439] State heal in progress                   accounts=38381@1.94MiB    slots=5996@472.20KiB codes=2075@15.89MiB nodes=49,018,382@14.06GiB pending=171,049
+INFO [07-28|14:12:42.899] Imported new block headers               count=1    elapsed=6.234ms   number=12,914,880 hash=a92e18..5e4a52
+INFO [07-28|14:12:43.989] Downloader queue stats                   receiptTasks=0    blockTasks=0    itemSize=253.77KiB throttle=259
+INFO [07-28|14:12:44.476] State heal in progress                   accounts=38611@1.96MiB    slots=6094@479.91KiB codes=2077@15.90MiB nodes=49,019,346@14.06GiB pending=171,305
+WARN [07-28|14:12:45.412] Unexpected bytecode heal packet          peer=28a04a97 reqid=4,138,005,878,074,082,782
+INFO [07-28|14:12:54.249] State heal in progress                   accounts=38965@1.97MiB    slots=6207@488.95KiB codes=2077@15.90MiB nodes=49,020,635@14.06GiB pending=171,500
+INFO [07-28|14:13:03.321] State heal in progress                   accounts=39219@1.98MiB    slots=6310@496.92KiB codes=2077@15.90MiB nodes=49,021,731@14.06GiB pending=171,790
+INFO [07-28|14:13:04.566] Imported new block headers               count=1    elapsed=6.473ms   number=12,914,881 hash=fef964..d789fc age=1m9s
+WARN [07-28|14:13:07.679] Unexpected bytecode heal packet          peer=6181d749 reqid=3,320,491,600,910,633,177
+INFO [07-28|14:13:07.730] Imported new block headers               count=1    elapsed=5.889ms   number=12,914,882 hash=160643..b75044
+INFO [07-28|14:13:12.476] State heal in progress                   accounts=39395@1.99MiB    slots=6433@506.05KiB codes=2077@15.90MiB nodes=49,022,639@14.06GiB pending=171,909
+INFO [07-28|14:13:21.474] State heal in progress                   accounts=39444@1.99MiB    slots=6522@512.96KiB codes=2077@15.90MiB nodes=49,023,310@14.06GiB pending=172,210
+INFO [07-28|14:13:30.523] State heal in progress                   accounts=39462@1.99MiB    slots=6645@522.79KiB codes=2077@15.90MiB nodes=49,024,050@14.06GiB pending=172,797
+WARN [07-28|14:13:30.524] Unexpected bytecode heal packet          peer=df5f16fe reqid=9,024,555,116,438,094,837
+INFO [07-28|14:13:40.301] State heal in progress                   accounts=39537@2.00MiB    slots=6762@532.19KiB codes=2078@15.92MiB nodes=49,024,884@14.06GiB pending=173,272
+INFO [07-28|14:13:48.336] State heal in progress                   accounts=39686@2.01MiB    slots=6914@544.32KiB codes=2078@15.92MiB nodes=49,025,795@14.06GiB pending=173,404

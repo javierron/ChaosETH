@@ -1,0 +1,311 @@
+2021-07-28 15:46:31 UTC Syncing #12915285 0x6603…cd08     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    3 Qed Ancient:#7100845 LI:#12915287   16/25 peers      3 MiB chain  718 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:47:05 UTC  Ancient:#7100867 AB:#7103348   10/25 peers      5 MiB chain  562 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:47:31 UTC  Ancient:#7100869 AB:#7104154   15/25 peers      5 MiB chain  676 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:47:37 UTC Syncing #12915288 0x16b1…a981     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    4 Qed Ancient:#7100869 LI:#12915293   13/25 peers      7 MiB chain  887 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:47:41 UTC Syncing #12915288 0x16b1…a981     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    4 Qed Ancient:#7100869 LI:#12915293   14/25 peers      2 MiB chain  887 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:47:46 UTC Syncing #12915288 0x16b1…a981     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    4 Qed Ancient:#7100869 LI:#12915293   13/25 peers      2 MiB chain  887 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:48:16 UTC  Ancient:#7100871 AB:#7104154   12/25 peers      4 MiB chain  529 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:48:46 UTC  Ancient:#7100874 AB:#7104154   11/25 peers      4 MiB chain  503 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:49:16 UTC Imported #12915296 0xb219…6d16 (82 txs, 14.97 Mgas, 12890 ms, 71.42 KiB)
+2021-07-28 15:49:23 UTC  Ancient:#7101729 AB:#7104229   14/25 peers    0 bytes chain  414 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:50:21 UTC Panic occured, see stderr for details
+
+
+====================
+
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:595:17
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:497:13
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys_common/backtrace.rs:141:18
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:493:5
+   5: core::panicking::panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/panicking.rs:92:14
+   6: core::option::expect_none_failed
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/option.rs:1300:5
+   7: <journaldb::overlayrecentdb::OverlayRecentDB as hash_db::HashDB<keccak_hasher::KeccakHasher,elastic_array::ElasticArray128<u8>>>::get
+   8: <&mut dyn hash_db::HashDB<H,T> as hash_db::HashDBRef<H,T>>::get
+   9: trie_db::lookup::Lookup<H,C,Q>::look_up
+  10: ethcore::state::State<B>::nonce
+  11: ethcore::client::traits::Nonce::latest_nonce
+  12: <ethcore::miner::pool_client::CachedNonceClient<C> as ethcore_miner::pool::client::NonceClient>::account_nonce
+  13: <(A,B) as transaction_pool::ready::Ready<T>>::is_ready
+  14: <transaction_pool::pool::PendingIterator<T,R,S,L> as core::iter::traits::iterator::Iterator>::next
+  15: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+  16: ethcore_miner::pool::queue::TransactionQueue::pending
+  17: <ethcore::client::client::Client as ethcore::client::traits::BlockChainClient>::transactions_to_propagate
+  18: ethcore_sync::chain::ChainSyncApi::process_priority_queue
+  19: <ethcore_sync::api::SyncProtocolHandler as ethcore_network::NetworkProtocolHandler>::timeout
+  20: <ethcore_network_devp2p::host::Host as ethcore_io::IoHandler<ethcore_network::NetworkIoMessage>>::timeout
+  21: ethcore_io::worker::Worker::new::{{closure}}::{{closure}}
+  22: <futures::future::loop_fn::LoopFn<A,F> as futures::future::Future>::poll
+  23: std::sys_common::backtrace::__rust_begin_short_backtrace
+  24: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  25: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys/unix/thread.rs:71:17
+  26: start_thread
+  27: __clone
+
+
+Thread 'Worker devp2p0' panicked at 'Low-level database error. Some issue with your hard disk?: Custom { kind: Other, error: "IO error: While open a file for random read: /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d/overlayrecent/db/436518.sst: No such file or directory" }', crates/db/journaldb/src/overlayrecentdb.rs:179
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-07-28 15:50:21 UTC Finishing work, please wait...
+2021-07-28 15:50:21 UTC Panic occured, see stderr for details
+
+
+====================
+
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:595:17
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:497:13
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys_common/backtrace.rs:141:18
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:493:5
+   5: core::panicking::panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/panicking.rs:92:14
+   6: core::option::expect_none_failed
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/option.rs:1300:5
+   7: <ethcore_blockchain::blockchain::BlockChain as ethcore_blockchain::blockchain::BlockProvider>::transaction_address
+   8: ethcore::client::client::Client::transaction_address
+   9: ethcore_miner::pool::queue::TransactionQueue::import::{{closure}}
+  10: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+  11: alloc::vec::source_iter_marker::<impl alloc::vec::spec_from_iter::SpecFromIter<T,I> for alloc::vec::Vec<T>>::from_iter
+  12: ethcore_miner::pool::queue::TransactionQueue::import
+  13: ethcore::client::client::IoChannelQueue::queue::{{closure}}
+  14: <ethcore_service::service::ClientIoHandler as ethcore_io::IoHandler<ethcore::client::io_message::ClientIoMessage>>::message
+  15: ethcore_io::worker::Worker::new::{{closure}}::{{closure}}
+  16: <futures::future::loop_fn::LoopFn<A,F> as futures::future::Future>::poll
+  17: std::sys_common::backtrace::__rust_begin_short_backtrace
+  18: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  19: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys/unix/thread.rs:71:17
+  20: start_thread
+  21: __clone
+
+
+Thread 'Worker Client2' panicked at 'db get failed, key: [2, 243, 150, 147, 88, 41, 120, 231, 152, 212, 37, 82, 228, 49, 62, 11, 117, 249, 80, 118, 47, 182, 42, 46, 13, 95, 62, 254, 32, 55, 34, 145, 168]: Custom { kind: Other, error: "IO error: While open a file for random read: /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d/overlayrecent/db/571703.sst: No such file or directory" }', /data/blockchain/openethereum/crates/db/db/src/db.rs:294
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-07-28 15:50:22 UTC Panic occured, see stderr for details
+
+
+====================
+
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:595:17
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:497:13
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys_common/backtrace.rs:141:18
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:493:5
+   5: core::panicking::panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/panicking.rs:92:14
+   6: core::option::expect_none_failed
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/option.rs:1300:5
+   7: <journaldb::overlayrecentdb::OverlayRecentDB as hash_db::HashDB<keccak_hasher::KeccakHasher,elastic_array::ElasticArray128<u8>>>::get
+   8: <&mut dyn hash_db::HashDB<H,T> as hash_db::HashDBRef<H,T>>::get
+   9: trie_db::lookup::Lookup<H,C,Q>::look_up
+  10: ethcore::state::State<B>::nonce
+  11: ethcore::client::traits::Nonce::latest_nonce
+  12: <ethcore::miner::pool_client::CachedNonceClient<C> as ethcore_miner::pool::client::NonceClient>::account_nonce
+  13: <(A,B) as transaction_pool::ready::Ready<T>>::is_ready
+  14: <transaction_pool::pool::PendingIterator<T,R,S,L> as core::iter::traits::iterator::Iterator>::next
+  15: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+  16: ethcore_miner::pool::queue::TransactionQueue::pending
+  17: <ethcore::client::client::Client as ethcore::client::traits::BlockChainClient>::transactions_to_propagate
+  18: ethcore_sync::chain::ChainSyncApi::process_priority_queue
+  19: <ethcore_sync::api::SyncProtocolHandler as ethcore_network::NetworkProtocolHandler>::timeout
+  20: <ethcore_network_devp2p::host::Host as ethcore_io::IoHandler<ethcore_network::NetworkIoMessage>>::timeout
+  21: ethcore_io::worker::Worker::new::{{closure}}::{{closure}}
+  22: <futures::future::loop_fn::LoopFn<A,F> as futures::future::Future>::poll
+  23: std::sys_common::backtrace::__rust_begin_short_backtrace
+  24: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  25: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys/unix/thread.rs:71:17
+  26: start_thread
+  27: __clone
+
+
+Thread 'Worker devp2p2' panicked at 'Low-level database error. Some issue with your hard disk?: Custom { kind: Other, error: "IO error: While open a file for random read: /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d/overlayrecent/db/564590.sst: No such file or directory" }', crates/db/journaldb/src/overlayrecentdb.rs:179
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-07-28 15:50:22 UTC Panic occured, see stderr for details
+
+
+====================
+
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:595:17
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:497:13
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys_common/backtrace.rs:141:18
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:493:5
+   5: std::panicking::begin_panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:435:5
+   6: ethcore_db::db::Readable::exists_with_cache
+   7: <ethcore::client::client::Client as ethcore::client::traits::BlockChainClient>::block_status
+   8: <ethcore::client::client::Client as ethcore::client::traits::ImportBlock>::import_block
+   9: ethcore_sync::chain::handler::SyncHandler::on_packet
+  10: ethcore_sync::chain::supplier::SyncSupplier::dispatch_packet
+  11: <ethcore_sync::api::SyncProtocolHandler as ethcore_network::NetworkProtocolHandler>::read
+  12: <ethcore_network_devp2p::host::Host as ethcore_io::IoHandler<ethcore_network::NetworkIoMessage>>::stream_readable
+  13: ethcore_io::worker::Worker::new::{{closure}}::{{closure}}
+  14: <futures::future::loop_fn::LoopFn<A,F> as futures::future::Future>::poll
+  15: std::sys_common::backtrace::__rust_begin_short_backtrace
+  16: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  17: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys/unix/thread.rs:71:17
+  18: start_thread
+  19: __clone
+
+
+Thread 'Worker devp2p1' panicked at 'db get failed, key: [0, 207, 29, 3, 158, 233, 173, 86, 170, 33, 138, 182, 162, 122, 240, 47, 148, 50, 184, 181, 233, 138, 180, 141, 30, 248, 86, 216, 95, 205, 237, 124, 214], err: Custom { kind: Other, error: "IO error: While open a file for random read: /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d/overlayrecent/db/554085.sst: No such file or directory" }', /data/blockchain/openethereum/crates/db/db/src/db.rs:307
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-07-28 15:50:22 UTC  Ancient:#7104360 AB:#7104360   12/25 peers    0 bytes chain  414 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:50:22 UTC Panic occured, see stderr for details
+
+
+====================
+
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:595:17
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:497:13
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys_common/backtrace.rs:141:18
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:493:5
+   5: core::panicking::panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/panicking.rs:92:14
+   6: core::option::expect_none_failed
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/option.rs:1300:5
+   7: <ethcore_blockchain::blockchain::BlockChain as ethcore_blockchain::blockchain::BlockProvider>::block_header_data
+   8: ethcore_blockchain::blockchain::BlockChain::chain_info
+   9: <ethcore::client::client::Client as ethcore::client::traits::ChainInfo>::chain_info
+  10: <ethcore::client::client::Client as stats::PrometheusMetrics>::prometheus_metrics
+  11: openethereum::metrics::handle_request
+  12: <hyper::proto::h1::dispatch::Server<S> as hyper::proto::h1::dispatch::Dispatch>::recv_msg
+  13: hyper::proto::h1::dispatch::Dispatcher<D,Bs,I,T>::poll_catch
+  14: futures::future::option::<impl futures::future::Future for core::option::Option<F>>::poll
+  15: <hyper::server::conn::spawn_all::NewSvcTask<I,N,S,E,W> as futures::future::Future>::poll
+  16: tokio_threadpool::worker::Worker::run_task
+  17: tokio_threadpool::worker::Worker::run
+  18: tokio_reactor::with_default
+  19: tokio::runtime::threadpool::builder::Builder::build::{{closure}}
+  20: std::sys_common::backtrace::__rust_begin_short_backtrace
+  21: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  22: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys/unix/thread.rs:71:17
+  23: start_thread
+  24: __clone
+
+
+Thread 'tokio-runtime-worker-1' panicked at 'Low level database error when fetching block header data. Some issue with disk?: Custom { kind: Other, error: "IO error: While open a file for random read: /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d/overlayrecent/db/571751.sst: No such file or directory" }', crates/ethcore/blockchain/src/blockchain.rs:331
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-07-28 15:50:22 UTC Panic occured, see stderr for details
+
+
+====================
+
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:595:17
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:497:13
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys_common/backtrace.rs:141:18
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:493:5
+   5: core::panicking::panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/panicking.rs:92:14
+   6: core::option::expect_none_failed
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/option.rs:1300:5
+   7: <journaldb::overlayrecentdb::OverlayRecentDB as hash_db::HashDB<keccak_hasher::KeccakHasher,elastic_array::ElasticArray128<u8>>>::get
+   8: <&mut dyn hash_db::HashDB<H,T> as hash_db::HashDBRef<H,T>>::get
+   9: trie_db::lookup::Lookup<H,C,Q>::look_up
+  10: ethcore::state::State<B>::nonce
+  11: ethcore::client::traits::Nonce::latest_nonce
+  12: <ethcore::miner::pool_client::CachedNonceClient<C> as ethcore_miner::pool::client::NonceClient>::account_nonce
+  13: ethcore_miner::pool::queue::TransactionQueue::import::{{closure}}
+  14: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+  15: alloc::vec::source_iter_marker::<impl alloc::vec::spec_from_iter::SpecFromIter<T,I> for alloc::vec::Vec<T>>::from_iter
+  16: ethcore_miner::pool::queue::TransactionQueue::import
+  17: ethcore::client::client::IoChannelQueue::queue::{{closure}}
+  18: <ethcore_service::service::ClientIoHandler as ethcore_io::IoHandler<ethcore::client::io_message::ClientIoMessage>>::message
+  19: ethcore_io::worker::Worker::new::{{closure}}::{{closure}}
+  20: <futures::future::loop_fn::LoopFn<A,F> as futures::future::Future>::poll
+  21: std::sys_common::backtrace::__rust_begin_short_backtrace
+  22: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  23: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys/unix/thread.rs:71:17
+  24: start_thread
+  25: __clone
+
+
+Thread 'Worker Client1' panicked at 'Low-level database error. Some issue with your hard disk?: Custom { kind: Other, error: "IO error: While open a file for random read: /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d/overlayrecent/db/474451.sst: No such file or directory" }', crates/db/journaldb/src/overlayrecentdb.rs:179
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+Error: 1

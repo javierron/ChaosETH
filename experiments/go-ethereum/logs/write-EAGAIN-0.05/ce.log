@@ -1,33 +1,16 @@
-INFO [06-03|22:50:09.797] Imported new block headers               count=1    elapsed=7.564ms     number=12564313 hash="0c58ab…678c6e"
-INFO [06-03|22:50:10.073] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=236.34KiB throttle=278
-INFO [06-03|22:50:11.684] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=31m56.048s
-INFO [06-03|22:50:14.011] Imported new state entries               count=384  elapsed="2.8µs"     processed=993902208 pending=104491 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-WARN [06-03|22:50:15.849] Dropping unsynced node during sync       id=e5994037b65affe7 conn=inbound addr=31.200.231.26:35512   type=Geth/v1.10.2-stable-...
-INFO [06-03|22:50:18.882] Imported new block headers               count=1    elapsed=7.452ms     number=12564314 hash="9ad411…79e683"
-INFO [06-03|22:50:19.685] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=32m4.049s
-INFO [06-03|22:50:21.993] Imported new block headers               count=2    elapsed=11.740ms    number=12564316 hash="e76438…c98393"
-ERROR[06-03|22:50:22.290] Snapshot extension registration failed   peer=cb5b9771 err="peer connected on snap without compatible eth support"
-INFO [06-03|22:50:24.129] Imported new state entries               count=384  elapsed="2.4µs"     processed=993902592 pending=105761 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:50:27.685] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=32m12.049s
-INFO [06-03|22:50:35.686] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=32m20.050s
-INFO [06-03|22:50:40.946] Looking for peers                        peercount=28 tried=2 static=0
-ERROR[06-03|22:50:43.039] Ethereum peer removal failed             peer=fce29e9b err="peer not registered"
-INFO [06-03|22:50:43.688] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=32m28.053s
-WARN [06-03|22:50:50.217] Unable to send to InfluxDB               err="Post \"http://localhost:8086/write?consistency=&db=chaosevm&precision=&rp=\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
-INFO [06-03|22:50:50.946] Looking for peers                        peercount=20 tried=4 static=0
-INFO [06-03|22:50:51.711] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=32m36.075s
-WARN [06-03|22:50:54.717] Dropping unsynced node during sync       id=3fcd85dbbe078cef conn=inbound addr=63.34.178.85:33710    type=OpenEthereum/v3.2.4-...
-INFO [06-03|22:50:58.660] Imported new state entries               count=384  elapsed=1.331ms     processed=993902976 pending=106175 trieretry=382  coderetry=0 duplicate=0 unexpected=2290
-WARN [06-03|22:50:58.662] Synchronisation failed, dropping peer    peer=fce29e9be64292107fa894c3ebc01d292bff09fe173acba41d4914acd8a20a6c err="action from bad peer ignored: header request timed out"
-ERROR[06-03|22:50:58.663] Ethereum peer removal failed             peer=fce29e9b err="peer not registered"
-INFO [06-03|22:50:59.711] Initializing state bloom                 items=316385102 errorrate=0.000 elapsed=32m44.075s
-WARN [06-03|22:51:00.225] Unable to send to InfluxDB               err="Post \"http://localhost:8086/write?consistency=&db=chaosevm&precision=&rp=\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
-2021/06/03 22:51:00 Unsolicited response received on idle HTTP channel starting with "HTTP/1.1 204 No Content\r\nContent-Type: application/json\r\nRequest-Id: 2a98e448-c4be-11eb-b120-0242ac110004\r\nX-Influxdb-Build: OSS\r\nX-Influxdb-Version: 1.8.5\r\nX-Request-Id: 2a98e448-c4be-11eb-b120-0242ac110004\r\nDate: Thu, 03 Jun 2021 22:51:00 GMT\r\n\r\n"; err=<nil>
-INFO [06-03|22:51:00.948] Looking for peers                        peercount=13 tried=6 static=0
-INFO [06-03|22:51:07.725] Initializing state bloom                 items=316385102 errorrate=0.000 elapsed=32m52.089s
-WARN [06-03|22:51:08.213] Synchronisation failed, dropping peer    peer=e787bc3869d719ffd9dbcb9d8a069b7918b8ad167b25d8a2ac46cf36f3463f6d err=timeout
-ERROR[06-03|22:51:08.213] Ethereum peer removal failed             peer=e787bc38 err="peer not registered"
-INFO [06-03|22:51:10.950] Looking for peers                        peercount=13 tried=3 static=0
-INFO [06-03|22:51:15.728] Initializing state bloom                 items=316385102 errorrate=0.000 elapsed=33m0.093s
-INFO [06-03|22:51:20.950] Looking for peers                        peercount=11 tried=5 static=0
-INFO [06-03|22:51:23.731] Initializing state bloom                 items=316385102 errorrate=0.000 elapsed=33m8.095s
+INFO [07-28|13:07:51.729] Imported new block headers               count=1  elapsed=5.633ms   number=12,914,610 hash=cb8218..2c3a56
+INFO [07-28|13:07:55.704] State heal in progress                   accounts=10349@543.52KiB slots=510@40.84KiB codes=2059@15.80MiB nodes=48,705,708@13.95GiB pending=102,335
+INFO [07-28|13:07:57.989] Imported new block headers               count=1  elapsed=5.939ms   number=12,914,611 hash=d3a4f5..9c4ed1
+INFO [07-28|13:08:04.552] State heal in progress                   accounts=10782@565.67KiB slots=518@41.44KiB codes=2059@15.80MiB nodes=48,707,001@13.95GiB pending=102,252
+INFO [07-28|13:08:10.413] Imported new block headers               count=1  elapsed=7.416ms   number=12,914,612 hash=e9d768..376e70
+INFO [07-28|13:08:14.214] State heal in progress                   accounts=11099@583.03KiB slots=519@41.54KiB codes=2059@15.80MiB nodes=48,708,038@13.95GiB pending=102,168
+INFO [07-28|13:08:16.668] Imported new block headers               count=1  elapsed=5.935ms   number=12,914,613 hash=e57a47..58c76f
+INFO [07-28|13:08:23.241] State heal in progress                   accounts=11285@592.88KiB slots=519@41.54KiB codes=2059@15.80MiB nodes=48,708,946@13.95GiB pending=102,430
+INFO [07-28|13:08:29.096] Imported new block headers               count=1  elapsed=7.080ms   number=12,914,614 hash=0a027a..c73daf
+INFO [07-28|13:08:32.718] State heal in progress                   accounts=11512@604.98KiB slots=531@42.43KiB codes=2059@15.80MiB nodes=48,710,006@13.95GiB pending=102,759
+INFO [07-28|13:08:38.434] Imported new block headers               count=1  elapsed=7.417ms   number=12,914,615 hash=28559b..715d10
+INFO [07-28|13:08:40.722] State heal in progress                   accounts=11626@611.10KiB slots=545@43.58KiB codes=2059@15.80MiB nodes=48,710,697@13.95GiB pending=103,040
+ERROR[07-28|13:08:44.104] Snapshot extension registration failed   peer=5c509ffc err="peer connected on snap without compatible eth support"
+INFO [07-28|13:08:47.771] Imported new block headers               count=1  elapsed=6.911ms   number=12,914,616 hash=a2d569..1ff66e
+INFO [07-28|13:08:49.216] State heal in progress                   accounts=12077@635.69KiB slots=557@44.50KiB codes=2059@15.80MiB nodes=48,711,933@13.95GiB pending=102,651
+CRIT [07-28|13:08:50.605] Failed to persist healing data           err="write /data/eth-data/geth/chaindata/881207.log: resource temporarily unavailable"

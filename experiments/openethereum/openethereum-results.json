@@ -2,6 +2,39 @@
   "experiment_name": "Error Models for Chaos Engineering Experiments on Openethereum", 
   "experiments": [
     {
+      "original_min_rate": 0.003773448773448773, 
+      "syscall_name": "sendto", 
+      "original_max_rate": 0.004026353763195868, 
+      "failure_rate": 0.05, 
+      "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 27.0, 
+            "mean": 26.0, 
+            "variance": 0.7619047619047619, 
+            "min": 25.0
+          }, 
+          "ce": {
+            "max": 27.0, 
+            "mean": 26.6, 
+            "variance": 0.24, 
+            "min": 26.0
+          }, 
+          "normal": {
+            "max": 28.0, 
+            "mean": 27.476190476190474, 
+            "variance": 0.2494331065759636, 
+            "min": 27.0
+          }
+        }, 
+        "client_crashed": false, 
+        "injection_count": 38
+      }, 
+      "original_mean_rate": 0.003899901268322321, 
+      "error_code": "-EAFNOSUPPORT", 
+      "experiment_duration": 60
+    }, 
+    {
       "original_min_rate": 0.5, 
       "syscall_name": "accept4", 
       "original_max_rate": 0.5, 
@@ -9,280 +42,313 @@
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 15.099999999999998, 
-            "mean": 8.842105263157896, 
-            "variance": 36.34349030470914, 
-            "min": 0.0
+            "max": 27.0, 
+            "mean": 24.952380952380953, 
+            "variance": 1.6643990929705215, 
+            "min": 23.0
           }, 
           "ce": {
-            "max": 2.0, 
-            "mean": 2.0, 
-            "variance": 0.0, 
-            "min": 2.0
+            "max": 26.0, 
+            "mean": 25.8, 
+            "variance": 0.16, 
+            "min": 25.2
           }, 
           "normal": {
-            "max": 20.0, 
-            "mean": 8.095238095238095, 
-            "variance": 42.3718820861678, 
-            "min": 2.0
+            "max": 27.0, 
+            "mean": 26.142857142857142, 
+            "variance": 0.5034013605442178, 
+            "min": 25.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 37
+        "injection_count": 68
       }, 
-      "original_mean_rate": 0.49968235351323975, 
+      "original_mean_rate": 0.49897897183857526, 
       "error_code": "-EAGAIN", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.00543884569638481, 
+      "original_min_rate": 0.0037798251830852823, 
       "syscall_name": "futex", 
-      "original_max_rate": 0.021130060603005287, 
-      "failure_rate": 0.05, 
-      "result": {
-        "peer_stat": {
-          "normal": {
-            "max": 22.0, 
-            "mean": 18.761904761904763, 
-            "variance": 8.848072562358276, 
-            "min": 14.0
-          }
-        }, 
-        "client_crashed": true, 
-        "injection_count": 1
-      }, 
-      "original_mean_rate": 0.012469558111804098, 
-      "error_code": "-EAGAIN", 
-      "experiment_duration": 60
-    }, 
-    {
-      "original_min_rate": 0.45060808281703724, 
-      "syscall_name": "read", 
-      "original_max_rate": 0.4961405200004464, 
-      "failure_rate": 0.5953686240005357, 
+      "original_max_rate": 0.08091450607719589, 
+      "failure_rate": 0.08091450607719589, 
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 30.0, 
-            "mean": 26.1, 
-            "variance": 7.990000000000002, 
-            "min": 22.8
-          }, 
-          "ce": {
-            "max": 24.0, 
-            "mean": 23.5, 
-            "variance": 0.25, 
+            "max": 26.0, 
+            "mean": 24.142857142857142, 
+            "variance": 1.0748299319727885, 
             "min": 23.0
           }, 
+          "ce": {
+            "max": 26.799999999999997, 
+            "mean": 25.2, 
+            "variance": 1.7599999999999998, 
+            "min": 23.400000000000002
+          }, 
           "normal": {
-            "max": 25.05, 
-            "mean": 23.85, 
-            "variance": 1.0275000000000005, 
+            "max": 25.0, 
+            "mean": 23.61904761904762, 
+            "variance": 0.8072562358276644, 
             "min": 22.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 851
+        "injection_count": 321
       }, 
-      "original_mean_rate": 0.47335801180453435, 
+      "original_mean_rate": 0.027450263626454065, 
       "error_code": "-EAGAIN", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.20194159725092337, 
-      "syscall_name": "recvfrom", 
-      "original_max_rate": 0.23854656296327426, 
-      "failure_rate": 0.2862558755559291, 
+      "original_min_rate": 0.1592366901860167, 
+      "syscall_name": "read", 
+      "original_max_rate": 0.4368962293549392, 
+      "failure_rate": 0.524275475225927, 
+      "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 27.0, 
+            "mean": 26.095238095238095, 
+            "variance": 0.7528344671201813, 
+            "min": 25.0
+          }
+        }, 
+        "client_crashed": true, 
+        "injection_count": 2173
+      }, 
+      "original_mean_rate": 0.2907881643443553, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 0.5, 
+      "syscall_name": "readv", 
+      "original_max_rate": 0.5, 
+      "failure_rate": 0.6, 
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 28.05, 
-            "mean": 21.7, 
-            "variance": 55.910000000000004, 
-            "min": 6.0
+            "max": 25.15, 
+            "mean": 19.833333333333332, 
+            "variance": 14.13888888888889, 
+            "min": 15.0
           }, 
           "ce": {
-            "max": 27.199999999999996, 
-            "mean": 14.6, 
-            "variance": 70.24, 
-            "min": 6.6000000000000005
+            "max": 24.85, 
+            "mean": 23.75, 
+            "variance": 0.6875, 
+            "min": 23.0
           }, 
           "normal": {
-            "max": 32.0, 
-            "mean": 29.45, 
-            "variance": 1.4475000000000005, 
-            "min": 27.95
+            "max": 22.0, 
+            "mean": 17.142857142857142, 
+            "variance": 8.21768707482993, 
+            "min": 13.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 1090
+        "injection_count": 9
       }, 
-      "original_mean_rate": 0.222253198211835, 
+      "original_mean_rate": 0.4946464801152119, 
       "error_code": "-EAGAIN", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.0005422706192144233, 
+      "original_min_rate": 0.07574005403872133, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": 0.37955957276059205, 
+      "failure_rate": 0.4554714873127104, 
+      "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 11.0, 
+            "mean": 6.761904761904762, 
+            "variance": 5.895691609977326, 
+            "min": 4.0
+          }, 
+          "ce": {
+            "max": 19.399999999999995, 
+            "mean": 7.0, 
+            "variance": 65.6, 
+            "min": 1.4000000000000001
+          }, 
+          "normal": {
+            "max": 27.0, 
+            "mean": 22.55, 
+            "variance": 5.1475, 
+            "min": 19.95
+          }
+        }, 
+        "client_crashed": false, 
+        "injection_count": 1706
+      }, 
+      "original_mean_rate": 0.18740181760630611, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 0.0012425591916592135, 
       "syscall_name": "sendto", 
-      "original_max_rate": 0.02189920569706929, 
+      "original_max_rate": 0.05777965398581514, 
+      "failure_rate": 0.05777965398581514, 
+      "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 18.0, 
+            "mean": 16.0, 
+            "variance": 4.285714285714286, 
+            "min": 13.0
+          }, 
+          "ce": {
+            "max": 13.8, 
+            "mean": 12.6, 
+            "variance": 1.0399999999999998, 
+            "min": 11.200000000000001
+          }, 
+          "normal": {
+            "max": 17.599999999999998, 
+            "mean": 12.705882352941176, 
+            "variance": 12.678200692041523, 
+            "min": 8.0
+          }
+        }, 
+        "client_crashed": false, 
+        "injection_count": 331
+      }, 
+      "original_mean_rate": 0.015062274326072562, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 8.415188493360026e-05, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": 0.002444548578569196, 
       "failure_rate": 0.05, 
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 27.05, 
-            "mean": 20.1, 
-            "variance": 41.089999999999996, 
-            "min": 9.85
+            "max": 18.0, 
+            "mean": 12.947368421052632, 
+            "variance": 9.102493074792243, 
+            "min": 8.0
           }, 
           "ce": {
-            "max": 26.599999999999998, 
-            "mean": 17.2, 
-            "variance": 80.16, 
-            "min": 6.200000000000001
+            "max": 23.4, 
+            "mean": 13.8, 
+            "variance": 41.36000000000001, 
+            "min": 8.200000000000001
           }, 
           "normal": {
-            "max": 32.05, 
-            "mean": 30.45, 
-            "variance": 2.2475000000000005, 
-            "min": 27.95
+            "max": 31.05, 
+            "mean": 27.9, 
+            "variance": 3.690000000000002, 
+            "min": 25.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 131
+        "injection_count": 498
       }, 
-      "original_mean_rate": 0.003863511348504983, 
-      "error_code": "-EAGAIN", 
+      "original_mean_rate": 0.0006424837853554907, 
+      "error_code": "-ECONNREFUSED", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.00022779043280182233, 
+      "original_min_rate": 0.001091672795473699, 
+      "syscall_name": "sendto", 
+      "original_max_rate": 0.00761431822884336, 
+      "failure_rate": 0.05, 
+      "result": {
+        "peer_stat": {
+          "recovery": {
+            "max": 16.0, 
+            "mean": 11.666666666666666, 
+            "variance": 6.793650793650794, 
+            "min": 8.0
+          }, 
+          "ce": {
+            "max": 9.6, 
+            "mean": 6.6, 
+            "variance": 4.24, 
+            "min": 5.0
+          }, 
+          "normal": {
+            "max": 16.0, 
+            "mean": 11.444444444444445, 
+            "variance": 6.246913580246914, 
+            "min": 7.0
+          }
+        }, 
+        "client_crashed": false, 
+        "injection_count": 137
+      }, 
+      "original_mean_rate": 0.003154521962773957, 
+      "error_code": "-ECONNREFUSED", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 7.386069872220991e-05, 
       "syscall_name": "recvfrom", 
-      "original_max_rate": 0.00022779043280182233, 
+      "original_max_rate": 0.0008484162895927602, 
       "failure_rate": 0.05, 
       "result": {
         "peer_stat": {
           "recovery": {
             "max": 26.0, 
-            "mean": 20.904761904761905, 
-            "variance": 34.65759637188209, 
+            "mean": 19.238095238095237, 
+            "variance": 38.276643990929706, 
             "min": 10.0
           }, 
           "ce": {
-            "max": 26.799999999999997, 
-            "mean": 15.4, 
-            "variance": 56.239999999999995, 
-            "min": 9.2
+            "max": 13.399999999999999, 
+            "mean": 8.2, 
+            "variance": 11.76, 
+            "min": 6.000000000000001
           }, 
           "normal": {
-            "max": 31.0, 
-            "mean": 28.333333333333332, 
-            "variance": 4.126984126984126, 
-            "min": 25.0
+            "max": 17.0, 
+            "mean": 11.904761904761905, 
+            "variance": 13.419501133786847, 
+            "min": 7.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 515
+        "injection_count": 566
       }, 
-      "original_mean_rate": 0.00022779043280182233, 
-      "error_code": "-ECONNREFUSED", 
-      "experiment_duration": 60
-    }, 
-    {
-      "original_min_rate": 0.0011890606420927466, 
-      "syscall_name": "sendto", 
-      "original_max_rate": 0.0011890606420927466, 
-      "failure_rate": 0.05, 
-      "result": {
-        "peer_stat": {
-          "recovery": {
-            "max": 27.0, 
-            "mean": 16.80952380952381, 
-            "variance": 64.63038548752834, 
-            "min": 6.0
-          }, 
-          "ce": {
-            "max": 29.4, 
-            "mean": 13.4, 
-            "variance": 111.44000000000001, 
-            "min": 4.2
-          }, 
-          "normal": {
-            "max": 33.0, 
-            "mean": 30.333333333333332, 
-            "variance": 6.126984126984128, 
-            "min": 27.0
-          }
-        }, 
-        "client_crashed": false, 
-        "injection_count": 213
-      }, 
-      "original_mean_rate": 0.0011890606420927466, 
-      "error_code": "-ECONNREFUSED", 
-      "experiment_duration": 60
-    }, 
-    {
-      "original_min_rate": 3.7267543696194986e-05, 
-      "syscall_name": "recvfrom", 
-      "original_max_rate": 3.7267543696194986e-05, 
-      "failure_rate": 0.05, 
-      "result": {
-        "peer_stat": {
-          "recovery": {
-            "max": 30.0, 
-            "mean": 19.38095238095238, 
-            "variance": 42.61678004535149, 
-            "min": 10.0
-          }, 
-          "ce": {
-            "max": 27.799999999999997, 
-            "mean": 15.0, 
-            "variance": 71.6, 
-            "min": 8.0
-          }, 
-          "normal": {
-            "max": 31.0, 
-            "mean": 27.857142857142858, 
-            "variance": 3.741496598639457, 
-            "min": 25.0
-          }
-        }, 
-        "client_crashed": false, 
-        "injection_count": 556
-      }, 
-      "original_mean_rate": 3.7267543696194986e-05, 
+      "original_mean_rate": 0.0003178807837898188, 
       "error_code": "-ECONNRESET", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.00047809515461638463, 
+      "original_min_rate": 0.0013643499357785071, 
       "syscall_name": "sendto", 
-      "original_max_rate": 0.0013056910911657242, 
+      "original_max_rate": 0.005410171224124712, 
       "failure_rate": 0.05, 
       "result": {
         "peer_stat": {
           "recovery": {
             "max": 28.0, 
-            "mean": 19.666666666666668, 
-            "variance": 42.31746031746032, 
-            "min": 9.0
+            "mean": 23.38095238095238, 
+            "variance": 5.47392290249433, 
+            "min": 21.0
           }, 
           "ce": {
-            "max": 36.6, 
-            "mean": 18.0, 
-            "variance": 220.0, 
-            "min": 3.6000000000000005
+            "max": 19.0, 
+            "mean": 18.4, 
+            "variance": 0.24, 
+            "min": 18.0
           }, 
           "normal": {
-            "max": 37.0, 
-            "mean": 34.19047619047619, 
-            "variance": 3.9637188208616783, 
-            "min": 32.0
+            "max": 28.0, 
+            "mean": 23.7, 
+            "variance": 18.009999999999998, 
+            "min": 16.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 204
+        "injection_count": 256
       }, 
-      "original_mean_rate": 0.0007628486149642043, 
+      "original_mean_rate": 0.0028342732985814773, 
       "error_code": "-ECONNRESET", 
       "experiment_duration": 60
     }, 
@@ -294,22 +360,22 @@
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 42.0, 
-            "mean": 40.857142857142854, 
-            "variance": 1.1700680272108848, 
-            "min": 39.0
+            "max": 16.0, 
+            "mean": 12.0, 
+            "variance": 9.333333333333334, 
+            "min": 8.0
           }, 
           "ce": {
-            "max": 38.8, 
-            "mean": 36.4, 
-            "variance": 3.04, 
-            "min": 35.0
+            "max": 16.6, 
+            "mean": 13.8, 
+            "variance": 5.359999999999999, 
+            "min": 10.6
           }, 
           "normal": {
-            "max": 35.0, 
-            "mean": 32.904761904761905, 
-            "variance": 3.3242630385487515, 
-            "min": 29.0
+            "max": 25.0, 
+            "mean": 16.857142857142858, 
+            "variance": 35.36054421768707, 
+            "min": 10.0
           }
         }, 
         "client_crashed": false, 
@@ -320,179 +386,212 @@
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.2, 
+      "original_min_rate": 1.0, 
       "syscall_name": "connect", 
       "original_max_rate": 1.0, 
       "failure_rate": 1, 
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 41.0, 
-            "mean": 40.476190476190474, 
-            "variance": 0.2494331065759636, 
-            "min": 40.0
+            "max": 29.0, 
+            "mean": 26.142857142857142, 
+            "variance": 1.8367346938775508, 
+            "min": 24.0
           }, 
           "ce": {
-            "max": 40.8, 
-            "mean": 39.8, 
-            "variance": 0.9599999999999997, 
-            "min": 38.400000000000006
+            "max": 25.8, 
+            "mean": 24.4, 
+            "variance": 1.0399999999999998, 
+            "min": 23.200000000000003
           }, 
           "normal": {
-            "max": 42.0, 
-            "mean": 41.57142857142857, 
-            "variance": 0.43537414965986393, 
-            "min": 40.0
+            "max": 24.0, 
+            "mean": 21.285714285714285, 
+            "variance": 8.680272108843539, 
+            "min": 17.0
           }
         }, 
         "client_crashed": false, 
         "injection_count": 0
       }, 
-      "original_mean_rate": 0.5459459459459458, 
+      "original_mean_rate": 0.9623041310541306, 
       "error_code": "-EINPROGRESS", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.0004816955684007707, 
+      "original_min_rate": 0.001137261795838253, 
       "syscall_name": "epoll_ctl", 
-      "original_max_rate": 0.0004816955684007707, 
+      "original_max_rate": 0.0016323953823953823, 
       "failure_rate": 0.05, 
       "result": {
         "peer_stat": {
           "normal": {
-            "max": 42.0, 
-            "mean": 41.333333333333336, 
-            "variance": 0.22222222222222218, 
-            "min": 41.0
+            "max": 29.0, 
+            "mean": 27.38095238095238, 
+            "variance": 1.3786848072562359, 
+            "min": 25.0
           }
         }, 
         "client_crashed": true, 
-        "injection_count": 2
+        "injection_count": 11
       }, 
-      "original_mean_rate": 0.0004816955684007707, 
+      "original_mean_rate": 0.0014033195808220724, 
       "error_code": "-ENOENT", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.024390243902439025, 
+      "original_min_rate": 7.170073993990136e-05, 
+      "syscall_name": "openat", 
+      "original_max_rate": 0.0006374814764131491, 
+      "failure_rate": 0.05, 
+      "result": {
+        "peer_stat": {
+          "normal": {
+            "max": 17.2, 
+            "mean": 12.176470588235293, 
+            "variance": 9.674740484429066, 
+            "min": 8.0
+          }
+        }, 
+        "client_crashed": true, 
+        "injection_count": 15
+      }, 
+      "original_mean_rate": 0.000252677185407511, 
+      "error_code": "-ENOENT", 
+      "experiment_duration": 60
+    }, 
+    {
+      "original_min_rate": 0.012024400330851944, 
       "syscall_name": "getpeername", 
-      "original_max_rate": 0.024390243902439025, 
+      "original_max_rate": 0.03854166666666666, 
       "failure_rate": 0.05, 
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 28.0, 
-            "mean": 26.157894736842106, 
-            "variance": 2.8698060941828265, 
-            "min": 22.9
+            "max": 34.35, 
+            "mean": 32.857142857142854, 
+            "variance": 1.6938775510204083, 
+            "min": 30.650000000000002
           }, 
           "ce": {
-            "max": 22.799999999999997, 
-            "mean": 19.8, 
-            "variance": 5.359999999999999, 
-            "min": 17.200000000000003
+            "max": 34.0, 
+            "mean": 32.4, 
+            "variance": 2.64, 
+            "min": 30.2
           }, 
           "normal": {
-            "max": 18.0, 
-            "mean": 12.476190476190476, 
-            "variance": 8.91609977324263, 
-            "min": 8.0
+            "max": 38.0, 
+            "mean": 35.04761904761905, 
+            "variance": 3.378684807256235, 
+            "min": 32.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 29
+        "injection_count": 11
       }, 
-      "original_mean_rate": 0.024390243902439025, 
+      "original_mean_rate": 0.02312086435070306, 
       "error_code": "-ENOTCONN", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.00045681936324184775, 
+      "original_min_rate": 0.00021412380970908937, 
       "syscall_name": "ioctl", 
-      "original_max_rate": 0.0305752975929338, 
-      "failure_rate": 0.05, 
+      "original_max_rate": 0.0729760863832563, 
+      "failure_rate": 0.0729760863832563, 
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 37.0, 
-            "mean": 36.05263157894737, 
-            "variance": 0.4709141274238227, 
-            "min": 35.0
+            "max": 29.0, 
+            "mean": 24.904761904761905, 
+            "variance": 9.60997732426304, 
+            "min": 20.0
           }, 
           "ce": {
-            "max": 36.0, 
-            "mean": 35.2, 
-            "variance": 1.3599999999999999, 
-            "min": 33.400000000000006
+            "max": 29.599999999999998, 
+            "mean": 27.6, 
+            "variance": 1.8399999999999999, 
+            "min": 26.200000000000003
           }, 
           "normal": {
-            "max": 34.0, 
-            "mean": 32.25, 
-            "variance": 1.0875, 
-            "min": 30.95
+            "max": 26.0, 
+            "mean": 22.61904761904762, 
+            "variance": 5.66439909297052, 
+            "min": 19.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 124
+        "injection_count": 470
       }, 
-      "original_mean_rate": 0.007308626397000068, 
+      "original_mean_rate": 0.018692367390309154, 
       "error_code": "-ENOTTY", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.0004507144290208624, 
+      "original_min_rate": 0.001348634156945149, 
       "syscall_name": "sendto", 
-      "original_max_rate": 0.006366710604776699, 
-      "failure_rate": 0.05, 
+      "original_max_rate": 0.055781679620688904, 
+      "failure_rate": 0.055781679620688904, 
       "result": {
         "peer_stat": {
           "recovery": {
-            "max": 20.0, 
-            "mean": 9.761904761904763, 
-            "variance": 35.80045351473924, 
-            "min": 2.0
+            "max": 19.05, 
+            "mean": 15.55, 
+            "variance": 7.647499999999999, 
+            "min": 11.95
           }, 
           "ce": {
-            "max": 19.999999999999996, 
-            "mean": 8.0, 
-            "variance": 64.4, 
-            "min": 1.2000000000000002
+            "max": 30.799999999999997, 
+            "mean": 21.5, 
+            "variance": 50.75, 
+            "min": 14.3
           }, 
           "normal": {
-            "max": 38.0, 
-            "mean": 34.8, 
-            "variance": 24.96, 
-            "min": 21.900000000000002
+            "max": 33.0, 
+            "mean": 29.285714285714285, 
+            "variance": 6.965986394557821, 
+            "min": 25.0
           }
         }, 
         "client_crashed": false, 
-        "injection_count": 221
+        "injection_count": 175
       }, 
-      "original_mean_rate": 0.007197382802330018, 
+      "original_mean_rate": 0.01958675657431909, 
       "error_code": "-EPIPE", 
       "experiment_duration": 60
     }, 
     {
-      "original_min_rate": 0.0025191390048762093, 
+      "original_min_rate": 0.011455328400016724, 
       "syscall_name": "futex", 
-      "original_max_rate": 0.007287172155517628, 
-      "failure_rate": 0.05, 
+      "original_max_rate": 0.05911435941530525, 
+      "failure_rate": 0.0709372312983663, 
       "result": {
         "peer_stat": {
+          "recovery": {
+            "max": 21.0, 
+            "mean": 17.571428571428573, 
+            "variance": 5.7687074829931975, 
+            "min": 14.0
+          }, 
+          "ce": {
+            "max": 18.2, 
+            "mean": 14.4, 
+            "variance": 8.639999999999999, 
+            "min": 10.6
+          }, 
           "normal": {
-            "max": 28.0, 
-            "mean": 24.142857142857142, 
-            "variance": 4.027210884353742, 
-            "min": 21.0
+            "max": 34.05, 
+            "mean": 27.95, 
+            "variance": 62.74750000000002, 
+            "min": 15.95
           }
         }, 
-        "client_crashed": true, 
-        "injection_count": 1
+        "client_crashed": false, 
+        "injection_count": 36
       }, 
-      "original_mean_rate": 0.004184365463961644, 
+      "original_mean_rate": 0.036181413823518666, 
       "error_code": "-ETIMEDOUT", 
       "experiment_duration": 60
     }
   ], 
-  "experiment_description": "Automatically generated based on monitoring data from 2021-05-10T16:00:00Z to 2021-05-11T16:00:00Z"
+  "experiment_description": "Automatically generated based on monitoring data from 2021-07-26T13:00:00Z to 2021-07-27T13:00:00Z"
 }

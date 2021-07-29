@@ -1,0 +1,38 @@
+INFO [07-28|12:36:00.734] Upgrading chain index                    type=bloombits               percentage=97
+INFO [07-28|12:36:02.044] Imported new block headers               count=1  elapsed=6.342ms   number=12,914,474 hash=55cfab..1ec548
+INFO [07-28|12:36:08.082] State heal in progress                   accounts=13@650.00B slots=0@0.00B codes=2054@15.76MiB nodes=48,544,086@13.88GiB pending=74121
+INFO [07-28|12:36:08.858] Upgrading chain index                    type=bloombits               percentage=98
+INFO [07-28|12:36:17.141] Upgrading chain index                    type=bloombits               percentage=98
+INFO [07-28|12:36:20.100] State heal in progress                   accounts=14@695.00B slots=0@0.00B codes=2054@15.76MiB nodes=48,544,440@13.88GiB pending=74673
+INFO [07-28|12:36:24.768] Imported new block headers               count=1  elapsed=17.396ms  number=12,914,475 hash=df0695..0145f6
+INFO [07-28|12:36:24.971] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=241.73KiB throttle=272
+INFO [07-28|12:36:25.457] Upgrading chain index                    type=bloombits               percentage=99
+INFO [07-28|12:36:28.419] Imported new block headers               count=1  elapsed=5.794ms   number=12,914,476 hash=4da125..bc0efc
+INFO [07-28|12:36:31.892] State heal in progress                   accounts=16@846.00B slots=0@0.00B codes=2054@15.76MiB nodes=48,544,776@13.88GiB pending=75159
+INFO [07-28|12:36:34.004] Upgrading chain index                    type=bloombits               percentage=99
+WARN [07-28|12:36:34.705] Unexpected trienode heal packet          peer=4e5ad941 reqid=1,000,314,724,281,322,089
+INFO [07-28|12:36:39.433] Finished upgrading chain index           type=bloombits
+INFO [07-28|12:36:44.141] Looking for peers                        peercount=26 tried=7 static=0
+WARN [07-28|12:36:44.816] Dropping unsynced node during sync       id=1b67454edc0143ab conn=inbound addr=122.232.184.190:63356 type=OpenEthereum/v3.3.0-...
+INFO [07-28|12:36:46.483] State heal in progress                   accounts=18@995.00B slots=0@0.00B codes=2054@15.76MiB nodes=48,545,180@13.88GiB pending=75702
+WARN [07-28|12:36:46.483] Unexpected trienode heal packet          peer=80eb3449 reqid=8,128,689,063,456,348,306
+WARN [07-28|12:36:48.028] Unable to send to InfluxDB               err="Post \"http://localhost:8086/write?consistency=&db=chaosevm&precision=&rp=\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
+WARN [07-28|12:36:48.492] Unexpected trienode heal packet          peer=6c88466e reqid=5,978,245,005,185,058,180
+INFO [07-28|12:36:54.893] Looking for peers                        peercount=27 tried=5 static=0
+INFO [07-28|12:37:01.783] State heal in progress                   accounts=18@995.00B slots=0@0.00B codes=2054@15.76MiB nodes=48,545,627@13.88GiB pending=76332
+WARN [07-28|12:37:04.006] Dropping unsynced node during sync       id=07a0fa5f4fd85027 conn=inbound addr=221.228.72.146:2437   type=Geth/v1.10.3-stable-...
+INFO [07-28|12:37:05.515] Looking for peers                        peercount=27 tried=6 static=0
+ERROR[07-28|12:37:13.233] Snapshot extension registration failed   peer=2bc3548d err="peer connected on snap without compatible eth support"
+INFO [07-28|12:37:15.671] Looking for peers                        peercount=28 tried=3 static=0
+INFO [07-28|12:37:19.975] State heal in progress                   accounts=19@1.07KiB slots=0@0.00B codes=2054@15.76MiB nodes=48,546,210@13.88GiB pending=77118
+INFO [07-28|12:37:25.762] Looking for peers                        peercount=27 tried=3 static=0
+INFO [07-28|12:37:31.384] State heal in progress                   accounts=19@1.07KiB slots=0@0.00B codes=2054@15.76MiB nodes=48,546,536@13.88GiB pending=77490
+INFO [07-28|12:37:31.385] State heal in progress                   accounts=19@1.07KiB slots=0@0.00B codes=2054@15.76MiB nodes=48,546,536@13.88GiB pending=77490
+WARN [07-28|12:37:31.388] Synchronisation failed, dropping peer    peer=d07f0f9d955b66709cafe01396706e59991e18136eafac52f63cfa42f6ece5f7 err="action from bad peer ignored: header request timed out"
+WARN [07-28|12:37:31.394] Unexpected trienode heal packet          peer=c829e13a reqid=3,599,397,690,805,042,640
+WARN [07-28|12:37:31.473] Unexpected trienode heal packet          peer=e7fe0fd2 reqid=6,862,079,772,669,631,403
+WARN [07-28|12:37:31.502] Unexpected trienode heal packet          peer=af943620 reqid=3,843,367,418,213,739,922
+WARN [07-28|12:37:31.527] Unexpected trienode heal packet          peer=5ac6d993 reqid=7,193,914,973,048,368,010
+WARN [07-28|12:37:31.545] Unexpected trienode heal packet          peer=27b20502 reqid=3,309,369,859,771,687,207
+WARN [07-28|12:37:31.607] Unexpected trienode heal packet          peer=165de667 reqid=9,128,278,355,224,853,858
+WARN [07-28|12:37:31.609] Unexpected trienode heal packet          peer=80eb3449 reqid=8,252,156,978,463,953,297

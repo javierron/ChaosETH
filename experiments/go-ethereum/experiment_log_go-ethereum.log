@@ -1,95 +1,103 @@
 nohup: ignoring input
-2021-06-03 22:00:50,676 INFO     geth's pid detected: 24229
-2021-06-03 22:00:50,676 INFO     begin the following experiment
-2021-06-03 22:00:50,677 INFO     {u'original_min_rate': 0.5, u'syscall_name': u'accept4', u'original_max_rate': 0.5, u'failure_rate': 0.6, u'original_mean_rate': 0.4998160102431358, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
-2021-06-03 22:00:50,677 INFO     5 min normal execution begins
-2021-06-03 22:05:50,951 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 22:06:54,127 INFO     5 min recovery phase observation begins
-2021-06-03 22:11:54,369 INFO     {'peer_stat': {'recovery': {'max': 48.0, 'mean': 47.9, 'variance': 0.08999999999999997, 'min': 47.0}, 'ce': {'max': 48.85, 'mean': 48.25, 'variance': 0.1875, 'min': 48.0}, 'normal': {'max': 50.0, 'mean': 47.55, 'variance': 2.5474999999999985, 'min': 43.95}}, 'client_crashed': False, 'injection_count': 83}
-2021-06-03 22:11:59,439 INFO     geth's pid detected: 24229
-2021-06-03 22:11:59,439 INFO     begin the following experiment
-2021-06-03 22:11:59,439 INFO     {u'original_min_rate': 0.0037612565267412298, u'syscall_name': u'futex', u'original_max_rate': 0.006410854895808032, u'failure_rate': 0.05, u'original_mean_rate': 0.004801777796822237, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
-2021-06-03 22:11:59,439 INFO     5 min normal execution begins
-2021-06-03 22:16:59,649 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 22:17:59,739 INFO     this experiment makes the client crash!
-2021-06-03 22:17:59,739 INFO     {'peer_stat': {'normal': {'max': 50.0, 'mean': 47.85, 'variance': 2.7275000000000005, 'min': 44.9}}, 'client_crashed': True, 'injection_count': 12}
-2021-06-03 22:18:02,766 INFO     successfully restart the client, new pid: 25539
-2021-06-03 22:23:07,886 INFO     geth's pid detected: 25539
-2021-06-03 22:23:07,909 INFO     begin the following experiment
-2021-06-03 22:23:07,909 INFO     {u'original_min_rate': 0.264485348275627, u'syscall_name': u'read', u'original_max_rate': 0.2747485626224835, u'failure_rate': 0.3296982751469802, u'original_mean_rate': 0.27024402394281, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
-2021-06-03 22:23:07,909 INFO     5 min normal execution begins
-2021-06-03 22:28:08,111 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 22:29:11,202 INFO     5 min recovery phase observation begins
-2021-06-03 22:34:11,316 INFO     {'peer_stat': {'recovery': {'max': 17.150000000000002, 'mean': 11.5, 'variance': 26.45, 'min': 2.95}, 'ce': {'max': 18.4, 'mean': 11.2, 'variance': 24.560000000000002, 'min': 6.200000000000001}, 'normal': {'max': 27.0, 'mean': 20.238095238095237, 'variance': 18.276643990929706, 'min': 15.0}}, 'client_crashed': False, 'injection_count': 288}
-2021-06-03 22:34:16,336 INFO     geth's pid detected: 25539
-2021-06-03 22:34:16,337 INFO     begin the following experiment
-2021-06-03 22:34:16,337 INFO     {u'original_min_rate': 0.4819927190777498, u'syscall_name': u'recvfrom', u'original_max_rate': 0.5, u'failure_rate': 0.6, u'original_mean_rate': 0.4956001083138303, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
-2021-06-03 22:34:16,337 INFO     5 min normal execution begins
-2021-06-03 22:39:16,470 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 22:40:19,604 INFO     5 min recovery phase observation begins
-2021-06-03 22:45:19,771 INFO     {'peer_stat': {'recovery': {'max': 38.0, 'mean': 36.95, 'variance': 0.4474999999999999, 'min': 36.0}, 'ce': {'max': 37.0, 'mean': 37.0, 'variance': 0.0, 'min': 37.0}, 'normal': {'max': 33.25, 'mean': 24.65, 'variance': 40.52749999999999, 'min': 14.0}}, 'client_crashed': False, 'injection_count': 144}
-2021-06-03 22:45:24,839 INFO     geth's pid detected: 25539
-2021-06-03 22:45:24,839 INFO     begin the following experiment
-2021-06-03 22:45:24,839 INFO     {u'original_min_rate': 0.0009125874095714721, u'syscall_name': u'write', u'original_max_rate': 0.010704471182412358, u'failure_rate': 0.05, u'original_mean_rate': 0.005672731671912925, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
-2021-06-03 22:45:24,839 INFO     5 min normal execution begins
-2021-06-03 22:50:25,010 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 22:51:28,069 INFO     5 min recovery phase observation begins
-2021-06-03 22:56:28,237 INFO     {'peer_stat': {'recovery': {'max': 34.05, 'mean': 22.7, 'variance': 71.91, 'min': 8.0}, 'ce': {'max': 35.8, 'mean': 25.0, 'variance': 144.0, 'min': 14.2}, 'normal': {'max': 38.05, 'mean': 36.45, 'variance': 2.6474999999999995, 'min': 33.0}}, 'client_crashed': False, 'injection_count': 226}
-2021-06-03 22:56:33,271 INFO     geth's pid detected: 25539
-2021-06-03 22:56:33,271 INFO     begin the following experiment
-2021-06-03 22:56:33,271 INFO     {u'original_min_rate': 1.0682966422022066e-05, u'syscall_name': u'read', u'original_max_rate': 1.883713037219241e-05, u'failure_rate': 0.05, u'original_mean_rate': 1.397175038506147e-05, u'error_code': u'-ECONNRESET', u'experiment_duration': 60}
-2021-06-03 22:56:33,271 INFO     5 min normal execution begins
-2021-06-03 23:01:33,436 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 23:02:36,571 INFO     5 min recovery phase observation begins
-2021-06-03 23:07:36,712 INFO     {'peer_stat': {'recovery': {'max': 36.0, 'mean': 30.142857142857142, 'variance': 18.7891156462585, 'min': 23.0}, 'ce': {'max': 21.599999999999998, 'mean': 19.2, 'variance': 2.96, 'min': 17.200000000000003}, 'normal': {'max': 38.0, 'mean': 35.476190476190474, 'variance': 1.7732426303854874, 'min': 33.0}}, 'client_crashed': False, 'injection_count': 20}
-2021-06-03 23:07:41,790 INFO     geth's pid detected: 25539
-2021-06-03 23:07:41,791 INFO     begin the following experiment
-2021-06-03 23:07:41,791 INFO     {u'original_min_rate': 0.0007447815051665581, u'syscall_name': u'write', u'original_max_rate': 0.0007579914553074644, u'failure_rate': 0.05, u'original_mean_rate': 0.0007513864802370113, u'error_code': u'-ECONNRESET', u'experiment_duration': 60}
-2021-06-03 23:07:41,791 INFO     5 min normal execution begins
-2021-06-03 23:12:41,958 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 23:13:42,058 INFO     this experiment makes the client crash!
-2021-06-03 23:13:42,058 INFO     {'peer_stat': {'normal': {'max': 38.0, 'mean': 36.05, 'variance': 5.047499999999998, 'min': 30.0}}, 'client_crashed': True, 'injection_count': 33}
-2021-06-03 23:13:45,074 INFO     successfully restart the client, new pid: 25903
-2021-06-03 23:18:50,189 INFO     geth's pid detected: 25903
-2021-06-03 23:18:50,209 INFO     begin the following experiment
-2021-06-03 23:18:50,209 INFO     {u'original_min_rate': 1.4930328585171822e-05, u'syscall_name': u'epoll_pwait', u'original_max_rate': 3.249288026122903e-05, u'failure_rate': 0.05, u'original_mean_rate': 2.2337879198831963e-05, u'error_code': u'-EINTR', u'experiment_duration': 60}
-2021-06-03 23:18:50,209 INFO     5 min normal execution begins
-2021-06-03 23:23:50,410 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 23:24:53,551 INFO     5 min recovery phase observation begins
-2021-06-03 23:29:53,740 INFO     {'peer_stat': {'recovery': {'max': 39.0, 'mean': 36.8, 'variance': 2.4599999999999986, 'min': 34.0}, 'ce': {'max': 38.0, 'mean': 37.25, 'variance': 0.6875, 'min': 36.15}, 'normal': {'max': 35.05, 'mean': 23.0, 'variance': 42.9, 'min': 16.0}}, 'client_crashed': False, 'injection_count': 949}
-2021-06-03 23:29:58,779 INFO     geth's pid detected: 25903
-2021-06-03 23:29:58,779 INFO     begin the following experiment
-2021-06-03 23:29:58,779 INFO     {u'original_min_rate': 0.3333333333333333, u'syscall_name': u'unlinkat', u'original_max_rate': 0.3333333333333333, u'failure_rate': 0.39999999999999997, u'original_mean_rate': 0.3333333333333332, u'error_code': u'-EISDIR', u'experiment_duration': 60}
-2021-06-03 23:29:58,779 INFO     5 min normal execution begins
-2021-06-03 23:34:58,918 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 23:36:02,066 INFO     5 min recovery phase observation begins
-2021-06-03 23:41:02,298 INFO     {'peer_stat': {'recovery': {'max': 38.05, 'mean': 38.0, 'variance': 0.1, 'min': 37.949999999999996}, 'ce': {'max': 38.849999999999994, 'mean': 38.25, 'variance': 0.1875, 'min': 38.0}, 'normal': {'max': 38.05, 'mean': 37.8, 'variance': 0.2599999999999999, 'min': 37.0}}, 'client_crashed': False, 'injection_count': 0}
-2021-06-03 23:41:07,337 INFO     geth's pid detected: 25903
-2021-06-03 23:41:07,337 INFO     begin the following experiment
-2021-06-03 23:41:07,338 INFO     {u'original_min_rate': 0.16666666666666666, u'syscall_name': u'newfstatat', u'original_max_rate': 0.2, u'failure_rate': 0.24, u'original_mean_rate': 0.1841269841269841, u'error_code': u'-ENOENT', u'experiment_duration': 60}
-2021-06-03 23:41:07,338 INFO     5 min normal execution begins
-2021-06-03 23:46:07,513 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 23:47:10,656 INFO     5 min recovery phase observation begins
-2021-06-03 23:52:10,856 INFO     {'peer_stat': {'recovery': {'max': 39.0, 'mean': 38.19047619047619, 'variance': 0.2494331065759637, 'min': 38.0}, 'ce': {'max': 38.0, 'mean': 38.0, 'variance': 0.0, 'min': 38.0}, 'normal': {'max': 39.0, 'mean': 38.23809523809524, 'variance': 0.3718820861678005, 'min': 38.0}}, 'client_crashed': False, 'injection_count': 2}
-2021-06-03 23:52:15,895 INFO     geth's pid detected: 25903
-2021-06-03 23:52:15,895 INFO     begin the following experiment
-2021-06-03 23:52:15,895 INFO     {u'original_min_rate': 0.16666666666666666, u'syscall_name': u'unlinkat', u'original_max_rate': 0.16666666666666666, u'failure_rate': 0.19999999999999998, u'original_mean_rate': 0.1666666666666666, u'error_code': u'-ENOTEMPTY', u'experiment_duration': 60}
-2021-06-03 23:52:15,895 INFO     5 min normal execution begins
-2021-06-03 23:57:16,059 INFO     60 seconds chaos engineering experiment begins
-2021-06-03 23:58:19,182 INFO     5 min recovery phase observation begins
-2021-06-04 00:03:19,372 INFO     {'peer_stat': {'recovery': {'max': 42.0, 'mean': 40.3, 'variance': 0.40999999999999986, 'min': 40.0}, 'ce': {'max': 40.0, 'mean': 40.0, 'variance': 0.0, 'min': 40.0}, 'normal': {'max': 41.10000000000001, 'mean': 39.45, 'variance': 1.5475000000000003, 'min': 38.0}}, 'client_crashed': False, 'injection_count': 0}
-2021-06-04 00:03:24,415 INFO     geth's pid detected: 25903
-2021-06-04 00:03:24,415 INFO     begin the following experiment
-2021-06-04 00:03:24,415 INFO     {u'original_min_rate': 0.0196078431372549, u'syscall_name': u'epoll_ctl', u'original_max_rate': 0.9104669225604072, u'failure_rate': 0.9104669225604072, u'original_mean_rate': 0.11583407416963688, u'error_code': u'-EPERM', u'experiment_duration': 60}
-2021-06-04 00:03:24,415 INFO     5 min normal execution begins
-2021-06-04 00:08:24,613 INFO     60 seconds chaos engineering experiment begins
-2021-06-04 00:09:27,770 INFO     5 min recovery phase observation begins
-2021-06-04 00:14:27,932 INFO     {'peer_stat': {'recovery': {'max': 41.050000000000004, 'mean': 40.8, 'variance': 0.25999999999999984, 'min': 40.0}, 'ce': {'max': 40.0, 'mean': 40.0, 'variance': 0.0, 'min': 40.0}, 'normal': {'max': 41.10000000000001, 'mean': 40.4, 'variance': 0.5399999999999998, 'min': 40.0}}, 'client_crashed': False, 'injection_count': 477}
-2021-06-04 00:14:32,972 INFO     geth's pid detected: 25903
-2021-06-04 00:14:32,972 INFO     begin the following experiment
-2021-06-04 00:14:32,972 INFO     {u'original_min_rate': 0.0019202775554707076, u'syscall_name': u'futex', u'original_max_rate': 0.0035466677945782017, u'failure_rate': 0.05, u'original_mean_rate': 0.0027394314648678864, u'error_code': u'-ETIMEDOUT', u'experiment_duration': 60}
-2021-06-04 00:14:32,972 INFO     5 min normal execution begins
-2021-06-04 00:19:33,185 INFO     60 seconds chaos engineering experiment begins
-2021-06-04 00:20:33,267 INFO     this experiment makes the client crash!
-2021-06-04 00:20:33,267 INFO     {'peer_stat': {'normal': {'max': 44.0, 'mean': 42.95238095238095, 'variance': 0.23582766439909303, 'min': 42.0}}, 'client_crashed': True, 'injection_count': 32}
-2021-06-04 00:20:36,284 INFO     successfully restart the client, new pid: 26777
+2021-07-28 11:59:23,442 INFO     geth's pid detected: 2831
+2021-07-28 11:59:23,443 INFO     begin the following experiment
+2021-07-28 11:59:23,443 INFO     {u'original_min_rate': 0.49635036496350365, u'syscall_name': u'accept4', u'original_max_rate': 0.5, u'failure_rate': 0.6, u'original_mean_rate': 0.49972010060277494, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-07-28 11:59:23,443 INFO     5 min normal execution begins
+2021-07-28 12:04:24,195 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 12:05:27,276 INFO     5 min recovery phase observation begins
+2021-07-28 12:10:27,296 INFO     {'peer_stat': {'recovery': {'max': 51.05, 'mean': 50.55, 'variance': 0.34749999999999986, 'min': 50.0}, 'ce': {'max': 50.8, 'mean': 50.2, 'variance': 0.16, 'min': 50.0}, 'normal': {'max': 52.0, 'mean': 50.42857142857143, 'variance': 0.5306122448979591, 'min': 50.0}}, 'client_crashed': False, 'injection_count': 158}
+2021-07-28 12:15:27,412 INFO     geth's pid detected: 2831
+2021-07-28 12:15:27,414 INFO     begin the following experiment
+2021-07-28 12:15:27,414 INFO     {u'original_min_rate': 0.0034017459716831682, u'syscall_name': u'futex', u'original_max_rate': 0.007611694167806356, u'failure_rate': 0.05, u'original_mean_rate': 0.005278985501195019, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-07-28 12:15:27,414 INFO     5 min normal execution begins
+2021-07-28 12:20:27,469 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 12:21:27,539 INFO     this experiment makes the client crash!
+2021-07-28 12:21:27,539 INFO     {'peer_stat': {'normal': {'max': 53.0, 'mean': 50.8, 'variance': 1.06, 'min': 50.0}}, 'client_crashed': True, 'injection_count': 1}
+2021-07-28 12:21:30,567 INFO     successfully restart the client, new pid: 11760
+2021-07-28 12:31:30,828 INFO     geth's pid detected: 11760
+2021-07-28 12:31:30,835 INFO     begin the following experiment
+2021-07-28 12:31:30,835 INFO     {u'original_min_rate': 0.47588650173234215, u'syscall_name': u'read', u'original_max_rate': 0.487156994191748, u'failure_rate': 0.5845883930300976, u'original_mean_rate': 0.48314001027382036, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-07-28 12:31:30,835 INFO     5 min normal execution begins
+2021-07-28 12:36:31,743 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 12:37:34,840 INFO     5 min recovery phase observation begins
+2021-07-28 12:42:34,870 INFO     {'peer_stat': {'recovery': {'max': 40.0, 'mean': 35.3, 'variance': 15.110000000000003, 'min': 27.95}, 'ce': {'max': 42.449999999999996, 'mean': 31.75, 'variance': 58.6875, 'min': 27.0}, 'normal': {'max': 39.05, 'mean': 38.2, 'variance': 0.6599999999999999, 'min': 37.0}}, 'client_crashed': False, 'injection_count': 76}
+2021-07-28 12:47:35,010 INFO     geth's pid detected: 11760
+2021-07-28 12:47:35,012 INFO     begin the following experiment
+2021-07-28 12:47:35,012 INFO     {u'original_min_rate': 0.4858757062146893, u'syscall_name': u'recvfrom', u'original_max_rate': 0.5, u'failure_rate': 0.6, u'original_mean_rate': 0.4951228403641277, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-07-28 12:47:35,012 INFO     5 min normal execution begins
+2021-07-28 12:52:35,102 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 12:53:38,187 INFO     5 min recovery phase observation begins
+2021-07-28 12:58:38,215 INFO     {'peer_stat': {'recovery': {'max': 39.05, 'mean': 38.4, 'variance': 0.33999999999999997, 'min': 38.0}, 'ce': {'max': 39.0, 'mean': 38.5, 'variance': 0.25, 'min': 38.0}, 'normal': {'max': 40.0, 'mean': 38.65, 'variance': 0.6275000000000001, 'min': 38.0}}, 'client_crashed': False, 'injection_count': 257}
+2021-07-28 13:03:38,319 INFO     geth's pid detected: 11760
+2021-07-28 13:03:38,322 INFO     begin the following experiment
+2021-07-28 13:03:38,322 INFO     {u'original_min_rate': 0.0014472188624805094, u'syscall_name': u'write', u'original_max_rate': 0.023438869092820842, u'failure_rate': 0.05, u'original_mean_rate': 0.008679106606068448, u'error_code': u'-EAGAIN', u'experiment_duration': 60}
+2021-07-28 13:03:38,322 INFO     5 min normal execution begins
+2021-07-28 13:08:38,370 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 13:09:38,441 INFO     this experiment makes the client crash!
+2021-07-28 13:09:38,441 INFO     {'peer_stat': {'normal': {'max': 42.05, 'mean': 40.55, 'variance': 0.8475000000000001, 'min': 39.0}}, 'client_crashed': True, 'injection_count': 19}
+2021-07-28 13:09:41,456 INFO     successfully restart the client, new pid: 12050
+2021-07-28 13:19:41,657 INFO     geth's pid detected: 12050
+2021-07-28 13:19:41,657 INFO     begin the following experiment
+2021-07-28 13:19:41,657 INFO     {u'original_min_rate': 5.566014797326944e-05, u'syscall_name': u'read', u'original_max_rate': 0.0001275143798381534, u'failure_rate': 0.05, u'original_mean_rate': 8.251229722262463e-05, u'error_code': u'-ECONNRESET', u'experiment_duration': 60}
+2021-07-28 13:19:41,657 INFO     5 min normal execution begins
+2021-07-28 13:24:41,687 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 13:25:44,775 INFO     5 min recovery phase observation begins
+2021-07-28 13:30:44,847 INFO     {'peer_stat': {'recovery': {'max': 33.1, 'mean': 26.95, 'variance': 21.547499999999996, 'min': 19.95}, 'ce': {'max': 18.849999999999998, 'mean': 16.5, 'variance': 7.25, 'min': 12.75}, 'normal': {'max': 37.0, 'mean': 34.75, 'variance': 1.6875, 'min': 32.95}}, 'client_crashed': False, 'injection_count': 50}
+2021-07-28 13:35:44,978 INFO     geth's pid detected: 12050
+2021-07-28 13:35:44,980 INFO     begin the following experiment
+2021-07-28 13:35:44,980 INFO     {u'original_min_rate': 0.16666666666666666, u'syscall_name': u'connect', u'original_max_rate': 0.49333333333333323, u'failure_rate': 0.5919999999999999, u'original_mean_rate': 0.32735689226311565, u'error_code': u'-EINPROGRESS', u'experiment_duration': 60}
+2021-07-28 13:35:44,980 INFO     5 min normal execution begins
+2021-07-28 13:40:45,012 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 13:41:48,085 INFO     5 min recovery phase observation begins
+2021-07-28 13:46:48,103 INFO     {'peer_stat': {'recovery': {'max': 37.050000000000004, 'mean': 35.95, 'variance': 1.0475, 'min': 34.0}, 'ce': {'max': 35.0, 'mean': 34.5, 'variance': 0.25, 'min': 34.0}, 'normal': {'max': 36.0, 'mean': 34.65, 'variance': 0.7275000000000001, 'min': 33.900000000000006}}, 'client_crashed': False, 'injection_count': 21}
+2021-07-28 13:51:48,208 INFO     geth's pid detected: 12050
+2021-07-28 13:51:48,208 INFO     begin the following experiment
+2021-07-28 13:51:48,208 INFO     {u'original_min_rate': 2.399517621486926e-05, u'syscall_name': u'epoll_pwait', u'original_max_rate': 6.252368514026766e-05, u'failure_rate': 0.05, u'original_mean_rate': 3.8932069741998336e-05, u'error_code': u'-EINTR', u'experiment_duration': 60}
+2021-07-28 13:51:48,208 INFO     5 min normal execution begins
+2021-07-28 13:56:48,230 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 13:57:51,311 INFO     5 min recovery phase observation begins
+2021-07-28 14:02:51,327 INFO     {'peer_stat': {'recovery': {'max': 40.0, 'mean': 38.23809523809524, 'variance': 1.0385487528344672, 'min': 37.0}, 'ce': {'max': 38.0, 'mean': 37.75, 'variance': 0.1875, 'min': 37.15}, 'normal': {'max': 38.0, 'mean': 36.35, 'variance': 0.6275, 'min': 35.0}}, 'client_crashed': False, 'injection_count': 681}
+2021-07-28 14:07:51,425 INFO     geth's pid detected: 12050
+2021-07-28 14:07:51,426 INFO     begin the following experiment
+2021-07-28 14:07:51,426 INFO     {u'original_min_rate': 0.3333333333333333, u'syscall_name': u'unlinkat', u'original_max_rate': 0.3333333333333333, u'failure_rate': 0.39999999999999997, u'original_mean_rate': 0.31975194751947505, u'error_code': u'-EISDIR', u'experiment_duration': 60}
+2021-07-28 14:07:51,426 INFO     5 min normal execution begins
+2021-07-28 14:12:51,465 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 14:13:54,547 INFO     5 min recovery phase observation begins
+2021-07-28 14:18:54,580 INFO     {'peer_stat': {'recovery': {'max': 42.0, 'mean': 40.57142857142857, 'variance': 0.7210884353741491, 'min': 40.0}, 'ce': {'max': 40.8, 'mean': 39.0, 'variance': 2.0, 'min': 37.2}, 'normal': {'max': 40.0, 'mean': 38.333333333333336, 'variance': 0.6984126984126983, 'min': 37.0}}, 'client_crashed': False, 'injection_count': 0}
+2021-07-28 14:23:54,704 INFO     geth's pid detected: 12050
+2021-07-28 14:23:54,705 INFO     begin the following experiment
+2021-07-28 14:23:54,705 INFO     {u'original_min_rate': 0.25, u'syscall_name': u'newfstatat', u'original_max_rate': 0.25, u'failure_rate': 0.3, u'original_mean_rate': 0.25833333333333336, u'error_code': u'-ENOENT', u'experiment_duration': 60}
+2021-07-28 14:23:54,705 INFO     5 min normal execution begins
+2021-07-28 14:28:54,731 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 14:29:57,803 INFO     5 min recovery phase observation begins
+2021-07-28 14:34:57,832 INFO     {'peer_stat': {'recovery': {'max': 43.0, 'mean': 41.61904761904762, 'variance': 0.7120181405895691, 'min': 41.0}, 'ce': {'max': 43.599999999999994, 'mean': 41.8, 'variance': 1.3599999999999999, 'min': 41.00000000000001}, 'normal': {'max': 43.0, 'mean': 40.904761904761905, 'variance': 1.2290249433106584, 'min': 40.0}}, 'client_crashed': False, 'injection_count': 1}
+2021-07-28 14:39:57,954 INFO     geth's pid detected: 12050
+2021-07-28 14:39:57,954 INFO     begin the following experiment
+2021-07-28 14:39:57,954 INFO     {u'original_min_rate': 0.16666666666666666, u'syscall_name': u'unlinkat', u'original_max_rate': 0.16666666666666666, u'failure_rate': 0.19999999999999998, u'original_mean_rate': 0.15987597375973753, u'error_code': u'-ENOTEMPTY', u'experiment_duration': 60}
+2021-07-28 14:39:57,954 INFO     5 min normal execution begins
+2021-07-28 14:44:57,973 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 14:46:01,068 INFO     5 min recovery phase observation begins
+2021-07-28 14:51:01,087 INFO     {'peer_stat': {'recovery': {'max': 45.050000000000004, 'mean': 43.55, 'variance': 0.7474999999999998, 'min': 42.949999999999996}, 'ce': {'max': 42.8, 'mean': 42.2, 'variance': 0.16, 'min': 42.0}, 'normal': {'max': 44.0, 'mean': 42.476190476190474, 'variance': 0.439909297052154, 'min': 42.0}}, 'client_crashed': False, 'injection_count': 0}
+2021-07-28 14:56:01,225 INFO     geth's pid detected: 12050
+2021-07-28 14:56:01,225 INFO     begin the following experiment
+2021-07-28 14:56:01,226 INFO     {u'original_min_rate': 0.058823529411764705, u'syscall_name': u'epoll_ctl', u'original_max_rate': 0.10071942446043165, u'failure_rate': 0.12086330935251798, u'original_mean_rate': 0.08703601265193026, u'error_code': u'-EPERM', u'experiment_duration': 60}
+2021-07-28 14:56:01,226 INFO     5 min normal execution begins
+2021-07-28 15:01:01,262 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 15:02:04,345 INFO     5 min recovery phase observation begins
+2021-07-28 15:07:04,359 INFO     {'peer_stat': {'recovery': {'max': 46.0, 'mean': 45.7, 'variance': 0.20999999999999983, 'min': 45.0}, 'ce': {'max': 45.849999999999994, 'mean': 45.25, 'variance': 0.1875, 'min': 45.0}, 'normal': {'max': 47.05, 'mean': 45.5, 'variance': 0.95, 'min': 44.0}}, 'client_crashed': False, 'injection_count': 17}
+2021-07-28 15:12:04,482 INFO     geth's pid detected: 12050
+2021-07-28 15:12:04,482 INFO     begin the following experiment
+2021-07-28 15:12:04,483 INFO     {u'original_min_rate': 0.0016525561706284598, u'syscall_name': u'write', u'original_max_rate': 0.0024593423551756886, u'failure_rate': 0.05, u'original_mean_rate': 0.0021177098010165575, u'error_code': u'-EPIPE', u'experiment_duration': 60}
+2021-07-28 15:12:04,483 INFO     5 min normal execution begins
+2021-07-28 15:17:04,677 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 15:18:04,741 INFO     this experiment makes the client crash!
+2021-07-28 15:18:04,742 INFO     {'peer_stat': {'normal': {'max': 46.05, 'mean': 45.1, 'variance': 0.6900000000000001, 'min': 44.0}}, 'client_crashed': True, 'injection_count': 1803}
+2021-07-28 15:18:07,759 INFO     successfully restart the client, new pid: 12806
+2021-07-28 15:28:07,972 INFO     geth's pid detected: 12806
+2021-07-28 15:28:07,973 INFO     begin the following experiment
+2021-07-28 15:28:07,973 INFO     {u'original_min_rate': 0.0023516326046392954, u'syscall_name': u'futex', u'original_max_rate': 0.014807341622191082, u'failure_rate': 0.05, u'original_mean_rate': 0.005273282029722006, u'error_code': u'-ETIMEDOUT', u'experiment_duration': 60}
+2021-07-28 15:28:07,973 INFO     5 min normal execution begins
+2021-07-28 15:33:08,002 INFO     60 seconds chaos engineering experiment begins
+2021-07-28 15:34:08,082 INFO     this experiment makes the client crash!
+2021-07-28 15:34:08,082 INFO     {'peer_stat': {'normal': {'max': 40.0, 'mean': 38.95, 'variance': 0.6474999999999999, 'min': 37.949999999999996}}, 'client_crashed': True, 'injection_count': 1}
+2021-07-28 15:34:11,096 INFO     successfully restart the client, new pid: 12915

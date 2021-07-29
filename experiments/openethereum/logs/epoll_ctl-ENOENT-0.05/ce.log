@@ -1,42 +1,42 @@
-2021-06-04 00:06:53 UTC Imported #12564630 0x3775…f788 (239 txs, 14.99 Mgas, 4816 ms, 54.92 KiB)
-2021-06-04 00:07:00 UTC  42/50 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-06-04 00:07:09 UTC Imported #12564631 0x0d5d…bd92 (270 txs, 15.00 Mgas, 5829 ms, 64.75 KiB)
-2021-06-04 00:07:15 UTC Imported #12564632 0x10a2…967a (165 txs, 15.00 Mgas, 4655 ms, 78.97 KiB)
-2021-06-04 00:07:23 UTC Imported #12564633 0xcd13…cfd9 (140 txs, 14.97 Mgas, 4283 ms, 47.67 KiB)
-2021-06-04 00:07:28 UTC Imported #12564634 0x3ea2…5626 (207 txs, 14.77 Mgas, 4063 ms, 50.46 KiB)
-2021-06-04 00:07:32 UTC  42/50 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-06-04 00:08:01 UTC  42/50 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-06-04 00:08:02 UTC Imported #12564637 0xc05e…8c3c (114 txs, 14.99 Mgas, 5623 ms, 38.63 KiB)
-2021-06-04 00:08:12 UTC Imported #12564638 0x6795…ee9c (181 txs, 14.75 Mgas, 6942 ms, 52.97 KiB)
-2021-06-04 00:08:23 UTC Panic occured, see stderr for details
+2021-07-28 15:31:36 UTC  Ancient:#7089891 AB:#7091642   27/50 peers     19 MiB chain  393 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:32:10 UTC  Ancient:#7089980 AB:#7092801   28/50 peers    646 KiB chain  190 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:32:34 UTC Reorg to #12915227 0x528c…ee6a (0xf169…9472 #12915225 0x92f0…597d 0x4759…2d16)
+2021-07-28 15:32:44 UTC  Ancient:#7089986 AB:#7093772   28/50 peers      2 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:32:51 UTC Imported #12915228 0xa294…a7f3 (246 txs, 14.93 Mgas, 16370 ms, 68.81 KiB)
+2021-07-28 15:33:18 UTC  Ancient:#7091914 AB:#7093772   26/50 peers      2 MiB chain  428 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:33:50 UTC Imported #12915233 0x0d26…f882 (177 txs, 14.97 Mgas, 6798 ms, 42.16 KiB)
+2021-07-28 15:33:52 UTC  Ancient:#7092049 AB:#7096015   24/25 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:33:58 UTC Imported #12915234 0xce02…6fcc (147 txs, 14.95 Mgas, 4525 ms, 42.95 KiB)
+2021-07-28 15:34:09 UTC Imported #12915235 0x4ede…ba80 (110 txs, 14.94 Mgas, 7189 ms, 28.29 KiB)
+2021-07-28 15:34:24 UTC  Ancient:#7093571 AB:#7096015   24/25 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:34:29 UTC Panic occured, see stderr for details
 
 
 ====================
 
-stack backtrace:
    0: panic_hook::set_with::{{closure}}
    1: std::panicking::rust_panic_with_hook
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:595
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:595:17
    2: std::panicking::begin_panic_handler::{{closure}}
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:497
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:497:13
    3: std::sys_common::backtrace::__rust_end_short_backtrace
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/sys_common/backtrace.rs:141
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys_common/backtrace.rs:141:18
    4: rust_begin_unwind
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/panicking.rs:493
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:493:5
    5: core::panicking::panic_fmt
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/core/src/panicking.rs:92
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/panicking.rs:92:14
    6: core::option::expect_none_failed
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/core/src/option.rs:1300
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/option.rs:1300:5
    7: <ethcore_network_devp2p::host::Host as ethcore_io::IoHandler<ethcore_network::NetworkIoMessage>>::update_stream
    8: mio::deprecated::event_loop::EventLoop<H>::run
    9: std::sys_common::backtrace::__rust_begin_short_backtrace
   10: core::ops::function::FnOnce::call_once{{vtable.shim}}
   11: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
       <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
       std::sys::unix::thread::Thread::new::thread_start
-             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0//library/std/src/sys/unix/thread.rs:71
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys/unix/thread.rs:71:17
   12: start_thread
   13: __clone
 
@@ -48,6 +48,8 @@ This is a bug. Please report it at:
     https://github.com/openethereum/openethereum/issues/new
 
 
-2021-06-04 00:08:23 UTC Finishing work, please wait...
-2021-06-04 00:08:24 UTC Error on IO service shutdown: NotifyError::Closed(..)
+2021-07-28 15:34:29 UTC Finishing work, please wait...
+2021-07-28 15:34:55 UTC  Ancient:#7093573 AB:#7096015   23/25 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-07-28 15:34:57 UTC Imported #12915238 0x8774…b7a0 (151 txs, 14.88 Mgas, 6822 ms, 44.73 KiB)
+2021-07-28 15:35:03 UTC Error on IO service shutdown: NotifyError::Closed(..)
 Error: 1

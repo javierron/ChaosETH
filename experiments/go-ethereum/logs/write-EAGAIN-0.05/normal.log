@@ -1,103 +1,72 @@
-INFO [06-03|22:44:29.866] Imported new block headers               count=1    elapsed=6.841ms     number=12564288 hash="371e0f…e0adb1"
-INFO [06-03|22:44:32.904] Imported new block headers               count=1    elapsed=6.960ms     number=12564289 hash="42f91b…964691"
-INFO [06-03|22:44:35.950] Imported new block headers               count=2    elapsed=6.068ms     number=12564291 hash="ccd314…4e684d"
-INFO [06-03|22:44:39.849] Imported new state entries               count=273  elapsed="3µs"       processed=993891272 pending=4369  trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:44:53.864] Imported new state entries               count=384  elapsed="2.3µs"     processed=993891656 pending=10482 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:45:03.171] Imported new block headers               count=1    elapsed=9.806ms     number=12564292 hash="8c0cbf…4e542a"
-INFO [06-03|22:45:07.415] Imported new state entries               count=384  elapsed="2.3µs"     processed=993892040 pending=16625 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:45:17.758] Imported new state entries               count=384  elapsed="3.5µs"     processed=993892424 pending=21667 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:45:18.313] Imported new block headers               count=1    elapsed=9.470ms     number=12564293 hash="0059ea…6179c6"
-INFO [06-03|22:45:18.845] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=208.16KiB throttle=315
-INFO [06-03|22:45:28.568] Imported new state entries               count=384  elapsed="2.5µs"     processed=993892808 pending=27665 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:45:35.562] Imported new state entries               count=256  elapsed="2.1µs"     processed=993893064 pending=31752 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:45:39.557] Imported new block headers               count=1    elapsed=38.982ms    number=12564294 hash="1c1b92…701a12" age=1m4s
-INFO [06-03|22:45:46.014] Imported new state entries               count=384  elapsed="2.4µs"     processed=993893448 pending=37825 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:45:56.022] Imported new state entries               count=384  elapsed="2.3µs"     processed=993893832 pending=43952 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:46:05.624] Imported new state entries               count=384  elapsed="2.5µs"     processed=993894216 pending=50096 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:46:15.509] Imported new state entries               count=384  elapsed="3.1µs"     processed=993894600 pending=56209 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:46:19.024] Imported new block headers               count=1    elapsed=18.753ms    number=12564295 hash="57f069…727ebf" age=1m18s
-INFO [06-03|22:46:19.904] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=220.15KiB throttle=298
-INFO [06-03|22:46:25.203] Imported new state entries               count=384  elapsed="2.5µs"     processed=993894984 pending=62352 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:46:31.375] Imported new block headers               count=1    elapsed=140.439ms   number=12564296 hash="b86b02…00a946" age=1m17s
-INFO [06-03|22:46:34.510] Imported new state entries               count=384  elapsed="4.9µs"     processed=993895368 pending=68494 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:46:48.501] Imported new state entries               count=384  elapsed="2.9µs"     processed=993895752 pending=69864 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:46:58.634] Imported new block headers               count=2    elapsed=139.710ms   number=12564298 hash="cab583…290dc8"
-INFO [06-03|22:47:02.369] Imported new state entries               count=384  elapsed="2.3µs"     processed=993896136 pending=71586 trieretry=0    coderetry=0 duplicate=0 unexpected=1570
-INFO [06-03|22:47:04.015] Imported new state entries               count=0    elapsed=1.642s      processed=993896136 pending=72304 trieretry=336  coderetry=0 duplicate=0 unexpected=1904
-INFO [06-03|22:47:17.702] Imported new state entries               count=434  elapsed="2.7µs"     processed=993896570 pending=73919 trieretry=0    coderetry=0 duplicate=0 unexpected=1904
-INFO [06-03|22:47:31.534] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=29m15.898s
-INFO [06-03|22:47:31.866] Imported new block headers               count=1    elapsed=26.975ms    number=12564299 hash="a13db1…55830a" age=1m1s
-INFO [06-03|22:47:31.915] Imported new state entries               count=384  elapsed="2.2µs"     processed=993896954 pending=75413 trieretry=2    coderetry=0 duplicate=0 unexpected=1904
-INFO [06-03|22:47:31.953] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=233.01KiB throttle=282
-INFO [06-03|22:47:32.010] Imported new state entries               count=0    elapsed="7µs"       processed=993896954 pending=75445 trieretry=2    coderetry=0 duplicate=0 unexpected=1906
-INFO [06-03|22:47:37.969] Imported new block headers               count=1    elapsed=8.098ms     number=12564300 hash="0dc9c7…bf162f"
-INFO [06-03|22:47:39.538] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=29m23.902s
-INFO [06-03|22:47:47.163] Imported new state entries               count=386  elapsed="3.4µs"     processed=993897340 pending=78388 trieretry=0    coderetry=0 duplicate=0 unexpected=1906
-INFO [06-03|22:47:47.563] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=29m31.927s
-INFO [06-03|22:47:50.130] Imported new block headers               count=1    elapsed=7.884ms     number=12564301 hash="60cdfd…836b2a"
-INFO [06-03|22:47:55.571] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=29m39.936s
-INFO [06-03|22:47:57.718] Imported new state entries               count=260  elapsed="2.8µs"     processed=993897600 pending=79937 trieretry=124  coderetry=0 duplicate=0 unexpected=1906
-INFO [06-03|22:47:57.720] Imported new state entries               count=0    elapsed="660.901µs" processed=993897600 pending=79937 trieretry=384  coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:48:02.334] Imported new block headers               count=1    elapsed=14.319ms    number=12564302 hash="4e877b…4949f3"
-INFO [06-03|22:48:03.573] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=29m47.937s
-INFO [06-03|22:48:11.407] Imported new block headers               count=2    elapsed=6.385ms     number=12564304 hash="851f95…8c332b"
-INFO [06-03|22:48:11.573] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=29m55.937s
-INFO [06-03|22:48:12.784] Imported new state entries               count=384  elapsed="3.4µs"     processed=993897984 pending=82925 trieretry=382  coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:48:19.573] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=30m3.938s
-INFO [06-03|22:48:26.525] Imported new block headers               count=1    elapsed=6.845ms     number=12564305 hash="72de2d…8492a0"
-INFO [06-03|22:48:27.094] Imported new state entries               count=384  elapsed="3.8µs"     processed=993898368 pending=84529 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:48:27.574] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=30m11.938s
-INFO [06-03|22:48:29.568] Imported new block headers               count=1    elapsed=8.490ms     number=12564306 hash="9fff24…a35c5e"
-INFO [06-03|22:48:35.579] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=30m19.943s
-INFO [06-03|22:48:42.230] Imported new state entries               count=384  elapsed="2.7µs"     processed=993898752 pending=90507 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-WARN [06-03|22:48:42.231] Stalling state sync, dropping peer       peer=3aaff351b9ce42f0530b9e531514f44f56a3d4715fd1e02be4ffbe071f634632
-ERROR[06-03|22:48:42.231] Ethereum peer removal failed             peer=3aaff351 err="peer not registered"
-WARN [06-03|22:48:42.232] Stalling state sync, dropping peer       peer=5dc97e21fe6171baae40f46c17e04af484a0b7aadb66d80b9fbacc8a5b74871a
-WARN [06-03|22:48:42.232] Stalling state sync, dropping peer       peer=50813ce2d8d0abb91c105943371fa430529caa1b48ac14f3c4dca9996b31706d
-WARN [06-03|22:48:42.232] Stalling state sync, dropping peer       peer=0deaa0c67a17823aa4a6b88f38290cbf33c412cffbd1b0082fb2dff1b256c1aa
-ERROR[06-03|22:48:42.232] Ethereum peer removal failed             peer=50813ce2 err="peer not registered"
-WARN [06-03|22:48:42.232] Stalling state sync, dropping peer       peer=88fc1c2f2084c0a89ea1ccd21341106005e51085becbcf8821fca71f522c6b96
-ERROR[06-03|22:48:42.232] Ethereum peer removal failed             peer=5dc97e21 err="peer not registered"
-ERROR[06-03|22:48:42.232] Ethereum peer removal failed             peer=0deaa0c6 err="peer not registered"
-WARN [06-03|22:48:42.233] Stalling state sync, dropping peer       peer=6947706974e54eba38fa8c8a8161ebc9b4b7d10e40c37c6310dcd7b16d1ee18a
-ERROR[06-03|22:48:42.233] Ethereum peer removal failed             peer=88fc1c2f err="peer not registered"
-ERROR[06-03|22:48:42.233] Ethereum peer removal failed             peer=69477069 err="peer not registered"
-INFO [06-03|22:48:43.581] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=30m27.945s
-INFO [06-03|22:48:51.623] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=30m35.987s
-INFO [06-03|22:48:56.225] Imported new state entries               count=384  elapsed="2.5µs"     processed=993899136 pending=96508 trieretry=776  coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:48:59.626] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=30m43.990s
-INFO [06-03|22:49:02.982] Imported new block headers               count=1    elapsed=12.317ms    number=12564307 hash="5ae880…099ab2"
-INFO [06-03|22:49:03.022] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=235.76KiB throttle=278
-INFO [06-03|22:49:04.427] Imported new state entries               count=384  elapsed="2.5µs"     processed=993899520 pending=97009 trieretry=776  coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:49:07.627] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=30m51.991s
-INFO [06-03|22:49:09.087] Imported new block headers               count=1    elapsed=7.203ms     number=12564308 hash="a62d9f…fc0b3e"
-INFO [06-03|22:49:11.872] Imported new state entries               count=384  elapsed="4.2µs"     processed=993899904 pending=97787 trieretry=8    coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:49:15.627] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=30m59.991s
-INFO [06-03|22:49:18.188] Imported new block headers               count=1    elapsed=6.912ms     number=12564309 hash="d0950d…7c5c27"
-INFO [06-03|22:49:18.876] Imported new state entries               count=384  elapsed="3µs"       processed=993900288 pending=98440 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:49:23.628] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=31m7.992s
-INFO [06-03|22:49:26.376] Imported new state entries               count=384  elapsed="3.8µs"     processed=993900672 pending=99463 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:49:31.630] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=31m15.994s
-INFO [06-03|22:49:36.019] Imported new state entries               count=384  elapsed="18.8µs"    processed=993901056 pending=100719 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:49:36.459] Imported new block headers               count=1    elapsed=31.076ms    number=12564310 hash="4a9c6e…5ae96f"
-INFO [06-03|22:49:39.662] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=31m24.026s
-WARN [06-03|22:49:42.248] Dropping unsynced node during sync       id=701f5a74598b1b5e conn=inbound addr=89.202.64.28:50856    type=OpenEthereum/v3.2.3-...
-ERROR[06-03|22:49:42.418] Snapshot extension registration failed   peer=63cbe74f err="peer connected on snap without compatible eth support"
-INFO [06-03|22:49:46.849] Imported new state entries               count=384  elapsed="3.9µs"     processed=993901440 pending=101988 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:49:47.679] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=31m32.043s
-INFO [06-03|22:49:51.592] Imported new block headers               count=1    elapsed=7.921ms     number=12564311 hash="5044e0…af81e1"
-INFO [06-03|22:49:54.668] Imported new block headers               count=1    elapsed=8.274ms     number=12564312 hash="fd223d…fa835d"
-INFO [06-03|22:49:55.682] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=31m40.046s
-WARN [06-03|22:49:57.339] Dropping unsynced node during sync       id=960a89a5b70c1f1d conn=inbound addr=116.25.248.26:44866   type=OpenEthereum/v3.2.6-...
-INFO [06-03|22:50:01.181] Imported new state entries               count=384  elapsed="2.6µs"     processed=993901824 pending=103223 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-INFO [06-03|22:50:03.683] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=31m48.047s
-INFO [06-03|22:50:09.797] Imported new block headers               count=1    elapsed=7.564ms     number=12564313 hash="0c58ab…678c6e"
-INFO [06-03|22:50:10.073] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=236.34KiB throttle=278
-INFO [06-03|22:50:11.684] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=31m56.048s
-INFO [06-03|22:50:14.011] Imported new state entries               count=384  elapsed="2.8µs"     processed=993902208 pending=104491 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
-WARN [06-03|22:50:15.849] Dropping unsynced node during sync       id=e5994037b65affe7 conn=inbound addr=31.200.231.26:35512   type=Geth/v1.10.2-stable-...
-INFO [06-03|22:50:18.882] Imported new block headers               count=1    elapsed=7.452ms     number=12564314 hash="9ad411…79e683"
-INFO [06-03|22:50:19.685] Initializing state bloom                 items=316385097 errorrate=0.000 elapsed=32m4.049s
-INFO [06-03|22:50:21.993] Imported new block headers               count=2    elapsed=11.740ms    number=12564316 hash="e76438…c98393"
-ERROR[06-03|22:50:22.290] Snapshot extension registration failed   peer=cb5b9771 err="peer connected on snap without compatible eth support"
-INFO [06-03|22:50:24.129] Imported new state entries               count=384  elapsed="2.4µs"     processed=993902592 pending=105761 trieretry=0    coderetry=0 duplicate=0 unexpected=2290
+INFO [07-28|13:02:45.182] State heal in progress                   accounts=8105@424.09KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,682,877@13.94GiB pending=83770
+INFO [07-28|13:02:53.606] State heal in progress                   accounts=8105@424.09KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,683,470@13.94GiB pending=84949
+INFO [07-28|13:03:05.699] State heal in progress                   accounts=8105@424.09KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,684,312@13.94GiB pending=86025
+INFO [07-28|13:03:12.888] Imported new block headers               count=1  elapsed=6.863ms   number=12,914,594 hash=77e936..1cd7af
+INFO [07-28|13:03:13.158] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=252.48KiB throttle=260
+INFO [07-28|13:03:17.808] State heal in progress                   accounts=8105@424.09KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,685,015@13.94GiB pending=86787
+WARN [07-28|13:03:24.725] Unexpected trienode heal packet          peer=eab54690 reqid=4,040,766,466,281,220,799
+INFO [07-28|13:03:30.426] State heal in progress                   accounts=8105@424.09KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,685,714@13.94GiB pending=87465
+WARN [07-28|13:03:30.428] Unexpected trienode heal packet          peer=af943620 reqid=5,988,976,945,442,560,332
+ERROR[07-28|13:03:36.152] Snapshot extension registration failed   peer=cc9bd165 err="peer connected on snap without compatible eth support"
+INFO [07-28|13:03:41.364] State heal in progress                   accounts=8105@424.09KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,686,384@13.94GiB pending=88378
+WARN [07-28|13:03:41.365] Unexpected trienode heal packet          peer=998a8de3 reqid=8,558,366,028,574,175,091
+WARN [07-28|13:03:41.536] Unexpected trienode heal packet          peer=df5f16fe reqid=6,228,065,581,409,071,391
+WARN [07-28|13:03:42.584] Unexpected trienode heal packet          peer=b6fb365a reqid=6,262,675,512,067,802,004
+INFO [07-28|13:03:49.364] State heal in progress                   accounts=8155@426.98KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,686,934@13.94GiB pending=88756
+ERROR[07-28|13:03:54.991] Snapshot extension registration failed   peer=83a1b3f5 err="peer connected on snap without compatible eth support"
+INFO [07-28|13:04:00.761] State heal in progress                   accounts=8247@431.96KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,687,793@13.94GiB pending=89284
+INFO [07-28|13:04:05.420] Imported new block headers               count=1  elapsed=9.455ms   number=12,914,595 hash=914450..964fa3 age=1m36s
+INFO [07-28|13:04:09.499] State heal in progress                   accounts=8249@432.05KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,688,268@13.94GiB pending=89882
+INFO [07-28|13:04:17.840] Imported new block headers               count=1  elapsed=8.143ms   number=12,914,596 hash=f303c6..252627 age=1m46s
+INFO [07-28|13:04:18.223] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=246.07KiB throttle=267
+INFO [07-28|13:04:19.469] State heal in progress                   accounts=8256@432.47KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,688,882@13.94GiB pending=90648
+INFO [07-28|13:04:28.936] State heal in progress                   accounts=8281@433.87KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,689,450@13.94GiB pending=91283
+INFO [07-28|13:04:36.431] Imported new block headers               count=1  elapsed=6.350ms   number=12,914,597 hash=37bc9d..aa90d5 age=1m26s
+INFO [07-28|13:04:39.236] State heal in progress                   accounts=8295@434.59KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,690,060@13.94GiB pending=92066
+INFO [07-28|13:04:39.600] Imported new block headers               count=1  elapsed=6.388ms   number=12,914,598 hash=3a6123..99a148
+INFO [07-28|13:04:45.853] Imported new block headers               count=1  elapsed=5.308ms   number=12,914,599 hash=8d9e9b..8c1492
+INFO [07-28|13:04:48.613] State heal in progress                   accounts=8306@435.24KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,690,659@13.95GiB pending=92984
+INFO [07-28|13:04:58.983] State heal in progress                   accounts=8329@436.57KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,691,303@13.95GiB pending=93569
+INFO [07-28|13:05:04.454] Imported new block headers               count=1  elapsed=5.500ms   number=12,914,600 hash=77b3a7..aa91f9
+INFO [07-28|13:05:08.444] State heal in progress                   accounts=8422@441.10KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,692,144@13.95GiB pending=94118
+INFO [07-28|13:05:16.738] State heal in progress                   accounts=8528@446.76KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,692,871@13.95GiB pending=94454
+INFO [07-28|13:05:26.141] Imported new block headers               count=2  elapsed=10.703ms  number=12,914,602 hash=192970..39d946
+INFO [07-28|13:05:26.756] State heal in progress                   accounts=8614@451.74KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,693,654@13.95GiB pending=95051
+INFO [07-28|13:05:27.292] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=259.56KiB throttle=253
+INFO [07-28|13:05:36.873] State heal in progress                   accounts=8685@455.37KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,694,431@13.95GiB pending=95732
+ERROR[07-28|13:05:45.985] Snapshot extension registration failed   peer=f60aab36 err="peer connected on snap without compatible eth support"
+INFO [07-28|13:05:47.180] State heal in progress                   accounts=8772@459.93KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,695,213@13.95GiB pending=96363
+INFO [07-28|13:05:53.982] Imported new block headers               count=1  elapsed=5.758ms   number=12,914,603 hash=1e3afb..fa1f3f
+INFO [07-28|13:05:58.132] State heal in progress                   accounts=8831@463.00KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,696,022@13.95GiB pending=97168
+WARN [07-28|13:06:02.087] Unexpected trienode heal packet          peer=479ba845 reqid=2,233,857,406,235,539,309
+INFO [07-28|13:06:09.305] State heal in progress                   accounts=8990@471.72KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,696,996@13.95GiB pending=97583
+INFO [07-28|13:06:22.721] State heal in progress                   accounts=9133@479.23KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,698,081@13.95GiB pending=98116
+INFO [07-28|13:06:24.923] Imported new block headers               count=1  elapsed=5.971ms   number=12,914,604 hash=87b6da..47442a age=1m
+INFO [07-28|13:06:27.326] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=252.43KiB throttle=260
+INFO [07-28|13:06:40.305] State heal in progress                   accounts=9141@479.69KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,699,016@13.95GiB pending=99083
+WARN [07-28|13:06:40.308] Unexpected trienode heal packet          peer=6c88466e reqid=8,983,921,569,655,839,593
+INFO [07-28|13:06:40.445] Imported new block headers               count=1  elapsed=5.896ms   number=12,914,605 hash=f88d64..fc1ec8 age=1m14s
+INFO [07-28|13:06:43.614] Imported new block headers               count=1  elapsed=5.528ms   number=12,914,606 hash=12d6f4..92a1fc
+WARN [07-28|13:06:44.139] Unexpected trienode heal packet          peer=ded82dac reqid=4,421,075,024,774,202,775
+WARN [07-28|13:06:44.603] Unexpected trienode heal packet          peer=479ba845 reqid=1,689,363,782,277,598,397
+WARN [07-28|13:06:44.635] Unexpected trienode heal packet          peer=c66ab34b reqid=6,101,877,327,105,061,543
+INFO [07-28|13:06:48.579] State heal in progress                   accounts=9316@488.91KiB slots=506@40.54KiB codes=2059@15.80MiB nodes=48,699,822@13.95GiB pending=99340
+INFO [07-28|13:06:58.866] State heal in progress                   accounts=9587@502.61KiB slots=508@40.68KiB codes=2059@15.80MiB nodes=48,700,953@13.95GiB pending=99414
+INFO [07-28|13:07:07.014] State heal in progress                   accounts=9758@511.87KiB slots=508@40.68KiB codes=2059@15.80MiB nodes=48,701,717@13.95GiB pending=99869
+INFO [07-28|13:07:11.460] Imported new block headers               count=1  elapsed=6.149ms   number=12,914,607 hash=cd511a..621fb2
+INFO [07-28|13:07:17.243] State heal in progress                   accounts=9948@521.66KiB slots=508@40.68KiB codes=2059@15.80MiB nodes=48,702,710@13.95GiB pending=100,193
+INFO [07-28|13:07:27.984] State heal in progress                   accounts=10060@527.67KiB slots=508@40.68KiB codes=2059@15.80MiB nodes=48,703,571@13.95GiB pending=100,768
+INFO [07-28|13:07:39.174] State heal in progress                   accounts=10154@532.77KiB slots=508@40.68KiB codes=2059@15.80MiB nodes=48,704,371@13.95GiB pending=101,532
+INFO [07-28|13:07:47.293] State heal in progress                   accounts=10266@538.67KiB slots=508@40.68KiB codes=2059@15.80MiB nodes=48,705,097@13.95GiB pending=101,914
+INFO [07-28|13:07:48.560] Imported new block headers               count=2  elapsed=5.828ms   number=12,914,609 hash=d59b9d..3ffdd4 age=1m6s
+INFO [07-28|13:07:50.415] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=252.88KiB throttle=260
+INFO [07-28|13:07:51.729] Imported new block headers               count=1  elapsed=5.633ms   number=12,914,610 hash=cb8218..2c3a56
+INFO [07-28|13:07:55.704] State heal in progress                   accounts=10349@543.52KiB slots=510@40.84KiB codes=2059@15.80MiB nodes=48,705,708@13.95GiB pending=102,335
+INFO [07-28|13:07:57.989] Imported new block headers               count=1  elapsed=5.939ms   number=12,914,611 hash=d3a4f5..9c4ed1
+INFO [07-28|13:08:04.552] State heal in progress                   accounts=10782@565.67KiB slots=518@41.44KiB codes=2059@15.80MiB nodes=48,707,001@13.95GiB pending=102,252
+INFO [07-28|13:08:10.413] Imported new block headers               count=1  elapsed=7.416ms   number=12,914,612 hash=e9d768..376e70
+INFO [07-28|13:08:14.214] State heal in progress                   accounts=11099@583.03KiB slots=519@41.54KiB codes=2059@15.80MiB nodes=48,708,038@13.95GiB pending=102,168
+INFO [07-28|13:08:16.668] Imported new block headers               count=1  elapsed=5.935ms   number=12,914,613 hash=e57a47..58c76f
+INFO [07-28|13:08:23.241] State heal in progress                   accounts=11285@592.88KiB slots=519@41.54KiB codes=2059@15.80MiB nodes=48,708,946@13.95GiB pending=102,430
+INFO [07-28|13:08:29.096] Imported new block headers               count=1  elapsed=7.080ms   number=12,914,614 hash=0a027a..c73daf
+INFO [07-28|13:08:32.718] State heal in progress                   accounts=11512@604.98KiB slots=531@42.43KiB codes=2059@15.80MiB nodes=48,710,006@13.95GiB pending=102,759

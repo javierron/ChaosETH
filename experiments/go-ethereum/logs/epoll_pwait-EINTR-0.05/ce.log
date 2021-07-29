@@ -1,27 +1,18 @@
-INFO [06-03|23:23:11.304] Looking for peers                        peercount=32 tried=4  static=0
-INFO [06-03|23:23:11.383] Initializing state bloom                 items=89792900 errorrate=0.000 elapsed=9m15.488s
-INFO [06-03|23:23:17.862] Imported new state entries               count=323  elapsed="3.7µs"    processed=993945772 pending=16409 trieretry=2  coderetry=0 duplicate=0 unexpected=28
-INFO [06-03|23:23:19.383] Initializing state bloom                 items=90428667 errorrate=0.000 elapsed=9m23.488s
-INFO [06-03|23:23:27.388] Initializing state bloom                 items=91103698 errorrate=0.000 elapsed=9m31.493s
-WARN [06-03|23:23:27.471] Dropping unsynced node during sync       id=916ac52bc5192159 conn=inbound addr=213.31.124.180:2538   type=Geth/v1.10.3-stable-...
-INFO [06-03|23:23:35.436] Initializing state bloom                 items=91794175 errorrate=0.000 elapsed=9m39.542s
-INFO [06-03|23:23:38.766] Imported new block headers               count=1    elapsed=13.720ms   number=12564446 hash="d8e871…cb3d0a" age=1m17s
-INFO [06-03|23:23:43.449] Initializing state bloom                 items=92442482 errorrate=0.000 elapsed=9m47.555s
-INFO [06-03|23:23:43.990] Imported new state entries               count=272  elapsed="3.2µs"    processed=993946044 pending=20727 trieretry=0  coderetry=0 duplicate=0 unexpected=28
-INFO [06-03|23:23:51.453] Initializing state bloom                 items=93143918 errorrate=0.000 elapsed=9m55.559s
-INFO [06-03|23:23:57.291] Imported new block headers               count=1    elapsed=183.473ms  number=12564447 hash="63dcc2…fe0be1" age=1m25s
-INFO [06-03|23:23:57.799] Downloader queue stats                   receiptTasks=0    blockTasks=0    itemSize=249.37KiB throttle=263
-INFO [06-03|23:23:59.455] Initializing state bloom                 items=93900555 errorrate=0.000 elapsed=10m3.560s
-WARN [06-03|23:24:02.505] Unable to send to InfluxDB               err="Post \"http://localhost:8086/write?consistency=&db=chaosevm&precision=&rp=\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
-INFO [06-03|23:24:07.463] Initializing state bloom                 items=94638629 errorrate=0.000 elapsed=10m11.568s
-INFO [06-03|23:24:12.461] Imported new block headers               count=1    elapsed=57.275ms   number=12564448 hash="4f36c2…6fd763" age=1m24s
-INFO [06-03|23:24:15.558] Initializing state bloom                 items=95358537 errorrate=0.000 elapsed=10m19.663s
-INFO [06-03|23:24:18.649] Imported new block headers               count=1    elapsed=85.926ms   number=12564449 hash="813db9…c8aa36"
-INFO [06-03|23:24:21.701] Imported new state entries               count=384  elapsed="3.7µs"    processed=993946428 pending=24673 trieretry=0  coderetry=0 duplicate=0 unexpected=28
-INFO [06-03|23:24:23.558] Initializing state bloom                 items=96163718 errorrate=0.000 elapsed=10m27.663s
-INFO [06-03|23:24:31.558] Initializing state bloom                 items=97235755 errorrate=0.000 elapsed=10m35.663s
-INFO [06-03|23:24:39.558] Initializing state bloom                 items=98722366 errorrate=0.000 elapsed=10m43.664s
-INFO [06-03|23:24:43.949] Imported new state entries               count=384  elapsed="3.1µs"    processed=993946812 pending=27043 trieretry=505 coderetry=0 duplicate=0 unexpected=28
-INFO [06-03|23:24:46.110] Imported new block headers               count=1    elapsed=81.970ms   number=12564450 hash="9cdfb3…bef1ff"
-INFO [06-03|23:24:47.558] Initializing state bloom                 items=100190478 errorrate=0.000 elapsed=10m51.664s
-INFO [06-03|23:24:49.132] Imported new block headers               count=1    elapsed=7.982ms    number=12564451 hash="286b7f…d360a5"
+INFO [07-28|13:56:05.535] Imported new block headers               count=1    elapsed=5.398ms   number=12,914,822 hash=c5d10b..a6a521
+INFO [07-28|13:56:06.266] Downloader queue stats                   receiptTasks=0    blockTasks=0    itemSize=236.14KiB throttle=278
+INFO [07-28|13:56:07.458] State heal in progress                   accounts=25733@1.33MiB    slots=4457@350.39KiB codes=2071@15.87MiB nodes=48,931,286@14.03GiB pending=194,875
+INFO [07-28|13:56:14.285] Looking for peers                        peercount=36 tried=3 static=0
+INFO [07-28|13:56:17.375] State heal in progress                   accounts=25785@1.33MiB    slots=4478@352.01KiB codes=2071@15.87MiB nodes=48,932,011@14.03GiB pending=195,521
+INFO [07-28|13:56:27.674] State heal in progress                   accounts=25856@1.34MiB    slots=4495@353.35KiB codes=2071@15.87MiB nodes=48,932,759@14.03GiB pending=196,261
+INFO [07-28|13:56:33.366] Imported new block headers               count=1    elapsed=7.706ms   number=12,914,823 hash=32f1be..5c3223
+INFO [07-28|13:56:36.005] State heal in progress                   accounts=25898@1.34MiB    slots=4517@354.94KiB codes=2071@15.87MiB nodes=48,933,414@14.03GiB pending=196,888
+INFO [07-28|13:56:39.620] Imported new block headers               count=1    elapsed=7.575ms   number=12,914,824 hash=bb9238..327fd7
+INFO [07-28|13:56:45.829] State heal in progress                   accounts=25921@1.34MiB    slots=4598@361.45KiB codes=2071@15.87MiB nodes=48,934,175@14.03GiB pending=197,433
+INFO [07-28|13:56:54.110] State heal in progress                   accounts=26048@1.34MiB    slots=4651@365.63KiB codes=2071@15.87MiB nodes=48,934,871@14.03GiB pending=197,739
+INFO [07-28|13:57:04.370] State heal in progress                   accounts=26087@1.35MiB    slots=4717@370.95KiB codes=2071@15.87MiB nodes=48,935,566@14.03GiB pending=198,536
+INFO [07-28|13:57:07.450] Imported new block headers               count=1    elapsed=8.639ms   number=12,914,825 hash=a8b8d3..b21888 age=1m4s
+INFO [07-28|13:57:08.308] Downloader queue stats                   receiptTasks=0    blockTasks=0    itemSize=242.37KiB throttle=271
+INFO [07-28|13:57:15.568] State heal in progress                   accounts=26288@1.36MiB    slots=4751@373.73KiB codes=2071@15.87MiB nodes=48,936,572@14.03GiB pending=199,409
+INFO [07-28|13:57:24.649] State heal in progress                   accounts=26710@1.38MiB    slots=4834@380.43KiB codes=2071@15.87MiB nodes=48,937,850@14.04GiB pending=199,303
+INFO [07-28|13:57:33.161] State heal in progress                   accounts=26808@1.38MiB    slots=4923@387.48KiB codes=2072@15.88MiB nodes=48,938,791@14.04GiB pending=199,763
+INFO [07-28|13:57:41.577] State heal in progress                   accounts=26996@1.39MiB    slots=4984@392.27KiB codes=2072@15.88MiB nodes=48,939,708@14.04GiB pending=200,071
