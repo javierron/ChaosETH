@@ -33,6 +33,12 @@ def pgrep_the_client(client_name):
     return pgrep_output
 
 def restart_client(client_name, client_path, restart_cmd, client_log):
+    pid = pgrep_the_client(client_name)
+    if pid != None:
+        logging.info("to restart the client, stop the current process (%s) first"%pid)
+        os.system("kill %s"%pid)
+        time.sleep(3)
+
     os.system("cd %s && %s >> %s 2>&1 &"%(client_path, restart_cmd, client_log))
     time.sleep(3)
 
@@ -106,10 +112,10 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     global INJECTOR
 
     # experiment principle
-    # 1 min normal execution, tail the log
-    # 30 seconds error injection, tail the log
+    # 5 min normal execution, tail the log
+    # 5 min error injection, tail the log
     #   restart hedwig if necessary
-    # 5 min recovery phase, tail the log
+    # 5 min recovery phase + 5 min post-recovery steady state analysis
 
     pid = pgrep_the_client(client_name)
     if pid == None:
@@ -164,11 +170,11 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
         dump_metric(ce_execution_peer_stat, dump_logs_folder, "ce_peer_stat.json")
         result["peer_stat"]["ce"] = ce_execution_peer_stat["stat"]
 
-    # step 3: 5 mins recovery phase observation
+    # step 3: 5 mins recovery phase + 5 mins post-recovery steady state analysis
     if not result["client_crashed"]:
         time.sleep(3)
-        logging.info("5 min recovery phase observation begins")
-        recovery_phase_log = tail_client_log(client_log, 60*5)
+        logging.info("5 mins recovery phase + 5 mins post-recovery steady state analysis begins")
+        recovery_phase_log = tail_client_log(client_log, 60*10)
         dump_logs(recovery_phase_log, dump_logs_folder, "recovery.log")
         recovery_phase_peer_stat = query_peer_stats(client_name, peer_stats_url, 60*5)
         dump_metric(recovery_phase_peer_stat, dump_logs_folder, "recovery_peer_stat.json")
