@@ -206,13 +206,12 @@ def main(config):
         for experiment in experiments["experiments"]:
             experiment = do_experiment(experiment, syscall_injector, client_name, client_log, dump_logs_path, peer_stats_url)
             save_experiment_result(experiments, "%s-results.json"%client_name)
-            if experiment["result"]["client_crashed"]:
-                new_pid = restart_client(client_name, client_path, restart_cmd, client_log)
-                if new_pid == None: break
-                # sleep for another 5 mins here if the client crashed due to the previous experiment
-                # this helps the client to warm up before a new experiment
-                time.sleep(60*5)
-            time.sleep(5)
+
+            # no matter the experiment crashes the client or not, we restart the client to avoid state corruptions
+            new_pid = restart_client(client_name, client_path, restart_cmd, client_log)
+            if new_pid == None: break
+            # sleep for 10 mins to give the client time to warm up before a new experiment
+            time.sleep(60*10)
 
     if (INJECTOR != None): os.killpg(os.getpgid(INJECTOR.pid), signal.SIGTERM)
 
