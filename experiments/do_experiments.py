@@ -58,37 +58,40 @@ def tail_client_log(client_log, timeout):
 
     return output
 
-def query_peer_stats(client_name, query_url, last_n_seconds):
+def query_metrics(client_name, metric_urls, last_n_seconds):
     end_ts = int(time.time())
     start_ts = end_ts - last_n_seconds
-    response = requests.get(query_url.format(start=start_ts, end=end_ts))
-    results = None
 
-    if client_name == "openethereum":
-        status = response.json()["status"]
-        if status == "error":
-            logging.error("peer stats query failed")
-            logging.error(response.json())
-        else:
-            if len(response.json()['data']['result']) == 0:
-                logging.warning("peer stats query result is empty")
+    results = dict()
+    results["stat"] = dict()
+    for metric_name, query_url in metric_urls:
+        response = requests.get(query_url.format(start=start_ts, end=end_ts))
+
+        if client_name == "openethereum":
+            status = response.json()["status"]
+            if status == "error":
+                logging.error("peer stats query failed")
+                logging.error(response.json())
             else:
-                results = response.json()['data']['result'][0]
-    elif client_name == "geth":
-        if "results" not in response.json():
-            logging.error("peer stats query failed")
-            logging.error(response.json())
-        else:
-            results = response.json()["results"][0]["series"][0]
+                if len(response.json()['data']['result']) == 0:
+                    logging.warning("peer stats query result is empty")
+                else:
+                    results[metric_name] = response.json()['data']['result'][0]
+        elif client_name == "geth":
+            if "results" not in response.json():
+                logging.error("peer stats query failed")
+                logging.error(response.json())
+            else:
+                results[metric_name] = response.json()["results"][0]["series"][0]
 
-    # calculate statistic information of the values
-    if results != None:
-        values = numpy.array(results["values"]).astype(int)
-        min_value = numpy.percentile(values, 5, axis=0)[1] # in the values array, index 0: timestamp, index 1: failure rate
-        mean_value = numpy.mean(values, axis=0)[1]
-        max_value = numpy.percentile(values, 95, axis=0)[1]
-        variance = numpy.var(values, axis=0)[1]
-        results["stat"] = {"min": min_value, "mean": mean_value, "max": max_value, "variance": variance}
+        # calculate statistic information of the values
+        if results[metric_name] != None:
+            values = numpy.array(results[metric_name]["values"]).astype(int)
+            min_value = numpy.percentile(values, 5, axis=0)[1] # in the values array, index 0: timestamp, index 1: failure rate
+            mean_value = numpy.mean(values, axis=0)[1]
+            max_value = numpy.percentile(values, 95, axis=0)[1]
+            variance = numpy.var(values, axis=0)[1]
+            results["stat"][metric_name] = {"min": min_value, "mean": mean_value, "max": max_value, "variance": variance}
 
     return results
 
@@ -108,7 +111,7 @@ def dump_metric(content, filepath, filename):
     with open(os.path.join(filepath, filename), "wt") as output:
         json.dump(content, output, indent = 2)
 
-def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_path, peer_stats_url):
+def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_path, metric_urls):
     global INJECTOR
 
     # experiment principle
@@ -132,10 +135,10 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     logging.info("5 min normal execution begins")
     normal_execution_log = tail_client_log(client_log, 60*5)
     dump_logs(normal_execution_log, dump_logs_folder, "normal.log")
-    normal_execution_peer_stat = query_peer_stats(client_name, peer_stats_url, 60*5)
-    dump_metric(normal_execution_peer_stat, dump_logs_folder, "normal_peer_stat.json")
-    result["peer_stat"] = dict()
-    result["peer_stat"]["normal"] = normal_execution_peer_stat["stat"]
+    normal_execution_metrics = query_metrics(client_name, metric_urls, 60*5)
+    dump_metric(normal_execution_metrics, dump_logs_folder, "normal_execution_metrics.json")
+    result["metrics"] = dict()
+    result["metrics"]["normal"] = normal_execution_metrics["stat"]
 
     # step 2: error injection experiment
     # start the injector
@@ -166,9 +169,9 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     else:
         result["client_crashed"] = False
         # only query peer stats when the client is not crashed
-        ce_execution_peer_stat = query_peer_stats(client_name, peer_stats_url, experiment["experiment_duration"])
-        dump_metric(ce_execution_peer_stat, dump_logs_folder, "ce_peer_stat.json")
-        result["peer_stat"]["ce"] = ce_execution_peer_stat["stat"]
+        ce_execution_metrics = query_metrics(client_name, metric_urls, experiment["experiment_duration"])
+        dump_metric(ce_execution_metrics, dump_logs_folder, "ce_execution_metrics.json")
+        result["metrics"]["ce"] = ce_execution_metrics["stat"]
 
     # step 3: 5 mins recovery phase + 5 mins post-recovery steady state analysis
     if not result["client_crashed"]:
@@ -176,9 +179,9 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
         logging.info("5 mins recovery phase + 5 mins post-recovery steady state analysis begins")
         recovery_phase_log = tail_client_log(client_log, 60*10)
         dump_logs(recovery_phase_log, dump_logs_folder, "recovery.log")
-        recovery_phase_peer_stat = query_peer_stats(client_name, peer_stats_url, 60*5)
-        dump_metric(recovery_phase_peer_stat, dump_logs_folder, "recovery_peer_stat.json")
-        result["peer_stat"]["recovery"] = recovery_phase_peer_stat["stat"]
+        post_recovery_phase_metrics = query_metrics(client_name, metric_urls, 60*5)
+        dump_metric(post_recovery_phase_metrics, dump_logs_folder, "post_recovery_phase_metrics.json")
+        result["metrics"]["post_recovery"] = post_recovery_phase_metrics["stat"]
 
     logging.info(result)
     experiment["result"] = result
@@ -198,13 +201,13 @@ def main(config):
     client_path = config["EthClient"]["client_path"]
     restart_cmd = config["EthClient"]["restart_cmd"]
     client_log = config["EthClient"]["client_log"]
-    peer_stats_url = config["EthClient"]["peer_stats_url"]
+    metric_urls = config.items("MetricUrls")
 
     with open(error_models, 'rt') as file:
         experiments = json.load(file)
 
         for experiment in experiments["experiments"]:
-            experiment = do_experiment(experiment, syscall_injector, client_name, client_log, dump_logs_path, peer_stats_url)
+            experiment = do_experiment(experiment, syscall_injector, client_name, client_log, dump_logs_path, metric_urls)
             save_experiment_result(experiments, "%s-results.json"%client_name)
 
             # no matter the experiment crashes the client or not, we restart the client to avoid state corruptions
