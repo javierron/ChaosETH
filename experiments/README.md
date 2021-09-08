@@ -31,6 +31,19 @@ docker run -p 8086:8086 -d --name influxdb -v influxdb:/var/lib/influxdb influxd
 
 ```
 
+In the case of `geth`, we also need to configure this influxdb container first. This is not required if other clients do not push metrics to InfluxDB.
+
+```bash
+docker exec -it influxdb bash
+# the following commands are executed inside the container
+influx
+# the following commands are executed in the InfluxDB shell
+CREATE DATABASE chaoseth
+CREATE RETENTION POLICY "rp_chaoseth" ON "chaoseth" DURATION 999d REPLICATION 1 DEFAULT
+CREATE USER geth WITH PASSWORD xxx WITH ALL PRIVILEGES
+
+```
+
 After setting up the containers, the following command is used to run `geth` in our experiment.
 
 ```bash
@@ -47,5 +60,5 @@ Here are some notes for each option in the command above.
 - `sudo nohup ./geth`: `sudo` is required for our system call monitor and error injector. As we restart the client after each experiment, the client is restarted by the root user in that case. So you could just run the client with `sudo` to avoid permission errors.
 - `--datadir=/data/eth-data`: Usually we have an extra disk attached to the instance. Thus we use this option to specify the data directory. Otherwise, the data is persisted in the instance's OS drive instead.
 - `--maxpeers 50`: We should keep all the target clients using consistent configurations such as the maximum number of peers. `50` is the default value of client `geth`. For other clients, we configure them to use the same number.
-- `--metrics...`: These metrics are related to application-level monitoring.
+- `--metrics...`: These metrics are related to application-level monitoring. Replace `DB_NAME` and `DB_PASS` with your actual configurations.
 - `>> geth.log 2>&1 &` Redirect the output to somewhere and make the client running in background.
