@@ -188,8 +188,8 @@ g_failure_rate = Gauge('syscalls_failure_rate', 'The rate of failures categorize
 g_avg_latency = Gauge('syscalls_avg_latency', 'The average execution time of system calls categorized by type', syscall_metric_labels)
 # dirtop metrics
 dirtop_metric_labels = ['hostname', 'application_name', 'pid', 'directory']
-g_reads_total = Gauge('reads_total', 'Read operations on a directory', dirtop_metric_labels)
-g_writes_total = Gauge('writes_total', 'Write operations on a directory', dirtop_metric_labels)
+g_reads_total = Gauge('dir_reads_total', 'Read operations on a directory', dirtop_metric_labels)
+g_writes_total = Gauge('dir_writes_total', 'Write operations on a directory', dirtop_metric_labels)
 g_reads_kb = Gauge('dir_reads_kb', 'The rate of read operations on a directory', dirtop_metric_labels)
 g_writes_kb = Gauge('dir_writes_kb', 'The rate of write operations on a directory', dirtop_metric_labels)
 
