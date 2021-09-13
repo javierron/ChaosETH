@@ -19,6 +19,8 @@ from bcc import BPF
 from bcc.utils import printb
 from bcc.syscall import syscall_name, syscalls
 from collections import namedtuple, defaultdict
+from socket import inet_ntop, AF_INET, AF_INET6
+from struct import pack
 
 # ebpf programs
 text_for_syscall = """
@@ -207,7 +209,7 @@ BPF_HASH(ipv6_recv_bytes, struct ipv6_key_t);
 int kprobe__tcp_sendmsg(struct pt_regs *ctx, struct sock *sk,
     struct msghdr *msg, size_t size)
 {
-    u32 tgid = bpf_get_current_pid_tgid() >> 32;
+    u32 pid = bpf_get_current_pid_tgid() >> 32;
     if (TGID_FILTER)
         return 0;
     u16 dport = 0, family = sk->__sk_common.skc_family;
@@ -242,7 +244,7 @@ int kprobe__tcp_sendmsg(struct pt_regs *ctx, struct sock *sk,
  */
 int kprobe__tcp_cleanup_rbuf(struct pt_regs *ctx, struct sock *sk, int copied)
 {
-    u32 tgid = bpf_get_current_pid_tgid() >> 32;
+    u32 pid = bpf_get_current_pid_tgid() >> 32;
     if (TGID_FILTER)
         return 0;
     u16 dport = 0, family = sk->__sk_common.skc_family;
@@ -543,6 +545,7 @@ def update_dirtop_metrics(args, inodes_to_path, bpf_for_dirtop):
             directory=inodes_to_path[node_id]
         ).set(writes_kb[node_id])
 
+    print("")
     counts.clear()
 
 def update_tcptop_metrics(args, bpf_for_tcptop):
@@ -659,7 +662,7 @@ def update_tcptop_metrics(args, bpf_for_tcptop):
         hostname=host_name,
         application_name=application_name,
         pid=args.pid,
-        ip_family="ipv4"
+        ip_family="ipv6"
     ).set(ipv6_connections)
     g_tcp_sends_kb.labels(
         hostname=host_name,
@@ -673,6 +676,8 @@ def update_tcptop_metrics(args, bpf_for_tcptop):
         pid=args.pid,
         ip_family="ipv6"
     ).set(ipv6_recvs_kb)
+
+    print("")
 
 def main(args):
     global text_for_syscall
@@ -704,7 +709,7 @@ def main(args):
 
     # for tcptop monitoring
     if args.pid:
-        text_for_tcptop = text_for_tcptop.replace('TGID_FILTER', 'tgid != %d' % args.pid)
+        text_for_tcptop = text_for_tcptop.replace('TGID_FILTER', 'pid != %d' % args.pid)
     else:
         text_for_tcptop = text_for_tcptop.replace('TGID_FILTER', '0')
 
