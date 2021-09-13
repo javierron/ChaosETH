@@ -16,7 +16,6 @@ from prometheus_client import start_http_server, Counter, Gauge
 from time import sleep, strftime
 import argparse, errno, itertools, sys, os, stat, logging, signal, socket
 from bcc import BPF
-from bcc.containers import filter_by_containers
 from bcc.utils import printb
 from bcc.syscall import syscall_name, syscalls
 from collections import namedtuple, defaultdict
@@ -208,9 +207,6 @@ BPF_HASH(ipv6_recv_bytes, struct ipv6_key_t);
 int kprobe__tcp_sendmsg(struct pt_regs *ctx, struct sock *sk,
     struct msghdr *msg, size_t size)
 {
-    if (container_should_be_filtered()) {
-        return 0;
-    }
     u32 pid = bpf_get_current_pid_tgid() >> 32;
     if (TGID_FILTER)
         return 0;
@@ -246,9 +242,6 @@ int kprobe__tcp_sendmsg(struct pt_regs *ctx, struct sock *sk,
  */
 int kprobe__tcp_cleanup_rbuf(struct pt_regs *ctx, struct sock *sk, int copied)
 {
-    if (container_should_be_filtered()) {
-        return 0;
-    }
     u32 pid = bpf_get_current_pid_tgid() >> 32;
     if (TGID_FILTER)
         return 0;
@@ -714,12 +707,11 @@ def main(args):
         text_for_dir_top = text_for_dir_top.replace('TGID_FILTER', 'tgid != %d' % args.pid)
     else:
         text_for_dir_top = text_for_dir_top.replace('TGID_FILTER', '0')
-    text_for_dir_top = filter_by_containers(args) + text_for_dir_top
 
     # set up all the ebpf programs
     bpf_for_syscall = BPF(text=text_for_syscall)
     bpf_for_dirtop = BPF(text=text_for_dir_top)
-    bpf_for_tcptop = BPF(text=bpf_for_tcptop)
+    bpf_for_tcptop = BPF(text=text_for_tcptop)
     bpf_for_dirtop.attach_kprobe(event="vfs_read", fn_name="trace_read_entry")
     bpf_for_dirtop.attach_kprobe(event="vfs_write", fn_name="trace_write_entry")
 
