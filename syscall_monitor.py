@@ -10,13 +10,16 @@
 # 15-Feb-2017   Sasha Goldshtein    Created this.
 # 22-Feb-2020   Long Zhang          Modified this.
 # 13-Sep-2021   Long Zhang          Modified this to include dirtop.py
+# 13-Sep-2021   Long Zhang          Modified this to include tcptop.py
 
 from prometheus_client import start_http_server, Counter, Gauge
 from time import sleep, strftime
 import argparse, errno, itertools, sys, os, stat, logging, signal, socket
 from bcc import BPF
+from bcc.containers import filter_by_containers
 from bcc.utils import printb
 from bcc.syscall import syscall_name, syscalls
+from collections import namedtuple, defaultdict
 
 # ebpf programs
 text_for_syscall = """
@@ -179,6 +182,105 @@ int trace_write_entry(struct pt_regs *ctx, struct file *file,
 }
 """
 
+text_for_tcptop = """
+#include <uapi/linux/ptrace.h>
+#include <net/sock.h>
+#include <bcc/proto.h>
+struct ipv4_key_t {
+    u32 pid;
+    u32 saddr;
+    u32 daddr;
+    u16 lport;
+    u16 dport;
+};
+BPF_HASH(ipv4_send_bytes, struct ipv4_key_t);
+BPF_HASH(ipv4_recv_bytes, struct ipv4_key_t);
+struct ipv6_key_t {
+    unsigned __int128 saddr;
+    unsigned __int128 daddr;
+    u32 pid;
+    u16 lport;
+    u16 dport;
+    u64 __pad__;
+};
+BPF_HASH(ipv6_send_bytes, struct ipv6_key_t);
+BPF_HASH(ipv6_recv_bytes, struct ipv6_key_t);
+int kprobe__tcp_sendmsg(struct pt_regs *ctx, struct sock *sk,
+    struct msghdr *msg, size_t size)
+{
+    if (container_should_be_filtered()) {
+        return 0;
+    }
+    u32 pid = bpf_get_current_pid_tgid() >> 32;
+    if (TGID_FILTER)
+        return 0;
+    u16 dport = 0, family = sk->__sk_common.skc_family;
+
+    if (family == AF_INET) {
+        struct ipv4_key_t ipv4_key = {.pid = pid};
+        ipv4_key.saddr = sk->__sk_common.skc_rcv_saddr;
+        ipv4_key.daddr = sk->__sk_common.skc_daddr;
+        ipv4_key.lport = sk->__sk_common.skc_num;
+        dport = sk->__sk_common.skc_dport;
+        ipv4_key.dport = ntohs(dport);
+        ipv4_send_bytes.increment(ipv4_key, size);
+    } else if (family == AF_INET6) {
+        struct ipv6_key_t ipv6_key = {.pid = pid};
+        bpf_probe_read_kernel(&ipv6_key.saddr, sizeof(ipv6_key.saddr),
+            &sk->__sk_common.skc_v6_rcv_saddr.in6_u.u6_addr32);
+        bpf_probe_read_kernel(&ipv6_key.daddr, sizeof(ipv6_key.daddr),
+            &sk->__sk_common.skc_v6_daddr.in6_u.u6_addr32);
+        ipv6_key.lport = sk->__sk_common.skc_num;
+        dport = sk->__sk_common.skc_dport;
+        ipv6_key.dport = ntohs(dport);
+        ipv6_send_bytes.increment(ipv6_key, size);
+    }
+    // else drop
+    return 0;
+}
+/*
+ * tcp_recvmsg() would be obvious to trace, but is less suitable because:
+ * - we'd need to trace both entry and return, to have both sock and size
+ * - misses tcp_read_sock() traffic
+ * we'd much prefer tracepoints once they are available.
+ */
+int kprobe__tcp_cleanup_rbuf(struct pt_regs *ctx, struct sock *sk, int copied)
+{
+    if (container_should_be_filtered()) {
+        return 0;
+    }
+    u32 pid = bpf_get_current_pid_tgid() >> 32;
+    if (TGID_FILTER)
+        return 0;
+    u16 dport = 0, family = sk->__sk_common.skc_family;
+    u64 *val, zero = 0;
+    if (copied <= 0)
+        return 0;
+
+    if (family == AF_INET) {
+        struct ipv4_key_t ipv4_key = {.pid = pid};
+        ipv4_key.saddr = sk->__sk_common.skc_rcv_saddr;
+        ipv4_key.daddr = sk->__sk_common.skc_daddr;
+        ipv4_key.lport = sk->__sk_common.skc_num;
+        dport = sk->__sk_common.skc_dport;
+        ipv4_key.dport = ntohs(dport);
+        ipv4_recv_bytes.increment(ipv4_key, copied);
+    } else if (family == AF_INET6) {
+        struct ipv6_key_t ipv6_key = {.pid = pid};
+        bpf_probe_read_kernel(&ipv6_key.saddr, sizeof(ipv6_key.saddr),
+            &sk->__sk_common.skc_v6_rcv_saddr.in6_u.u6_addr32);
+        bpf_probe_read_kernel(&ipv6_key.daddr, sizeof(ipv6_key.daddr),
+            &sk->__sk_common.skc_v6_daddr.in6_u.u6_addr32);
+        ipv6_key.lport = sk->__sk_common.skc_num;
+        dport = sk->__sk_common.skc_dport;
+        ipv6_key.dport = ntohs(dport);
+        ipv6_recv_bytes.increment(ipv6_key, copied);
+    }
+    // else drop
+    return 0;
+}
+"""
+
 # prometheus metrics
 # syscall metrics
 syscall_metric_labels = ['hostname', 'application_name', 'pid', 'layer', 'syscall_name', 'error_code', 'injected_on_purpose']
@@ -192,6 +294,11 @@ g_reads_total = Gauge('dir_reads_total', 'Read operations on a directory', dirto
 g_writes_total = Gauge('dir_writes_total', 'Write operations on a directory', dirtop_metric_labels)
 g_reads_kb = Gauge('dir_reads_kb', 'The rate of read operations on a directory', dirtop_metric_labels)
 g_writes_kb = Gauge('dir_writes_kb', 'The rate of write operations on a directory', dirtop_metric_labels)
+# tcptop metrics
+tcptop_metric_labels = ['hostname', 'application_name', 'pid', 'ip_family']
+g_tcp_connections = Gauge('tcp_connections_total', 'The total number of tcp connections', tcptop_metric_labels)
+g_tcp_sends_kb = Gauge('tcp_sends_kb', 'The rate of read operations on a directory', tcptop_metric_labels)
+g_tcp_recvs_kb = Gauge('tcp_recvs_kb', 'The rate of write operations on a directory', tcptop_metric_labels)
 
 # signal handler
 def signal_ignore(signal, frame):
@@ -445,9 +552,139 @@ def update_dirtop_metrics(args, inodes_to_path, bpf_for_dirtop):
 
     counts.clear()
 
+def update_tcptop_metrics(args, bpf_for_tcptop):
+    TCPSessionKey = namedtuple('TCPSession', ['pid', 'laddr', 'lport', 'daddr', 'dport'])
+    def get_ipv4_session_key(k):
+        return TCPSessionKey(pid = k.pid,
+                             laddr = inet_ntop(AF_INET, pack("I", k.saddr)),
+                             lport = k.lport,
+                             daddr = inet_ntop(AF_INET, pack("I", k.daddr)),
+                             dport = k.dport)
+
+    def get_ipv6_session_key(k):
+        return TCPSessionKey(pid = k.pid,
+                             laddr = inet_ntop(AF_INET6, k.saddr),
+                             lport = k.lport,
+                             daddr = inet_ntop(AF_INET6, k.daddr),
+                             dport = k.dport)
+
+    global g_tcp_connections
+    global g_tcp_sends_kb
+    global g_tcp_recvs_kb
+    host_name = socket.gethostname()
+    application_name = comm_for_pid(args.pid)
+
+    ipv4_send_bytes = bpf_for_tcptop["ipv4_send_bytes"]
+    ipv4_recv_bytes = bpf_for_tcptop["ipv4_recv_bytes"]
+    ipv6_send_bytes = bpf_for_tcptop["ipv6_send_bytes"]
+    ipv6_recv_bytes = bpf_for_tcptop["ipv6_recv_bytes"]
+
+    ipv4_connections = len(ipv4_send_bytes.items())
+    ipv4_sends_kb = 0
+    ipv4_recvs_kb = 0
+    # IPv4: build dict of all seen keys
+    ipv4_throughput = defaultdict(lambda: [0, 0])
+    for k, v in ipv4_send_bytes.items():
+        key = get_ipv4_session_key(k)
+        ipv4_throughput[key][0] = v.value
+        ipv4_sends_kb = ipv4_sends_kb + int(v.value / 1024)
+    ipv4_send_bytes.clear()
+
+    for k, v in ipv4_recv_bytes.items():
+        key = get_ipv4_session_key(k)
+        ipv4_throughput[key][1] = v.value
+        ipv4_recvs_kb = ipv4_recvs_kb + int(v.value / 1024)
+    ipv4_recv_bytes.clear()
+
+    if ipv4_throughput:
+        print("%-6s %-12s %-21s %-21s %6s %6s" % ("PID", "COMM",
+            "LADDR", "RADDR", "RX_KB", "TX_KB"))
+
+        # output
+        for k, (send_bytes, recv_bytes) in sorted(ipv4_throughput.items(),
+                                                  key=lambda kv: sum(kv[1]),
+                                                  reverse=True):
+            ipv4_connections = ipv4_connections + 1
+            print("%-6d %-12.12s %-21s %-21s %6d %6d" % (k.pid,
+                application_name,
+                k.laddr + ":" + str(k.lport),
+                k.daddr + ":" + str(k.dport),
+                int(recv_bytes / 1024), int(send_bytes / 1024)))
+
+    g_tcp_connections.labels(
+        hostname=host_name,
+        application_name=application_name,
+        pid=args.pid,
+        ip_family="ipv4"
+    ).set(ipv4_connections)
+    g_tcp_sends_kb.labels(
+        hostname=host_name,
+        application_name=application_name,
+        pid=args.pid,
+        ip_family="ipv4"
+    ).set(ipv4_sends_kb)
+    g_tcp_recvs_kb.labels(
+        hostname=host_name,
+        application_name=application_name,
+        pid=args.pid,
+        ip_family="ipv4"
+    ).set(ipv4_recvs_kb)
+
+    ipv6_connections = len(ipv6_send_bytes.items())
+    ipv6_sends_kb = 0
+    ipv6_recvs_kb = 0
+    # IPv6: build dict of all seen keys
+    ipv6_throughput = defaultdict(lambda: [0, 0])
+    for k, v in ipv6_send_bytes.items():
+        key = get_ipv6_session_key(k)
+        ipv6_throughput[key][0] = v.value
+        ipv6_sends_kb = ipv6_sends_kb + int(v.value / 1024)
+    ipv6_send_bytes.clear()
+
+    for k, v in ipv6_recv_bytes.items():
+        key = get_ipv6_session_key(k)
+        ipv6_throughput[key][1] = v.value
+        ipv6_recvs_kb = ipv6_recvs_kb + int(v.value / 1024)
+    ipv6_recv_bytes.clear()
+
+    if ipv6_throughput:
+        # more than 80 chars, sadly.
+        print("\n%-6s %-12s %-32s %-32s %6s %6s" % ("PID", "COMM",
+            "LADDR6", "RADDR6", "RX_KB", "TX_KB"))
+
+        # output
+        for k, (send_bytes, recv_bytes) in sorted(ipv6_throughput.items(),
+                                                  key=lambda kv: sum(kv[1]),
+                                                  reverse=True):
+            print("%-6d %-12.12s %-32s %-32s %6d %6d" % (k.pid,
+                application_name,
+                k.laddr + ":" + str(k.lport),
+                k.daddr + ":" + str(k.dport),
+                int(recv_bytes / 1024), int(send_bytes / 1024)))
+
+    g_tcp_connections.labels(
+        hostname=host_name,
+        application_name=application_name,
+        pid=args.pid,
+        ip_family="ipv4"
+    ).set(ipv6_connections)
+    g_tcp_sends_kb.labels(
+        hostname=host_name,
+        application_name=application_name,
+        pid=args.pid,
+        ip_family="ipv6"
+    ).set(ipv6_sends_kb)
+    g_tcp_recvs_kb.labels(
+        hostname=host_name,
+        application_name=application_name,
+        pid=args.pid,
+        ip_family="ipv6"
+    ).set(ipv6_recvs_kb)
+
 def main(args):
     global text_for_syscall
     global text_for_dir_top
+    global text_for_tcptop
 
     # for syscall monitoring
     if args.pid:
@@ -472,9 +709,17 @@ def main(args):
     text_for_dir_top = text_for_dir_top.replace(
         "INODES_NUMBER", '{}'.format(len(inodes.split(','))))
 
+    # for tcptop monitoring
+    if args.pid:
+        text_for_dir_top = text_for_dir_top.replace('TGID_FILTER', 'tgid != %d' % args.pid)
+    else:
+        text_for_dir_top = text_for_dir_top.replace('TGID_FILTER', '0')
+    text_for_dir_top = filter_by_containers(args) + text_for_dir_top
+
     # set up all the ebpf programs
     bpf_for_syscall = BPF(text=text_for_syscall)
     bpf_for_dirtop = BPF(text=text_for_dir_top)
+    bpf_for_tcptop = BPF(text=bpf_for_tcptop)
     bpf_for_dirtop.attach_kprobe(event="vfs_read", fn_name="trace_read_entry")
     bpf_for_dirtop.attach_kprobe(event="vfs_write", fn_name="trace_write_entry")
 
@@ -497,6 +742,7 @@ def main(args):
 
         print_stats(args, bpf_for_syscall)
         update_dirtop_metrics(args, inodes_to_path, bpf_for_dirtop)
+        update_tcptop_metrics(args, bpf_for_tcptop)
 
         if exiting:
             print("Detaching...")
