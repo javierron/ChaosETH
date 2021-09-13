@@ -704,9 +704,9 @@ def main(args):
 
     # for tcptop monitoring
     if args.pid:
-        text_for_dir_top = text_for_dir_top.replace('TGID_FILTER', 'tgid != %d' % args.pid)
+        text_for_tcptop = text_for_tcptop.replace('TGID_FILTER', 'tgid != %d' % args.pid)
     else:
-        text_for_dir_top = text_for_dir_top.replace('TGID_FILTER', '0')
+        text_for_tcptop = text_for_tcptop.replace('TGID_FILTER', '0')
 
     # set up all the ebpf programs
     bpf_for_syscall = BPF(text=text_for_syscall)
