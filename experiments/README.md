@@ -62,3 +62,35 @@ Here are some notes for each option in the command above.
 - `--maxpeers 50`: We should keep all the target clients using consistent configurations such as the maximum number of peers. `50` is the default value of client `geth`. For other clients, we configure them to use the same number.
 - `--metrics...`: These metrics are related to application-level monitoring. Replace `DB_NAME` and `DB_PASS` with your actual configurations.
 - `>> geth.log 2>&1 &` Redirect the output to somewhere and make the client running in background.
+
+## Wait for the Client to Be Synced
+
+Usually it takes about 3 days for a client to be fully synced. You could use https://ethernodes.org/ to check the status of the node.
+
+## Normal Execution Phase
+
+### Deploy the Client Monitor
+
+After the client is fully synced, the client monitor (`client_monitor.py`) is deployed to observe the steady state related metrics of the client. Note that you could also deploy the monitor before the client is fully synced but usually we analyze the metrics after the client is synced.
+
+
+```bash
+nohup sudo ./client_monitor.py -p CLIENT_PID -m -i 15 --data-dir=CLIENT_DATA_DIR >/dev/null 2>&1 &
+
+```
+
+The command above attaches the client monitor to the client process and exposes the metrics as a Prometheus end point (defaut port number `8000`). `CLIENT_PID` is the pid of the client process, which could be queried by using `pgrep CLIENT_NAME`. `CLIENT_DATA_DIR` refers to the data folder of the running client.
+
+In order to pull the metrics from the Prometheus side, make sure you have the following part in your Prometheus's configuration file.
+
+
+```yaml
+scrape_configs:
+  - job_name: 'client_monitoring'
+    static_configs:
+      # The url to pull the metrics
+      - targets: ['172.17.0.1:8000'] # If Prometheus is running in a container, `172.17.0.1:8000` may work. Otherwise use `ip address` to see the host's IP address.
+
+```
+
+Now Prometheus should be able to scrape the metrics exposed by the client monitor. You could use `./visualization/Grafana - Syscall Monitoring.json` to create a Grafana dashboard to visualize the monitored metrics.
