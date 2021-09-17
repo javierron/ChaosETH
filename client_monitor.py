@@ -115,8 +115,9 @@ TRACEPOINT_PROBE(raw_syscalls, sys_exit) {
 """
 
 text_for_dir_top = """
-# include <uapi/linux/ptrace.h>
-# include <linux/blkdev.h>
+#include <linux/sched.h>
+#include <uapi/linux/ptrace.h>
+#include <linux/blkdev.h>
 // the key for the output summary
 struct info_t {
     unsigned long inode_id;
@@ -208,6 +209,7 @@ int trace_write_entry(struct pt_regs *ctx, struct file *file,
 """
 
 text_for_tcptop = """
+#include <linux/sched.h>
 #include <uapi/linux/ptrace.h>
 #include <net/sock.h>
 #include <bcc/proto.h>
