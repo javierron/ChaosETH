@@ -129,12 +129,36 @@ struct val_t {
     u64 wbytes;
 };
 BPF_HASH(counts, struct info_t, struct val_t);
+
+#ifdef FILTER_PROCESS
+static inline bool compare_process_name(char *str) {
+    char comm[TASK_COMM_LEN];
+    bpf_get_current_comm(&comm, sizeof(comm));
+    char comparand[sizeof(str)];
+    bpf_probe_read(&comparand, sizeof(comparand), str);
+    for (int i = 0; i < sizeof(comparand); ++i) {
+        if (comm[i] == comparand[i] && comm[i] == '\\0')
+            break;
+        if (comm[i] != comparand[i])
+            return false;
+    }
+    return true;
+}
+#endif
+
 static int do_entry(struct pt_regs *ctx, struct file *file,
     char __user *buf, size_t count, int is_read)
 {
     u32 tgid = bpf_get_current_pid_tgid() >> 32;
     if (TGID_FILTER)
         return 0;
+
+#ifdef FILTER_PROCESS
+    char process[] = FILTER_PROCESS;
+    if (!compare_process_name(process))
+        return 0;
+#endif
+
     // The directory inodes we look at
     u32 dir_ids[INODES_NUMBER] =  DIRECTORY_INODES;
     struct info_t info = {.inode_id = 0};
@@ -206,14 +230,36 @@ struct ipv6_key_t {
 };
 BPF_HASH(ipv6_send_bytes, struct ipv6_key_t);
 BPF_HASH(ipv6_recv_bytes, struct ipv6_key_t);
+
+#ifdef FILTER_PROCESS
+static inline bool compare_process_name(char *str) {
+    char comm[TASK_COMM_LEN];
+    bpf_get_current_comm(&comm, sizeof(comm));
+    char comparand[sizeof(str)];
+    bpf_probe_read(&comparand, sizeof(comparand), str);
+    for (int i = 0; i < sizeof(comparand); ++i) {
+        if (comm[i] == comparand[i] && comm[i] == '\\0')
+            break;
+        if (comm[i] != comparand[i])
+            return false;
+    }
+    return true;
+}
+#endif
+
 int kprobe__tcp_sendmsg(struct pt_regs *ctx, struct sock *sk,
     struct msghdr *msg, size_t size)
 {
     u32 pid = bpf_get_current_pid_tgid() >> 32;
     if (TGID_FILTER)
         return 0;
-    u16 dport = 0, family = sk->__sk_common.skc_family;
+#ifdef FILTER_PROCESS
+    char process[] = FILTER_PROCESS;
+    if (!compare_process_name(process))
+        return 0;
+#endif
 
+    u16 dport = 0, family = sk->__sk_common.skc_family;
     if (family == AF_INET) {
         struct ipv4_key_t ipv4_key = {.pid = pid};
         ipv4_key.saddr = sk->__sk_common.skc_rcv_saddr;
@@ -247,6 +293,12 @@ int kprobe__tcp_cleanup_rbuf(struct pt_regs *ctx, struct sock *sk, int copied)
     u32 pid = bpf_get_current_pid_tgid() >> 32;
     if (TGID_FILTER)
         return 0;
+#ifdef FILTER_PROCESS
+    char process[] = FILTER_PROCESS;
+    if (!compare_process_name(process))
+        return 0;
+#endif
+
     u16 dport = 0, family = sk->__sk_common.skc_family;
     u64 *val, zero = 0;
     if (copied <= 0)
@@ -702,6 +754,8 @@ def main(args):
         text_for_dir_top = text_for_dir_top.replace('TGID_FILTER', 'tgid != %d' % args.pid)
     else:
         text_for_dir_top = text_for_dir_top.replace('TGID_FILTER', '0')
+    if args.process:
+        text_for_dir_top = ('#define FILTER_PROCESS "%s"\n' % args.process) + text_for_dir_top
     inodes, inodes_to_path = get_searched_ids(args.data_dir)
     text_for_dir_top = text_for_dir_top.replace("DIRECTORY_INODES", inodes)
     text_for_dir_top = text_for_dir_top.replace(
@@ -712,6 +766,8 @@ def main(args):
         text_for_tcptop = text_for_tcptop.replace('TGID_FILTER', 'pid != %d' % args.pid)
     else:
         text_for_tcptop = text_for_tcptop.replace('TGID_FILTER', '0')
+    if args.process:
+        text_for_tcptop = ('#define FILTER_PROCESS "%s"\n' % args.process) + text_for_tcptop
 
     # set up all the ebpf programs
     bpf_for_syscall = BPF(text=text_for_syscall)
