@@ -18,14 +18,16 @@ BPF_ARRAY(count, u32, 1);
 
 #ifdef FILTER_PROCESS
 static inline bool compare_process_name(char *str) {
-    char comm[TASK_COMM_LEN];
-    bpf_get_current_comm(&comm, sizeof(comm));
-    char comparand[sizeof(str)];
+    // char comm[TASK_COMM_LEN] = {};
+    struct task_struct *task;
+    task = (struct task_struct *)bpf_get_current_task();
+    char* pcomm = task->group_leader->comm;
+    char comparand[sizeof(str)] = {};
     bpf_probe_read(&comparand, sizeof(comparand), str);
     for (int i = 0; i < sizeof(comparand); ++i) {
-        if (comm[i] == comparand[i] && comm[i] == '\\0')
+        if (pcomm[i] == comparand[i] && pcomm[i] == '\\0')
             break;
-        if (comm[i] != comparand[i])
+        if (pcomm[i] != comparand[i])
             return false;
     }
     return true;
