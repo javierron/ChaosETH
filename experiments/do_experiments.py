@@ -58,7 +58,7 @@ def tail_client_log(client_log, timeout):
 
     return output
 
-def query_metrics(client_name, metric_urls, last_n_seconds):
+def query_metrics(metric_urls, last_n_seconds):
     end_ts = int(time.time())
     start_ts = end_ts - last_n_seconds
 
@@ -67,7 +67,8 @@ def query_metrics(client_name, metric_urls, last_n_seconds):
     for metric_name, query_url in metric_urls:
         response = requests.get(query_url.format(start=start_ts, end=end_ts))
 
-        if client_name == "openethereum":
+        if "api/v1" in query_url:
+            # a query to prometheus
             status = response.json()["status"]
             if status == "error":
                 logging.error("peer stats query failed")
@@ -77,7 +78,8 @@ def query_metrics(client_name, metric_urls, last_n_seconds):
                     logging.warning("peer stats query result is empty")
                 else:
                     results[metric_name] = response.json()['data']['result'][0]
-        elif client_name == "geth":
+        else:
+            # a query to influxdb
             if "results" not in response.json():
                 logging.error("peer stats query failed")
                 logging.error(response.json())
@@ -86,7 +88,7 @@ def query_metrics(client_name, metric_urls, last_n_seconds):
 
         # calculate statistic information of the values
         if results[metric_name] != None:
-            values = numpy.array(results[metric_name]["values"]).astype(int)
+            values = numpy.array(results[metric_name]["values"]).astype(float)
             min_value = numpy.percentile(values, 5, axis=0)[1] # in the values array, index 0: timestamp, index 1: failure rate
             mean_value = numpy.mean(values, axis=0)[1]
             max_value = numpy.percentile(values, 95, axis=0)[1]
@@ -135,7 +137,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     logging.info("5 min normal execution begins")
     normal_execution_log = tail_client_log(client_log, 60*5)
     dump_logs(normal_execution_log, dump_logs_folder, "normal.log")
-    normal_execution_metrics = query_metrics(client_name, metric_urls, 60*5)
+    normal_execution_metrics = query_metrics(metric_urls, 60*5)
     dump_metric(normal_execution_metrics, dump_logs_folder, "normal_execution_metrics.json")
     result["metrics"] = dict()
     result["metrics"]["normal"] = normal_execution_metrics["stat"]
@@ -169,7 +171,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     else:
         result["client_crashed"] = False
         # only query peer stats when the client is not crashed
-        ce_execution_metrics = query_metrics(client_name, metric_urls, experiment["experiment_duration"])
+        ce_execution_metrics = query_metrics(metric_urls, experiment["experiment_duration"])
         dump_metric(ce_execution_metrics, dump_logs_folder, "ce_execution_metrics.json")
         result["metrics"]["ce"] = ce_execution_metrics["stat"]
 
@@ -179,7 +181,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
         logging.info("5 mins recovery phase + 5 mins post-recovery steady state analysis begins")
         recovery_phase_log = tail_client_log(client_log, 60*10)
         dump_logs(recovery_phase_log, dump_logs_folder, "recovery.log")
-        post_recovery_phase_metrics = query_metrics(client_name, metric_urls, 60*5)
+        post_recovery_phase_metrics = query_metrics(metric_urls, 60*5)
         dump_metric(post_recovery_phase_metrics, dump_logs_folder, "post_recovery_phase_metrics.json")
         result["metrics"]["post_recovery"] = post_recovery_phase_metrics["stat"]
 
