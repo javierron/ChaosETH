@@ -660,7 +660,6 @@ def update_tcptop_metrics(args, bpf_for_tcptop):
         for k, (send_bytes, recv_bytes) in sorted(ipv4_throughput.items(),
                                                   key=lambda kv: sum(kv[1]),
                                                   reverse=True):
-            ipv4_connections = ipv4_connections + 1
             print("%-6d %-12.12s %-21s %-21s %6d %6d" % (k.pid,
                 application_name,
                 k.laddr + ":" + str(k.lport),
