@@ -3,6 +3,7 @@
 # Filename: steady_state_analyzer.py
 
 import csv, requests, sys, argparse, time, calendar, json, numpy
+import iso8601
 from datetime import datetime
 from prettytable import PrettyTable
 import logging
@@ -62,8 +63,8 @@ def query_total_invocations(prometheus_url, syscall_name, error_code, start_time
             total = 0
         else:
             results = response.json()['data']['result'][0]
-            # https://stackoverflow.com/questions/5067218/get-utc-timestamp-in-python-with-datetime
-            start_datetime = datetime.strptime(start_time, '%Y-%m-%dT%H:%M:%SZ')
+            # https://stackoverflow.com/questions/1941927/convert-an-rfc-3339-time-to-a-standard-python-timestamp
+            start_datetime = iso8601.parse_date(start_time)
             start_timestamp = calendar.timegm(start_datetime.utctimetuple())
             if results["values"][0][0] > start_timestamp:
                 # the first failure happened after start_time
@@ -203,7 +204,7 @@ def generate_experiment(syscall_name, error_code, failure_rate, ori_min_rate, or
 def generate_experiment_config(args, error_list):
     start = args.start
     end = args.end
-    output_file = args.output_config
+    output_file = args.output_models
     config = {
         "experiment_name": "ChaosETH Experiment Error Models",
         "experiment_description": "Automatically generated based on monitoring data from %s to %s"%(start, end),
