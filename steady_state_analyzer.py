@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Filename: realistic_failures.py
+# Filename: steady_state_analyzer.py
 
 import csv, requests, sys, argparse, time, calendar, json, numpy
 from datetime import datetime
@@ -20,8 +20,8 @@ def get_args():
         help = "query step in seconds, default: 15s")
     parser.add_argument("--output_query", default = "query_results.json",
         help = "a json file name that saves query results, default: query_results.json")
-    parser.add_argument("--output_config", default = "experiment_config.json",
-        help = "a json file name that saves query results, default: experiment_config.json")
+    parser.add_argument("--output_models", default = "error_models.json",
+        help = "a json file name that saves query results, default: error_models.json")
     parser.add_argument("--from_json",
         help = "generate steady state and error models from a json file that contains the metrics")
     args = parser.parse_args()
@@ -205,7 +205,7 @@ def generate_experiment_config(args, error_list):
     end = args.end
     output_file = args.output_config
     config = {
-        "experiment_name": "Syscall Chaos Engineering Experiments",
+        "experiment_name": "ChaosETH Experiment Error Models",
         "experiment_description": "Automatically generated based on monitoring data from %s to %s"%(start, end),
         "experiments": []
     }
