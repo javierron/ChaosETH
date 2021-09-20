@@ -7,6 +7,7 @@ import argparse, configparser
 import logging
 
 INJECTOR = None
+MONITOR = None
 
 def handle_sigint(sig, frame):
     global INJECTOR
@@ -24,7 +25,7 @@ def get_configs():
 
     return config
 
-def pgrep_the_client(client_name):
+def pgrep_the_process(client_name):
     try:
         pgrep_output = subprocess.check_output("pgrep ^%s$"%client_name, shell=True).decode("utf-8").strip()
     except subprocess.CalledProcessError as error:
@@ -32,8 +33,18 @@ def pgrep_the_client(client_name):
 
     return pgrep_output
 
+def restart_monitor(monitor_path):
+    global MONITOR
+    if (MONITOR != None): os.killpg(os.getpgid(MONITOR.pid), signal.SIGTERM)
+
+    pid = pgrep_the_process(client_name)
+    if pid != None:
+        full_monitor_path = monitor_path.format(pid=pid)
+        MONITOR = subprocess.Popen("%s"%full_monitor_path, close_fds=True, shell=True, preexec_fn=os.setsid)
+        time.sleep(3)
+
 def restart_client(client_name, client_path, restart_cmd, client_log):
-    pid = pgrep_the_client(client_name)
+    pid = pgrep_the_process(client_name)
     if pid != None:
         logging.info("to restart the client, stop the current process (%s) first"%pid)
         os.system("kill %s"%pid)
@@ -42,7 +53,7 @@ def restart_client(client_name, client_path, restart_cmd, client_log):
     os.system("cd %s && %s >> %s 2>&1 &"%(client_path, restart_cmd, client_log))
     time.sleep(3)
 
-    pid = pgrep_the_client(client_name)
+    pid = pgrep_the_process(client_name)
     if pid == None:
         logging.warning("failed to restart the client")
     else:
@@ -122,7 +133,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     #   restart hedwig if necessary
     # 5 min recovery phase + 5 min post-recovery steady state analysis
 
-    pid = pgrep_the_client(client_name)
+    pid = pgrep_the_process(client_name)
     if pid == None:
         logging.warning("%s's pid is not detected!"%client_name)
         sys.exit(-1)
@@ -164,7 +175,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     dump_logs(ce_execution_log, dump_logs_folder, "ce.log")
 
     # check if the chaos engineering experiment breaks the client
-    pid = pgrep_the_client(client_name)
+    pid = pgrep_the_process(client_name)
     if pid == None:
         logging.info("this experiment makes the client crash!")
         result["client_crashed"] = True
@@ -198,12 +209,17 @@ def main(config):
 
     error_models = config["ChaosEVM"]["error_models"]
     syscall_injector = config["ChaosEVM"]["syscall_injector"]
+    client_monitor = config["ChaosEVM"]["client_monitor"]
     dump_logs_path = config["ChaosEVM"]["dump_logs_path"]
     client_name = config["EthClient"]["client_name"]
     client_path = config["EthClient"]["client_path"]
     restart_cmd = config["EthClient"]["restart_cmd"]
     client_log = config["EthClient"]["client_log"]
     metric_urls = config.items("MetricUrls")
+
+    # check whether the monitor is running
+    monitor_pid = pgrep_the_process("client_monitor")
+    if monitor_pid == None: restart_monitor(client_monitor)
 
     with open(error_models, 'rt') as file:
         experiments = json.load(file)
@@ -214,7 +230,10 @@ def main(config):
 
             # no matter the experiment crashes the client or not, we restart the client to avoid state corruptions
             new_pid = restart_client(client_name, client_path, restart_cmd, client_log)
-            if new_pid == None: break
+            if new_pid == None:
+                break
+            else:
+                restart_monitor(client_monitor)
             # sleep for 10 mins to give the client time to warm up before a new experiment
             time.sleep(60*10)
 
