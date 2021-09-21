@@ -25,15 +25,15 @@ def get_configs():
 
     return config
 
-def pgrep_the_process(client_name):
+def pgrep_the_process(process_name):
     try:
-        pgrep_output = subprocess.check_output("pgrep ^%s$"%client_name, shell=True).decode("utf-8").strip()
+        pgrep_output = subprocess.check_output("pgrep ^%s$"%process_name, shell=True).decode("utf-8").strip()
     except subprocess.CalledProcessError as error:
         pgrep_output = None
 
     return pgrep_output
 
-def restart_monitor(monitor_path):
+def restart_monitor(client_name, monitor_path):
     global MONITOR
     if (MONITOR != None): os.killpg(os.getpgid(MONITOR.pid), signal.SIGTERM)
 
@@ -219,7 +219,7 @@ def main(config):
 
     # check whether the monitor is running
     monitor_pid = pgrep_the_process("client_monitor")
-    if monitor_pid == None: restart_monitor(client_monitor)
+    if monitor_pid == None: restart_monitor(client_name, client_monitor)
 
     with open(error_models, 'rt') as file:
         experiments = json.load(file)
