@@ -16,8 +16,8 @@ def handle_sigint(sig, frame):
 
 def get_configs():
     parser = argparse.ArgumentParser(
-        description="Conduct chaos engineering experiments on an ETH client")
-    parser.add_argument("-c", "--config", required=True, help="the experiments config file (.ini)")
+        description = "Conduct chaos engineering experiments on an ETH client")
+    parser.add_argument("-c", "--config", required = True, help = "the experiments config file (.ini)")
     args = parser.parse_args()
 
     config = configparser.ConfigParser()
@@ -27,7 +27,7 @@ def get_configs():
 
 def pgrep_the_process(process_name):
     try:
-        pgrep_output = subprocess.check_output("pgrep ^%s$"%process_name, shell=True).decode("utf-8").strip()
+        pgrep_output = subprocess.check_output("pgrep ^%s$"%process_name, shell = True).decode("utf-8").strip()
     except subprocess.CalledProcessError as error:
         pgrep_output = None
 
@@ -39,8 +39,8 @@ def restart_monitor(client_name, monitor_path):
 
     pid = pgrep_the_process(client_name)
     if pid != None:
-        full_monitor_path = monitor_path.format(pid=pid)
-        MONITOR = subprocess.Popen("%s"%full_monitor_path, close_fds=True, shell=True, preexec_fn=os.setsid)
+        full_monitor_path = monitor_path.format(pid = pid)
+        MONITOR = subprocess.Popen("%s"%full_monitor_path, close_fds = True, shell = True, preexec_fn = os.setsid)
         time.sleep(3)
 
 def restart_client(client_name, client_path, restart_cmd, client_log):
@@ -63,7 +63,7 @@ def restart_client(client_name, client_path, restart_cmd, client_log):
 
 def tail_client_log(client_log, timeout):
     try:
-        output = subprocess.check_output("timeout %d tail -f %s"%(timeout, client_log), shell=True).decode("utf-8").strip()
+        output = subprocess.check_output("timeout %d tail -f %s"%(timeout, client_log), shell = True).decode("utf-8").strip()
     except subprocess.CalledProcessError as error:
         output = error.output.decode("utf-8").strip()
 
@@ -76,7 +76,7 @@ def query_metrics(metric_urls, last_n_seconds):
     results = dict()
     results["stat"] = dict()
     for metric_name, query_url in metric_urls:
-        response = requests.get(query_url.format(start=start_ts, end=end_ts))
+        response = requests.get(query_url.format(start = start_ts, end = end_ts))
 
         if "api/v1" in query_url:
             # a query to prometheus
@@ -100,10 +100,10 @@ def query_metrics(metric_urls, last_n_seconds):
         # calculate statistic information of the values
         if results[metric_name] != None:
             values = numpy.array(results[metric_name]["values"]).astype(float)
-            min_value = numpy.percentile(values, 5, axis=0)[1] # in the values array, index 0: timestamp, index 1: failure rate
-            mean_value = numpy.mean(values, axis=0)[1]
-            max_value = numpy.percentile(values, 95, axis=0)[1]
-            variance = numpy.var(values, axis=0)[1]
+            min_value = numpy.percentile(values, 5, axis = 0)[1] # in the values array, index 0: timestamp, index 1: failure rate
+            mean_value = numpy.mean(values, axis = 0)[1]
+            max_value = numpy.percentile(values, 95, axis = 0)[1]
+            variance = numpy.var(values, axis = 0)[1]
             results["stat"][metric_name] = {"min": min_value, "mean": mean_value, "max": max_value, "variance": variance}
 
     return results
@@ -158,7 +158,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     logging.info("%d seconds chaos engineering experiment begins"%experiment["experiment_duration"])
     INJECTOR = subprocess.Popen("python -u %s -p %s -P %s --errorno=%s %s"%(
         injector_path, pid, experiment["failure_rate"], experiment["error_code"], experiment["syscall_name"]
-    ), stdout=subprocess.PIPE, stderr=subprocess.PIPE, close_fds=True, shell=True, preexec_fn=os.setsid)
+    ), stdout = subprocess.PIPE, stderr = subprocess.PIPE, close_fds = True, shell = True, preexec_fn = os.setsid)
     ce_execution_log = tail_client_log(client_log, experiment["experiment_duration"])
     # end the injector
     os.killpg(os.getpgid(INJECTOR.pid), signal.SIGTERM)
