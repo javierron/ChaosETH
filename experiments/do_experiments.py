@@ -50,6 +50,14 @@ def restart_client(client_name, client_path, restart_cmd, client_log):
         os.system("kill %s"%pid)
         time.sleep(3)
 
+    # check whether the client process has completely stopped
+    while True:
+        pid = pgrep_the_process(client_name)
+        if pid != None:
+            time.sleep(1)
+        else:
+            break
+
     os.system("cd %s && %s >> %s 2>&1 &"%(client_path, restart_cmd, client_log))
     time.sleep(3)
 
@@ -233,7 +241,7 @@ def main(config):
             if new_pid == None:
                 break
             else:
-                restart_monitor(client_monitor)
+                restart_monitor(client_name, client_monitor)
             # sleep for 10 mins to give the client time to warm up before a new experiment
             time.sleep(60*10)
 
