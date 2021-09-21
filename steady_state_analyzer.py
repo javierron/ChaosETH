@@ -161,10 +161,19 @@ def infer_steady_state(host, start_time, end_time, step):
     other_metrics = query_metrics(host, start_time, end_time, step)
     return {"syscall_errors": error_list, "other_metrics": other_metrics}
 
+def pretty_print_metrics(metrics):
+    stat_table = PrettyTable()
+    stat_table.field_names = ["Metric Name", "Min", "Mean", "Max", "Variance"]
+
+    for metric in metrics:
+        stat_table.add_row([metric["metric_name"], metric["stat"]["min"], metric["stat"]["mean"], metric["stat"]["max"], metric["stat"]["variance"]])
+
+    stat_table.sortby = "Metric Name"
+    print(stat_table)
 
 def pretty_print_syscall_errors(error_list):
     stat_table = PrettyTable()
-    stat_table.field_names = ["Syscall Name", "Error Code", "Samples in Total", "Invocations in Total", "Failure Rate", "Variance", "Samples"]
+    stat_table.field_names = ["Syscall Name", "Error Code", "Samples in Total", "Invocations in Total", "Failure Rate", "Variance"]
 
     tmp_success_count = dict()
     for detail in error_list:
@@ -177,14 +186,9 @@ def pretty_print_syscall_errors(error_list):
     for detail in error_list:
         if detail["error_code"].startswith("-"): continue
         if detail["error_code"] == "SUCCESS":
-            stat_table.add_row([detail["syscall_name"], detail["error_code"], "-", detail["invocations_in_total"] + tmp_success_count[detail["syscall_name"]] if detail["syscall_name"] in tmp_success_count else detail["invocations_in_total"], "-", "-", "-"])
+            stat_table.add_row([detail["syscall_name"], detail["error_code"], "-", detail["invocations_in_total"] + tmp_success_count[detail["syscall_name"]] if detail["syscall_name"] in tmp_success_count else detail["invocations_in_total"], "-", "-"])
         else:
-            samples_str = ""
-            for sample in detail["samples"]:
-                localtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(sample["timestamp"]))
-                samples_str += "localtime: %s, failure rate: %2f\n"%(localtime, sample["failure_rate"])
-            samples_str = samples_str[:-1]
-            stat_table.add_row([detail["syscall_name"], detail["error_code"], detail["samples_in_total"], detail["invocations_in_total"], "%f, %f, %f"%(detail["rate_min"], detail["rate_mean"], detail["rate_max"]), detail["variance"], samples_str])
+            stat_table.add_row([detail["syscall_name"], detail["error_code"], detail["samples_in_total"], detail["invocations_in_total"], "%f, %f, %f"%(detail["rate_min"], detail["rate_mean"], detail["rate_max"]), detail["variance"]])
 
     stat_table.sortby = "Syscall Name"
     print(stat_table)
@@ -243,6 +247,7 @@ def main(args):
         steady_state = infer_steady_state(args.host, args.start, args.end, args.step)
         pretty_print_syscall_errors(steady_state["syscall_errors"])
         generate_experiment_config(args, steady_state["syscall_errors"])
+        pretty_print_metrics(steady_state["other_metrics"])
         dump_query_results(args.output_query, steady_state)
 
 if __name__ == "__main__":
