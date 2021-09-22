@@ -227,7 +227,11 @@ def main(config):
 
     # check whether the monitor is running
     monitor_pid = pgrep_the_process("client_monitor")
-    if monitor_pid == None: restart_monitor(client_name, client_monitor)
+    if monitor_pid != None:
+        # kill the existing monitor as we need to take control of the monitor in this script
+        os.system("kill %s"%monitor_pid)
+        time.sleep(3)
+    restart_monitor(client_name, client_monitor)
 
     with open(error_models, 'rt') as file:
         experiments = json.load(file)
