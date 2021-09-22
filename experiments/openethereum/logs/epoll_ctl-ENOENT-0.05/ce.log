@@ -1,15 +1,16 @@
-2021-07-28 15:31:36 UTC  Ancient:#7089891 AB:#7091642   27/50 peers     19 MiB chain  393 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-07-28 15:32:10 UTC  Ancient:#7089980 AB:#7092801   28/50 peers    646 KiB chain  190 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-07-28 15:32:34 UTC Reorg to #12915227 0x528c…ee6a (0xf169…9472 #12915225 0x92f0…597d 0x4759…2d16)
-2021-07-28 15:32:44 UTC  Ancient:#7089986 AB:#7093772   28/50 peers      2 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-07-28 15:32:51 UTC Imported #12915228 0xa294…a7f3 (246 txs, 14.93 Mgas, 16370 ms, 68.81 KiB)
-2021-07-28 15:33:18 UTC  Ancient:#7091914 AB:#7093772   26/50 peers      2 MiB chain  428 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-07-28 15:33:50 UTC Imported #12915233 0x0d26…f882 (177 txs, 14.97 Mgas, 6798 ms, 42.16 KiB)
-2021-07-28 15:33:52 UTC  Ancient:#7092049 AB:#7096015   24/25 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-07-28 15:33:58 UTC Imported #12915234 0xce02…6fcc (147 txs, 14.95 Mgas, 4525 ms, 42.95 KiB)
-2021-07-28 15:34:09 UTC Imported #12915235 0x4ede…ba80 (110 txs, 14.94 Mgas, 7189 ms, 28.29 KiB)
-2021-07-28 15:34:24 UTC  Ancient:#7093571 AB:#7096015   24/25 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-07-28 15:34:29 UTC Panic occured, see stderr for details
+2021-09-22 02:09:10 UTC Syncing #13272815 0x9689…2f44     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    2 Qed Ancient:#5642162 LI:#13272818    9/25 peers      1 MiB chain  416 KiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:09:15 UTC Syncing #13272817 0x3014…e813     0.40 blk/s  110.2 tx/s    7.4 Mgas/s      0+    0 Qed Ancient:#5642164 LI:#13272818    9/25 peers      1 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:09:24 UTC Syncing #13272818 0x733d…6a8f     0.20 blk/s   33.4 tx/s    2.2 Mgas/s      0+    0 Qed Ancient:#5642937 LI:#13272818    9/25 peers      1 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:09:32 UTC Syncing #13272818 0x733d…6a8f     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    0 Qed Ancient:#5643914 LI:#13272818    9/25 peers      1 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:09:32 UTC Syncing #13272818 0x733d…6a8f     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    0 Qed Ancient:#5645049 LI:#13272818    9/25 peers      4 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:09:39 UTC Reorg to #13272819 0x93bc…9207 (0x733d…6a8f #13272817 0x3014…e813 0xae9d…2747)
+2021-09-22 02:10:03 UTC Imported #13272820 0x53ad…3a6a (208 txs, 12.93 Mgas, 15553 ms, 69.77 KiB) + another 1 block(s) containing 167 tx(s)
+2021-09-22 02:10:03 UTC  Ancient:#5645460 AB:#5645460    8/25 peers      2 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:10:54 UTC  Ancient:#5645700 AB:#5645700    8/25 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:12:04 UTC Syncing #13272821 0xa075…b117     0.01 blk/s    9.3 tx/s    0.4 Mgas/s      0+    6 Qed Ancient:#5645700 LI:#13272826    6/25 peers      5 MiB chain    2 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:12:20 UTC Syncing #13272821 0xa075…b117     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    9 Qed Ancient:#5645712 LI:#13272829    6/25 peers      5 MiB chain    2 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:12:27 UTC Syncing #13272821 0xa075…b117     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    9 Qed Ancient:#5645778 LI:#13272829    6/25 peers      5 MiB chain    2 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:12:27 UTC Panic occured, see stderr for details
 
 
 ====================
@@ -48,8 +49,8 @@ This is a bug. Please report it at:
     https://github.com/openethereum/openethereum/issues/new
 
 
-2021-07-28 15:34:29 UTC Finishing work, please wait...
-2021-07-28 15:34:55 UTC  Ancient:#7093573 AB:#7096015   23/25 peers      5 MiB chain  0 bytes queue  RPC:  0 conn,    0 req/s,    0 µs
-2021-07-28 15:34:57 UTC Imported #12915238 0x8774…b7a0 (151 txs, 14.88 Mgas, 6822 ms, 44.73 KiB)
-2021-07-28 15:35:03 UTC Error on IO service shutdown: NotifyError::Closed(..)
+2021-09-22 02:12:27 UTC Finishing work, please wait...
+2021-09-22 02:12:35 UTC Syncing #13272821 0xa075…b117     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    9 Qed Ancient:#5645778 LI:#13272829    6/25 peers      5 MiB chain    2 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:12:38 UTC Syncing #13272821 0xa075…b117     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+    9 Qed Ancient:#5645778 LI:#13272829    6/25 peers      5 MiB chain    2 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-09-22 02:13:03 UTC Error on IO service shutdown: NotifyError::Closed(..)
 Error: 1
