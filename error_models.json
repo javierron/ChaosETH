@@ -1,0 +1,69 @@
+{
+  "experiment_name": "ChaosETH Experiment Error Models", 
+  "experiments": [
+    {
+      "original_min_rate": 0.5, 
+      "syscall_name": "accept4", 
+      "original_max_rate": 0.5, 
+      "failure_rate": 0.6, 
+      "original_mean_rate": 0.49979846777998027, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 300
+    }, 
+    {
+      "original_min_rate": 0.0006534849418398401, 
+      "syscall_name": "futex", 
+      "original_max_rate": 0.0018828880893346507, 
+      "failure_rate": 0.05, 
+      "original_mean_rate": 0.0010967645929214514, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 300
+    }, 
+    {
+      "original_min_rate": 0.4831995421479886, 
+      "syscall_name": "read", 
+      "original_max_rate": 0.4992656164501915, 
+      "failure_rate": 0.5991187397402298, 
+      "original_mean_rate": 0.4970065419683043, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 300
+    }, 
+    {
+      "original_min_rate": 0.09454182935947496, 
+      "syscall_name": "recvfrom", 
+      "original_max_rate": 0.5, 
+      "failure_rate": 0.6, 
+      "original_mean_rate": 0.4609543577174334, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 300
+    }, 
+    {
+      "original_min_rate": 0.0006422607578676942, 
+      "syscall_name": "write", 
+      "original_max_rate": 0.009086334980909811, 
+      "failure_rate": 0.05, 
+      "original_mean_rate": 0.004056593865595177, 
+      "error_code": "-EAGAIN", 
+      "experiment_duration": 300
+    }, 
+    {
+      "original_min_rate": 0.0425531914893617, 
+      "syscall_name": "epoll_ctl", 
+      "original_max_rate": 0.11320754716981132, 
+      "failure_rate": 0.13584905660377358, 
+      "original_mean_rate": 0.07967917665209337, 
+      "error_code": "-EPERM", 
+      "experiment_duration": 300
+    }, 
+    {
+      "original_min_rate": 0.0005300085810913129, 
+      "syscall_name": "futex", 
+      "original_max_rate": 0.03818620696799859, 
+      "failure_rate": 0.05, 
+      "original_mean_rate": 0.006490309466496037, 
+      "error_code": "-ETIMEDOUT", 
+      "experiment_duration": 300
+    }
+  ], 
+  "experiment_description": "Automatically generated based on monitoring data from 2021-09-19T22:00:00+02:00 to 2021-09-19T23:00:00+02:00"
+}
