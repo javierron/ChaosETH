@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Filename: steady_state_analyzer.py
 
-import csv, requests, sys, argparse, time, calendar, json, numpy
+import csv, requests, sys, argparse, configparser, time, calendar, json, numpy
 import iso8601
 from datetime import datetime
 from prettytable import PrettyTable
@@ -11,27 +11,33 @@ import logging
 def get_args():
     parser = argparse.ArgumentParser(
         description="Infer an Ethereum client's steady state and error models.")
+    parser.add_argument("-c", "--config", required=True,
+        help="the experiments config file (.ini) which contains the metric urls")
     parser.add_argument("--host", required = True,
         help = "URL to the prometheus database, e.g. http://prometheus:9090")
-    parser.add_argument("--start", required = True,
-        help = "starting timepoint in rfc3339 or unix_timestamp")
-    parser.add_argument("--end", required = True,
-        help = "starting timepoint in rfc3339 or unix_timestamp")
-    parser.add_argument("-s", "--step", default = "15s",
-        help = "query step in seconds, default: 15s")
-    parser.add_argument("--output_query", default = "query_results.json",
-        help = "a json file name that saves query results, default: query_results.json")
-    parser.add_argument("--output_models", default = "error_models.json",
-        help = "a json file name that saves query results, default: error_models.json")
+    parser.add_argument("--start", required=True,
+        help="starting timepoint in rfc3339 or unix_timestamp")
+    parser.add_argument("--end", required=True,
+        help="starting timepoint in rfc3339 or unix_timestamp")
+    parser.add_argument("-s", "--step", default="15s",
+        help="query step in seconds, default: 15s")
+    parser.add_argument("--output_query", default="query_results.json",
+        help="a json file name that saves query results, default: query_results.json")
+    parser.add_argument("--output_models", default="error_models.json",
+        help="a json file name that saves query results, default: error_models.json")
     parser.add_argument("--from_json",
-        help = "generate steady state and error models from a json file that contains the metrics")
+        help="generate steady state and error models from a json file that contains the metrics")
     args = parser.parse_args()
+
+    config = configparser.ConfigParser()
+    config.read(args.config)
+    args.metric_urls = config.items("MetricUrls")
 
     return args
 
 def dump_query_results(filename, error_list):
     with open(filename, "wt") as output:
-        json.dump(error_list, output, indent = 2)
+        json.dump(error_list, output, indent=2)
 
 def read_query_results(filename):
     with open(filename, "rt") as json_file:
@@ -121,44 +127,55 @@ def query_syscall_errors(prometheus_url, start_time, end_time, step):
 
     return error_list
 
-def query_metrics(prometheus_url, start_time, end_time, step):
-    range_query_api = "/api/v1/query_range"
-    # metric_name: query_string
-    metrics = {
-        "dir_read_c": "dir_reads_total",
-        "dir_write_c": "dir_writes_total",
-        "dir_reads": "dir_reads_kb*1024",
-        "dir_writes": "dir_writes_kb*1024",
-        "tcp_conn": "sum(tcp_connections_total)",
-        "tcp_sends": "sum(tcp_sends_kb*1024)",
-        "tcp_recvs": "sum(tcp_recvs_kb*1024)"
-    }
-    query_results = list()
+def query_metrics(metric_urls, start_time, end_time, step):
+    start_datetime = iso8601.parse_date(start_time)
+    start_timestamp = calendar.timegm(start_datetime.utctimetuple())
+    end_datetime = iso8601.parse_date(end_time)
+    end_timestamp = calendar.timegm(end_datetime.utctimetuple())
 
-    for metric_name, query_string in metrics.items():
-        response = requests.post(prometheus_url + range_query_api, data={'query': query_string, 'start': start_time, 'end': end_time, 'step': step})
-        status = response.json()["status"]
-        if status == "error":
-            logging.error(response.json())
-            continue
-        results = response.json()['data']['result'][0]
-        min_value, mean_value, max_value, variance = calculate_stats(results["values"])
-        query_results.append({
-            "metric_name": metric_name,
-            "stat": {
-                "min": min_value,
-                "mean": mean_value,
-                "max": max_value,
-                "variance": variance
-            },
-            "data_points": results["values"]
-        })
+    query_results = list()
+    for metric_name, query_url in metric_urls:
+        response = requests.get(query_url.format(start=start_timestamp, end=end_timestamp))
+        datapoints = None
+
+        if "api/v1" in query_url:
+            # a query to prometheus
+            status = response.json()["status"]
+            if status == "error":
+                logging.error("peer stats query failed")
+                logging.error(response.json())
+            else:
+                if len(response.json()['data']['result']) == 0:
+                    logging.warning("peer stats query result is empty")
+                else:
+                    datapoints = response.json()['data']['result'][0]["values"]
+        else:
+            # a query to influxdb
+            if "results" not in response.json():
+                logging.error("peer stats query failed")
+                logging.error(response.json())
+            else:
+                datapoints = response.json()["results"][0]["series"][0]["values"]
+
+        # calculate statistic information of the values
+        if datapoints != None:
+            min_value, mean_value, max_value, variance = calculate_stats(datapoints)
+            query_results.append({
+                "metric_name": metric_name,
+                "stat": {
+                    "min": min_value,
+                    "mean": mean_value,
+                    "max": max_value,
+                    "variance": variance
+                },
+                "data_points": datapoints
+            })
 
     return query_results
 
-def infer_steady_state(host, start_time, end_time, step):
+def infer_steady_state(host, metric_urls, start_time, end_time, step):
     error_list = query_syscall_errors(host, start_time, end_time, step)
-    other_metrics = query_metrics(host, start_time, end_time, step)
+    other_metrics = query_metrics(metric_urls, start_time, end_time, step)
     return {"syscall_errors": error_list, "other_metrics": other_metrics}
 
 def pretty_print_metrics(metrics):
@@ -244,7 +261,7 @@ def main(args):
         pretty_print_syscall_errors(error_list)
         generate_experiment_config(args, error_list)
     else:
-        steady_state = infer_steady_state(args.host, args.start, args.end, args.step)
+        steady_state = infer_steady_state(args.host, args.metric_urls, args.start, args.end, args.step)
         pretty_print_syscall_errors(steady_state["syscall_errors"])
         generate_experiment_config(args, steady_state["syscall_errors"])
         pretty_print_metrics(steady_state["other_metrics"])
