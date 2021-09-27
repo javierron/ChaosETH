@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Filename: results_to_latex.py
 
-import os, argparse, json, math
+import os, argparse, json, math, csv
 import logging
 
 TEMPLATE_CE_RESULTS = r"""\begin{table}[tb]
@@ -26,10 +26,11 @@ H\textsubscript{R}: Marked if the client can recover to its steady state after t
 
 def get_args():
     parser = argparse.ArgumentParser(
-        description="Chaos engineering experiments .json to a table in latex")
-    parser.add_argument("-f", "--file", required=True, help="the experiment result file (.json)")
-    parser.add_argument("-t", "--template", default="ce", choices=['ce', 'benchmark'], help="the template to be used")
-    parser.add_argument("-c", "--client", default="XXX", choices=['geth', 'openethereum'], help="the client's name")
+        description = "Chaos engineering experiments .json to a table in latex")
+    parser.add_argument("-f", "--file", required = True, help = "the experiment result file (.json)")
+    parser.add_argument("-t", "--template", default = "ce", choices = ['ce', 'benchmark'], help = "the template to be used")
+    parser.add_argument("-c", "--client", required = True, choices = ['geth', 'openethereum'], help = "the client's name")
+    parser.add_argument("--csv", action = 'store_true', help = "generate a csv file of the results")
     args = parser.parse_args()
 
     return args
@@ -37,9 +38,34 @@ def get_args():
 def round_number(x, sig = 3):
     return round(x, sig - int(math.floor(math.log10(abs(x)))) - 1)
 
+def generate_csv(experiments):
+    with open("experiment_results.csv", "w", newline = "") as csvfile:
+        metric_names = list(experiments[0]["result"]["metrics"]["normal"].keys())
+        header = ["error_model", "injection_count", "client_crashed"] + metric_names
+        csv_writer = csv.DictWriter(csvfile, fieldnames = header)
+        csv_writer.writeheader()
+        for experiment in experiments:
+            row = dict()
+
+            error_model = "%s,%s,%s"%(experiment["syscall_name"], experiment["error_code"][1:], experiment["failure_rate"])
+            row.update({"error_model": error_model})
+            row.update({"injection_count": experiment["result"]["injection_count"]})
+            row.update({"client_crashed": experiment["result"]["client_crashed"]})
+            metric_values = dict()
+            for metric in metric_names:
+                if experiment["result"]["client_crashed"]:
+                    metric_values[metric] = "%.2f"%(experiment["result"]["metrics"]["normal"][metric]["mean"])
+                else:
+                    metric_values[metric] = "%.2f/%.2f/%.2f"%(experiment["result"]["metrics"]["normal"][metric]["mean"], experiment["result"]["metrics"]["ce"][metric]["mean"], experiment["result"]["metrics"]["post_recovery"][metric]["mean"])
+            row.update(metric_values)
+
+            csv_writer.writerow(row)
+
 def main(args):
     with open(args.file, 'rt') as file:
         data = json.load(file)
+        if args.csv: generate_csv(data["experiments"])
+
         body = ""
         for experiment in data["experiments"]:
             if experiment["result"]["injection_count"] == 0: continue
