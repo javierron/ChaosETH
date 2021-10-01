@@ -149,7 +149,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     logging.info("begin the following experiment")
     logging.info(experiment)
 
-    dump_logs_folder = "%s/%s%s-%s"%(dump_logs_path, experiment["syscall_name"], experiment["error_code"], experiment["failure_rate"])
+    dump_logs_folder = "%s/%s%s-%.3f"%(dump_logs_path, experiment["syscall_name"], experiment["error_code"], experiment["failure_rate"])
 
     result = dict()
     # step 1: 5 mins normal execution, tail the log
