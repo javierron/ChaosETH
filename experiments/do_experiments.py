@@ -199,7 +199,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     else:
         result["client_crashed"] = False
         # only query peer stats when the client is not crashed
-        ce_execution_metrics = query_metrics(metric_urls, experiment["experiment_duration"])
+        ce_execution_metrics = query_metrics(metric_urls, experiment["experiment_duration"], ss_metrics)
         dump_metric(ce_execution_metrics, dump_logs_folder, "ce_execution_metrics.json")
         result["metrics"]["ce"] = ce_execution_metrics["stat"]
 
@@ -210,14 +210,14 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
         logging.info("1st 5 mins post-recovery steady state analysis")
         recovery_phase_log = tail_client_log(client_log, 60*5)
         dump_logs(recovery_phase_log, dump_logs_folder, "post_recovery_phase_1.log")
-        post_recovery_phase_metrics = query_metrics(metric_urls, 60*5)
+        post_recovery_phase_metrics = query_metrics(metric_urls, 60*5, ss_metrics)
         dump_metric(post_recovery_phase_metrics, dump_logs_folder, "post_recovery_phase_metrics_1.json")
         result["metrics"]["post_recovery_1"] = post_recovery_phase_metrics["stat"]
         time.sleep(3)
         logging.info("2nd 5 mins post-recovery steady state analysis")
         recovery_phase_log = tail_client_log(client_log, 60*5)
         dump_logs(recovery_phase_log, dump_logs_folder, "post_recovery_phase_2.log")
-        post_recovery_phase_metrics = query_metrics(metric_urls, 60*5)
+        post_recovery_phase_metrics = query_metrics(metric_urls, 60*5, ss_metrics)
         dump_metric(post_recovery_phase_metrics, dump_logs_folder, "post_recovery_phase_metrics_2.json")
         result["metrics"]["post_recovery_2"] = post_recovery_phase_metrics["stat"]
 
