@@ -3,6 +3,7 @@
 # Filename: do_experiments.py
 
 import os, sys, requests, datetime, time, json, re, subprocess, signal, random, numpy
+from scipy.stats import ks_2samp
 import argparse, configparser
 import logging
 
@@ -77,7 +78,7 @@ def tail_client_log(client_log, timeout):
 
     return output
 
-def query_metrics(metric_urls, last_n_seconds):
+def query_metrics(metric_urls, last_n_seconds, ss_metrics):
     end_ts = int(time.time())
     start_ts = end_ts - last_n_seconds
 
@@ -114,6 +115,14 @@ def query_metrics(metric_urls, last_n_seconds):
             variance = numpy.var(values, axis = 0)[1]
             results["stat"][metric_name] = {"min": min_value, "mean": mean_value, "max": max_value, "variance": variance}
 
+    # calculate the pvalues
+    for metric in ss_metrics:
+        metric_name = metric["metric_name"]
+        ss_metric_points = numpy.array(metric["data_points"]).astype(float)
+        experiment_metric_points = numpy.array(results[metric_name]["values"]).astype(float)
+        t = ks_2samp(ss_metric_points[:,1], experiment_metric_points[:,1])
+        results["stat"][metric_name]["pvalue"] = t.pvalue
+
     return results
 
 def dump_logs(content, filepath, filename):
@@ -132,7 +141,7 @@ def dump_metric(content, filepath, filename):
     with open(os.path.join(filepath, filename), "wt") as output:
         json.dump(content, output, indent = 2)
 
-def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_path, metric_urls):
+def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_path, metric_urls, ss_metrics):
     global INJECTOR
 
     # experiment principle
@@ -156,7 +165,7 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
     logging.info("5 min normal execution begins")
     normal_execution_log = tail_client_log(client_log, 60*5)
     dump_logs(normal_execution_log, dump_logs_folder, "normal.log")
-    normal_execution_metrics = query_metrics(metric_urls, 60*5)
+    normal_execution_metrics = query_metrics(metric_urls, 60*5, ss_metrics)
     dump_metric(normal_execution_metrics, dump_logs_folder, "normal_execution_metrics.json")
     result["metrics"] = dict()
     result["metrics"]["normal"] = normal_execution_metrics["stat"]
@@ -194,15 +203,23 @@ def do_experiment(experiment, injector_path, client_name, client_log, dump_logs_
         dump_metric(ce_execution_metrics, dump_logs_folder, "ce_execution_metrics.json")
         result["metrics"]["ce"] = ce_execution_metrics["stat"]
 
-    # step 3: 5 mins recovery phase + 5 mins post-recovery steady state analysis
+    # step 3: 5 mins recovery phase + 2 * 5 mins post-recovery steady state analysis
     if not result["client_crashed"]:
-        time.sleep(3)
-        logging.info("5 mins recovery phase + 5 mins post-recovery steady state analysis begins")
-        recovery_phase_log = tail_client_log(client_log, 60*10)
-        dump_logs(recovery_phase_log, dump_logs_folder, "recovery.log")
+        logging.info("5 mins recovery phase, we do nothing here.")
+        time.sleep(60*5)
+        logging.info("1st 5 mins post-recovery steady state analysis")
+        recovery_phase_log = tail_client_log(client_log, 60*5)
+        dump_logs(recovery_phase_log, dump_logs_folder, "post_recovery_phase_1.log")
         post_recovery_phase_metrics = query_metrics(metric_urls, 60*5)
-        dump_metric(post_recovery_phase_metrics, dump_logs_folder, "post_recovery_phase_metrics.json")
-        result["metrics"]["post_recovery"] = post_recovery_phase_metrics["stat"]
+        dump_metric(post_recovery_phase_metrics, dump_logs_folder, "post_recovery_phase_metrics_1.json")
+        result["metrics"]["post_recovery_1"] = post_recovery_phase_metrics["stat"]
+        time.sleep(3)
+        logging.info("2nd 5 mins post-recovery steady state analysis")
+        recovery_phase_log = tail_client_log(client_log, 60*5)
+        dump_logs(recovery_phase_log, dump_logs_folder, "post_recovery_phase_2.log")
+        post_recovery_phase_metrics = query_metrics(metric_urls, 60*5)
+        dump_metric(post_recovery_phase_metrics, dump_logs_folder, "post_recovery_phase_metrics_2.json")
+        result["metrics"]["post_recovery_2"] = post_recovery_phase_metrics["stat"]
 
     logging.info(result)
     experiment["result"] = result
@@ -215,6 +232,7 @@ def save_experiment_result(experiments, filename):
 def main(config):
     global INJECTOR
 
+    steady_state = config["ChaosEVM"]["steady_state"]
     error_models = config["ChaosEVM"]["error_models"]
     syscall_injector = config["ChaosEVM"]["syscall_injector"]
     client_monitor = config["ChaosEVM"]["client_monitor"]
@@ -233,11 +251,13 @@ def main(config):
         time.sleep(3)
     restart_monitor(client_name, client_monitor)
 
-    with open(error_models, 'rt') as file:
-        experiments = json.load(file)
+    with open(error_models, 'rt') as error_models_file, open(steady_state, 'rt') as steady_state_file:
+        experiments = json.load(error_models_file)
+        ss_data = json.load(steady_state_file)
+        ss_metrics = ss_data["other_metrics"]
 
         for experiment in experiments["experiments"]:
-            experiment = do_experiment(experiment, syscall_injector, client_name, client_log, dump_logs_path, metric_urls)
+            experiment = do_experiment(experiment, syscall_injector, client_name, client_log, dump_logs_path, metric_urls, ss_metrics)
             save_experiment_result(experiments, "%s-results.json"%client_name)
 
             # no matter the experiment crashes the client or not, we restart the client to avoid state corruptions
