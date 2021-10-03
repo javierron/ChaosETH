@@ -1,0 +1,103 @@
+INFO [10-01|19:20:34.358] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=256.11KiB throttle=1024
+INFO [10-01|19:20:36.278] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,162,532@77.56GiB pending=91695
+WARN [10-01|19:20:37.575] Unexpected trienode heal packet          peer=ddc6f00a reqid=1,723,647,088,146,736,659
+INFO [10-01|19:20:38.813] Looking for peers                        peercount=34 tried=3 static=0
+INFO [10-01|19:20:45.590] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,162,861@77.56GiB pending=92210
+WARN [10-01|19:20:46.554] Unexpected trienode heal packet          peer=f6ea0b17 reqid=7,397,302,104,909,395,921
+INFO [10-01|19:20:48.814] Looking for peers                        peercount=34 tried=3 static=0
+WARN [10-01|19:20:52.814] Unexpected trienode heal packet          peer=6e41cdb2 reqid=8,296,415,504,215,356,070
+WARN [10-01|19:20:53.094] Unexpected trienode heal packet          peer=eeaf30da reqid=406,437,183,393,553,921
+INFO [10-01|19:20:53.631] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,163,135@77.56GiB pending=92642
+INFO [10-01|19:20:58.816] Looking for peers                        peercount=34 tried=3 static=0
+INFO [10-01|19:21:03.355] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,163,484@77.56GiB pending=93173
+INFO [10-01|19:21:08.817] Looking for peers                        peercount=34 tried=3 static=0
+INFO [10-01|19:21:11.485] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,163,754@77.56GiB pending=93573
+INFO [10-01|19:21:13.979] Imported new block headers               count=2    elapsed=12.416ms    number=13,335,325 hash=203431..a5a82b
+INFO [10-01|19:21:18.820] Looking for peers                        peercount=34 tried=3 static=0
+INFO [10-01|19:21:19.995] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,164,039@77.56GiB pending=93955
+INFO [10-01|19:21:21.388] Imported new block headers               count=1    elapsed=5.716ms     number=13,335,326 hash=c61ed7..2ff525
+INFO [10-01|19:21:28.821] Looking for peers                        peercount=34 tried=3 static=0
+INFO [10-01|19:21:30.466] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,164,404@77.56GiB pending=94468
+INFO [10-01|19:21:37.468] Imported new block headers               count=2    elapsed=6.421ms     number=13,335,328 hash=abaf13..5f5f0b
+INFO [10-01|19:21:38.400] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=280.08KiB throttle=936
+INFO [10-01|19:21:38.822] Looking for peers                        peercount=33 tried=3 static=0
+INFO [10-01|19:21:40.959] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,164,762@77.56GiB pending=95041
+INFO [10-01|19:21:46.674] Imported new block headers               count=1    elapsed=6.636ms     number=13,335,329 hash=2ebba8..a8a21d
+INFO [10-01|19:21:48.823] Looking for peers                        peercount=34 tried=3 static=0
+ERROR[10-01|19:21:49.240] Snapshot extension registration failed   peer=5e9ddde8 err="peer connected on snap without compatible eth support"
+INFO [10-01|19:21:49.810] Imported new block headers               count=1    elapsed=6.400ms     number=13,335,330 hash=12773e..dd8f56
+INFO [10-01|19:21:52.505] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,165,156@77.56GiB pending=95649
+WARN [10-01|19:21:52.506] Unexpected trienode heal packet          peer=e28c8af6 reqid=3,187,006,006,236,120,258
+WARN [10-01|19:21:55.626] Checkpoint challenge timed out, dropping id=bc529bfcde09afd5 conn=inbound addr=159.89.131.56:59730   type=OpenEthereum/v3.3.0-...
+INFO [10-01|19:21:58.824] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:22:02.323] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,165,492@77.56GiB pending=96108
+INFO [10-01|19:22:02.625] Imported new block headers               count=1    elapsed=6.225ms     number=13,335,331 hash=f66aa7..4dc753
+INFO [10-01|19:22:08.826] Looking for peers                        peercount=35 tried=1 static=0
+WARN [10-01|19:22:09.131] Dropping unsynced node during sync       id=e13e188e69f3526c conn=inbound addr=87.89.234.25:61991    type=OpenEthereum/v3.3.0-...
+INFO [10-01|19:22:10.720] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,165,800@77.56GiB pending=96654
+INFO [10-01|19:22:18.827] Looking for peers                        peercount=35 tried=5 static=0
+INFO [10-01|19:22:21.225] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,166,172@77.56GiB pending=97183
+INFO [10-01|19:22:28.829] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:22:31.698] State heal in progress                   accounts=0@0.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,166,534@77.56GiB pending=97804
+INFO [10-01|19:22:38.809] Imported new block headers               count=1    elapsed=6.765ms     number=13,335,332 hash=ce62d7..89e590
+INFO [10-01|19:22:38.830] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:22:39.438] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=246.51KiB throttle=1064
+INFO [10-01|19:22:41.656] State heal in progress                   accounts=6@384.00B slots=0@0.00B codes=11097@94.25MiB nodes=267,166,909@77.56GiB pending=98360
+INFO [10-01|19:22:41.937] Imported new block headers               count=1    elapsed=5.901ms     number=13,335,333 hash=d78af5..d0d983
+INFO [10-01|19:22:48.831] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:22:52.366] State heal in progress                   accounts=36@2.04KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,167,340@77.56GiB pending=98886
+INFO [10-01|19:22:54.560] Imported new block headers               count=1    elapsed=5.920ms     number=13,335,334 hash=d7edcb..25195a age=1m
+INFO [10-01|19:22:58.836] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:23:01.358] State heal in progress                   accounts=64@3.94KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,167,707@77.56GiB pending=99350
+INFO [10-01|19:23:08.838] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:23:11.730] State heal in progress                   accounts=69@4.17KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,168,054@77.57GiB pending=99829
+INFO [10-01|19:23:12.883] Imported new block headers               count=1    elapsed=6.073ms     number=13,335,335 hash=17bd08..1d674e
+INFO [10-01|19:23:18.839] Looking for peers                        peercount=35 tried=2 static=0
+INFO [10-01|19:23:22.406] State heal in progress                   accounts=149@8.93KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,168,600@77.57GiB pending=100,283
+INFO [10-01|19:23:22.837] Imported new block headers               count=1    elapsed=6.685ms     number=13,335,336 hash=c79724..3a46c1
+INFO [10-01|19:23:28.840] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:23:32.108] State heal in progress                   accounts=158@9.56KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,168,939@77.57GiB pending=100,775
+INFO [10-01|19:23:38.841] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:23:42.949] State heal in progress                   accounts=175@10.55KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,169,340@77.57GiB pending=101,339
+INFO [10-01|19:23:48.844] Looking for peers                        peercount=35 tried=2 static=0
+INFO [10-01|19:23:51.343] State heal in progress                   accounts=178@10.79KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,169,630@77.57GiB pending=101,758
+INFO [10-01|19:23:58.845] Looking for peers                        peercount=35 tried=2 static=0
+INFO [10-01|19:24:00.195] State heal in progress                   accounts=186@11.38KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,169,963@77.57GiB pending=102,287
+INFO [10-01|19:24:08.847] Looking for peers                        peercount=35 tried=5 static=0
+INFO [10-01|19:24:14.672] State heal in progress                   accounts=186@11.38KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,170,444@77.57GiB pending=102,974
+INFO [10-01|19:24:14.957] Imported new block headers               count=1    elapsed=6.645ms     number=13,335,337 hash=443cab..e648ab age=1m27s
+INFO [10-01|19:24:16.499] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=300.90KiB throttle=872
+INFO [10-01|19:24:18.119] Imported new block headers               count=1    elapsed=6.157ms     number=13,335,338 hash=77bcb7..c7d94d age=1m11s
+INFO [10-01|19:24:18.847] Looking for peers                        peercount=35 tried=2 static=0
+INFO [10-01|19:24:26.810] State heal in progress                   accounts=229@14.17KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,170,941@77.57GiB pending=103,516
+INFO [10-01|19:24:28.847] Looking for peers                        peercount=35 tried=4 static=0
+INFO [10-01|19:24:36.682] Imported new block headers               count=1    elapsed=6.869ms     number=13,335,339 hash=4f414b..88aa5d age=1m21s
+INFO [10-01|19:24:37.012] State heal in progress                   accounts=352@21.01KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,171,782@77.57GiB pending=103,984
+INFO [10-01|19:24:38.849] Looking for peers                        peercount=35 tried=0 static=0
+INFO [10-01|19:24:45.298] State heal in progress                   accounts=388@23.08KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,172,249@77.57GiB pending=104,421
+INFO [10-01|19:24:48.850] Looking for peers                        peercount=35 tried=5 static=0
+INFO [10-01|19:24:51.882] Imported new block headers               count=1    elapsed=6.072ms     number=13,335,340 hash=808179..dd9942
+INFO [10-01|19:24:55.540] State heal in progress                   accounts=472@27.91KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,172,983@77.57GiB pending=104,917
+INFO [10-01|19:24:58.851] Looking for peers                        peercount=35 tried=1 static=0
+INFO [10-01|19:24:59.606] Imported new block headers               count=1    elapsed=6.661ms     number=13,335,341 hash=7f916f..f27627
+INFO [10-01|19:25:03.634] Imported new block headers               count=1    elapsed=6.319ms     number=13,335,342 hash=6d7ca4..b7128c
+INFO [10-01|19:25:04.763] State heal in progress                   accounts=534@31.79KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,173,547@77.57GiB pending=105,425
+WARN [10-01|19:25:08.272] Unexpected trienode heal packet          peer=7a5f352d reqid=6,380,296,408,568,371,363
+INFO [10-01|19:25:08.851] Looking for peers                        peercount=35 tried=3 static=0
+INFO [10-01|19:25:11.304] Imported new block headers               count=1    elapsed=7.457ms     number=13,335,343 hash=da2488..be0f13
+INFO [10-01|19:25:13.013] State heal in progress                   accounts=700@40.77KiB slots=0@0.00B codes=11097@94.25MiB nodes=267,174,206@77.57GiB pending=105,594
+INFO [10-01|19:25:18.532] Downloader queue stats                   receiptTasks=0  blockTasks=0  itemSize=290.93KiB throttle=902
+WARN [10-01|19:25:20.435] Unexpected trienode heal packet          peer=56e9a445 reqid=1,621,136,608,919,685,155
+INFO [10-01|19:25:21.370] Looking for peers                        peercount=35 tried=5 static=0
+INFO [10-01|19:25:25.444] State heal in progress                   accounts=748@43.42KiB slots=0@0.00B codes=11098@94.26MiB nodes=267,174,870@77.57GiB pending=106,197
+INFO [10-01|19:25:26.865] Imported new block headers               count=1    elapsed=6.943ms     number=13,335,344 hash=37dc31..93be37
+INFO [10-01|19:25:31.372] Looking for peers                        peercount=36 tried=4 static=0
+INFO [10-01|19:25:33.339] Imported new block headers               count=1    elapsed=6.759ms     number=13,335,345 hash=404695..223490
+INFO [10-01|19:25:38.799] State heal in progress                   accounts=775@45.15KiB slots=0@0.00B codes=11098@94.26MiB nodes=267,175,469@77.57GiB pending=106,870
+INFO [10-01|19:25:41.378] Looking for peers                        peercount=35 tried=3 static=0
+WARN [10-01|19:25:43.130] Dropping unsynced node during sync       id=2a171d42e93ce059 conn=inbound addr=3.1.58.68:44610       type=OpenEthereum/v3.3.0-...
+INFO [10-01|19:25:46.599] Imported new block headers               count=1    elapsed=7.148ms     number=13,335,346 hash=a986f1..c38f61
+WARN [10-01|19:25:48.294] Dropping unsynced node during sync       id=2b5854999da34d5c conn=inbound addr=47.149.80.50:4039     type=OpenEthereum/v3.3.0-...
+INFO [10-01|19:25:49.779] Imported new block headers               count=1    elapsed=5.683ms     number=13,335,347 hash=a79284..2c93f6
+INFO [10-01|19:25:51.379] Looking for peers                        peercount=34 tried=3 static=0
+INFO [10-01|19:25:54.162] State heal in progress                   accounts=838@49.03KiB slots=0@0.00B codes=11098@94.26MiB nodes=267,176,236@77.57GiB pending=107,565

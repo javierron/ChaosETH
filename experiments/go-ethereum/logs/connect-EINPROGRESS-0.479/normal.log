@@ -1,0 +1,124 @@
+INFO [10-01|21:26:36.529] State heal in progress                   accounts=2005@129.98KiB slots=214@16.34KiB codes=11114@94.34MiB nodes=267,740,639@77.78GiB pending=76471
+INFO [10-01|21:26:39.968] Imported new block headers               count=1    elapsed=7.116ms   number=13,335,860 hash=4f0f6e..0593ca
+INFO [10-01|21:26:40.874] Looking for peers                        peercount=18 tried=2 static=0
+INFO [10-01|21:26:42.333] Downloader queue stats                   receiptTasks=0  blockTasks=0   itemSize=153.65KiB throttle=1707
+INFO [10-01|21:26:47.017] State heal in progress                   accounts=2053@133.13KiB slots=240@18.33KiB codes=11114@94.34MiB nodes=267,741,236@77.78GiB pending=77283
+ERROR[10-01|21:26:48.238] Snapshot extension registration failed   peer=3300220c err="peer connected on snap without compatible eth support"
+INFO [10-01|21:26:50.028] Imported new block headers               count=1    elapsed=6.151ms   number=13,335,861 hash=4cb64c..ed0145
+INFO [10-01|21:26:51.730] Looking for peers                        peercount=17 tried=3 static=0
+INFO [10-01|21:26:56.761] Imported new block headers               count=1    elapsed=6.460ms   number=13,335,862 hash=24f3bd..c63873
+INFO [10-01|21:26:56.981] State heal in progress                   accounts=2085@135.41KiB slots=279@21.39KiB codes=11114@94.34MiB nodes=267,741,789@77.78GiB pending=77928
+INFO [10-01|21:27:01.738] Looking for peers                        peercount=17 tried=4 static=0
+INFO [10-01|21:27:03.493] Imported new block headers               count=1    elapsed=6.527ms   number=13,335,863 hash=bc3487..154cef
+INFO [10-01|21:27:07.951] State heal in progress                   accounts=2118@137.40KiB slots=373@28.83KiB codes=11114@94.34MiB nodes=267,742,482@77.78GiB pending=78698
+INFO [10-01|21:27:13.275] Looking for peers                        peercount=18 tried=3 static=0
+INFO [10-01|21:27:13.475] Imported new block headers               count=1    elapsed=8.358ms   number=13,335,864 hash=3ad5a3..7cc7b5
+INFO [10-01|21:27:13.725] Imported new block headers               count=1    elapsed=7.129ms   number=13,335,865 hash=98e39c..22b871
+ERROR[10-01|21:27:15.319] Snapshot extension registration failed   peer=fcd9662c err="peer connected on snap without compatible eth support"
+INFO [10-01|21:27:17.619] State heal in progress                   accounts=2127@137.89KiB slots=462@35.98KiB codes=11114@94.34MiB nodes=267,743,092@77.78GiB pending=79221
+INFO [10-01|21:27:21.229] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,743,249@77.78GiB pending=79445
+WARN [10-01|21:27:21.237] Synchronisation failed, dropping peer    peer=4ba6ac43cf7218b1ca616589a6c175b1196b2436c06b636f3dc16982f447df7e err="action from bad peer ignored: header request timed out"
+WARN [10-01|21:27:21.248] Unexpected trienode heal packet          peer=8696026c reqid=7,818,043,867,399,310,105
+WARN [10-01|21:27:21.560] Unexpected trienode heal packet          peer=54867a2c reqid=8,363,292,575,415,051,173
+INFO [10-01|21:27:21.681] Disabling direct-ancient mode            origin=13,335,763 ancient=12,976,127
+INFO [10-01|21:27:22.139] Imported new block headers               count=1    elapsed=399.772ms number=13,335,866 hash=e6ca3c..bd19ad ignored=102
+INFO [10-01|21:27:22.999] Imported new block receipts              count=26   elapsed=134.061ms number=13,335,789 hash=8f225d..327f7f age=15m50s   size=3.18MiB
+INFO [10-01|21:27:25.088] Looking for peers                        peercount=17 tried=3 static=0
+INFO [10-01|21:27:29.174] Imported new block receipts              count=13   elapsed=46.500ms  number=13,335,802 hash=c113b4..f0ba61 age=13m11s   size=1.24MiB
+INFO [10-01|21:27:30.539] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,745,387@77.78GiB pending=26280
+INFO [10-01|21:27:30.543] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,745,387@77.78GiB pending=26280
+WARN [10-01|21:27:30.616] Unexpected trienode heal packet          peer=8696026c reqid=8,524,299,278,947,728,493
+WARN [10-01|21:27:30.796] Unexpected trienode heal packet          peer=54867a2c reqid=2,935,129,157,101,938,884
+INFO [10-01|21:27:32.469] Imported new block headers               count=2    elapsed=17.569ms  number=13,335,868 hash=22e734..50587c
+INFO [10-01|21:27:35.112] Looking for peers                        peercount=17 tried=3 static=0
+ERROR[10-01|21:27:37.066] Snapshot extension registration failed   peer=b17b6239 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:27:39.514] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,748,420@77.79GiB pending=40481
+INFO [10-01|21:27:45.113] Looking for peers                        peercount=18 tried=3 static=0
+INFO [10-01|21:27:47.571] Imported new block headers               count=1    elapsed=6.168ms   number=13,335,869 hash=f502fc..6caf5e
+INFO [10-01|21:27:49.707] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,749,846@77.79GiB pending=42483
+INFO [10-01|21:27:50.566] Downloader queue stats                   receiptTasks=0  blockTasks=0   itemSize=186.02KiB throttle=1410
+ERROR[10-01|21:27:54.529] Snapshot extension registration failed   peer=80e4ad9a err="peer connected on snap without compatible eth support"
+INFO [10-01|21:27:55.114] Looking for peers                        peercount=19 tried=3 static=0
+INFO [10-01|21:27:58.851] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,751,339@77.79GiB pending=46858
+INFO [10-01|21:28:05.116] Looking for peers                        peercount=19 tried=3 static=0
+WARN [10-01|21:28:06.636] Dropping unsynced node during sync       id=7dd45cc77c69c4f2 conn=inbound addr=144.76.0.7:52196      type=OpenEthereum/v3.3.0-...
+ERROR[10-01|21:28:09.115] Snapshot extension registration failed   peer=20dcc090 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:28:09.645] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,752,589@77.79GiB pending=50823
+INFO [10-01|21:28:15.117] Looking for peers                        peercount=20 tried=2 static=0
+WARN [10-01|21:28:20.693] Checkpoint challenge timed out, dropping id=783390fed10f4f11 conn=inbound addr=144.76.105.190:1514   type=erigon/v2021.08.5-al...
+INFO [10-01|21:28:22.994] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,753,460@77.79GiB pending=51727
+INFO [10-01|21:28:25.118] Looking for peers                        peercount=18 tried=3 static=0
+INFO [10-01|21:28:27.612] Imported new block headers               count=1    elapsed=7.628ms   number=13,335,870 hash=27d451..11c145 age=1m
+INFO [10-01|21:28:35.119] Looking for peers                        peercount=19 tried=4 static=0
+INFO [10-01|21:28:37.083] Imported new block headers               count=1    elapsed=11.661ms  number=13,335,871 hash=8ce586..c202e4 age=1m7s
+INFO [10-01|21:28:38.157] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,754,385@77.79GiB pending=53157
+INFO [10-01|21:28:40.179] Imported new block headers               count=1    elapsed=10.326ms  number=13,335,872 hash=e7f18e..d415e2
+ERROR[10-01|21:28:42.379] Snapshot extension registration failed   peer=a8f2e0ef err="peer connected on snap without compatible eth support"
+INFO [10-01|21:28:43.205] Imported new block headers               count=1    elapsed=7.475ms   number=13,335,873 hash=390635..e724e8
+INFO [10-01|21:28:45.124] Looking for peers                        peercount=18 tried=3 static=0
+ERROR[10-01|21:28:45.137] Snapshot extension registration failed   peer=e5f21886 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:28:46.170] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,754,809@77.79GiB pending=53646
+INFO [10-01|21:28:52.260] Imported new block headers               count=1    elapsed=8.412ms   number=13,335,874 hash=64499e..3a314a
+INFO [10-01|21:28:52.629] Downloader queue stats                   receiptTasks=0  blockTasks=0   itemSize=229.19KiB throttle=1144
+INFO [10-01|21:28:55.126] Looking for peers                        peercount=18 tried=3 static=0
+ERROR[10-01|21:28:55.590] Snapshot extension registration failed   peer=2f1ae073 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:28:56.709] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,755,610@77.79GiB pending=56263
+INFO [10-01|21:29:00.566] Imported new block headers               count=2    elapsed=10.563ms  number=13,335,876 hash=e4dca9..7cd006
+INFO [10-01|21:29:05.126] Looking for peers                        peercount=19 tried=3 static=0
+ERROR[10-01|21:29:05.846] Snapshot extension registration failed   peer=51071016 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:29:08.532] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,756,520@77.79GiB pending=59711
+INFO [10-01|21:29:13.084] Imported new block headers               count=1    elapsed=6.398ms   number=13,335,877 hash=2fa0e1..8467c3
+INFO [10-01|21:29:15.129] Looking for peers                        peercount=19 tried=2 static=0
+INFO [10-01|21:29:16.980] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,757,137@77.79GiB pending=61944
+ERROR[10-01|21:29:18.168] Snapshot extension registration failed   peer=20dcc090 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:29:25.130] Looking for peers                        peercount=19 tried=2 static=0
+INFO [10-01|21:29:27.374] State heal in progress                   accounts=2127@137.89KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,757,919@77.79GiB pending=64801
+WARN [10-01|21:29:32.095] Dropping unsynced node during sync       id=7804d8ebe98917da conn=inbound addr=178.132.207.83:60512  type=Nethermind/v1.10.63-...
+WARN [10-01|21:29:33.228] Checkpoint challenge timed out, dropping id=baac25dfd1a29370 conn=inbound addr=142.93.73.145:38370   type=OpenEthereum/v3.3.0-...
+INFO [10-01|21:29:34.209] Imported new block headers               count=1    elapsed=7.796ms   number=13,335,878 hash=64bad8..de304d
+INFO [10-01|21:29:35.131] Looking for peers                        peercount=19 tried=4 static=0
+INFO [10-01|21:29:38.144] Imported new block headers               count=1    elapsed=6.880ms   number=13,335,879 hash=981429..a54e1f
+INFO [10-01|21:29:38.582] State heal in progress                   accounts=2168@140.67KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,758,865@77.79GiB pending=67068
+INFO [10-01|21:29:45.132] Looking for peers                        peercount=22 tried=3 static=0
+WARN [10-01|21:29:46.348] Dropping unsynced node during sync       id=015a3ad26cebb106 conn=inbound addr=47.96.169.40:52268    type=OpenEthereum/v3.3.0-...
+INFO [10-01|21:29:48.115] Imported new block headers               count=1    elapsed=7.197ms   number=13,335,880 hash=dd04e5..228252
+INFO [10-01|21:29:48.598] State heal in progress                   accounts=2196@142.54KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,759,817@77.79GiB pending=69564
+WARN [10-01|21:29:53.051] Checkpoint challenge timed out, dropping id=e5b94677a605b16b conn=inbound addr=157.90.199.87:54332   type=erigon/v2021.09.4/li...
+INFO [10-01|21:29:55.135] Looking for peers                        peercount=21 tried=2 static=0
+INFO [10-01|21:29:57.778] Imported new block headers               count=1    elapsed=6.045ms   number=13,335,881 hash=9b9624..0c809d
+ERROR[10-01|21:30:00.205] Snapshot extension registration failed   peer=20dcc090 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:30:00.699] State heal in progress                   accounts=2265@147.15KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,760,961@77.79GiB pending=71409
+INFO [10-01|21:30:01.185] Imported new block headers               count=1    elapsed=6.692ms   number=13,335,882 hash=03ac4e..4b3a1f
+ERROR[10-01|21:30:01.294] Snapshot extension registration failed   peer=20dcc090 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:30:05.137] Looking for peers                        peercount=22 tried=2 static=0
+INFO [10-01|21:30:05.524] Imported new block headers               count=1    elapsed=6.454ms   number=13,335,883 hash=a7d0c6..bbd150
+INFO [10-01|21:30:10.691] Downloader queue stats                   receiptTasks=0  blockTasks=0   itemSize=196.84KiB throttle=1332
+WARN [10-01|21:30:12.710] Dropping unsynced node during sync       id=4535e1debe9e2c3f conn=inbound addr=77.128.120.94:58842   type=Geth/v1.10.8-stable-...
+INFO [10-01|21:30:15.138] Looking for peers                        peercount=22 tried=3 static=0
+INFO [10-01|21:30:15.334] State heal in progress                   accounts=2272@147.58KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,761,684@77.79GiB pending=72155
+INFO [10-01|21:30:25.139] Looking for peers                        peercount=23 tried=3 static=0
+INFO [10-01|21:30:28.165] State heal in progress                   accounts=2385@155.70KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,762,528@77.79GiB pending=72917
+INFO [10-01|21:30:35.141] Looking for peers                        peercount=24 tried=4 static=0
+ERROR[10-01|21:30:35.978] Snapshot extension registration failed   peer=cbd3f861 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:30:45.142] Looking for peers                        peercount=24 tried=2 static=0
+INFO [10-01|21:30:48.649] State heal in progress                   accounts=2397@156.29KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,763,073@77.79GiB pending=73511
+INFO [10-01|21:30:55.144] Looking for peers                        peercount=24 tried=3 static=0
+ERROR[10-01|21:30:55.820] Snapshot extension registration failed   peer=d0d0c417 err="peer connected on snap without compatible eth support"
+ERROR[10-01|21:31:00.687] Snapshot extension registration failed   peer=d2c44a15 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:31:05.146] Looking for peers                        peercount=24 tried=4 static=0
+INFO [10-01|21:31:10.965] State heal in progress                   accounts=2403@156.74KiB slots=468@36.44KiB codes=11114@94.34MiB nodes=267,763,657@77.79GiB pending=74190
+INFO [10-01|21:31:15.146] Looking for peers                        peercount=24 tried=2 static=0
+INFO [10-01|21:31:21.375] State heal in progress                   accounts=2510@163.58KiB slots=469@36.53KiB codes=11114@94.34MiB nodes=267,764,462@77.79GiB pending=74854
+INFO [10-01|21:31:25.248] Looking for peers                        peercount=24 tried=1 static=0
+INFO [10-01|21:31:28.641] Imported new block headers               count=1    elapsed=10.464ms  number=13,335,884 hash=12d219..ad48da age=1m34s
+INFO [10-01|21:31:29.761] Downloader queue stats                   receiptTasks=0  blockTasks=0   itemSize=186.12KiB throttle=1409
+INFO [10-01|21:31:34.126] State heal in progress                   accounts=2548@166.03KiB slots=469@36.53KiB codes=11114@94.34MiB nodes=267,765,085@77.79GiB pending=75508
+INFO [10-01|21:31:35.249] Looking for peers                        peercount=26 tried=6 static=0
+INFO [10-01|21:31:43.096] State heal in progress                   accounts=2566@167.11KiB slots=469@36.53KiB codes=11114@94.34MiB nodes=267,765,431@77.79GiB pending=75952
+WARN [10-01|21:31:44.148] Checkpoint challenge timed out, dropping id=09e35060edf45e4a conn=inbound addr=24.80.105.157:35036   type=erigon/v2021.08.5-al...
+ERROR[10-01|21:31:45.219] Snapshot extension registration failed   peer=00ec02be err="peer connected on snap without compatible eth support"
+INFO [10-01|21:31:45.250] Looking for peers                        peercount=25 tried=3 static=0
+ERROR[10-01|21:31:54.035] Snapshot extension registration failed   peer=3c960ec6 err="peer connected on snap without compatible eth support"
+INFO [10-01|21:31:55.252] Looking for peers                        peercount=27 tried=3 static=0
+INFO [10-01|21:31:55.712] State heal in progress                   accounts=2676@174.00KiB slots=469@36.53KiB codes=11114@94.34MiB nodes=267,766,249@77.79GiB pending=76639
+ERROR[10-01|21:31:59.303] Snapshot extension registration failed   peer=cc8018e3 err="peer connected on snap without compatible eth support"

@@ -1,0 +1,70 @@
+2021-10-02 02:38:57 UTC Syncing #13337206 0xa84d…5b2b     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+   22 Qed Ancient:#11295499 LI:#13337228   19/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:02 UTC Syncing #13337206 0xa84d…5b2b     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+   22 Qed Ancient:#11295499 LI:#13337228   19/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:08 UTC Syncing #13337207 0x21af…84e1     0.20 blk/s   75.4 tx/s    6.0 Mgas/s      0+   21 Qed Ancient:#11295500 LI:#13337228   19/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:12 UTC Syncing #13337207 0x21af…84e1     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+   21 Qed Ancient:#11295500 LI:#13337228   21/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:17 UTC Syncing #13337207 0x21af…84e1     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+   21 Qed Ancient:#11295500 LI:#13337228   21/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:22 UTC Syncing #13337207 0x21af…84e1     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+   21 Qed Ancient:#11295500 LI:#13337228   21/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:27 UTC Syncing #13337208 0x02a4…2ce0     0.20 blk/s   48.0 tx/s    2.7 Mgas/s      0+   20 Qed Ancient:#11295501 LI:#13337228   21/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:36 UTC Syncing #13337208 0x02a4…2ce0     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+   20 Qed Ancient:#11295501 LI:#13337228   22/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:37 UTC Syncing #13337208 0x02a4…2ce0     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+   20 Qed Ancient:#11295501 LI:#13337228   21/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:42 UTC Syncing #13337208 0x02a4…2ce0     0.00 blk/s    0.0 tx/s    0.0 Mgas/s      0+   20 Qed Ancient:#11295501 LI:#13337228   21/25 peers      2 MiB chain    5 MiB queue  RPC:  0 conn,    0 req/s,    0 µs
+2021-10-02 02:39:45 UTC Panic occured, see stderr for details
+
+
+====================
+
+   0: panic_hook::set_with::{{closure}}
+   1: std::panicking::rust_panic_with_hook
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:595:17
+   2: std::panicking::begin_panic_handler::{{closure}}
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:497:13
+   3: std::sys_common::backtrace::__rust_end_short_backtrace
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys_common/backtrace.rs:141:18
+   4: rust_begin_unwind
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/panicking.rs:493:5
+   5: core::panicking::panic_fmt
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/panicking.rs:92:14
+   6: core::option::expect_none_failed
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/core/src/option.rs:1300:5
+   7: <journaldb::overlayrecentdb::OverlayRecentDB as hash_db::HashDB<keccak_hasher::KeccakHasher,elastic_array::ElasticArray128<u8>>>::get
+   8: trie_db::triedbmut::TrieDBMut<H,C>::cache
+   9: trie_db::triedbmut::TrieDBMut<H,C>::insert_at
+  10: trie_db::triedbmut::TrieDBMut<H,C>::insert_inspector
+  11: trie_db::triedbmut::TrieDBMut<H,C>::insert_at
+  12: trie_db::triedbmut::TrieDBMut<H,C>::insert_inspector
+  13: trie_db::triedbmut::TrieDBMut<H,C>::insert_at
+  14: trie_db::triedbmut::TrieDBMut<H,C>::insert_inspector
+  15: trie_db::triedbmut::TrieDBMut<H,C>::insert_at
+  16: trie_db::triedbmut::TrieDBMut<H,C>::insert_inspector
+  17: trie_db::triedbmut::TrieDBMut<H,C>::insert_at
+  18: trie_db::triedbmut::TrieDBMut<H,C>::insert_inspector
+  19: trie_db::triedbmut::TrieDBMut<H,C>::insert_at
+  20: <trie_db::triedbmut::TrieDBMut<H,C> as trie_db::TrieMut<H,C>>::insert
+  21: <trie_db::sectriedbmut::SecTrieDBMut<H,C> as trie_db::TrieMut<H,C>>::insert
+  22: ethcore::state::State<B>::commit
+  23: ethcore::block::OpenBlock::close_and_lock
+  24: ethcore::client::client::Importer::import_verified_blocks
+  25: <ethcore_service::service::ClientIoHandler as ethcore_io::IoHandler<ethcore::client::io_message::ClientIoMessage>>::message
+  26: ethcore_io::worker::Worker::new::{{closure}}::{{closure}}
+  27: <futures::future::loop_fn::LoopFn<A,F> as futures::future::Future>::poll
+  28: std::sys_common::backtrace::__rust_begin_short_backtrace
+  29: core::ops::function::FnOnce::call_once{{vtable.shim}}
+  30: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/alloc/src/boxed.rs:1521:9
+      std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/2fd73fabe469357a12c2c974c140f67e7cdd76d0/library/std/src/sys/unix/thread.rs:71:17
+  31: start_thread
+  32: __clone
+
+
+Thread 'Worker Client3' panicked at 'Low-level database error. Some issue with your hard disk?: Custom { kind: Other, error: "IO error: While open a file for random read: /data/blockchain/eth-data/chains/ethereum/db/906a34e69aec8c0d/overlayrecent/db/1238259.sst: No such file or directory" }', crates/db/journaldb/src/overlayrecentdb.rs:180
+
+This is a bug. Please report it at:
+
+    https://github.com/openethereum/openethereum/issues/new
+
+
+2021-10-02 02:39:45 UTC Finishing work, please wait...
+Error: 1

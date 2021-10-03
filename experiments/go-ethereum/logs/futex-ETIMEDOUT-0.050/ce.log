@@ -1,0 +1,81 @@
+INFO [10-02|01:03:25.378] Imported new block headers               count=1    elapsed=6.607ms   number=13,336,828 hash=8f874f..04865b age=1m58s
+WARN [10-02|01:03:26.437] Pivot became stale, moving               old=13,336,702 new=13,336,766
+INFO [10-02|01:03:26.601] Imported new block receipts              count=64   elapsed=162.563ms number=13,336,765 hash=9fb60e..72cd3f age=14m59s    size=9.21MiB
+INFO [10-02|01:03:26.601] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,702,260@78.12GiB pending=97515
+ERROR[10-02|01:03:27.474] Snapshot extension registration failed   peer=20dcc090 err="peer connected on snap without compatible eth support"
+INFO [10-02|01:03:34.965] Imported new block headers               count=1    elapsed=7.501ms   number=13,336,829 hash=2ac570..a03e8c age=1m36s
+INFO [10-02|01:03:36.021] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,703,780@78.12GiB pending=23067
+ERROR[10-02|01:03:40.757] Snapshot extension registration failed   peer=0eac251e err="peer connected on snap without compatible eth support"
+WARN [10-02|01:03:41.349] Dropping unsynced node during sync       id=d0cbf35c927e0a42 conn=inbound addr=117.50.6.70:43774     type=Geth/v1.10.8-stable-...
+INFO [10-02|01:03:44.593] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,705,736@78.12GiB pending=45849
+INFO [10-02|01:03:57.178] Imported new block headers               count=1    elapsed=6.912ms   number=13,336,830 hash=cc553e..9f59d6 age=1m57s
+INFO [10-02|01:04:01.434] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,707,565@78.12GiB pending=51158
+INFO [10-02|01:04:15.074] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,709,343@78.12GiB pending=62423
+INFO [10-02|01:04:16.645] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=318.32KiB throttle=824
+WARN [10-02|01:04:18.688] Dropping unsynced node during sync       id=8362f7cc4da2fb5e conn=inbound addr=144.137.20.70:46780   type=Nethermind/v1.11.3-0...
+INFO [10-02|01:04:24.660] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,710,243@78.12GiB pending=65125
+ERROR[10-02|01:04:34.999] Snapshot extension registration failed   peer=406f4203 err="peer connected on snap without compatible eth support"
+INFO [10-02|01:04:35.122] Imported new block headers               count=1    elapsed=10.994ms  number=13,336,831 hash=4e3434..dc7203 age=1m51s
+WARN [10-02|01:04:37.269] Dropping unsynced node during sync       id=7dd45cc77c69c4f2 conn=inbound addr=144.76.0.7:42694      type=OpenEthereum/v3.3.0-...
+INFO [10-02|01:04:37.776] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,710,983@78.12GiB pending=66278
+ERROR[10-02|01:04:44.275] Snapshot extension registration failed   peer=eadc8d2a err="peer connected on snap without compatible eth support"
+INFO [10-02|01:04:45.978] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,711,838@78.12GiB pending=68767
+ERROR[10-02|01:04:53.108] Snapshot extension registration failed   peer=c4dc26bb err="peer connected on snap without compatible eth support"
+ERROR[10-02|01:04:58.585] Snapshot extension registration failed   peer=bad9be4f err="peer connected on snap without compatible eth support"
+INFO [10-02|01:05:00.577] Imported new block headers               count=1    elapsed=7.308ms   number=13,336,832 hash=715de5..688832 age=1m46s
+INFO [10-02|01:05:01.652] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,713,305@78.12GiB pending=73645
+WARN [10-02|01:05:02.060] Dropping unsynced node during sync       id=21f3a38af799b830 conn=inbound addr=89.3.198.30:39050     type=ethereumjs-devp2p/v4...
+INFO [10-02|01:05:07.022] Imported new block headers               count=1    elapsed=8.527ms   number=13,336,833 hash=979149..5772c4 age=1m45s
+ERROR[10-02|01:05:15.459] Snapshot extension registration failed   peer=8aff6ddb err="peer connected on snap without compatible eth support"
+INFO [10-02|01:05:16.032] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,714,733@78.12GiB pending=77351
+ERROR[10-02|01:05:21.164] Snapshot extension registration failed   peer=d0d0c417 err="peer connected on snap without compatible eth support"
+INFO [10-02|01:05:24.175] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,715,589@78.12GiB pending=78521
+INFO [10-02|01:05:39.671] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,716,343@78.13GiB pending=79367
+INFO [10-02|01:05:51.310] Imported new block headers               count=2    elapsed=8.781ms   number=13,336,835 hash=e8dcaa..221a0a age=1m59s
+ERROR[10-02|01:05:51.990] Snapshot extension registration failed   peer=4cbed73d err="peer connected on snap without compatible eth support"
+INFO [10-02|01:05:54.866] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,716,899@78.13GiB pending=79979
+INFO [10-02|01:05:57.704] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=320.05KiB throttle=820
+INFO [10-02|01:06:07.241] Imported new block headers               count=1    elapsed=6.250ms   number=13,336,836 hash=533575..bb57f0 age=1m36s
+INFO [10-02|01:06:09.383] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,717,390@78.13GiB pending=80527
+INFO [10-02|01:06:18.014] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,717,725@78.13GiB pending=80942
+ERROR[10-02|01:06:18.475] Snapshot extension registration failed   peer=666c78f4 err="peer connected on snap without compatible eth support"
+INFO [10-02|01:06:23.119] Imported new block headers               count=1    elapsed=6.029ms   number=13,336,837 hash=13eb81..d30c45 age=1m28s
+INFO [10-02|01:06:27.861] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,718,137@78.13GiB pending=81447
+ERROR[10-02|01:06:34.282] Snapshot extension registration failed   peer=49de6cc2 err="peer connected on snap without compatible eth support"
+ERROR[10-02|01:06:35.934] Snapshot extension registration failed   peer=b52c702e err="peer connected on snap without compatible eth support"
+INFO [10-02|01:06:41.155] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,718,622@78.13GiB pending=82000
+ERROR[10-02|01:06:49.172] Snapshot extension registration failed   peer=4ef01af3 err="peer connected on snap without compatible eth support"
+INFO [10-02|01:06:50.414] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,719,021@78.13GiB pending=82764
+ERROR[10-02|01:06:51.615] Snapshot extension registration failed   peer=db10c423 err="peer connected on snap without compatible eth support"
+INFO [10-02|01:06:51.843] Imported new block headers               count=1    elapsed=9.769ms   number=13,336,838 hash=14c0ac..6ada76 age=1m49s
+INFO [10-02|01:07:01.564] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,719,428@78.13GiB pending=83344
+WARN [10-02|01:07:01.566] Unexpected trienode heal packet          peer=31f7ddbc reqid=1,609,327,200,302,774,481
+WARN [10-02|01:07:01.926] Unexpected trienode heal packet          peer=62408054 reqid=399,395,840,344,738,082
+INFO [10-02|01:07:04.577] Imported new block headers               count=1    elapsed=7.245ms   number=13,336,839 hash=1d6138..db902b age=1m19s
+INFO [10-02|01:07:11.322] Imported new block headers               count=2    elapsed=11.971ms  number=13,336,841 hash=13cc86..b55560 age=1m9s
+INFO [10-02|01:07:11.749] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=288.14KiB throttle=910
+INFO [10-02|01:07:12.180] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,719,825@78.13GiB pending=83822
+WARN [10-02|01:07:12.181] Unexpected trienode heal packet          peer=95993035 reqid=3,552,137,887,708,853,616
+INFO [10-02|01:07:23.098] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,720,208@78.13GiB pending=84337
+WARN [10-02|01:07:23.099] Unexpected trienode heal packet          peer=c746522c reqid=477,254,249,962,719,567
+INFO [10-02|01:07:24.375] Imported new block headers               count=1    elapsed=6.578ms   number=13,336,842 hash=d960e1..7a31c4 age=1m5s
+INFO [10-02|01:07:27.664] Imported new block headers               count=1    elapsed=6.185ms   number=13,336,843 hash=e40489..532fd3
+INFO [10-02|01:07:32.403] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,720,588@78.13GiB pending=85045
+INFO [10-02|01:07:40.441] Imported new block headers               count=1    elapsed=6.472ms   number=13,336,844 hash=22a2ad..f4f70c
+INFO [10-02|01:07:42.685] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,720,962@78.13GiB pending=85513
+WARN [10-02|01:07:42.686] Unexpected trienode heal packet          peer=2a44a7da reqid=8,020,846,223,886,400,024
+WARN [10-02|01:07:46.410] Dropping unsynced node during sync       id=5476b207e17a89cd conn=inbound addr=112.35.33.38:38726    type=OpenEthereum/v3.3.0-...
+ERROR[10-02|01:07:47.623] Snapshot extension registration failed   peer=3300220c err="peer connected on snap without compatible eth support"
+INFO [10-02|01:07:52.265] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,721,343@78.13GiB pending=86193
+WARN [10-02|01:07:52.266] Unexpected trienode heal packet          peer=552ff5ce reqid=5,988,276,384,937,344,462
+WARN [10-02|01:07:55.113] Dropping unsynced node during sync       id=4939bf247c3381be conn=inbound addr=107.179.178.136:48242 type=Geth/v1.10.8-stable-...
+INFO [10-02|01:08:02.360] State heal in progress                   accounts=2669@161.15KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,721,727@78.13GiB pending=86688
+WARN [10-02|01:08:02.361] Unexpected trienode heal packet          peer=31f7ddbc reqid=9,083,679,236,918,236,841
+WARN [10-02|01:08:02.391] Unexpected trienode heal packet          peer=62408054 reqid=5,831,850,874,989,630,616
+INFO [10-02|01:08:11.315] State heal in progress                   accounts=2670@161.19KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,722,047@78.13GiB pending=87028
+INFO [10-02|01:08:23.253] State heal in progress                   accounts=2670@161.19KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,722,496@78.13GiB pending=87597
+INFO [10-02|01:08:32.312] State heal in progress                   accounts=2671@161.24KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,722,846@78.13GiB pending=88047
+INFO [10-02|01:08:37.510] Imported new block headers               count=2    elapsed=8.492ms   number=13,336,846 hash=9889b9..845c05 age=1m30s
+INFO [10-02|01:08:38.822] Downloader queue stats                   receiptTasks=0   blockTasks=0   itemSize=263.67KiB throttle=995
+INFO [10-02|01:08:40.640] State heal in progress                   accounts=2672@161.28KiB slots=1577@124.98KiB codes=11152@94.67MiB nodes=268,723,159@78.13GiB pending=88425
+INFO [10-02|01:08:44.142] Imported new block headers               count=1    elapsed=6.798ms   number=13,336,847 hash=249b59..9677dc age=1m24s
