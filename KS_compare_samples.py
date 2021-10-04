@@ -10,8 +10,7 @@ def get_args():
     parser.add_argument("-s2", "--sample-2", type=str, dest="sample_2", help="sample 2 csv file path", required=True)
     parser.add_argument("-p", "--p-value", type=float, dest="p_value", help="p-value threshold", required=True)
     parser.add_argument("-o", "--output", type=str, dest="output", help="output file path", required=True)
-    parser.add_argument("--plot", dest="plot", help="plot the samples CDFs", action='store_true')
-    parser.add_argument("--plot-dir", dest="plot_dir", type=str, help="path to store the plots", default="./")
+    parser.add_argument("--plot", dest="plot", type=str, help="plot the samples distribution functions", choices=['pdf', 'cdf', 'no'], default='no')
     args = parser.parse_args()
     return args
 
@@ -25,8 +24,6 @@ def compute(args):
     data = {}
 
     for metric in metrics:
-        # print(metric)
-
         ss_metric = data_s1[metric]
         uc_metric = data_s2[metric]
 
@@ -35,12 +32,11 @@ def compute(args):
         # t = ttest_ind(uc_metric, ss_metric)
         
 
-        if(args.plot):
+        if(args.plot != 'no'):
             plot(args, data_s1, data_s2, metric)
            
 
         data[metric] = {"p-value": t.pvalue, "stat": t.statistic}
-        # print(t)
 
         result = "Different" if t.pvalue < args.p_value else "Similar"
         
@@ -49,7 +45,7 @@ def compute(args):
     print_json(args, data)
 
 def print_json(args, data):
-    with open(args.output, "w") as outfile:
+    with open(f"{args.output}/test-results.json", "w") as outfile:
         json.dump(data, outfile, indent=4)
 
 def plot(args, data_s1, data_s2, metric): 
@@ -65,8 +61,8 @@ def plot(args, data_s1, data_s2, metric):
     stats_df['cdf'] = stats_df['pdf'].cumsum()
     stats_df = stats_df.reset_index()
 
-    ax = stats_df.plot(x=metric, y=['pdf','cdf'], grid=True, label=['Sample 1 PDF', 'Sample 1 CDF'])
-
+    ax = stats_df.plot(x=metric, y=[args.plot], grid=True, label=[f'Sample 1 {args.plot.upper()}'], figsize=(3,2))
+    # ax.subplots_adjust(bottom=0.15)
     #-----------------------------
     # Sample 2 CDF plot 
     #-----------------------------
@@ -80,10 +76,14 @@ def plot(args, data_s1, data_s2, metric):
     stats_df['cdf'] = stats_df['pdf'].cumsum()
     stats_df = stats_df.reset_index()
 
-    stats_df.plot(x=metric, y=['pdf','cdf'], grid=True, ax=ax, label=['Sample 2 PDF', 'Sample 2 CDF'])
+    stats_df.plot(x=metric, y=[args.plot], grid=True, ax=ax, label=[f'Sample 2 {args.plot.upper()}'])
 
+    plt.title(metric)
+
+    plt.xlabel("Incidences per 15 sec.")
+    plt.ylabel("Cumulative probability")
     
-    plt.savefig(args.plot_dir + "/" + metric + ".pdf")
+    plt.savefig(args.output + "/" + metric + f'_{args.plot}.pdf', bbox_inches='tight')
 
 if __name__ == "__main__":
     args = get_args()
